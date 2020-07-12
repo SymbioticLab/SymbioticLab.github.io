@@ -16,15 +16,8 @@ git config --global user.email "$INPUT_USER_EMAIL"
 npm install hexo-cli -g
 npm install hexo-deployer-git --save
 
-# for reading the deployo branch
-npm install js-yaml
-
 # populate the deploy root with history
-function get_branch() {
-    local NODE_PATH=$(pwd)/node_modules
-    echo $(env NODE_PATH=$NODE_PATH node /get_branch.js $1)
-}
-git clone --branch "$(get_branch _config.yml)" https://github.com/$GITHUB_REPOSITORY .deploy_git
+env NODE_PATH=$(pwd)/node_modules node /setup_deploy_repo.js
 
 # deployment
 if [ "$INPUT_COMMIT_MSG" == "" ]

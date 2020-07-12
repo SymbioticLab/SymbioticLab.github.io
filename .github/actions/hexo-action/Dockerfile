@@ -5,7 +5,7 @@ LABEL repository="https://github.com/SymbioticLab/SymbioticLab.github.io"
 
 RUN apk add --no-cache git openssh > /dev/null
 
-COPY get_branch.js /get_branch.js
+COPY setup_deploy_repo.js /setup_deploy_repo.js
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
