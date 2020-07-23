@@ -1,6 +1,7 @@
 # Header
 menu:
   Home: /
+  People: /People
   Archives: /archives
 rss: /atom.xml
 
