@@ -1,9 +1,9 @@
 # Header
 menu:
   Home: /
-  Projects: /Projects
-  Publications: /Publications
-  People: /People
+  Projects: /projects
+  Publications: /publications
+  People: /people
 rss: /atom.xml
 
 # Content
