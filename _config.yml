@@ -90,11 +90,6 @@ include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: landscape
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -102,3 +97,156 @@ deploy:
   repo: git@github.com:SymbioticLab/SymbioticLab.github.io.git
   branch: master
 
+# ---------------------------------------------------------------
+# Theme Configuration Settings
+# See: https://theme-next.org/docs/theme-settings/
+# ---------------------------------------------------------------
+theme: next
+theme_config:
+  # Remove unnecessary files after hexo generate.
+  minify: true
+
+  # Site Information Settings
+  # See: https://theme-next.org/docs/getting-started/
+  favicon:
+    small: /assets//favicon/favicon-16x16.png
+    medium: /assets/favicon/favicon-32x32.png
+    apple_touch_icon: /assets/favicon/apple-touch-icon.png
+    safari_pinned_tab: /assets/favicon/safari-pinned-tab.svg
+    android_manifest: /assets/favicon/site.webmanifest
+    ms_browserconfig: /assets/favicon/browserconfig.xml
+
+  footer:
+    # Specify the date when the site was setup. If not defined, current year will be used.
+    #since: 2015
+
+    # Icon between year and copyright info.
+    icon:
+      # Icon name in Font Awesome. See: https://fontawesome.com/icons
+      name: fa fa-heart
+      # If you want to animate the icon, set it to true.
+      animated: false
+      # Change the color of icon, using Hex Code.
+      color: "#ff0000"
+
+    # If not defined, `author` from Hexo `_config.yml` will be used.
+    copyright: SymbioticLab
+
+    # Powered by Hexo & NexT
+    powered: true
+
+  # Creative Commons 4.0 International License.
+  # See: https://creativecommons.org/share-your-work/licensing-types-examples
+  # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+  # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+  # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+  creative_commons:
+    license: by-nc-sa
+    sidebar: false
+    post: false
+    language:
+
+
+  # ---------------------------------------------------------------
+  # Scheme Settings
+  # ---------------------------------------------------------------
+
+  # Schemes
+  #scheme: Muse
+  scheme: Mist
+  #scheme: Pisces
+  #scheme: Gemini
+
+  # Dark Mode
+  darkmode: false
+
+
+  # ---------------------------------------------------------------
+  # Menu Settings
+  # ---------------------------------------------------------------
+
+  # Usage: `Key: /link/ || icon`
+  # Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
+  # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
+  # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
+  # External url should start with http:// or https://
+  menu:
+    home: / || fa fa-home
+    Projects: /projects || fa fa-home
+    Publications: /publications || fa fa-home
+    People: /people || fa fa-home
+    #about: /about/ || fa fa-user
+    #tags: /tags/ || fa fa-tags
+    #categories: /categories/ || fa fa-th
+
+  # Enable / Disable menu icons / item badges.
+  menu_settings:
+    icons: true
+    badges: false
+
+
+  # ---------------------------------------------------------------
+  # Sidebar Settings
+  # See: https://theme-next.org/docs/theme-settings/sidebar
+  # ---------------------------------------------------------------
+  sidebar:
+    display: remove
+
+  # ---------------------------------------------------------------
+  # Post Settings
+  # See: https://theme-next.js.org/docs/theme-settings/posts
+  # ---------------------------------------------------------------
+  # Show previous post and next post in post footer if exists
+  # Available values: left | right | false
+  post_navigation: right
+
+  # ---------------------------------------------------------------
+  # Misc Theme Settings
+  # See: https://theme-next.js.org/docs/theme-settings/
+  # ---------------------------------------------------------------
+
+  # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
+  android_chrome_color: "#fe6600"
+
+  # Custom Logo (Do not support scheme Mist)
+  custom_logo: /assets/logo.svg
+
+  codeblock:
+    # Code Highlight theme
+    # All available themes: https://theme-next.js.org/highlight/
+    theme:
+      light: default
+      dark: tomorrow-night
+    prism:
+      light: prism
+      dark: prism-dark
+    # Add copy button on codeblock
+    copy_button:
+      enable: true
+      # Available values: default | flat | mac
+      style:
+
+  back2top:
+    enable: true
+    # Back to top in sidebar.
+    sidebar: false
+    # Scroll percent label in b2t button.
+    scrollpercent: true
+
+  # ---------------------------------------------------------------
+  # Animation Settings
+  # ---------------------------------------------------------------
+
+  # Use Animate.css to animate everything.
+  # For more information: https://animate.style
+  motion:
+    enable: true
+    async: true
+    transition:
+      # All available transition variants: https://theme-next.js.org/animate/
+      post_block: fadeIn
+      post_header: fadeInDown
+      post_body: fadeInDown
+      coll_header: fadeInLeft
+      # Only for Pisces | Gemini.
+      sidebar: fadeInUp
