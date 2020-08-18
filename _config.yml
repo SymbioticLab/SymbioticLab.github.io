@@ -172,10 +172,11 @@ theme_config:
   # External url should start with http:// or https://
   menu:
     # home: / || fa fa-home
-    About: /about || fa fa-info
+    
     Projects: /projects || fa fa-code
     Publications: /publications || fa fa-book
     People: /people || fa fa-user
+    Funding: /funding || fa fa-info
     #tags: /tags/ || fa fa-tags
     #categories: /categories/ || fa fa-th
 
