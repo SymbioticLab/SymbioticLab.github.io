@@ -39,13 +39,3 @@ date: 2020-07-22 23:09:46
 * Alexander Neben (CSE BSE) → Ocient
 * Jiangchen Zhu (CSE BSE) → PhD @Columbia
 * Jiaxing Yang (CSE BSE)
-
-# Collaborators
-* Robert Grandl (UW-Madison, advised by Aditya Akella) → Google
-* Tan N. Le (Stony Brook, advised by Zhenhua Liu) → PayPal
-* Youngmoon Lee (Michigan, advised by Kang G. Shin) → Asst. Professor @Hanyang University, South Korea
-* Kshiteej Mahajan (UW-Madison, advised by Aditya Akella)
-* Xiao Sun (Stony Brook, advised by Zhenhua Liu)
-* Muhammed Uluyol (Michigan, advised by Harsha Madhyastha)
-* Dong Young Yoon (Michigan, advised by Barzan Mozafari) → Facebook
-* Hong Zhang (HKUST, advised by Kai Chen) → PostDoc @UC Berkeley
