@@ -171,11 +171,11 @@ theme_config:
   # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
   # External url should start with http:// or https://
   menu:
-    home: / || fa fa-home
+    # home: / || fa fa-home
+    About: /about || fa fa-info
     Projects: /projects || fa fa-code
     Publications: /publications || fa fa-book
     People: /people || fa fa-user
-    About: /about || fa fa-info
     #tags: /tags/ || fa fa-tags
     #categories: /categories/ || fa fa-th
 
