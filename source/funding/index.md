@@ -28,8 +28,9 @@ date: 2020-08-18 12:08:53
 }
 </style>
 
+<p style="line-height: 1.7;"> Any opinions, findings, and conclusions of our research projects are those of the author(s) and do not necessarily represent the official policy of any of these organizations. </p>
 
-Current Sponsors
+<h3> Current Sponsors </h3>
 
 <div class="row">
   <div class="column_current">
@@ -43,7 +44,7 @@ Current Sponsors
   </div>
 </div>
 
-Past Sponsors
+<h3> Past Sponsors </h3>
 <div class="row">
   <div class="column_past">
     <img src="images/vmware.png" alt="VMware" style="width:100%">
