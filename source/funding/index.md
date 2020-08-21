@@ -4,52 +4,54 @@ date: 2020-08-18 12:08:53
 ---
 
 <style>
-* {
-  box-sizing: border-box;
+.flex-row p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.column_current {
-  float: left;
-  width: 20%;
-  padding: 5px;
+.flex-row img {
+  /* default to 5 images per row */
+  flex: 20%;
+  max-width: 20%;
+
+  margin: 0px;
 }
 
-.column_past {
-  float: left;
-  width: 20%;
-  padding: 5px;
+@media (max-width: 800px) {
+  .flex-row img {
+    flex: 25%;
+    max-width: 25%;
+  }
 }
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+@media (max-width: 600px) {
+  .flex-row img {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 </style>
 
-<p style="line-height: 1.7;"> Any opinions, findings, and conclusions of our research projects are those of the author(s) and do not necessarily represent the official policy of any of these organizations. </p>
+{% note default %}
+Any opinions, findings, and conclusions of our research projects are those of the author(s) and do not necessarily represent the official policy of any of these organizations.
+{% endnote %}
 
-<h3> Current Sponsors </h3>
+### Current Sponsors
 
-<div class="row">
-  <div class="column_current">
-    <img src="images/nsf.png" alt="NSF" style="width:100%">
-  </div>
-  <div class="column_current" style="margin-top:10px;">
-    <img src="images/google.png" alt="Google" style="width:100%">
-  </div>
-  <div class="column_current">
-    <img src="images/kla.png" alt="KLA" style="width:100%">
-  </div>
+[comment]: # "Note that there must be a blank line after the div, otherwise the img tag won't be rendered"
+
+<div class='flex-row'>
+
+![NSF](images/nsf.png)
+![Google](images/google.png)
+![KLA](images/kla.png)
 </div>
 
-<h3> Past Sponsors </h3>
-<div class="row">
-  <div class="column_past">
-    <img src="images/vmware.png" alt="VMware" style="width:100%">
-  </div>
-  <div class="column_past" style="margin-top:15px;">
-    <img src="images/chelsio.png" alt="Chelsio" style="width:100%">
-  </div>
+### Past Sponsors
+
+<div class='flex-row'>
+
+![VMware](images/vmware.png)
+![Chelsio](images/chelsio.png)
 </div>
