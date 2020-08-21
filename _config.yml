@@ -98,6 +98,22 @@ deploy:
   repo: git@github.com:SymbioticLab/SymbioticLab.github.io.git
   branch: master
 
+# config of hexo-renderer-markdown-it
+markdown:
+  render:
+    html: true
+    xhtmlOut: true
+    breaks: false
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - "@iktakahiro/markdown-it-katex"
+
+publist:
+  # entries within the last `new_months` will be marked new
+  new_month: 3
+
 # ---------------------------------------------------------------
 # Theme Configuration Settings
 # See: https://theme-next.org/docs/theme-settings/
@@ -193,6 +209,7 @@ theme_config:
   # ---------------------------------------------------------------
   sidebar:
     display: remove
+    position: right
 
   # ---------------------------------------------------------------
   # Post Settings
@@ -252,3 +269,20 @@ theme_config:
       coll_header: fadeInLeft
       # Only for Pisces | Gemini.
       sidebar: fadeInUp
+
+  # ---------------------------------------------------------------
+  # Math Formulas Render Support
+  # ---------------------------------------------------------------
+  math:
+    # Default (true) will load mathjax / katex script on demand.
+    # That is it only render those page which has `mathjax: true` in Front-matter.
+    # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
+    per_page: true
+
+    mathjax:
+      enable: false
+
+    katex:
+      enable: true
+      # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+      copy_tex: false
