@@ -109,6 +109,28 @@ markdown:
     quotes: '“”‘’'
   plugins:
     - "@iktakahiro/markdown-it-katex"
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+  anchors:
+    # Minimum level for ID creation. (Ex. h2 to h6)
+    level: 2
+    # A suffix that is prepended to the number given if the ID is repeated.
+    collisionSuffix: ''
+    # If `true`, creates an anchor tag with a permalink besides the heading.
+    permalink: true
+    # Class used for the permalink anchor tag.
+    permalinkClass: headerlink
+    # Set to 'right' to add permalink after heading
+    permalinkSide: 'right'
+    # The symbol used to make the permalink
+    permalinkSymbol: ''
+    # Transform anchor to (1) lower case; (2) upper case
+    case: 1
+    # Replace space with a character
+    separator: '-'
 
 publist:
   # entries within the last `new_months` will be marked new

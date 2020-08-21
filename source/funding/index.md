@@ -37,7 +37,7 @@ date: 2020-08-18 12:08:53
 Any opinions, findings, and conclusions of our research projects are those of the author(s) and do not necessarily represent the official policy of any of these organizations.
 {% endnote %}
 
-### Current Sponsors
+## Current Sponsors
 
 [comment]: # "Note that there must be a blank line after the div, otherwise the img tag won't be rendered"
 
@@ -48,7 +48,7 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![KLA](images/kla.png)
 </div>
 
-### Past Sponsors
+## Past Sponsors
 
 <div class='flex-row'>
 

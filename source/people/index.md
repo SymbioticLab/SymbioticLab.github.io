@@ -3,11 +3,11 @@ title: People
 date: 2020-07-22 23:09:46
 ---
 
-# Faculty
+## Faculty
 
 * [Mosharaf Chowdhury](https://www.mosharaf.com/)
 
-# Current Phd Students
+## Current Phd Students
 
 * [Juncheng Gu](https://web.eecs.umich.edu/~jcgu/)
 * Jie You
@@ -17,11 +17,11 @@ date: 2020-07-22 23:09:46
 * [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
 * [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
 
-# Current Master’s and Undergraduate Students
+## Current Master’s and Undergraduate Students
 * [Xiangfeng Zhu](https://xzhu27.me/) (CS-LSA BS)
 * Yinwei Dai (CSE MSE)
 
-# Alumni
+## Alumni
 * Jack Kosaian (CSE BSE) → PhD @CMU
 * Qinye Li (CSE BSE) → Master’s @Michigan
 * Yang Liu (ECE MSE) → Facebook
