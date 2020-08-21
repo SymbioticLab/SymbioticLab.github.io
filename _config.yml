@@ -195,7 +195,8 @@ theme_config:
     People: /people || fa fa-user
     Funding: /funding || fa fa-info
     #tags: /tags/ || fa fa-tags
-    #categories: /categories/ || fa fa-th
+    Github: https://github.com/SymbioticLab || fab fa-github-alt
+    Wiki: https://symbiotic.eecs.umich.edu/wiki || fab fa-wikipedia-w
 
   # Enable / Disable menu icons / item badges.
   menu_settings:
