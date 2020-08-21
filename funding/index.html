@@ -16,20 +16,18 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  
-  <link rel="stylesheet" href="/lib/animate-css/animate.min.css">
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"symbioticlab.github.io","root":"/","scheme":"Mist","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
+    var CONFIG = {"hostname":"symbioticlab.github.io","root":"/","scheme":"Mist","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
   </script>
 
-  <meta name="description" content="* {   box-sizing: border-box; }  .column_current {   float: left;   width: 20%;   padding: 5px; }  .column_past {   float: left;   width: 20%;   padding: 5px; }  &#x2F;* Clearfix (clear floats) *&#x2F; .row::a">
+  <meta name="description" content=".flex-row p {   display: flex;   flex-wrap: wrap;   justify-content: flex-start;   align-items: center; }  .flex-row img {   &#x2F;* default to 5 images per row *&#x2F;   flex: 20%;   max-width: 20%;    margin">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Funding">
 <meta property="og:url" content="https://symbioticlab.github.io/funding/index.html">
 <meta property="og:site_name" content="SymbioticLab">
-<meta property="og:description" content="* {   box-sizing: border-box; }  .column_current {   float: left;   width: 20%;   padding: 5px; }  .column_past {   float: left;   width: 20%;   padding: 5px; }  &#x2F;* Clearfix (clear floats) *&#x2F; .row::a">
+<meta property="og:description" content=".flex-row p {   display: flex;   flex-wrap: wrap;   justify-content: flex-start;   align-items: center; }  .flex-row img {   &#x2F;* default to 5 images per row *&#x2F;   flex: 20%;   max-width: 20%;    margin">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://symbioticlab.github.io/funding/images/nsf.png">
 <meta property="og:image" content="https://symbioticlab.github.io/funding/images/google.png">
@@ -37,7 +35,7 @@
 <meta property="og:image" content="https://symbioticlab.github.io/funding/images/vmware.png">
 <meta property="og:image" content="https://symbioticlab.github.io/funding/images/chelsio.png">
 <meta property="article:published_time" content="2020-08-18T16:08:53.000Z">
-<meta property="article:modified_time" content="2020-08-19T21:11:52.486Z">
+<meta property="article:modified_time" content="2020-08-18T16:08:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://symbioticlab.github.io/funding/images/nsf.png">
 
@@ -53,6 +51,7 @@
     lang   : 'en'
   };
 </script>
+
 
   <title>Funding | SymbioticLab
 </title>
@@ -101,7 +100,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <div class="container">
     <div class="headband"></div>
 
     <main class="main">
@@ -203,55 +202,48 @@
       
       <div class="post-body">
           <style>
-* {
-  box-sizing: border-box;
+.flex-row p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.column_current {
-  float: left;
-  width: 20%;
-  padding: 5px;
+.flex-row img {
+  /* default to 5 images per row */
+  flex: 20%;
+  max-width: 20%;
+
+  margin: 0px;
 }
 
-.column_past {
-  float: left;
-  width: 20%;
-  padding: 5px;
+@media (max-width: 800px) {
+  .flex-row img {
+    flex: 25%;
+    max-width: 25%;
+  }
 }
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+@media (max-width: 600px) {
+  .flex-row img {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 </style>
-
-<p style="line-height: 1.7;"> Any opinions, findings, and conclusions of our research projects are those of the author(s) and do not necessarily represent the official policy of any of these organizations. </p>
-
-<h3> Current Sponsors </h3>
-
-<div class="row">
-  <div class="column_current">
-    <img src="images/nsf.png" alt="NSF" style="width:100%">
-  </div>
-  <div class="column_current" style="margin-top:10px;">
-    <img src="images/google.png" alt="Google" style="width:100%">
-  </div>
-  <div class="column_current">
-    <img src="images/kla.png" alt="KLA" style="width:100%">
-  </div>
+<div class="note default"><p>Any opinions, findings, and conclusions of our research projects are those of the author(s) and do not necessarily represent the official policy of any of these organizations.</p>
+</div>
+<h3 id="Current-Sponsors">Current Sponsors</h3>
+<div class='flex-row'>
+<p><img src="images/nsf.png" alt="NSF" />
+<img src="images/google.png" alt="Google" />
+<img src="images/kla.png" alt="KLA" /></p>
+</div>
+<h3 id="Past-Sponsors">Past Sponsors</h3>
+<div class='flex-row'>
+<p><img src="images/vmware.png" alt="VMware" />
+<img src="images/chelsio.png" alt="Chelsio" /></p>
 </div>
 
-<h3> Past Sponsors </h3>
-<div class="row">
-  <div class="column_past">
-    <img src="images/vmware.png" alt="VMware" style="width:100%">
-  </div>
-  <div class="column_past" style="margin-top:15px;">
-    <img src="images/chelsio.png" alt="Chelsio" style="width:100%">
-  </div>
-</div>
       </div>
       
       
@@ -328,8 +320,6 @@
 
 <script src="/js/utils.js"></script>
 
-<script src="/js/motion.js"></script>
-
 
 <script src="/js/schemes/muse.js"></script>
 
@@ -356,6 +346,9 @@
   
 
   
+
+  
+
 
 </body>
 </html>

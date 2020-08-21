@@ -1,0 +1,256 @@
+/* Clear some padding and margin on the page */
+.post-header .post-meta {
+    display: none;
+}
+.posts-expand {
+    padding-top: 0px !important;
+}
+
+.pub-list {
+    line-height: 1.5;
+}
+
+.pub-list section.year {
+    position: relative;
+
+    padding: 1em 0em 0em 0em;
+    margin-left: 3.5em;
+
+    /* Place the .year-mark-wrapper and ul at the same vertical point from the top edge */
+    display: flex;
+    align-items: flex-start;
+}
+
+/* The vertical line */
+.pub-list section.year ul li {
+    position: relative;
+}
+.pub-list section.year ul li::before {
+    content: ' ';
+
+    background: rgba(.3, .3, .3, .3);
+    z-index: -1;
+
+    position: absolute;
+    left: calc(-2em + -2px);
+    width: 2px;
+    top: -1px;
+    bottom: 0px;
+}
+.pub-list section.year ul li:first-child::before {
+    top: calc(-1em + -1px);
+}
+.pub-list section.year:last-child ul li:last-child::before {
+    background: linear-gradient(to bottom, rgba(.3, .3, .3, .3) 60%, rgba(.3, .3, .3, 0));
+}
+
+/* The circle and year */
+.pub-list .year-mark-wrapper {
+    /* Align .year-mark center within the height of a line */
+    display: flex;
+    align-items: center;
+    width: 0px;
+    /* sticky effect */
+    position: sticky;
+    top: 5em; /* 1em + 2 * 1em padding of select + height of select */
+}
+.pub-list .year-mark-wrapper::before {
+    /* Use the pseudo element to make the .year-mark-wrapper exactly the height of a line of text */
+    content: "A";
+    width: 0px;
+    visibility: hidden;
+}
+.pub-list .year-mark {
+    position: relative;
+    left: -8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 10px;
+    height: 10px;
+    background: #C5C5C5;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.pub-list .year-mark::before {
+    content: attr(data-year);
+    font-size: 1rem;
+    font-weight: bold;
+
+    margin-right: 1em;
+}
+@media (min-width: 62em) {
+    .pub-list .year-mark::before {
+        font-size: 1.1rem;
+    }
+}
+
+/* The styling of the list */
+.pub-list section.year ul {
+    padding: 0 0 0 2em;
+    margin: 0em;
+    font-size: 1em;
+    width: 100%;
+}
+@media (min-width: 62em) {
+    .pub-list section.year section ul {
+        font-size: 1.1em;
+        padding-left: 2.2em;
+    }
+}
+
+.pub-list section.year ul li {
+    list-style-type: none;
+    padding: 1rem 0rem 1.25rem 0rem;
+    border-bottom: 1px dashed #ccc;
+}
+.pub-list section.year ul li:first-child {
+    padding-top: 0rem;
+}
+.pub-list section.year:last-child ul li:last-child {
+    border-bottom: none;
+}
+
+/* The publication block */
+.pub-block .pub-title {
+    font-weight: bold;
+}
+.pub-block .pub-badge {
+    color: red;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.pub-block .pub-authors,
+.pub-block .pub-conference,
+.pub-block .pub-links {
+    font-size: 0.9em;
+}
+.pub-block .pub-conference {
+    font-style: italic;
+}
+.pub-block .pub-conference .pub-conference-acceptance {
+    font-style: normal;
+}
+
+.pub-block .pub-abstract-frame {
+    height: 0px;
+    overflow: hidden;
+    /*
+     * Emulate velocity's default swing curve
+     * see https://stackoverflow.com/a/9245729/2441376
+     */
+    transition: height 0.4s cubic-bezier(.02, .01, .47, 1);
+}
+.pub-block .pub-abstract {
+    padding: 1em 0em;
+}
+.pub-block .pub-abstract p:last-child {
+    margin-bottom: 0px;
+}
+
+.pub-block .pub-author.pub-highlight {
+    /* Highlight authors */
+    font-weight: bold;
+}
+
+/* timeline search panel */
+.timeline-search-panel {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding: 1em 0em 1em 0em;
+    margin-top: -1em;
+
+    border-bottom: dashed 1px #ccc;
+
+    position: sticky;
+    top: 0px;
+
+    background: white;
+    z-index: 10;
+}
+.timeline-search-panel h4 {
+    margin: 0em 1em 0em .5em;
+    padding: 0px;
+}
+
+/* The select box */
+.select-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.select-box .select-arrow {
+    position: relative;
+    height: 1.5em;
+    width: 0em;
+
+    left: -2em;
+
+    pointer-events: none;
+    z-index: 2;
+    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+    opacity: 0.6;
+}
+.select-box .select-arrow svg {
+    width: 1.5em;
+    height: auto;
+    fill: #a0a0a0;
+}
+.select-box select {
+    /* No default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+
+    border: 2px solid rgba(.3, .3, .3, .3);
+    background: #fff;
+    padding-left: 1em;
+    padding-right: 2.5em;
+}
+
+/* The checkbox */
+.check-box {
+    margin: 0em 1em 0em 2em;
+    display: flex;
+    align-items: center;
+}
+
+.check-box ~ .check-box {
+    margin: 0em 1em;
+}
+
+.check-box input[type="checkbox"] {
+    margin-right: .2em;
+}
+
+/* Copied tooltip */
+#copied-tooltip .jBox-container {
+    background: #222;
+    color: #eee;
+    line-height: 1;
+    display: flex;
+}
+#copied-tooltip .jBox-pointer::after {
+    background: #222;
+}
+#copied-tooltip .jBox-content {
+    display: inline;
+    padding: 7px 7px;
+    font-size: .8em;
+}
+#copied-tooltip .jBox-pointer {
+    height: 7px;
+}
+
+/* Filter */
+.filter-hide {
+    display: none !important;
+}
