@@ -2696,7 +2696,7 @@ hr {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fa90b9;
+  background: #3cffd4;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
