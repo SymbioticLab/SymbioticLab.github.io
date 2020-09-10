@@ -19,6 +19,7 @@ date: 2020-07-22 23:09:46
 
 ## Current Master’s and Undergraduate Students
 * [Xiangfeng Zhu](https://xzhu27.me/) (CS-LSA BS)
+* Chris Chen (CS-LSA BS)
 * Yinwei Dai (CSE MSE)
 
 ## Alumni
