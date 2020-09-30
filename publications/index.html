@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"symbioticlab.github.io","root":"/","scheme":"Mist","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
   </script>
 
-  <meta name="description" content="Work in progress                Filters:                                       All Venues                                      MLSys                                      NSDI">
+  <meta name="description" content="Work in progress                Filters:                                       All Venues                                      EuroSys                                      MLSys">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Publications">
 <meta property="og:url" content="https://symbioticlab.github.io/publications/index.html">
 <meta property="og:site_name" content="SymbioticLab">
-<meta property="og:description" content="Work in progress                Filters:                                       All Venues                                      MLSys                                      NSDI">
+<meta property="og:description" content="Work in progress                Filters:                                       All Venues                                      EuroSys                                      MLSys">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-23T03:10:02.000Z">
 <meta property="article:modified_time" content="2020-07-23T03:10:02.000Z">
@@ -217,6 +217,8 @@
             <select>
                 <option value="all" selected>All Venues</option>
                 <optgroup label="Conferences">
+                    <option value="EuroSys">EuroSys</option>
+                
                     <option value="MLSys">MLSys</option>
                 
                     <option value="NSDI">NSDI</option>
@@ -252,6 +254,47 @@
                 <span class="year-mark" data-year="2020"></span>
             </div>
             <ul>
+                <li data-pub-venue="EuroSys"
+                    data-pub-cat="Conferences">
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/allox:eurosys20/allox-eurosys20.pdf">AlloX: compute allocation in hybrid clusters</a>
+                            
+                        </div>
+                        
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Tan-N. Le ">Tan&nbspN.&nbspLe</span>, 
+                            <span class="pub-author pub-author-Xiao-Sun ">Xiao&nbspSun</span>, 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
+                            <span class="pub-author pub-author-Zhenhua-Liu ">Zhenhua&nbspLiu</span>
+                        </div>
+                        <div class="pub-conference">
+                            The Fifteenth European Conference on Computer Systems
+                            (<a target="_blank" title=""
+                                href="https://www.eurosys2020.org/">EuroSys'20</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Modern deep learning frameworks support a variety of hardware, including CPU, GPU, and other accelerators, to perform computation. In this paper, we study how to schedule jobs over such interchangeable resources – each with a different rate of computation – to optimize performance while providing fairness among users in a shared cluster. We demonstrate theoretically and empirically that existing solutions and their straightforward modifications perform poorly in the presence of interchangeable resources, which motivates the design and implementation of AlloX. At its core, AlloX transforms the scheduling problem into a min-cost bipartite matching problem and provides dynamic fair allocation over time. We theoretically prove its optimality in an ideal, offline setting and show empirically that it works well in the online scenario by incorporating with Kubernetes. Evaluations on a small-scale CPU-GPU hybrid cluster and large-scale simulations highlight that AlloX can reduce the average job completion time significantly (by up to 95% when the system load is high) while providing fairness and preventing starvation.</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/allox:eurosys20/allox-eurosys20.pdf">[paper]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{allox:eurosys20,
+    author    = {Tan N. Le and Xiao Sun and Mosharaf Chowdhury and Zhenhua Liu},
+    booktitle = {ACM EuroSys},
+    title     = {AlloX: compute allocation in hybrid clusters},
+    year      = {2020},
+    pages     = {31:1--31:16},
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
                 <li data-pub-venue="MLSys"
                     data-pub-cat="Conferences">
                     <div class="pub-block">
@@ -311,32 +354,45 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         </div>
                     </div>
                 </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="NSDI"
+                    data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
-                            AlloX: compute allocation in hybrid clusters
+                            <a target="_blank" href="/publications/files/pando:nsdi20/pando-nsdi20.pdf">Near-optimal latency versus cost tradeoffs in geo-distributed storage</a>
                             
                         </div>
                         
                         <div class="pub-authors">
-                            <span class="pub-author pub-author-Tan-N. Le ">Tan&nbspN.&nbspLe</span>, 
-                            <span class="pub-author pub-author-Xiao-Sun ">Xiao&nbspSun</span>, 
+                            <span class="pub-author pub-author-Muhammed-Uluyol ">Muhammed&nbspUluyol</span>, 
+                            <span class="pub-author pub-author-Anthony-Huang ">Anthony&nbspHuang</span>, 
+                            <span class="pub-author pub-author-Ayush-Goel ">Ayush&nbspGoel</span>, 
                             <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
-                            <span class="pub-author pub-author-Zhenhua-Liu ">Zhenhua&nbspLiu</span>
+                            <span class="pub-author pub-author-Harsha-V. Madhyastha ">Harsha&nbspV.&nbspMadhyastha</span>
                         </div>
-                        
-                        
+                        <div class="pub-conference">
+                            The 17th USENIX Symposium on Networked Systems Design and Implementation
+                            (<a target="_blank" title=""
+                                href="https://www.usenix.org/conference/nsdi20">NSDI'20</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>By replicating data across sites in multiple geo- graphic regions, web services can maximize availability and minimize latency for their users. However, when sacrificing data consistency is not an option, we show that service providers have to today incur significantly higher cost to meet desired la- tency goals than the lowest cost theoretically feasible. We show that the key to addressing this sub-optimality is to 1) allow for erasure coding, not just replication, of data across data cen- ters, and 2) mitigate the resultant increase in read and write la- tencies by rethinking how to enable consensus across the wide- area network. Our extensive evaluation mimicking web service deployments on the Azure cloud service shows that we enable near-optimal latency versus cost tradeoffs.</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
                         <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{allox:eurosys20,
-    author    = {Tan N. Le and Xiao Sun and Mosharaf Chowdhury and Zhenhua Liu},
-    booktitle = {ACM EuroSys},
-    title     = {AlloX: compute allocation in hybrid clusters},
+                            <a target="_blank" href="/publications/files/pando:nsdi20/pando-nsdi20.pdf">[paper]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{pando:nsdi20,
+    author    = {Muhammed Uluyol and Anthony Huang and Ayush Goel and Mosharaf Chowdhury and Harsha V. Madhyastha},
+    booktitle = {USENIX NSDI},
+    title     = {Near-Optimal Latency Versus Cost Tradeoffs in Geo-Distributed Storage},
     year      = {2020},
-    pages     = {31:1--31:16},
+    pages     = {157--180},
 }
 ">[bibtex]</a>
-                            
+                            <a class="pub-link-abstract">[abstract]</a>
                         </div>
                     </div>
                 </li>
@@ -364,36 +420,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
     title     = {Sol: Fast Distributed Computation Over Slow Networks},
     year      = {2020},
     pages     = {273--288},
-}
-">[bibtex]</a>
-                            
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            Near-optimal latency versus cost tradeoffs in geo-distributed storage
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Muhammed-Uluyol ">Muhammed&nbspUluyol</span>, 
-                            <span class="pub-author pub-author-Anthony-Huang ">Anthony&nbspHuang</span>, 
-                            <span class="pub-author pub-author-Ayush-Goel ">Ayush&nbspGoel</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
-                            <span class="pub-author pub-author-Harsha-V. Madhyastha ">Harsha&nbspV.&nbspMadhyastha</span>
-                        </div>
-                        
-                        
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{pando:nsdi20,
-    author    = {Muhammed Uluyol and Anthony Huang and Ayush Goel and Mosharaf Chowdhury and Harsha V. Madhyastha},
-    booktitle = {USENIX NSDI},
-    title     = {Near-Optimal Latency Versus Cost Tradeoffs in Geo-Distributed Storage},
-    year      = {2020},
-    pages     = {157--180},
 }
 ">[bibtex]</a>
                             
@@ -490,8 +516,8 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
-                                <blockquote><p>Deep learning (DL) training jobs bring some unique challenges to existing cluster managers, such as unpredictable training times, an all-or-nothing execution model, and inflexibility in GPU sharing. Our analysis of a large GPU cluster in production shows that existing big data schedulers cause long queueing delays and low overall performance.
-We present Tiresias, a GPU cluster manager tailored for distributed DL training jobs, which efficiently schedules and places DL jobs to reduce their job completion times (JCTs). Given that a DL job’s execution time is often unpredictable, we propose two scheduling algorithms – Discretized Two-Dimensional Gittins index relies on partial information and Discretized Two-Dimensional LAS is information-agnostic – that aim to minimize the average JCT. Additionally, we describe when the consolidated placement constraint can be relaxed, and present a placement algorithm to leverage these observations without any user input. Experiments on the Michigan ConFlux cluster with 60 P100 GPUs and large-scale trace-driven simulations show that Tiresias improves the average JCT by up to 5.5× over an Apache YARN-based resource manager used in production. More importantly, Tiresias’s performance is comparable to that of solutions assuming perfect knowledge.</p>
+                                <blockquote><p>Deep learning (DL) training jobs bring some unique challenges to existing cluster managers, such as unpredictable training times, an all-or-nothing execution model, and inflexibility in GPU sharing. Our analysis of a large GPU cluster in production shows that existing big data schedulers cause long queueing delays and low overall performance.</p>
+<p>We present Tiresias, a GPU cluster manager tailored for distributed DL training jobs, which efficiently schedules and places DL jobs to reduce their job completion times (JCTs). Given that a DL job’s execution time is often unpredictable, we propose two scheduling algorithms – Discretized Two-Dimensional Gittins index relies on partial information and Discretized Two-Dimensional LAS is information-agnostic – that aim to minimize the average JCT. Additionally, we describe when the consolidated placement constraint can be relaxed, and present a placement algorithm to leverage these observations without any user input. Experiments on the Michigan ConFlux cluster with 60 P100 GPUs and large-scale trace-driven simulations show that Tiresias improves the average JCT by up to 5.5× over an Apache YARN-based resource manager used in production. More importantly, Tiresias’s performance is comparable to that of solutions assuming perfect knowledge.</p>
 
                                 </blockquote>
                             </div>
