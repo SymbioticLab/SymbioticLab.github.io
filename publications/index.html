@@ -220,6 +220,10 @@
                     <option value="MLSys">MLSys</option>
                 
                     <option value="NSDI">NSDI</option>
+                
+                    <option value="OSDI">OSDI</option>
+                
+                    <option value="SIGCOMM">SIGCOMM</option>
                 </optgroup><optgroup label="Journals">
                     <option value="USENIX ;login:">USENIX ;login:</option>
                 </optgroup>
@@ -1061,11 +1065,11 @@ We present Tiresias, a GPU cluster manager tailored for distributed DL training 
                         </div>
                     </div>
                 </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="SIGCOMM"
+                    data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
-                            Resilient datacenter load balancing in the wild
+                            <a target="_blank" href="/publications/files/hermes:sigcomm17/hermes-sigcomm17.pdf">Resilient datacenter load balancing in the wild</a>
                             
                         </div>
                         
@@ -1076,7 +1080,12 @@ We present Tiresias, a GPU cluster manager tailored for distributed DL training 
                             <span class="pub-author pub-author-Kai-Chen ">Kai&nbspChen</span>, and 
                             <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>
                         </div>
-                        
+                        <div class="pub-conference">
+                            The 2017 ACM SIGCOMM Conference
+                            (<a target="_blank" title=""
+                                href="http://conferences.sigcomm.org/sigcomm/2017/">SIGCOMM'17</a>)
+                            
+                        </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
                                 <blockquote>Production datacenters operate under various uncertainties such as traffic dynamics, topology asymmetry, and failures. Therefore, datacenter load balancing schemes must be resilient to these uncertainties; i.e., they should accurately sense path conditions and timely react to mitigate the fallouts. Despite significant efforts, prior solutions have important drawbacks. On the one hand, solutions such as Presto and DRB are oblivious to path conditions and blindly reroute at fixed granularity. On the other hand, solutions such as CONGA and CLOVE can sense congestion, but they can only reroute when flowlets emerge; thus, they cannot always react timely to uncertainties. To make things worse, these solutions fail to detect/handle failures such as blackholes and random packet drops, which greatly degrades their performance. In this paper, we introduce Hermes, a datacenter load balancer that is resilient to the aforementioned uncertainties. At its heart, Hermes leverages comprehensive sensing to detect path conditions including failures unattended before, and it reacts using timely yet cautious rerouting. Hermes is a practical edge-based solution with no switch modification. We have implemented Hermes with commodity switches and evaluated it through both testbed experiments and large-scale simulations. Our results show that Hermes achieves comparable performance to CONGA and Presto in normal cases, and well handles uncertainties: under asymmetries, Hermes achieves up to 10% and 20% better flow completion time (FCT) than CONGA and CLOVE; under switch failures, it outperforms all other schemes by over 32%.
@@ -1084,6 +1093,7 @@ We present Tiresias, a GPU cluster manager tailored for distributed DL training 
                             </div>
                         </div>
                         <div class="pub-links">
+                            <a target="_blank" href="/publications/files/hermes:sigcomm17/hermes-sigcomm17.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{hermes:sigcomm17,
     Title                    = {Resilient Datacenter Load Balancing in the Wild},
     Author                   = {Hong Zhang and Junxue Zhang and Wei Bai and Kai Chen and Mosharaf Chowdhury},
@@ -1228,11 +1238,11 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                 <span class="year-mark" data-year="2016"></span>
             </div>
             <ul>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="OSDI"
+                    data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
-                            Altruistic scheduling in multi-resource clusters
+                            <a target="_blank" href="/publications/files/carbyne:osdi16/carbyne-osdi16.pdf">Altruistic scheduling in multi-resource clusters</a>
                             
                         </div>
                         
@@ -1242,7 +1252,12 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                             <span class="pub-author pub-author-Aditya-Akella ">Aditya&nbspAkella</span>, and 
                             <span class="pub-author pub-author-Ganesh-Ananthanarayanan ">Ganesh&nbspAnanthanarayanan</span>
                         </div>
-                        
+                        <div class="pub-conference">
+                            The 12th USENIX Symposium on Operating Systems Design and Implementation
+                            (<a target="_blank" title=""
+                                href="https://www.usenix.org/conference/osdi16">OSDI'16</a>)
+                            
+                        </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
                                 <blockquote>Given the well-known tradeoffs between fairness, performance, and efficiency, modern cluster schedulers often prefer instantaneous fairness as their primary objective to ensure performance isolation between users and groups. However, instantaneous, short-term convergence to fairness often does not result in noticeable long-term benefits. Instead, we propose an altruistic, long-term approach, Carbyne, where jobs yield fractions of their allocated resources without impacting their own completion times. We show that leftover resources collected via altruisms of many jobs can then be rescheduled to further secondary goals such as application-level performance and cluster efficiency without impacting performance isolation. Deployments and large-scale simulations show that Carbyne closely approximates the state-of-the-art solutions (e.g., DRF) in terms of performance isolation, while providing 1.26X better efficiency and 1.59X lower average job completion time.
@@ -1250,6 +1265,7 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                             </div>
                         </div>
                         <div class="pub-links">
+                            <a target="_blank" href="/publications/files/carbyne:osdi16/carbyne-osdi16.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{carbyne:osdi16,
     Title                    = {Altruistic Scheduling in Multi-Resource Clusters},
     Author                   = {Robert Grandl and Mosharaf Chowdhury and Aditya Akella and Ganesh Ananthanarayanan},
@@ -1263,11 +1279,11 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                         </div>
                     </div>
                 </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="OSDI"
+                    data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
-                            EC-Cache: Load-balanced, low-latency cluster caching with online erasure coding
+                            <a target="_blank" href="/publications/files/eccache:osdi16/eccache-osdi16.pdf">EC-Cache: Load-balanced, low-latency cluster caching with online erasure coding</a>
                             
                         </div>
                         
@@ -1278,7 +1294,12 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                             <span class="pub-author pub-author-Ion-Stoica ">Ion&nbspStoica</span>, and 
                             <span class="pub-author pub-author-Kannan-Ramchandran ">Kannan&nbspRamchandran</span>
                         </div>
-                        
+                        <div class="pub-conference">
+                            The 12th USENIX Symposium on Operating Systems Design and Implementation
+                            (<a target="_blank" title=""
+                                href="https://www.usenix.org/conference/osdi16">OSDI'16</a>)
+                            
+                        </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
                                 <blockquote>Data-intensive clusters and object stores are increasingly relying on in-memory object caching to meet the I/O performance demands. These systems routinely face the challenges of popularity skew, background load imbalance, and server failures, which result in severe load imbalance across storage servers and degraded I/O performance. Selective replication is a commonly used technique to tackle these challenges, where the number of cached replicas of an object is proportional to its popularity. In this paper, we explore an alternative approach using erasure coding. EC-Cache is a load-balanced, low latency cluster cache that uses online erasure coding to overcome the limitations of selective replication. EC-Cache employs erasure coding by: (i) splitting and erasure coding individual objects during writes, and (ii) late binding, wherein obtaining any k out of (k + r) splits of an object are sufficient, during reads. As compared to selective replication, EC-Cache improves load balancing by more than 3X and reduces the median and tail read latencies by more than 2X, while using the same amount of memory. EC-Cache does so using 10% additional bandwidth and a small increase in the amount of stored metadata. The benefits offered by EC-Cache are further amplified in the presence of background network load imbalance and server failures.
@@ -1286,6 +1307,7 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                             </div>
                         </div>
                         <div class="pub-links">
+                            <a target="_blank" href="/publications/files/eccache:osdi16/eccache-osdi16.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{eccache:osdi16,
     Title                    = {{EC-Cache}: Load-Balanced, Low-Latency Cluster Caching with Online Erasure Coding},
     Author                   = {K. V. Rashmi and Mosharaf Chowdhury and Jack Kosaian and Ion Stoica and Kannan Ramchandran},
@@ -1301,11 +1323,11 @@ EC-Cache is a load-balanced, low latency cluster cache that uses online erasure 
                         </div>
                     </div>
                 </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="SIGCOMM"
+                    data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
-                            CODA: Toward automatically identifying and scheduling COflows in the DArk
+                            <a target="_blank" href="/publications/files/coda:sigcomm16/coda-sigcomm16.pdf">CODA: Toward automatically identifying and scheduling COflows in the DArk</a>
                             
                         </div>
                         
@@ -1317,7 +1339,12 @@ EC-Cache is a load-balanced, low latency cluster cache that uses online erasure 
                             <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
                             <span class="pub-author pub-author-Yanhui-Geng ">Yanhui&nbspGeng</span>
                         </div>
-                        
+                        <div class="pub-conference">
+                            The 2016 ACM SIGCOMM Conference
+                            (<a target="_blank" title=""
+                                href="http://conferences.sigcomm.org/sigcomm/2016/">SIGCOMM'16</a>)
+                            
+                        </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
                                 <blockquote>Leveraging application-level requirements using coflows has recently been shown to improve application-level communication performance in data-parallel clusters. However, existing coflow-based solutions rely on modifying applications to extract coflows, making them inapplicable to many practical scenarios. In this paper, we present CODA, a first attempt at automatically identifying and scheduling coflows without any application modifications. We employ an incremental clustering algorithm to perform fast, application-transparent coflow identification and complement it by proposing an error-tolerant coflow scheduler to mitigate occasional identification errors. Testbed experiments and large-scale simulations with production workloads show that CODA can identify coflows with over 90% accuracy, and its scheduler is robust to inaccuracies, enabling communication stages to complete 2.4X (5.1X) faster on average (95th percentile) compared to per-flow mechanisms. Overall, CODA's performance is comparable to that of solutions requiring application modifications.
@@ -1325,6 +1352,7 @@ EC-Cache is a load-balanced, low latency cluster cache that uses online erasure 
                             </div>
                         </div>
                         <div class="pub-links">
+                            <a target="_blank" href="/publications/files/coda:sigcomm16/coda-sigcomm16.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{coda:sigcomm16,
     Title                    = {{CODA}: Toward Automatically Identifying and Scheduling {CO}flows in the {DA}rk},
     Author                   = {Hong Zhang and Li Chen and Bairen Yi and Kai Chen and Mosharaf Chowdhury and Yanhui Geng},
@@ -1378,11 +1406,11 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
                         </div>
                     </div>
                 </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="NSDI"
+                    data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
-                            HUG: Multi-resource fairness for correlated and elastic demands
+                            <a target="_blank" href="/publications/files/hug:nsdi16/hug-nsdi16.pdf">HUG: Multi-resource fairness for correlated and elastic demands</a>
                             
                         </div>
                         
@@ -1392,7 +1420,12 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
                             <span class="pub-author pub-author-Ali-Ghodsi ">Ali&nbspGhodsi</span>, and 
                             <span class="pub-author pub-author-Ion-Stoica ">Ion&nbspStoica</span>
                         </div>
-                        
+                        <div class="pub-conference">
+                            The 13th USENIX Symposium on Networked Systems Design and Implementation
+                            (<a target="_blank" title=""
+                                href="https://www.usenix.org/conference/nsdi16">NSDI'16</a>)
+                            
+                        </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
                                 <blockquote>In this paper, we study how to optimally provide isolation guarantees in multi-resource environments, such as public clouds, where a tenant's demands on different resources (links) are correlated. Unlike prior work such as Dominant Resource Fairness (DRF) that assumes static and fixed demands, we consider elastic demands. Our approach generalizes canonical max-min fairness to the multi-resource setting with correlated demands, and extends DRF to elastic demands. We consider two natural optimization objectives: isolation guarantee from a tenant's viewpoint and system utilization (work conservation) from an operator's perspective. We prove that in non-cooperative environments like public cloud networks, there is a strong tradeoff between optimal isolation guarantee and work conservation when demands are elastic. Even worse, work conservation can even decrease network utilization instead of improving it when demands are inelastic. We identify the root cause behind the tradeoff and present a provably optimal allocation algorithm, High Utilization with Guarantees (HUG), to achieve maximum attainable network utilization without sacrificing the optimal isolation guarantee, strategy-proofness, and other useful properties of DRF. In cooperative environments like private datacenter networks, HUG achieves both the optimal isolation guarantee and work conservation. Analyses, simulations, and experiments show that HUG provides better isolation guarantees, higher system utilization, and better tenant-level performance than its counterparts.
@@ -1400,6 +1433,7 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
                             </div>
                         </div>
                         <div class="pub-links">
+                            <a target="_blank" href="/publications/files/hug:nsdi16/hug-nsdi16.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{hug:nsdi16,
     Title                    = {{HUG}: Multi-Resource Fairness for Correlated and Elastic Demands},
     Author                   = {Mosharaf Chowdhury and Zhenhua Liu and Ali Ghodsi and Ion Stoica},
