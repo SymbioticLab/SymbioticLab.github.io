@@ -29,7 +29,8 @@
   Number                   = {4},
   Pages                    = {42--48},
   Volume                   = {42},
-
+  publist_confkey = {USENIX ;login:},
+  publist_link = {paper || infiniswap-login17.pdf},
   Abstract                 = {Memory disaggregation can expose remote memory across a cluster to local applications. However, existing proposals call for new architectures and/or new programming models, making them infeasible. We have developed a practical memory disaggregation solution, Infiniswap, which is a remote memory paging system for clusters with lowlatency, kernel-bypass networks such as RDMA. Infiniswap opportunistically harvests and transparently exposes unused memory across the cluster to unmodified applications by dividing the swap space of each machine into many chunks and distributing them to unused memory of many remote machines. For scalability, it leverages the power of many choices to perform decentralized memory chunk placements and evictions. Applications using Infiniswap receive large performance boosts when their working sets are larger than their physical memory allocations.}
 }
 
@@ -40,12 +41,17 @@
   Year                     = {2017},
   Month                    = {March},
 
-  Abstract                 = {Memory-intensive applications suffer large performance loss when their working sets do not fully fit in memory. Yet, they cannot leverage otherwise unused remote memory when paging out to disks even in the presence of large imbalance in memory utilizations across a cluster. Existing proposals for memory disaggregation call for new architectures, new hardware designs, and/or new programming models, making them infeasible.
-
-This paper describes the design and implementation of Infiniswap, a remote memory paging system designed specifically for an RDMA network. Infiniswap opportunistically harvests and transparently exposes unused memory to unmodified applications by dividing the swap space of each machine into many slabs and distributing them across many machines' remote memory. Because one-sided RDMA operations bypass remote CPUs, Infiniswap leverages the power of many choices to perform decentralized slab placements and evictions.
-
-We have implemented and deployed Infiniswap on an RDMA cluster without any modifications to user applications or the OS and evaluated its effectiveness using multiple workloads running on unmodified VoltDB, Memcached, PowerGraph, GraphX, and Apache Spark. Using Infiniswap, throughputs of these applications improve between 4X (0.94X) to 15.4X (7.8X) over disk (Mellanox nbdX), and median and tail latencies between 5.4X (2X) and 61X (2.3X). Infiniswap achieves these with negligible remote CPU usage, whereas nbdX becomes CPU-bound. Infiniswap increases the overall memory utilization of a cluster and works well at scale.}
-}
+  publist_confkey = {NSDI'17},
+  publist_link = {paper || infiniswap-nsdi17.pdf},
+  publist_link = {slides || infiniswap-nsdi17-slides.pdf},
+  publist_link = {code || https://github.com/SymbioticLab/Infiniswap},
+  publist_link = {website || https://infiniswap.github.io/},
+  publist_link = {media || https://blog.acolyer.org/2017/05/05/efficient-memory-disaggregation-with-infiniswap/},
+  publist_abstract = {
+  Memory-intensive applications suffer large performance loss when their working sets do not fully fit in memory. Yet, they cannot leverage otherwise unused remote memory when paging out to disks even in the presence of large imbalance in memory utilizations across a cluster. Existing proposals for memory disaggregation call for new architectures, new hardware designs, and/or new programming models, making them infeasible.
+  This paper describes the design and implementation of Infiniswap, a remote memory paging system designed specifically for an RDMA network. Infiniswap opportunistically harvests and transparently exposes unused memory to unmodified applications by dividing the swap space of each machine into many slabs and distributing them across many machines' remote memory. Because one-sided RDMA operations bypass remote CPUs, Infiniswap leverages the power of many choices to perform decentralized slab placements and evictions.
+  We have implemented and deployed Infiniswap on an RDMA cluster without any modifications to user applications or the OS and evaluated its effectiveness using multiple workloads running on unmodified VoltDB, Memcached, PowerGraph, GraphX, and Apache Spark. Using Infiniswap, throughputs of these applications improve between 4X (0.94X) to 15.4X (7.8X) over disk (Mellanox nbdX), and median and tail latencies between 5.4X (2X) and 61X (2.3X). Infiniswap achieves these with negligible remote CPU usage, whereas nbdX becomes CPU-bound. Infiniswap increases the overall memory utilization of a cluster and works well at scale.}
+  }
 
 @TechReport{cellscope:tr16,
   Title                    = {Fast and Accurate Performance Analysis of {LTE} Radio Access Networks},
@@ -185,9 +191,18 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 @InProceedings{tiresias:nsdi19,
   author    = {Juncheng Gu and Mosharaf Chowdhury and Kang G. Shin and Yibo Zhu and Myeongjae Jeon and Junjie Qian and Hongqiang Harry Liu and Chuanxiong Guo},
   booktitle = {USENIX NSDI},
-  title     = {Tiresias: {A} {GPU} Cluster Manager for Distributed Deep Learning},
+  title     = {Tiresias: A {GPU} Cluster Manager for Distributed Deep Learning},
   year      = {2019},
   pages     = {485--500},
+
+  publist_confkey = {NSDI'19},
+  publist_link = {paper || tiresias-nsdi19.pdf},
+  publist_link = {slides || tiresias-nsdi19-slides.pdf},
+  publist_link = {pps || tiresias-nsdi19-slides.ppsx},
+  publist_link = {code || https://github.com/SymbioticLab/Tiresias},
+  publist_abstract = {
+  Deep learning (DL) training jobs bring some unique challenges to existing cluster managers, such as unpredictable training times, an all-or-nothing execution model, and inflexibility in GPU sharing. Our analysis of a large GPU cluster in production shows that existing big data schedulers cause long queueing delays and low overall performance.
+  We present Tiresias, a GPU cluster manager tailored for distributed DL training jobs, which efficiently schedules and places DL jobs to reduce their job completion times (JCTs). Given that a DL job’s execution time is often unpredictable, we propose two scheduling algorithms – Discretized Two-Dimensional Gittins index relies on partial information and Discretized Two-Dimensional LAS is information-agnostic – that aim to minimize the average JCT. Additionally, we describe when the consolidated placement constraint can be relaxed, and present a placement algorithm to leverage these observations without any user input. Experiments on the Michigan ConFlux cluster with 60 P100 GPUs and large-scale trace-driven simulations show that Tiresias improves the average JCT by up to 5.5× over an Apache YARN-based resource manager used in production. More importantly, Tiresias’s performance is comparable to that of solutions assuming perfect knowledge.}
 }
 
 @InProceedings{nocs:spaa19,

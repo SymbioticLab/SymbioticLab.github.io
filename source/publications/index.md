@@ -29,8 +29,35 @@ venues:
       url: https://mlsys.org/Conferences/2020
       # conference acceptance rate (optional)
       acceptance: "19.2%"
+    NSDI'17:
+      # conference id
+      venue: NSDI
+      # conference full name
+      name: The 14th USENIX Symposium on Networked Systems Design and Implementation
+      # date for sorting
+      date: 2017-03-27
+      # conference website (optional)
+      url: https://www.usenix.org/conference/nsdi17
+    NSDI'19:
+      # conference id
+      venue: NSDI
+      # conference full name
+      name: The 16th USENIX Symposium on Networked Systems Design and Implementation
+      # date for sorting
+      date: 2019-02-26
+      # conference website (optional)
+      url: https://www.usenix.org/conference/nsdi19
   Workshops: {}
   Posters: {}
   Demos: {}
-  Journals: {}
+  Journals:     
+    'USENIX ;login:':
+      # journal id
+      venue: 'USENIX ;login:'
+      # journal full name
+      name: 'USENIX ;login: Winter 2017, VOL. 42, NO. 4'
+      # date for sorting
+      date: 2017-12-30
+      # journal website (optional)
+      url: https://www.usenix.org/publications/login
 {% endpublist %}
