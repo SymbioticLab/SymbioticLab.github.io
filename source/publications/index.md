@@ -18,6 +18,15 @@ venues:
   # key is also used in display
   Conferences:
     # conference short name
+    EuroSys'20:
+      # conference id
+      venue: EuroSys
+      # conference full name
+      name: The Fifteenth European Conference on Computer Systems
+      # date for sorting
+      date: 2020-04-27
+      # conference website (optional)
+      url: https://www.eurosys2020.org/
     MLSys'20:
       # conference id
       venue: MLSys
@@ -29,6 +38,15 @@ venues:
       url: https://mlsys.org/Conferences/2020
       # conference acceptance rate (optional)
       acceptance: "19.2%"
+    NSDI'20:
+      # conference id
+      venue: NSDI
+      # conference full name
+      name: The 17th USENIX Symposium on Networked Systems Design and Implementation
+      # date for sorting
+      date: 2020-02-25
+      # conference website (optional)
+      url: https://www.usenix.org/conference/nsdi20
     NSDI'19:
       # conference id
       venue: NSDI
