@@ -182,6 +182,13 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   booktitle = {USENIX HotCloud},
   title     = {To Relay or Not to Relay for Inter-Cloud Transfers?},
   year      = {2018},
+
+  publist_confkey = {HotCloud'18},
+  publist_link = {paper || relay-hotcloud18.pdf},
+  publist_link = {slides || relay-hotcloud18-slides.pdf},
+  Abstract    = {
+    Efficient big data analytics over the wide-area network (WAN) is becoming increasingly more popular. Current geo-distributed analytics (GDA) systems employ WANaware optimizations to tackle WAN heterogeneities. Although extensive measurements on public clouds suggest the potential for improving inter-datacenter data transfers via detours, we show that such optimizations are unlikely to work in practice. This is because the widely accepted mantra used in a large body of literature – WAN bandwidth has high variability – can be misleading. Instead, our measurements across 40 datacenters belonging to Amazon EC2, Microsoft Azure, and Google Cloud Platform show that the available WAN bandwidth is often spatially homogeneous and temporally stable between two virtual machines (VMs) in different datacenters, even though it can be heterogeneous at the TCP flow level. Moreover, there is little scope for either bandwidth or latency optimization in a cost-effective manner via relaying. We believe that these findings will motivate the community to rethink the design rationales of GDA systems and geo-distributed services.
+  }
 }
 
 @InProceedings{cellscope:mobicom18,
@@ -410,6 +417,16 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   title     = {Sol: Fast Distributed Computation Over Slow Networks},
   year      = {2020},
   pages     = {273--288},
+
+  publist_confkey = {NSDI'20},
+  publist_link = {paper || sol-nsdi20.pdf},
+  publist_link = {slides || sol-nsdi20-slides.pdf},
+  publist_link = {code || https://github.com/SymbioticLab/Sol},
+  publist_abstract = {
+    The popularity of big data and AI has led to many optimizations at different layers of distributed computation stacks. Despite – or perhaps, because of – its role as the narrow waist of such software stacks, the design of the execution engine, which is in charge of executing every single task of a job, has mostly remained unchanged. As a result, the execution engines available today are ones primarily designed for low latency and high bandwidth datacenter networks. When either or both of the network assumptions do not hold, CPUs are significantly underutilized.
+
+    In this paper, we take a first-principles approach toward developing an execution engine that can adapt to diverse network conditions. Sol, our federated execution engine architecture, flips the status quo in two respects. First, to mitigate the impact of high latency, Sol proactively assigns tasks, but does so judiciously to be resilient to uncertainties. Second, to improve the overall resource utilization, Sol decouples communication from computation internally instead of committing resources to both aspects of a task simultaneously. Our evaluations on EC2 show that, compared to Apache Spark in resource-constrained networks, Sol improves SQL and machine learning jobs by $16.4\times$ and $4.2\times$ on average.
+  }
 }
 
 @InProceedings{pando:nsdi20,
