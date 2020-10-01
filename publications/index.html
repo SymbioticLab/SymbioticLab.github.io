@@ -373,6 +373,51 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                     data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
+                            <a target="_blank" href="/publications/files/sol:nsdi20/sol-nsdi20.pdf">Sol: Fast distributed computation over slow networks</a>
+                            
+                        </div>
+                        
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Fan-Lai ">Fan&nbspLai</span>, 
+                            <span class="pub-author pub-author-Jie-You ">Jie&nbspYou</span>, 
+                            <span class="pub-author pub-author-Xiangfeng-Zhu ">Xiangfeng&nbspZhu</span>, 
+                            <span class="pub-author pub-author-Harsha-V. Madhyastha ">Harsha&nbspV.&nbspMadhyastha</span>, and 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 17th USENIX Symposium on Networked Systems Design and Implementation
+                            (<a target="_blank" title=""
+                                href="https://www.usenix.org/conference/nsdi20">NSDI'20</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>The popularity of big data and AI has led to many optimizations at different layers of distributed computation stacks. Despite – or perhaps, because of – its role as the narrow waist of such software stacks, the design of the execution engine, which is in charge of executing every single task of a job, has mostly remained unchanged. As a result, the execution engines available today are ones primarily designed for low latency and high bandwidth datacenter networks. When either or both of the network assumptions do not hold, CPUs are significantly underutilized.</p>
+<p>In this paper, we take a first-principles approach toward developing an execution engine that can adapt to diverse network conditions. Sol, our federated execution engine architecture, flips the status quo in two respects. First, to mitigate the impact of high latency, Sol proactively assigns tasks, but does so judiciously to be resilient to uncertainties. Second, to improve the overall resource utilization, Sol decouples communication from computation internally instead of committing resources to both aspects of a task simultaneously. Our evaluations on EC2 show that, compared to Apache Spark in resource-constrained networks, Sol improves SQL and machine learning jobs by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.4</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">16.4\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">6</span><span class="mord">.</span><span class="mord">4</span><span class="mord">×</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.2</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">4.2\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mord">.</span><span class="mord">2</span><span class="mord">×</span></span></span></span> on average.</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/sol:nsdi20/sol-nsdi20.pdf">[paper]</a>
+                            <a target="_blank" href="/publications/files/sol:nsdi20/sol-nsdi20-slides.pdf">[slides]</a>
+                            <a target="_blank" href="https://github.com/SymbioticLab/Sol">[code]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{sol:nsdi20,
+    author    = {Fan Lai and Jie You and Xiangfeng Zhu and Harsha V. Madhyastha and Mosharaf Chowdhury},
+    booktitle = {USENIX NSDI},
+    title     = {Sol: Fast Distributed Computation Over Slow Networks},
+    year      = {2020},
+    pages     = {273--288},
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
+                <li data-pub-venue="NSDI"
+                    data-pub-cat="Conferences">
+                    <div class="pub-block">
+                        <div class="pub-title">
                             <a target="_blank" href="/publications/files/pando:nsdi20/pando-nsdi20.pdf">Near-optimal latency versus cost tradeoffs in geo-distributed storage</a>
                             
                         </div>
@@ -408,36 +453,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            Sol: Fast distributed computation over slow networks
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Fan-Lai ">Fan&nbspLai</span>, 
-                            <span class="pub-author pub-author-Jie-You ">Jie&nbspYou</span>, 
-                            <span class="pub-author pub-author-Xiangfeng-Zhu ">Xiangfeng&nbspZhu</span>, 
-                            <span class="pub-author pub-author-Harsha-V. Madhyastha ">Harsha&nbspV.&nbspMadhyastha</span>, and 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>
-                        </div>
-                        
-                        
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{sol:nsdi20,
-    author    = {Fan Lai and Jie You and Xiangfeng Zhu and Harsha V. Madhyastha and Mosharaf Chowdhury},
-    booktitle = {USENIX NSDI},
-    title     = {Sol: Fast Distributed Computation Over Slow Networks},
-    year      = {2020},
-    pages     = {273--288},
-}
-">[bibtex]</a>
-                            
                         </div>
                     </div>
                 </li>
@@ -996,6 +1011,48 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         </div>
                     </div>
                 </li>
+                <li data-pub-venue="HotCloud"
+                    data-pub-cat="Workshops">
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/relay:hotcloud18/relay-hotcloud18.pdf">To relay or not to relay for inter-cloud transfers?</a>
+                            
+                        </div>
+                        
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Fan-Lai ">Fan&nbspLai</span>, 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
+                            <span class="pub-author pub-author-Harsha-V. Madhyastha ">Harsha&nbspV.&nbspMadhyastha</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 10th USENIX Workshop on Hot Topics in Cloud Computing
+                            (<a target="_blank" title=""
+                                href="https://www.usenix.org/conference/hotcloud18">HotCloud'18</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Efficient big data analytics over the wide-area network (WAN) is becoming increasingly more popular. Current geo-distributed analytics (GDA) systems employ WANaware optimizations to tackle WAN heterogeneities. Although extensive measurements on public clouds suggest the potential for improving inter-datacenter data transfers via detours, we show that such optimizations are unlikely to work in practice. This is because the widely accepted mantra used in a large body of literature – WAN bandwidth has high variability – can be misleading. Instead, our measurements across 40 datacenters belonging to Amazon EC2, Microsoft Azure, and Google Cloud Platform show that the available WAN bandwidth is often spatially homogeneous and temporally stable between two virtual machines (VMs) in different datacenters, even though it can be heterogeneous at the TCP flow level. Moreover, there is little scope for either bandwidth or latency optimization in a cost-effective manner via relaying. We believe that these findings will motivate the community to rethink the design rationales of GDA systems and geo-distributed services.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/relay:hotcloud18/relay-hotcloud18.pdf">[paper]</a>
+                            <a target="_blank" href="/publications/files/relay:hotcloud18/relay-hotcloud18-slides.pdf">[slides]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{relay:hotcloud18,
+    author    = {Fan Lai and Mosharaf Chowdhury and Harsha V. Madhyastha},
+    booktitle = {USENIX HotCloud},
+    title     = {To Relay or Not to Relay for Inter-Cloud Transfers?},
+    year      = {2018},
+    Abstract    = {
+    Efficient big data analytics over the wide-area network (WAN) is becoming increasingly more popular. Current geo-distributed analytics (GDA) systems employ WANaware optimizations to tackle WAN heterogeneities. Although extensive measurements on public clouds suggest the potential for improving inter-datacenter data transfers via detours, we show that such optimizations are unlikely to work in practice. This is because the widely accepted mantra used in a large body of literature – WAN bandwidth has high variability – can be misleading. Instead, our measurements across 40 datacenters belonging to Amazon EC2, Microsoft Azure, and Google Cloud Platform show that the available WAN bandwidth is often spatially homogeneous and temporally stable between two virtual machines (VMs) in different datacenters, even though it can be heterogeneous at the TCP flow level. Moreover, there is little scope for either bandwidth or latency optimization in a cost-effective manner via relaying. We believe that these findings will motivate the community to rethink the design rationales of GDA systems and geo-distributed services.
+  }
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
                 <li data-pub-venue="MAMA"
                     data-pub-cat="Workshops">
                     <div class="pub-block">
@@ -1123,33 +1180,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            To relay or not to relay for inter-cloud transfers?
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Fan-Lai ">Fan&nbspLai</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
-                            <span class="pub-author pub-author-Harsha-V. Madhyastha ">Harsha&nbspV.&nbspMadhyastha</span>
-                        </div>
-                        
-                        
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{relay:hotcloud18,
-    author    = {Fan Lai and Mosharaf Chowdhury and Harsha V. Madhyastha},
-    booktitle = {USENIX HotCloud},
-    title     = {To Relay or Not to Relay for Inter-Cloud Transfers?},
-    year      = {2018},
-}
-">[bibtex]</a>
-                            
                         </div>
                     </div>
                 </li>
