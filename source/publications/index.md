@@ -165,9 +165,18 @@ venues:
       date: 2018-06-10
       # workshop website (optional)
       url: https://sites.google.com/site/gradesnda2018/
+    HotOS'17:
+      # workshop id
+      venue: HotOS
+      # workshop full name
+      name: The 16th Workshop on Hot Topics in Operating Systems
+      # date for sorting
+      date: 2017-05-07
+      # workshop website (optional)
+      url: https://www.sigops.org/s/conferences/hotos/2017
   Posters: {}
   Demos: {}
-  Journals:     
+  Journals:
     'USENIX ;login:':
       # journal id
       venue: 'USENIX ;login:'
