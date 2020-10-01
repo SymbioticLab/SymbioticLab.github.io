@@ -56,6 +56,33 @@ venues:
       date: 2019-02-26
       # conference website (optional)
       url: https://www.usenix.org/conference/nsdi19
+    MobiCom'18:
+      # conference id
+      venue: MobiCom
+      # conference full name
+      name: The 24th Annual International Conference on Mobile Computing and Networking
+      # date for sorting
+      date: 2018-10-29
+      # conference website (optional)
+      url: https://sigmobile.org/mobicom/2018/
+    OSDI'18:
+      # conference id
+      venue: OSDI
+      # conference full name
+      name: The 13th USENIX Symposium on Operating Systems Design and Implementation
+      # date for sorting
+      date: 2018-10-08
+      # conference website (optional)
+      url: https://www.usenix.org/conference/osdi18
+    SIGMOD'18:
+      # conference id
+      venue: SIGMOD
+      # conference full name
+      name: The 2018 ACM SIGMOD/PODS Conference
+      # date for sorting
+      date: 2018-06-10
+      # conference website (optional)
+      url: http://sigmod2018.org/
     SIGCOMM'17:
       # conference id
       venue: SIGCOMM
@@ -101,7 +128,43 @@ venues:
       date: 2016-03-13
       # conference website (optional)
       url: https://www.usenix.org/conference/nsdi16
-  Workshops: {}
+  Workshops:
+    APNet'18:
+      # workshop id
+      venue: APNet
+      # workshop full name
+      name: The 2nd Asia-Pacific Workshop on Networking (APNet 2018)
+      # date for sorting
+      date: 2018-08-02
+      # workshop website (optional)
+      url: https://conferences.sigcomm.org/events/apnet2018/index.html
+    HotCloud'18:
+      # workshop id
+      venue: HotCloud
+      # workshop full name
+      name: The 10th USENIX Workshop on Hot Topics in Cloud Computing
+      # date for sorting
+      date: 2018-07-09
+      # workshop website (optional)
+      url: https://www.usenix.org/conference/hotcloud18
+    MAMA'18:
+      # workshop id
+      venue: MAMA
+      # workshop full name
+      name: The 20th Workshop on MAthematical performance Modeling and Analysis (MAMA)
+      # date for sorting
+      date: 2018-06-18
+      # workshop website (optional)
+      url: http://www.sigmetrics.org/mama/2018/
+    GRADES-NDA'18:
+      # workshop id
+      venue: GRADES-NDA
+      # workshop full name
+      name: The 1st Joint International Workshop on Graph Data Management Experiences & Systems (GRADES) and Network Data Analytics (NDA) 2018
+      # date for sorting
+      date: 2018-06-10
+      # workshop website (optional)
+      url: https://sites.google.com/site/gradesnda2018/
   Posters: {}
   Demos: {}
   Journals:     
