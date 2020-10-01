@@ -221,11 +221,23 @@
                 
                     <option value="MLSys">MLSys</option>
                 
+                    <option value="MobiCom">MobiCom</option>
+                
                     <option value="NSDI">NSDI</option>
                 
                     <option value="OSDI">OSDI</option>
                 
                     <option value="SIGCOMM">SIGCOMM</option>
+                
+                    <option value="SIGMOD">SIGMOD</option>
+                </optgroup><optgroup label="Workshops">
+                    <option value="APNet">APNet</option>
+                
+                    <option value="GRADES-NDA">GRADES-NDA</option>
+                
+                    <option value="HotCloud">HotCloud</option>
+                
+                    <option value="MAMA">MAMA</option>
                 </optgroup><optgroup label="Journals">
                     <option value="USENIX ;login:">USENIX ;login:</option>
                 </optgroup>
@@ -243,6 +255,9 @@
         </label>
         <label class="check-box">
             <input type="checkbox" checked="checked" value="Conferences"> Conferences
+        </label>
+        <label class="check-box">
+            <input type="checkbox" checked="checked" value="Workshops"> Workshops
         </label>
         <label class="check-box">
             <input type="checkbox" checked="checked" value="Journals"> Journals
@@ -809,11 +824,97 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                 <span class="year-mark" data-year="2018"></span>
             </div>
             <ul>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="MobiCom"
+                    data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
-                            Pas de deux: Shape the Circuits, and Shape the Apps too!
+                            <a target="_blank" href="/publications/files/cellscope:mobicom18/cellscope-mobicom18.pdf">Mitigating the latency-accuracy trade-off in mobile data analytics systems</a>
+                            
+                        </div>
+                        
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Anand-Padmanabha Iyer ">Anand&nbspPadmanabha&nbspIyer</span>, 
+                            <span class="pub-author pub-author-Li-Erran Li ">Li&nbspErran&nbspLi</span>, 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
+                            <span class="pub-author pub-author-Ion-Stoica ">Ion&nbspStoica</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 24th Annual International Conference on Mobile Computing and Networking
+                            (<a target="_blank" title=""
+                                href="https://sigmobile.org/mobicom/2018/">MobiCom'18</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>An increasing amount of mobile analytics is performed on data that is procured in a real-time fashion to make real-time decisions. Such tasks include simple reporting on streams to sophisticated model building. However, the practicality of these analyses are impeded in several domains because they are faced with a fundamental trade-off between data collection latency and analysis accuracy. In this paper, we first study this trade-off in the context of a specific domain, Cellular Radio Access Networks (RAN). We find that the trade-off can be resolved using two broad, general techniques: intelligent data grouping and task formulations that leverage domain characteristics. Based on this, we present CellScope, a system that applies a domain specific formulation and application of Multi-task Learning (MTL) to RAN performance analysis. It uses three techniques: feature engineering to transform raw data into effective features, a PCA inspired similarity metric to group data from geographically nearby base stations sharing performance commonalities, and a hybrid online-offline model for efficient model updates. Our evaluation shows that CellScope's accuracy improvements over direct application of ML range from 2.5X to 4.4X while reducing the model update overhead by up to 4.8X. We have also used CellScope to analyze an LTE network of over 2 million subscribers, where it reduced troubleshooting efforts by several magnitudes.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/cellscope:mobicom18/cellscope-mobicom18.pdf">[paper]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{cellscope:mobicom18,
+    author    = {Anand Padmanabha Iyer and Li Erran Li and Mosharaf Chowdhury and Ion Stoica},
+    booktitle = {ACM MobiCom},
+    title     = {Mitigating the Latency-Accuracy Trade-off in Mobile Data Analytics Systems},
+    year      = {2018},
+    pages     = {513--528},
+    Abstract                 = {An increasing amount of mobile analytics is performed on data that is procured in a real-time fashion to make real-time decisions. Such tasks include simple reporting on streams to sophisticated model building. However, the practicality of these analyses are impeded in several domains because they are faced with a fundamental trade-off between data collection latency and analysis accuracy.
+
+    In this paper, we first study this trade-off in the context of a specific domain, Cellular Radio Access Networks (RAN). We find that the trade-off can be resolved using two broad, general techniques: intelligent data grouping and task formulations that leverage domain characteristics. Based on this, we present CellScope, a system that applies a domain specific formulation and application of Multi-task Learning (MTL) to RAN performance analysis. It uses three techniques: feature engineering to transform raw data into effective features, a PCA inspired similarity metric to group data from geographically nearby base stations sharing performance commonalities, and a hybrid online-offline model for efficient model updates. Our evaluation shows that CellScope's accuracy improvements over direct application of ML range from 2.5X to 4.4X while reducing the model update overhead by up to 4.8X. We have also used CellScope to analyze an LTE network of over 2 million subscribers, where it reduced troubleshooting efforts by several magnitudes.}
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
+                <li data-pub-venue="OSDI"
+                    data-pub-cat="Conferences">
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/qoop:osdi18/qoop-osdi18.pdf">Dynamic query re-planning using QOOP</a>
+                            
+                        </div>
+                        
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Kshiteej-Mahajan ">Kshiteej&nbspMahajan</span>, 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, 
+                            <span class="pub-author pub-author-Aditya-Akella ">Aditya&nbspAkella</span>, and 
+                            <span class="pub-author pub-author-Shuchi-Chawla ">Shuchi&nbspChawla</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 13th USENIX Symposium on Operating Systems Design and Implementation
+                            (<a target="_blank" title=""
+                                href="https://www.usenix.org/conference/osdi18">OSDI'18</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Modern data processing clusters are highly dynamic – both in terms of the number of concurrently running jobs and their resource usage. To improve job performance, recent works have focused on optimizing the cluster scheduler and the jobs' query planner with a focus on picking the right query execution plan (QEP) – represented as a directed acyclic graph – for a job in a resource-aware manner, and scheduling jobs in a QEP-aware manner. However, because existing solutions use a fixed QEP throughout the entire execution, the inability to adapt a QEP in reaction to resource changes often leads to large performance inefficiencies. This paper argues for dynamic query re-planning, wherein we re-evaluate and re-plan a job's QEP during its execution. We show that designing for re-planning requires fundamental changes to the interfaces between key layers of data analytics stacks today, i.e., the query planner, the execution engine, and the cluster scheduler. Instead of pushing more complexity into the scheduler or the query planner, we argue for a redistribution of responsibilities between the three components to simplify their designs. Under this redesign, we analytically show that a greedy algorithm for re-planning and execution alongside a simple max-min fair scheduler can offer provably competitive behavior even under adversarial resource changes. We prototype our algorithms atop Apache Hive and Tez. Via extensive experiments, we show that our design can offer a median performance improvement of 1.47X compared to state-of-the-art alternatives.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/qoop:osdi18/qoop-osdi18.pdf">[paper]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{qoop:osdi18,
+    author    = {Kshiteej Mahajan and Mosharaf Chowdhury and Aditya Akella and Shuchi Chawla},
+    booktitle = {USENIX OSDI},
+    title     = {Dynamic Query Re-Planning using {QOOP}},
+    year      = {2018},
+    pages     = {253--267},
+    Abstract                 = {Modern data processing clusters are highly dynamic – both in terms of the number of concurrently running jobs and their resource usage. To improve job performance, recent works have focused on optimizing the cluster scheduler and the jobs' query planner with a focus on picking the right query execution plan (QEP) – represented as a directed acyclic graph – for a job in a resource-aware manner, and scheduling jobs in a QEP-aware manner. However, because existing solutions use a fixed QEP throughout the entire execution, the inability to adapt a QEP in reaction to resource changes often leads to large performance inefficiencies.
+
+    This paper argues for dynamic query re-planning, wherein we re-evaluate and re-plan a job's QEP during its execution. We show that designing for re-planning requires fundamental changes to the interfaces between key layers of data analytics stacks today, i.e., the query planner, the execution engine, and the cluster scheduler. Instead of pushing more complexity into the scheduler or the query planner, we argue for a redistribution of responsibilities between the three components to simplify their designs. Under this redesign, we analytically show that a greedy algorithm for re-planning and execution alongside a simple max-min fair scheduler can offer provably competitive behavior even under adversarial resource changes. We prototype our algorithms atop Apache Hive and Tez. Via extensive experiments, we show that our design can offer a median performance improvement of 1.47X compared to state-of-the-art alternatives.}
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
+                <li data-pub-venue="APNet"
+                    data-pub-cat="Workshops">
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/pdd:apnet18/pdd-apnet18.pdf">Pas de deux: Shape the Circuits, and Shape the Apps too!</a>
                             
                         </div>
                         
@@ -822,29 +923,130 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                             <span class="pub-author pub-author-Kai-Chen ">Kai&nbspChen</span>, and 
                             <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>
                         </div>
-                        
-                        
+                        <div class="pub-conference">
+                            The 2nd Asia-Pacific Workshop on Networking (APNet 2018)
+                            (<a target="_blank" title=""
+                                href="https://conferences.sigcomm.org/events/apnet2018/index.html">APNet'18</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Despite continued efforts toward building high bandwidth, low cost datacenter networks with reconfigurable optical fabrics, the impact of optical networks on datacenter applications has received little attention. Given the constraints of optical networks and the semantics of datacenter applications, we believe the network-application intersection to be the next innovation hotspot. In this paper, we specifically focus on data-parallel applications for two primary reasons: they are a natural fit to exploit high bandwidth optical fabrics, and they often form structured communication patterns or coflows. We show that configuring circuits in reaction to changing traffic patterns is not enough. Efficient scheduling of even a single coflow in optical networks should be a "Pas de deux" – a joint shaping of not only the underlying circuit, but also the application’s traffic demand. Our preliminary evaluation with a production trace shows that joint shaping is on average within 1.18X of the optimal and performs 30% better than solu- tions that configure circuits in application-agnostic fashions. We further extend our analysis to inter-coflow scheduling and propose a layered solution that jointly considers circuit reconfiguration, coflow prioritization, as well as flow rate and route assignments.
+                                </blockquote>
+                            </div>
+                        </div>
                         <div class="pub-links">
+                            <a target="_blank" href="/publications/files/pdd:apnet18/pdd-apnet18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{pdd:apnet18,
     author    = {Hong Zhang and Kai Chen and Mosharaf Chowdhury},
     booktitle = {ACM APNet},
     title     = {Pas de deux: Shape the Circuits, and Shape the Apps too!},
     year      = {2018},
     pages     = {29--35},
+    Abstract                 = {Despite continued efforts toward building high bandwidth, low cost datacenter networks with reconfigurable optical fabrics, the impact of optical networks on datacenter applications has received little attention. Given the constraints of optical networks and the semantics of datacenter applications, we believe the network-application intersection to be the next innovation hotspot. In this paper, we specifically focus on data-parallel applications for two primary reasons: they are a natural fit to exploit high bandwidth optical fabrics, and they often form structured communication patterns or coflows.
+
+    We show that configuring circuits in reaction to changing traffic patterns is not enough. Efficient scheduling of even a single coflow in optical networks should be a "Pas de deux" – a joint shaping of not only the underlying circuit, but also the application’s traffic demand. Our preliminary evaluation with a production trace shows that joint shaping is on average within 1.18X of the optimal and performs 30% better than solu- tions that configure circuits in application-agnostic fashions. We further extend our analysis to inter-coflow scheduling and propose a layered solution that jointly considers circuit reconfiguration, coflow prioritization, as well as flow rate and route assignments.}
 }
 ">[bibtex]</a>
-                            
+                            <a class="pub-link-abstract">[abstract]</a>
                         </div>
                     </div>
                 </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="HotCloud"
+                    data-pub-cat="Workshops">
                     <div class="pub-block">
                         <div class="pub-title">
-                            Bridging the GAP: Towards approximate graph analytics
+                            <a target="_blank" href="/publications/files/monarch:hotcloud18/monarch-hotcloud18.pdf">Monarch: Gaining command on geo-distributed graph analytics</a>
                             
                         </div>
                         
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Anand-Padmanabha Iyer ">Anand&nbspPadmanabha&nbspIyer</span>, 
+                            <span class="pub-author pub-author-Aurojit-Panda ">Aurojit&nbspPanda</span>, 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, 
+                            <span class="pub-author pub-author-Aditya-Akella ">Aditya&nbspAkella</span>, 
+                            <span class="pub-author pub-author-Scott-Shenker ">Scott&nbspShenker</span>, and 
+                            <span class="pub-author pub-author-Ion-Stoica ">Ion&nbspStoica</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 10th USENIX Workshop on Hot Topics in Cloud Computing
+                            (<a target="_blank" title=""
+                                href="https://www.usenix.org/conference/hotcloud18">HotCloud'18</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>A number of existing and emerging application scenarios generate graph-structured data in a geo-distributed fashion. Although there is a lot of interest in distributed graph processing systems, none of them support geo-distributed graph processing. Geo-distributed analytics, on the other hand, has not focused on iterative workloads such as distributed graph processing. In this paper, we look at the problem of efficient geo-distributed graph analytics. We find that optimizing the iterative processing style of graph-parallel systems is the key to achieving this goal rather than extending existing geo-distributed techniques to graph processing. Based on this, we discuss our proposal on building Monarch, the first system to our knowledge that focuses on geo-distributed graph processing. Our preliminary evaluation of Monarch shows encouraging results.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/monarch:hotcloud18/monarch-hotcloud18.pdf">[paper]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{monarch:hotcloud18,
+    author    = {Anand Padmanabha Iyer and Aurojit Panda and Mosharaf Chowdhury and Aditya Akella and Scott Shenker and Ion Stoica},
+    booktitle = {USENIX HotCloud},
+    title     = {Monarch: Gaining Command on Geo-Distributed Graph Analytics},
+    year      = {2018},
+    Abstract                 = {A number of existing and emerging application scenarios generate graph-structured data in a geo-distributed fashion. Although there is a lot of interest in distributed graph processing systems, none of them support geo-distributed graph processing. Geo-distributed analytics, on the other hand, has not focused on iterative workloads such as distributed graph processing.
+
+    In this paper, we look at the problem of efficient geo-distributed graph analytics. We find that optimizing the iterative processing style of graph-parallel systems is the key to achieving this goal rather than extending existing geo-distributed techniques to graph processing. Based on this, we discuss our proposal on building Monarch, the first system to our knowledge that focuses on geo-distributed graph processing. Our preliminary evaluation of Monarch shows encouraging results.}
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
+                <li data-pub-venue="MAMA"
+                    data-pub-cat="Workshops">
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/allox:mama18/allox-mama18.pdf">Fair allocation of heterogeneous and interchangeable resources</a>
+                            
+                        </div>
+                        
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Xiao-Sun ">Xiao&nbspSun</span>, 
+                            <span class="pub-author pub-author-Tan-N. Le ">Tan&nbspN.&nbspLe</span>, 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
+                            <span class="pub-author pub-author-Zhenhua-Liu ">Zhenhua&nbspLiu</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 20th Workshop on MAthematical performance Modeling and Analysis (MAMA)
+                            (<a target="_blank" title=""
+                                href="http://www.sigmetrics.org/mama/2018/">MAMA'18</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Motivated by the proliferation of heterogeneous processors such as multi-core CPUs, GPUs, TPUs, and other accelerators for machine learning, we formulate a novel multi-interchangeable resource allocation (MIRA) problem where some resources are interchangeable. The challenge is how to allocate interchangeable resources to users in a sharing system while maintaining desirable properties such as sharing incentive, Pareto efficiency, and envy-freeness. In this paper, we first show that existing algorithms, including the Dominant Resource Fairness used in production systems, fail to provide these properties for interchangeable resources. Then we characterize the tradeoff between performance and strategyproofness, and design the Budget-based (BUD) algorithm, which preserves Pareto efficiency, sharing incentive and envy-freeness while providing better performance over currently used algorithms.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/allox:mama18/allox-mama18.pdf">[paper]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{allox:mama18,
+    author    = {Xiao Sun and Tan N. Le and Mosharaf Chowdhury and Zhenhua Liu},
+    booktitle = {ACM SIGMETRICS MAMA},
+    title     = {Fair Allocation of Heterogeneous and Interchangeable Resources},
+    year      = {2018},
+    Abstract                 = {Motivated by the proliferation of heterogeneous processors such as multi-core CPUs, GPUs, TPUs, and other accelerators for machine learning, we formulate a novel multi-interchangeable resource allocation (MIRA) problem where some resources are interchangeable. The challenge is how to allocate interchangeable resources to users in a sharing system while maintaining desirable properties such as sharing incentive, Pareto efficiency, and envy-freeness. In this paper, we first show that existing algorithms, including the Dominant Resource Fairness used in production systems, fail to provide these properties for interchangeable resources. Then we characterize the tradeoff between performance and strategyproofness, and design the Budget-based (BUD) algorithm, which preserves Pareto efficiency, sharing incentive and envy-freeness while providing better performance over currently used algorithms.
+}
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
+                <li data-pub-venue="GRADES-NDA"
+                    data-pub-cat="Workshops">
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/aga:grades-nda18/aga-grades-nda18.pdf">Bridging the GAP: Towards approximate graph analytics</a>
+                            
+                        </div>
+                        <div class="pub-badges">
+                            <span class="label default pub-badge">Best Paper Award</span>
+                        </div>
                         <div class="pub-authors">
                             <span class="pub-author pub-author-Anand-Padmanabha Iyer ">Anand&nbspPadmanabha&nbspIyer</span>, 
                             <span class="pub-author pub-author-Aurojit-Panda ">Aurojit&nbspPanda</span>, 
@@ -854,47 +1056,73 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                             <span class="pub-author pub-author-Scott-Shenker ">Scott&nbspShenker</span>, and 
                             <span class="pub-author pub-author-Ion-Stoica ">Ion&nbspStoica</span>
                         </div>
-                        
-                        
+                        <div class="pub-conference">
+                            The 1st Joint International Workshop on Graph Data Management Experiences & Systems (GRADES) and Network Data Analytics (NDA) 2018
+                            (<a target="_blank" title=""
+                                href="https://sites.google.com/site/gradesnda2018/">GRADES-NDA'18</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>While there has been a tremendous interest in processing data that has an underlying graph structure, existing distributed graph processing systems take several minutes or even hours to execute popular graph algorithms. However, in several cases, providing an approximate answer is good enough. Approximate analytics is seeing considerable attention in big data due to its ability to produce timely results by trading accuracy, but they do not support graph analytics. In this paper, we bridge this gap and take a first attempt at realizing approximate graph analytics. We discuss how traditional approximate analytics techniques do not carry over to the graph usecase. Leveraging the characteristics of graph properties and algorithms, we propose a graph sparsification technique, and a machine learning based approach to choose the apt amount of sparsification required to meet a given budget. Our preliminary evaluations show encouraging results.
+                                </blockquote>
+                            </div>
+                        </div>
                         <div class="pub-links">
+                            <a target="_blank" href="/publications/files/aga:grades-nda18/aga-grades-nda18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{aga:grades-nda18,
     author    = {Anand Padmanabha Iyer and Aurojit Panda and Shivaram Venkataraman and Mosharaf Chowdhury and Aditya Akella and Scott Shenker and Ion Stoica},
     booktitle = {ACM SIGMOD GRADES-NDA},
     title     = {Bridging the {GAP}: Towards Approximate Graph analytics},
     year      = {2018},
+    Abstract                 = {While there has been a tremendous interest in processing data that has an underlying graph structure, existing distributed graph processing systems take several minutes or even hours to execute popular graph algorithms. However, in several cases, providing an approximate answer is good enough. Approximate analytics is seeing considerable attention in big data due to its ability to produce timely results by trading accuracy, but they do not support graph analytics. In this paper, we bridge this gap and take a first attempt at realizing approximate graph analytics. We discuss how traditional approximate analytics techniques do not carry over to the graph usecase. Leveraging the characteristics of graph properties and algorithms, we propose a graph sparsification technique, and a machine learning based approach to choose the apt amount of sparsification required to meet a given budget. Our preliminary evaluations show encouraging results.}
 }
 ">[bibtex]</a>
-                            
+                            <a class="pub-link-abstract">[abstract]</a>
                         </div>
                     </div>
                 </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
+                <li data-pub-venue="SIGMOD"
+                    data-pub-cat="Conferences">
                     <div class="pub-block">
                         <div class="pub-title">
-                            Monarch: Gaining command on geo-distributed graph analytics
+                            <a target="_blank" href="/publications/files/dslr:sigmod18/dslr-sigmod18.pdf">Distributed lock management with RDMA: Decentralization without starvation</a>
                             
                         </div>
                         
                         <div class="pub-authors">
-                            <span class="pub-author pub-author-Anand-Padmanabha Iyer ">Anand&nbspPadmanabha&nbspIyer</span>, 
-                            <span class="pub-author pub-author-Aurojit-Panda ">Aurojit&nbspPanda</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, 
-                            <span class="pub-author pub-author-Aditya-Akella ">Aditya&nbspAkella</span>, 
-                            <span class="pub-author pub-author-Scott-Shenker ">Scott&nbspShenker</span>, and 
-                            <span class="pub-author pub-author-Ion-Stoica ">Ion&nbspStoica</span>
+                            <span class="pub-author pub-author-Dong-Young Yoon ">Dong&nbspYoung&nbspYoon</span>, 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
+                            <span class="pub-author pub-author-Barzan-Mozafari ">Barzan&nbspMozafari</span>
                         </div>
-                        
-                        
+                        <div class="pub-conference">
+                            The 2018 ACM SIGMOD/PODS Conference
+                            (<a target="_blank" title=""
+                                href="http://sigmod2018.org/">SIGMOD'18</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Lock managers are a crucial component of modern distributed systems. However, with the increasing availability of fast RDMA-enabled networks, traditional lock managers can no longer keep up with the latency and throughput requirements of modern systems. Centralized lock managers can ensure fairness and prevent starvation using global knowledge of the system, but are themselves single points of contention and failure. Consequently, they fall short in leveraging the full potential of RDMA networks. On the other hand, decentralized (RDMA-based) lock managers either completely sacrifice global knowledge to achieve higher throughput at the risk of starvation and higher tail latencies, or they resort to costly communications in order to maintain global knowledge, which can result in significantly lower throughput. In this paper, we show that it is possible for a lock manager to be fully decentralized and yet exchange the partial knowledge necessary for preventing starvation and thereby reducing tail latencies. Our main observation is that we can design a lock manager primarily using RDMA's fetch-and-add (FA) operations, which always succeed, rather than compare-and-swap (CAS) operations, which only succeed if a given condition is satisfied. While this requires us to rethink the locking mechanism from the ground up, it enables us to sidestep the performance drawbacks of the previous CAS-based proposals that relied solely on blind retries upon lock conflicts. Specifically, we present DSLR (Decentralized and Starvation-free Lock management with RDMA), a decentralized lock manager that targets distributed systems running on RDMA-enabled networks. We demonstrate that, despite being fully decentralized, DSLR prevents starvation and blind retries by guaranteeing first-come-first-serve (FCFS) scheduling without maintaining explicit queues. We adapt Lamport's bakery algorithm [36] to an RDMA-enabled environment with multiple bakers, utilizing only one-sided READ and atomic FA operations. Our experiments show that, on average, DSLR delivers 1.8X (and up to 2.8X) higher throughput than all existing RDMA-based lock managers, while reducing their mean and 99.9% latencies by 2.0X and 18.3X (and up to 2.5X and 47X), respectively.
+                                </blockquote>
+                            </div>
+                        </div>
                         <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{monarch:hotcloud18,
-    author    = {Anand Padmanabha Iyer and Aurojit Panda and Mosharaf Chowdhury and Aditya Akella and Scott Shenker and Ion Stoica},
-    booktitle = {USENIX HotCloud},
-    title     = {Monarch: Gaining Command on Geo-Distributed Graph Analytics},
+                            <a target="_blank" href="/publications/files/dslr:sigmod18/dslr-sigmod18.pdf">[paper]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{dslr:sigmod18,
+    author    = {Dong Young Yoon and Mosharaf Chowdhury and Barzan Mozafari},
+    booktitle = {ACM SIGMOD},
+    title     = {Distributed Lock Management with {RDMA}: Decentralization without Starvation},
     year      = {2018},
+    pages     = {1571--1586},
+    Abstract                 = {Lock managers are a crucial component of modern distributed systems. However, with the increasing availability of fast RDMA-enabled networks, traditional lock managers can no longer keep up with the latency and throughput requirements of modern systems. Centralized lock managers can ensure fairness and prevent starvation using global knowledge of the system, but are themselves single points of contention and failure. Consequently, they fall short in leveraging the full potential of RDMA networks. On the other hand, decentralized (RDMA-based) lock managers either completely sacrifice global knowledge to achieve higher throughput at the risk of starvation and higher tail latencies, or they resort to costly communications in order to maintain global knowledge, which can result in significantly lower throughput.
+  
+    In this paper, we show that it is possible for a lock manager to be fully decentralized and yet exchange the partial knowledge necessary for preventing starvation and thereby reducing tail latencies. Our main observation is that we can design a lock manager primarily using RDMA's fetch-and-add (FA) operations, which always succeed, rather than compare-and-swap (CAS) operations, which only succeed if a given condition is satisfied. While this requires us to rethink the locking mechanism from the ground up, it enables us to sidestep the performance drawbacks of the previous CAS-based proposals that relied solely on blind retries upon lock conflicts.
+
+    Specifically, we present DSLR (Decentralized and Starvation-free Lock management with RDMA), a decentralized lock manager that targets distributed systems running on RDMA-enabled networks. We demonstrate that, despite being fully decentralized, DSLR prevents starvation and blind retries by guaranteeing first-come-first-serve (FCFS) scheduling without maintaining explicit queues. We adapt Lamport's bakery algorithm [36] to an RDMA-enabled environment with multiple bakers, utilizing only one-sided READ and atomic FA operations. Our experiments show that, on average, DSLR delivers 1.8X (and up to 2.8X) higher throughput than all existing RDMA-based lock managers, while reducing their mean and 99.9% latencies by 2.0X and 18.3X (and up to 2.5X and 47X), respectively.}
 }
 ">[bibtex]</a>
-                            
+                            <a class="pub-link-abstract">[abstract]</a>
                         </div>
                     </div>
                 </li>
@@ -918,120 +1146,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
     author    = {Fan Lai and Mosharaf Chowdhury and Harsha V. Madhyastha},
     booktitle = {USENIX HotCloud},
     title     = {To Relay or Not to Relay for Inter-Cloud Transfers?},
-    year      = {2018},
-}
-">[bibtex]</a>
-                            
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            Mitigating the latency-accuracy trade-off in mobile data analytics systems
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Anand-Padmanabha Iyer ">Anand&nbspPadmanabha&nbspIyer</span>, 
-                            <span class="pub-author pub-author-Li-Erran Li ">Li&nbspErran&nbspLi</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
-                            <span class="pub-author pub-author-Ion-Stoica ">Ion&nbspStoica</span>
-                        </div>
-                        
-                        
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{cellscope:mobicom18,
-    author    = {Anand Padmanabha Iyer and Li Erran Li and Mosharaf Chowdhury and Ion Stoica},
-    booktitle = {ACM MobiCom},
-    title     = {Mitigating the Latency-Accuracy Trade-off in Mobile Data Analytics Systems},
-    year      = {2018},
-    pages     = {513--528},
-}
-">[bibtex]</a>
-                            
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            Dynamic query re-planning using QOOP
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Kshiteej-Mahajan ">Kshiteej&nbspMahajan</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, 
-                            <span class="pub-author pub-author-Aditya-Akella ">Aditya&nbspAkella</span>, and 
-                            <span class="pub-author pub-author-Shuchi-Chawla ">Shuchi&nbspChawla</span>
-                        </div>
-                        
-                        
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{qoop:osdi18,
-    author    = {Kshiteej Mahajan and Mosharaf Chowdhury and Aditya Akella and Shuchi Chawla},
-    booktitle = {USENIX OSDI},
-    title     = {Dynamic Query Re-Planning using {QOOP}},
-    year      = {2018},
-    pages     = {253--267},
-}
-">[bibtex]</a>
-                            
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            Distributed lock management with RDMA: Decentralization without starvation
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Dong-Young Yoon ">Dong&nbspYoung&nbspYoon</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
-                            <span class="pub-author pub-author-Barzan-Mozafari ">Barzan&nbspMozafari</span>
-                        </div>
-                        
-                        
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{dslr:sigmod18,
-    author    = {Dong Young Yoon and Mosharaf Chowdhury and Barzan Mozafari},
-    booktitle = {ACM SIGMOD},
-    title     = {Distributed Lock Management with {RDMA}: Decentralization without Starvation},
-    year      = {2018},
-    pages     = {1571--1586},
-}
-">[bibtex]</a>
-                            
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            Fair allocation of heterogeneous and interchangeable resources
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Xiao-Sun ">Xiao&nbspSun</span>, 
-                            <span class="pub-author pub-author-Tan-N. Le ">Tan&nbspN.&nbspLe</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
-                            <span class="pub-author pub-author-Zhenhua-Liu ">Zhenhua&nbspLiu</span>
-                        </div>
-                        
-                        
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{allox:mama18,
-    author    = {Xiao Sun and Tan N. Le and Mosharaf Chowdhury and Zhenhua Liu},
-    booktitle = {ACM SIGMETRICS MAMA},
-    title     = {Fair Allocation of Heterogeneous and Interchangeable Resources},
     year      = {2018},
 }
 ">[bibtex]</a>
