@@ -18,3 +18,7 @@ node_modules
 __pycache__
 db.json
 debug.log
+
+# OS files
+
+*.DS_Store
