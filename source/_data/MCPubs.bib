@@ -332,7 +332,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 }
 
 @Article{hydra:arxiv19,
-  author        = {Youngmoon Lee and Hassan Al Maruf and Mosharaf Chowdhury and Kang G. Shin},
+  author        = {Youngmoon Lee and Hasan Al Maruf and Mosharaf Chowdhury and Kang G. Shin},
   journal       = {CoRR},
   title         = {Mitigating the Performance-Efficiency Tradeoff in Resilient Memory Disaggregation},
   year          = {2019},
@@ -342,19 +342,12 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   biburl        = {https://dblp.org/rec/journals/corr/abs-1910-09727.bib},
   eprint        = {1910.09727},
   url           = {http://arxiv.org/abs/1910.09727},
-}
 
-@Article{leap:arxiv19,
-  author        = {Hasan Al Maruf and Mosharaf Chowdhury},
-  journal       = {CoRR},
-  title         = {Effectively Prefetching Remote Memory with {Leap}},
-  year          = {2019},
-  volume        = {abs/1911.09829},
-  archiveprefix = {arXiv},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/journals/corr/abs-1911-09829.bib},
-  eprint        = {1911.09829},
-  url           = {http://arxiv.org/abs/1911.09829},
+  publist_abstract = {
+    Memory disaggregation has received attention in recent years as a promising idea to reduce the total cost of ownership (TCO) of memory in modern datacenters. However, relying on remote memory expands an application’s failure domain and makes it susceptible to tail latency variations. In attempts to making disaggregated memory resilient, stateof-the-art solutions face the classic tradeoff between performance and efficiency: some double the memory overhead of disaggregation by replicating to remote memory, while many others limit performance by replicating to the local disk.
+
+    We present Hydra, a configurable, erasure-coded resilience mechanism for common memory disaggregation solutions. It can transparently handle uncertainties arising from remote failures, evictions, memory corruptions, and stragglers from network imbalance with a significantly better performanceefficiency tradeoff than the state-of-the-art. We design a finetuned data path to achieve single µs read/write latency to remote memory, develop decentralized algorithms for clusterwide memory management, and analyze how to select parameters to mitigate independent and correlated uncertainties. Our integration of Hydra with two major memory disaggregation systems and evaluation on a 50-machine RDMA cluster demonstrates that it achieves the best of both worlds: it improves the latency and throughput of memory-intensive applications by up to 64.78× and 20.61×, respectively, over the state-of-the-art disk backup-based solution. At the same time, it provides performance similar to that of in-memory replication with 1.6× lower memory overhead.
+  }
 }
 
 @Article{bopf:arxiv19,
@@ -463,4 +456,14 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   title     = {Effectively Prefetching Remote Memory with {Leap}},
   year      = {2020},
   pages     = {843--857},
+
+  publist_confkey = {ATC'20},
+  publist_link = {paper || leap-atc20.pdf},
+  publist_link = {slides || leap-atc20-slides.pdf},
+  publist_link = {code || https://github.com/SymbioticLab/Leap},
+  publist_abstract = {
+    Memory disaggregation over RDMA can improve the performance of memory-constrained applications by replacing disk swapping with remote memory accesses. However, state-of-the-art memory disaggregation solutions still use data path components designed for slow disks. As a result, applications experience remote memory access latency significantly higher than that of the underlying low-latency network, which itself can be too high for many applications.
+
+    In this paper, we propose Leap, a prefetching solution for remote memory accesses due to memory disaggregation. At its core, Leap employs an online, majority-based prefetching algorithm, which increases the page cache hit rate. We complement it with a lightweight and efficient data path in the kernel that isolates each application’s data path to the disaggregated memory and mitigates latency bottlenecks arising from legacy throughput-optimizing operations. Integration of Leap in the Linux kernel improves the median and tail remote page access latencies of memory-bound applications by up to 104.04× and 22.62×, respectively, over the default data path. This leads to up to 10.16× performance improvements for applications using disaggregated memory in comparison to the state-of-the-art solutions.
+  }
 }
