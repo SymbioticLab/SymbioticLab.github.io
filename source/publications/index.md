@@ -47,6 +47,15 @@ venues:
       date: 2020-02-25
       # conference website (optional)
       url: https://www.usenix.org/conference/nsdi20
+    SIGCOMM'20:
+      # conference id
+      venue: SIGCOMM
+      # conference full name
+      name: The 2020 ACM SIGCOMM Conference
+      # date for sorting
+      date: 2020-08-11
+      # conference website (optional)
+      url: https://conferences.sigcomm.org/sigcomm/2020/
     NSDI'19:
       # conference id
       venue: NSDI
@@ -174,6 +183,15 @@ venues:
       date: 2017-05-07
       # workshop website (optional)
       url: https://www.sigops.org/s/conferences/hotos/2017
+    KBNets'17:
+      # workshop id
+      venue: KBNets
+      # workshop full name
+      name: ACM SIGCOMM 2017 Workshop on Kernel-Bypass Networks
+      # date for sorting
+      date: 2017-08-21
+      # workshop website (optional)
+      url: https://conferences.sigcomm.org/sigcomm/2017/workshop-kbnets.html
   Posters: {}
   Demos: {}
   Journals:
