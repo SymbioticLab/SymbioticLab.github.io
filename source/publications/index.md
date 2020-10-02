@@ -56,6 +56,15 @@ venues:
       date: 2020-08-11
       # conference website (optional)
       url: https://conferences.sigcomm.org/sigcomm/2020/
+    SPAA'19:
+      # conference id
+      venue: SPAA
+      # conference full name
+      name: The 31st ACM Symposium on Parallelism in Algorithms and Architectures
+      # date for sorting
+      date: 2019-06-22
+      # conference website (optional)
+      url: https://spaa.acm.org/2019/
     NSDI'19:
       # conference id
       venue: NSDI
