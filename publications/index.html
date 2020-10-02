@@ -239,6 +239,8 @@
                 
                     <option value="HotOS">HotOS</option>
                 
+                    <option value="KBNets">KBNets</option>
+                
                     <option value="MAMA">MAMA</option>
                 </optgroup><optgroup label="Journals">
                     <option value="USENIX ;login:">USENIX ;login:</option>
@@ -271,6 +273,49 @@
                 <span class="year-mark" data-year="2020"></span>
             </div>
             <ul>
+                <li data-pub-venue="SIGCOMM"
+                    data-pub-cat="Conferences">
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/netlock:sigcomm20/netlock-sigcomm20.pdf">NetLock: Fast, centralized lock management using programmable switches</a>
+                            <span class="label primary">New</span>
+                        </div>
+                        
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Zhuolong-Yu ">Zhuolong&nbspYu</span>, 
+                            <span class="pub-author pub-author-Yiwen-Zhang ">Yiwen&nbspZhang</span>, 
+                            <span class="pub-author pub-author-Vladimir-Braverman ">Vladimir&nbspBraverman</span>, 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
+                            <span class="pub-author pub-author-Xin-Jin ">Xin&nbspJin</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 2020 ACM SIGCOMM Conference
+                            (<a target="_blank" title=""
+                                href="https://conferences.sigcomm.org/sigcomm/2020/">SIGCOMM'20</a>)
+                            
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Lock managers are widely used by distributed systems. Traditional centralized lock managers can easily support policies between multiple users using global knowledge, but they suffer from low performance. In contrast, emerging decentralized approaches are faster but cannot provide flexible policy support. Furthermore, performance in both cases is limited by the server capability.</p>
+<p>We present NetLock, a new centralized lock manager that co-designs servers and network switches to achieve high performance without sacrificing flexibility in policy support. The key idea of NetLock is to exploit the capability of emerging programmable switches to directly process lock requests in the switch data plane. Due to the limited switch memory, we design a memory management mechanism to seamlessly integrate the switch and server memory. To realize the locking functionality in the switch, we design a custom data plane module that efficiently pools multiple register arrays together to maximize memory utilization We have implemented a NetLock prototype with a Barefoot Tofino switch and a cluster of commodity servers. Evaluation results show that NetLock improves the throughput by 14.0-18.4x, and reduces the average and 99% latency by 4.7-20.3x and 10.4-18.7x over DSLR, a state-of-the-art RDMA-based solution, while providing flexible policy support.</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/netlock:sigcomm20/netlock-sigcomm20.pdf">[paper]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{netlock:sigcomm20,
+    author    = {Zhuolong Yu and Yiwen Zhang and Vladimir Braverman and Mosharaf Chowdhury and Xin Jin},
+    booktitle = {ACM SIGCOMM},
+    title     = {{NetLock}: Fast, Centralized Lock Management Using Programmable Switches},
+    year      = {2020},
+    pages     = {126--138},
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
                 <li data-pub-venue="EuroSys"
                     data-pub-cat="Conferences">
                     <div class="pub-block">
@@ -455,36 +500,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            NetLock: Fast, centralized lock management using programmable switches
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Zhuolong-Yu ">Zhuolong&nbspYu</span>, 
-                            <span class="pub-author pub-author-Yiwen-Zhang ">Yiwen&nbspZhang</span>, 
-                            <span class="pub-author pub-author-Vladimir-Braverman ">Vladimir&nbspBraverman</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
-                            <span class="pub-author pub-author-Xin-Jin ">Xin&nbspJin</span>
-                        </div>
-                        
-                        
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{netlock:sigcomm20,
-    author    = {Zhuolong Yu and Yiwen Zhang and Vladimir Braverman and Mosharaf Chowdhury and Xin Jin},
-    booktitle = {ACM SIGCOMM},
-    title     = {{NetLock}: Fast, Centralized Lock Management Using Programmable Switches},
-    year      = {2020},
-    pages     = {126--138},
-}
-">[bibtex]</a>
-                            
                         </div>
                     </div>
                 </li>
@@ -679,7 +694,7 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                     data-pub-cat="">
                     <div class="pub-block">
                         <div class="pub-title">
-                            RDMA performance isolation with Justitia
+                            <a target="_blank" href="/publications/files/justitia:arxiv19/justitia-arxiv.pdf">RDMA performance isolation with Justitia</a>
                             
                         </div>
                         
@@ -690,8 +705,16 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                             <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>
                         </div>
                         
-                        
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Despite its increasing popularity, most of RDMA’s benefits such as ultra-low latency can be achieved only when running an application in isolation. Using microbenchmarks and real open-source RDMA applications, we identify a series of performance anomalies when multiple applications coexist and show that such anomalies are pervasive across InfiniBand, RoCEv2, and iWARP. They arise due to a fundamental tradeoff between performance isolation and work conservation, which the state-of-the-art RDMA congestion control protocols such as DCQCN cannot resolve.</p>
+<p>We present Justitia to address these performance anomalies. Justitia is a software-only, host-based, and easy-to-deploy solution that maximizes RNIC utilization while guaranteeing performance isolation via shaping, rate limiting, and pacing at senders. Our evaluation of Justitia on multiple RDMA implementations show that Justitia effectively isolates different types of traffic and significantly improves latency (by up to 56.9×) and throughput (by up to 9.7×) of real-world RDMAbased applications without compromising low CPU usage or modifying the applications.</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
                         <div class="pub-links">
+                            <a target="_blank" href="/publications/files/justitia:arxiv19/justitia-arxiv.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@article{justitia:arxiv19,
     author        = {Yiwen Zhang and Yue Tan and Brent Stephens and Mosharaf Chowdhury},
     journal       = {CoRR},
@@ -705,7 +728,7 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
     url           = {http://arxiv.org/abs/1905.04437},
 }
 ">[bibtex]</a>
-                            
+                            <a class="pub-link-abstract">[abstract]</a>
                         </div>
                     </div>
                 </li>
@@ -1260,44 +1283,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
     Abstract                 = {Production datacenters operate under various uncertainties such as traffic dynamics, topology asymmetry, and failures. Therefore, datacenter load balancing schemes must be resilient to these uncertainties; i.e., they should accurately sense path conditions and timely react to mitigate the fallouts. Despite significant efforts, prior solutions have important drawbacks. On the one hand, solutions such as Presto and DRB are oblivious to path conditions and blindly reroute at fixed granularity. On the other hand, solutions such as CONGA and CLOVE can sense congestion, but they can only reroute when flowlets emerge; thus, they cannot always react timely to uncertainties. To make things worse, these solutions fail to detect/handle failures such as blackholes and random packet drops, which greatly degrades their performance.
 
 In this paper, we introduce Hermes, a datacenter load balancer that is resilient to the aforementioned uncertainties. At its heart, Hermes leverages comprehensive sensing to detect path conditions including failures unattended before, and it reacts using timely yet cautious rerouting. Hermes is a practical edge-based solution with no switch modification. We have implemented Hermes with commodity switches and evaluated it through both testbed experiments and large-scale simulations. Our results show that Hermes achieves comparable performance to CONGA and Presto in normal cases, and well handles uncertainties: under asymmetries, Hermes achieves up to 10% and 20% better flow completion time (FCT) than CONGA and CLOVE; under switch failures, it outperforms all other schemes by over 32%.}
-}
-">[bibtex]</a>
-                            <a class="pub-link-abstract">[abstract]</a>
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            Performance isolation anomalies in RDMA
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Yiwen-Zhang ">Yiwen&nbspZhang</span>, 
-                            <span class="pub-author pub-author-Juncheng-Gu ">Juncheng&nbspGu</span>, 
-                            <span class="pub-author pub-author-Youngmoon-Lee ">Youngmoon&nbspLee</span>, 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>, and 
-                            <span class="pub-author pub-author-Kang-G. Shin ">Kang&nbspG.&nbspShin</span>
-                        </div>
-                        
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>To meet the increasing throughput and latency demands of modern applications, many operators are rapidly deploying RDMA in their datacenters. At the same time, developers are re-designing their software to take advantage of RDMA's benefits for individual applications. However, when it comes to RDMA's performance, many simple questions remain open. In this paper, we consider the performance isolation characteristics of RDMA. Specifically, we conduct three sets of experiments – three combinations of one throughput-sensitive flow and one latency-sensitive flow – in a controlled environment, observe large discrepancies in RDMA performance with and without the presence of a competing flow, and describe our progress in identifying plausible root-causes.
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="pub-links">
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{fairdma:kbnets2017,
-    Title                    = {Performance Isolation Anomalies in {RDMA}},
-    Author                   = {Yiwen Zhang and Juncheng Gu and Youngmoon Lee and Mosharaf Chowdhury and Kang G. Shin},
-    Booktitle                = {ACM SIGCOMMKBNets},
-    Year                     = {2017},
-    Month                    = {August},
-    Abstract                 = {To meet the increasing throughput and latency demands of modern applications, many operators are rapidly deploying RDMA in their datacenters. At the same time, developers are re-designing their software to take advantage of RDMA's benefits for individual applications. However, when it comes to RDMA's performance, many simple questions remain open.
-
-In this paper, we consider the performance isolation characteristics of RDMA. Specifically, we conduct three sets of experiments -- three combinations of one throughput-sensitive flow and one latency-sensitive flow -- in a controlled environment, observe large discrepancies in RDMA performance with and without the presence of a competing flow, and describe our progress in identifying plausible root-causes.}
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
