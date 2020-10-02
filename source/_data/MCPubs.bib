@@ -303,6 +303,9 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   biburl        = {https://dblp.org/rec/journals/corr/abs-1904-08480.bib},
   eprint        = {1904.08480},
   url           = {http://arxiv.org/abs/1904.08480},
+  publist_abstract = {
+  Geo-distributed analytics (GDA) frameworks transfer large datasets over the wide-area network (WAN). Yet existing frameworks often ignore the WAN topology. This disconnect between WAN-bound applications and the WAN itself results in missed opportunities for cross-layer optimizations. In this paper, we present Terra to bridge this gap. Instead of decoupled WAN routing and GDA transfer scheduling, Terra applies scalable cross-layer optimizations to minimize WAN transfer times for GDA jobs. We present a two-pronged approach: (i) a scalable algorithm for joint routing and scheduling to make fast decisions; and (ii) a scalable, overlay-based enforcement mechanism that avoids expensive switch rule updates in the WAN. Together, they enable Terra to quickly react to WAN uncertainties such as large bandwidth fluctuations and failures in an application-aware manner as well. Integration with the FloodLight SDN controller and Apache YARN, and evaluation on 4 workloads and 3 WAN topologies show that Terra improves the average completion times of GDA jobs by 1.55x-3.43x. GDA jobs running with Terra meets 2.82x-4.29x more deadlines and can quickly react to WAN-level events in an application-aware manner.
+  },
 }
 
 @Article{justitia:arxiv19,
