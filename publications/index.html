@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"symbioticlab.github.io","root":"/","scheme":"Mist","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
   </script>
 
-  <meta name="description" content="Work in progress                Filters:                                       All Venues                                      EuroSys                                      MLSys">
+  <meta name="description" content="Work in progress                Filters:                                       All Venues                                      ATC                                      EuroSys">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Publications">
 <meta property="og:url" content="https://symbioticlab.github.io/publications/index.html">
 <meta property="og:site_name" content="SymbioticLab">
-<meta property="og:description" content="Work in progress                Filters:                                       All Venues                                      EuroSys                                      MLSys">
+<meta property="og:description" content="Work in progress                Filters:                                       All Venues                                      ATC                                      EuroSys">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-23T03:10:02.000Z">
 <meta property="article:modified_time" content="2020-07-23T03:10:02.000Z">
@@ -217,6 +217,8 @@
             <select>
                 <option value="all" selected>All Venues</option>
                 <optgroup label="Conferences">
+                    <option value="ATC">ATC</option>
+                
                     <option value="EuroSys">EuroSys</option>
                 
                     <option value="MLSys">MLSys</option>
@@ -292,9 +294,9 @@
                         </div>
                         <div class="pub-conference">
                             The 2020 ACM SIGCOMM Conference
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="21.6%"
                                 href="https://conferences.sigcomm.org/sigcomm/2020/">SIGCOMM'20</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 21.6%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -318,6 +320,50 @@
                         </div>
                     </div>
                 </li>
+                <li data-pub-venue="ATC"
+                    data-pub-cat="Conferences">
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/leap:atc20/leap-atc20.pdf">Effectively prefetching remote memory with Leap</a>
+                            <span class="label primary">New</span>
+                        </div>
+                        <div class="pub-badges">
+                            <span class="label default pub-badge">Best Paper Award</span>
+                        </div>
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Hasan-Al Maruf ">Hasan&nbspAl&nbspMaruf</span>, and 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 2020 USENIX Annual Technical Conference
+                            (<a target="_blank" title="18.68%"
+                                href="https://www.usenix.org/conference/atc20">ATC'20</a>)
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 18.68%)</span>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Memory disaggregation over RDMA can improve the performance of memory-constrained applications by replacing disk swapping with remote memory accesses. However, state-of-the-art memory disaggregation solutions still use data path components designed for slow disks. As a result, applications experience remote memory access latency significantly higher than that of the underlying low-latency network, which itself can be too high for many applications.</p>
+<p>In this paper, we propose Leap, a prefetching solution for remote memory accesses due to memory disaggregation. At its core, Leap employs an online, majority-based prefetching algorithm, which increases the page cache hit rate. We complement it with a lightweight and efficient data path in the kernel that isolates each application’s data path to the disaggregated memory and mitigates latency bottlenecks arising from legacy throughput-optimizing operations. Integration of Leap in the Linux kernel improves the median and tail remote page access latencies of memory-bound applications by up to 104.04× and 22.62×, respectively, over the default data path. This leads to up to 10.16× performance improvements for applications using disaggregated memory in comparison to the state-of-the-art solutions.</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/leap:atc20/leap-atc20.pdf">[paper]</a>
+                            <a target="_blank" href="/publications/files/leap:atc20/leap-atc20-slides.pdf">[slides]</a>
+                            <a target="_blank" href="https://github.com/SymbioticLab/Leap">[code]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{leap:atc20,
+    author    = {Hasan Al Maruf and Mosharaf Chowdhury},
+    booktitle = {USENIX ATC},
+    title     = {Effectively Prefetching Remote Memory with {Leap}},
+    year      = {2020},
+    pages     = {843--857},
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                    </div>
+                </li>
                 <li data-pub-venue="EuroSys"
                     data-pub-cat="Conferences">
                     <div class="pub-block">
@@ -334,9 +380,9 @@
                         </div>
                         <div class="pub-conference">
                             The Fifteenth European Conference on Computer Systems
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="18.38%"
                                 href="https://www.eurosys2020.org/">EuroSys'20</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 18.38%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -435,9 +481,9 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         </div>
                         <div class="pub-conference">
                             The 17th USENIX Symposium on Networked Systems Design and Implementation
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="18.36%"
                                 href="https://www.usenix.org/conference/nsdi20">NSDI'20</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 18.36%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -480,9 +526,9 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         </div>
                         <div class="pub-conference">
                             The 17th USENIX Symposium on Networked Systems Design and Implementation
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="18.36%"
                                 href="https://www.usenix.org/conference/nsdi20">NSDI'20</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 18.36%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -499,43 +545,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
     title     = {Near-Optimal Latency Versus Cost Tradeoffs in Geo-Distributed Storage},
     year      = {2020},
     pages     = {157--180},
-}
-">[bibtex]</a>
-                            <a class="pub-link-abstract">[abstract]</a>
-                        </div>
-                    </div>
-                </li>
-                <li data-pub-venue=""
-                    data-pub-cat="">
-                    <div class="pub-block">
-                        <div class="pub-title">
-                            <a target="_blank" href="/publications/files/leap:atc20/leap-atc20.pdf">Effectively prefetching remote memory with Leap</a>
-                            
-                        </div>
-                        
-                        <div class="pub-authors">
-                            <span class="pub-author pub-author-Hasan-Al Maruf ">Hasan&nbspAl&nbspMaruf</span>, and 
-                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>
-                        </div>
-                        
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Memory disaggregation over RDMA can improve the performance of memory-constrained applications by replacing disk swapping with remote memory accesses. However, state-of-the-art memory disaggregation solutions still use data path components designed for slow disks. As a result, applications experience remote memory access latency significantly higher than that of the underlying low-latency network, which itself can be too high for many applications.</p>
-<p>In this paper, we propose Leap, a prefetching solution for remote memory accesses due to memory disaggregation. At its core, Leap employs an online, majority-based prefetching algorithm, which increases the page cache hit rate. We complement it with a lightweight and efficient data path in the kernel that isolates each application’s data path to the disaggregated memory and mitigates latency bottlenecks arising from legacy throughput-optimizing operations. Integration of Leap in the Linux kernel improves the median and tail remote page access latencies of memory-bound applications by up to 104.04× and 22.62×, respectively, over the default data path. This leads to up to 10.16× performance improvements for applications using disaggregated memory in comparison to the state-of-the-art solutions.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="pub-links">
-                            <a target="_blank" href="/publications/files/leap:atc20/leap-atc20.pdf">[paper]</a>
-                            <a target="_blank" href="/publications/files/leap:atc20/leap-atc20-slides.pdf">[slides]</a>
-                            <a target="_blank" href="https://github.com/SymbioticLab/Leap">[code]</a>
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{leap:atc20,
-    author    = {Hasan Al Maruf and Mosharaf Chowdhury},
-    booktitle = {USENIX ATC},
-    title     = {Effectively Prefetching Remote Memory with {Leap}},
-    year      = {2020},
-    pages     = {843--857},
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
@@ -566,9 +575,9 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         </div>
                         <div class="pub-conference">
                             The 31st ACM Symposium on Parallelism in Algorithms and Architectures
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="33%"
                                 href="https://spaa.acm.org/2019/">SPAA'19</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 33%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -611,9 +620,9 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         </div>
                         <div class="pub-conference">
                             The 16th USENIX Symposium on Networked Systems Design and Implementation
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="14.76%"
                                 href="https://www.usenix.org/conference/nsdi19">NSDI'19</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 14.76%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -894,9 +903,9 @@ In this work, we study a slightly different model of coflow scheduling in genera
                         </div>
                         <div class="pub-conference">
                             The 24th Annual International Conference on Mobile Computing and Networking
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="22.46%"
                                 href="https://sigmobile.org/mobicom/2018/">MobiCom'18</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 22.46%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -937,9 +946,9 @@ In this work, we study a slightly different model of coflow scheduling in genera
                         </div>
                         <div class="pub-conference">
                             The 13th USENIX Symposium on Operating Systems Design and Implementation
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="18.29%"
                                 href="https://www.usenix.org/conference/osdi18">OSDI'18</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 18.29%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -1193,9 +1202,9 @@ In this work, we study a slightly different model of coflow scheduling in genera
                         </div>
                         <div class="pub-conference">
                             The 2018 ACM SIGMOD/PODS Conference
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="19.52%"
                                 href="http://sigmod2018.org/">SIGMOD'18</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 19.52%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -1291,9 +1300,9 @@ In this work, we study a slightly different model of coflow scheduling in genera
                         </div>
                         <div class="pub-conference">
                             The 2017 ACM SIGCOMM Conference
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="14.4%"
                                 href="http://conferences.sigcomm.org/sigcomm/2017/">SIGCOMM'17</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 14.4%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -1380,9 +1389,9 @@ We expect this decoupling to accelerate progress in both domains.</p>
                         </div>
                         <div class="pub-conference">
                             The 14th USENIX Symposium on Networked Systems Design and Implementation
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="18.04%"
                                 href="https://www.usenix.org/conference/nsdi17">NSDI'17</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 18.04%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -1434,9 +1443,9 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                         </div>
                         <div class="pub-conference">
                             The 12th USENIX Symposium on Operating Systems Design and Implementation
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="18.08%"
                                 href="https://www.usenix.org/conference/osdi16">OSDI'16</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 18.08%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -1476,9 +1485,9 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                         </div>
                         <div class="pub-conference">
                             The 12th USENIX Symposium on Operating Systems Design and Implementation
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="18.08%"
                                 href="https://www.usenix.org/conference/osdi16">OSDI'16</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 18.08%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -1521,9 +1530,9 @@ EC-Cache is a load-balanced, low latency cluster cache that uses online erasure 
                         </div>
                         <div class="pub-conference">
                             The 2016 ACM SIGCOMM Conference
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="17.33%"
                                 href="http://conferences.sigcomm.org/sigcomm/2016/">SIGCOMM'16</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 17.33%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -1602,9 +1611,9 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
                         </div>
                         <div class="pub-conference">
                             The 13th USENIX Symposium on Networked Systems Design and Implementation
-                            (<a target="_blank" title=""
+                            (<a target="_blank" title="19.74%"
                                 href="https://www.usenix.org/conference/nsdi16">NSDI'16</a>)
-                            
+                            <span class="pub-conference-acceptance">(Acceptance Rate: 19.74%)</span>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
