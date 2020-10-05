@@ -18,6 +18,17 @@ venues:
   # key is also used in display
   Conferences:
     # conference short name
+    ATC'20:
+      # conference id
+      venue: ATC
+      # conference full name
+      name: The 2020 USENIX Annual Technical Conference
+      # date for sorting
+      date: 2020-07-15
+      # conference website (optional)
+      url: https://www.usenix.org/conference/atc20
+      # conference acceptance rate (optional)
+      acceptance: "18.68%"
     EuroSys'20:
       # conference id
       venue: EuroSys
@@ -27,6 +38,8 @@ venues:
       date: 2020-04-27
       # conference website (optional)
       url: https://www.eurosys2020.org/
+      # conference acceptance rate (optional)
+      acceptance: "18.38%"
     MLSys'20:
       # conference id
       venue: MLSys
@@ -47,6 +60,8 @@ venues:
       date: 2020-02-25
       # conference website (optional)
       url: https://www.usenix.org/conference/nsdi20
+      # conference acceptance rate (optional)
+      acceptance: "18.36%"
     SIGCOMM'20:
       # conference id
       venue: SIGCOMM
@@ -56,6 +71,8 @@ venues:
       date: 2020-08-11
       # conference website (optional)
       url: https://conferences.sigcomm.org/sigcomm/2020/
+      # conference acceptance rate (optional)
+      acceptance: "21.6%"
     SPAA'19:
       # conference id
       venue: SPAA
@@ -65,6 +82,8 @@ venues:
       date: 2019-06-22
       # conference website (optional)
       url: https://spaa.acm.org/2019/
+      # conference acceptance rate (optional)
+      acceptance: "33%"
     NSDI'19:
       # conference id
       venue: NSDI
@@ -74,6 +93,8 @@ venues:
       date: 2019-02-26
       # conference website (optional)
       url: https://www.usenix.org/conference/nsdi19
+      # conference acceptance rate (optional)
+      acceptance: "14.76%"
     MobiCom'18:
       # conference id
       venue: MobiCom
@@ -83,6 +104,8 @@ venues:
       date: 2018-10-29
       # conference website (optional)
       url: https://sigmobile.org/mobicom/2018/
+      # conference acceptance rate (optional)
+      acceptance: "22.46%"
     OSDI'18:
       # conference id
       venue: OSDI
@@ -92,6 +115,8 @@ venues:
       date: 2018-10-08
       # conference website (optional)
       url: https://www.usenix.org/conference/osdi18
+      # conference acceptance rate (optional)
+      acceptance: "18.29%"
     SIGMOD'18:
       # conference id
       venue: SIGMOD
@@ -101,6 +126,8 @@ venues:
       date: 2018-06-10
       # conference website (optional)
       url: http://sigmod2018.org/
+      # conference acceptance rate (optional)
+      acceptance: "19.52%"
     SIGCOMM'17:
       # conference id
       venue: SIGCOMM
@@ -110,6 +137,8 @@ venues:
       date: 2017-08-22
       # conference website (optional)
       url: http://conferences.sigcomm.org/sigcomm/2017/
+      # conference acceptance rate (optional)
+      acceptance: "14.4%"
     NSDI'17:
       # conference id
       venue: NSDI
@@ -119,6 +148,8 @@ venues:
       date: 2017-03-27
       # conference website (optional)
       url: https://www.usenix.org/conference/nsdi17
+      # conference acceptance rate (optional)
+      acceptance: "18.04%"
     OSDI'16:
       # conference id
       venue: OSDI
@@ -128,6 +159,8 @@ venues:
       date: 2016-11-02
       # conference website (optional)
       url: https://www.usenix.org/conference/osdi16
+      # conference acceptance rate (optional)
+      acceptance: "18.08%"
     SIGCOMM'16:
       # conference id
       venue: SIGCOMM
@@ -137,6 +170,8 @@ venues:
       date: 2016-08-23
       # conference website (optional)
       url: http://conferences.sigcomm.org/sigcomm/2016/
+      # conference acceptance rate (optional)
+      acceptance: "17.33%"
     NSDI'16:
       # conference id
       venue: NSDI
@@ -146,6 +181,8 @@ venues:
       date: 2016-03-13
       # conference website (optional)
       url: https://www.usenix.org/conference/nsdi16
+      # conference acceptance rate (optional)
+      acceptance: "19.74%"
   Workshops:
     APNet'18:
       # workshop id
