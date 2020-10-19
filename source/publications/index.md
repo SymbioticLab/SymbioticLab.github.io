@@ -4,15 +4,18 @@ date: 2020-07-22 23:10:02
 publist: true
 mathjax: true
 ---
-{% note warning %}
-Work in progress
-{% endnote %}
-
 {% publist MCPubs %}
 # directory used for relative links in publication items
 pub_dir: publications/files
 # which author name to highlight
 highlight_authors: []
+extra_filters:
+  - name: Topic
+    path: meta.topic
+  - name: Tag
+    path: meta.tag
+  - name: Badge
+    path: badges
 # Map of venue types to venues
 venues:
   # key is also used in display
@@ -188,7 +191,7 @@ venues:
       # workshop id
       venue: APNet
       # workshop full name
-      name: The 2nd Asia-Pacific Workshop on Networking (APNet 2018)
+      name: The 2nd Asia-Pacific Workshop on Networking
       # date for sorting
       date: 2018-08-02
       # workshop website (optional)
@@ -215,7 +218,7 @@ venues:
       # workshop id
       venue: GRADES-NDA
       # workshop full name
-      name: The 1st Joint International Workshop on Graph Data Management Experiences & Systems (GRADES) and Network Data Analytics (NDA) 2018
+      name: The 1st Joint International Workshop on Graph Data Management Experiences & Systems (GRADES) and Network Data Analytics (NDA)
       # date for sorting
       date: 2018-06-10
       # workshop website (optional)
@@ -238,8 +241,14 @@ venues:
       date: 2017-08-21
       # workshop website (optional)
       url: https://conferences.sigcomm.org/sigcomm/2017/workshop-kbnets.html
-  Posters: {}
-  Demos: {}
+  'Technical Reports':
+    arXiv:
+      # workshop id
+      venue: arXiv
+      # workshop full name
+      name: arXiv
+      # workshop website (optional)
+      url: https://arxiv.org
   Journals:
     'USENIX ;login:':
       # journal id

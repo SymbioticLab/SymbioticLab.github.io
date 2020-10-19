@@ -135,6 +135,8 @@ markdown:
 publist:
   # entries within the last `new_months` will be marked new
   new_month: 3
+  # force error on invalid bib file
+  strict: true
 
 # ---------------------------------------------------------------
 # Theme Configuration Settings
@@ -142,6 +144,10 @@ publist:
 # ---------------------------------------------------------------
 theme: next
 theme_config:
+  custom_file_path:
+    style: source/_custom/styles.styl
+    variable: source/_custom/variables.styl
+
   # Remove unnecessary files after hexo generate.
   minify: true
 
