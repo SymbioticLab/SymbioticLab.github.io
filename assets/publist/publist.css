@@ -146,6 +146,7 @@
 }
 .pub-block .pub-abstract {
     padding: 1em 0em;
+    text-align: justify;
 }
 .pub-block .pub-abstract p:last-child {
     margin-bottom: 0px;

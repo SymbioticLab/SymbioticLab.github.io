@@ -196,7 +196,7 @@
     class ShowAbstract {
         constructor (cssSelector) {
             $(cssSelector).on('click', e => {
-                $tgt = $(e.trigger).closest('.pub-block').find('.pub-abstract-frame');
+                const $tgt = $(e.currentTarget).closest('.pub-block').find('.pub-abstract-frame');
                 if ($tgt.toggleClass('shown')) {
                     $tgt.css('height', `${$tgt.el.scrollHeight}px`);
                     $tgt.el.scrollIntoView({
