@@ -135,6 +135,8 @@ markdown:
 publist:
   # entries within the last `new_months` will be marked new
   new_month: 3
+  # force error on invalid bib file
+  strict: true
 
 # ---------------------------------------------------------------
 # Theme Configuration Settings
