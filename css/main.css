@@ -2677,11 +2677,11 @@ hr {
   padding-bottom: 80px;
 }
 .post-block:first-of-type {
-  padding-top: 80px;
+  padding-top: 35px;
 }
 @media (max-width: 767px) {
   .post-block:first-of-type {
-    padding-top: 60px;
+    padding-top: 35px;
   }
 }
 @media (min-width: 992px) {
@@ -2728,7 +2728,7 @@ hr {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e790a7;
+  background: #30fff0;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2754,4 +2754,7 @@ hr {
 }
 .sub-menu .menu-item {
   display: inline-block;
+}
+.post-header {
+  display: none;
 }
