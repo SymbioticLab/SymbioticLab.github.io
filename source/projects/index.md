@@ -3,48 +3,13 @@ title: Projects
 date: 2020-10-16 23:09:52
 ---
 
-<style>
-.flex-row p {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.flex-row img {
-  /* default to 5 images per row */
-  flex: 100%;
-  max-width: 100%;
-
-  margin: 0px;
-}
-
-@media (max-width: 800px) {
-  .flex-row img {
-    flex: 25%;
-    max-width: 25%;
-  }
-}
-@media (max-width: 600px) {
-  .flex-row img {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-</style>
-
-[comment]: # "Note that there must be a blank line after the div, otherwise the img tag won't be rendered"
-
 Data systems are eating the world. 
 They leverage Big Data and AI tools to extract value out of data, be it local or distributed across the world. 
 Our work in the SymbioticLab has shown that *network-informed data systems design* can yield order-of-magnitude performance and efficiency improvements. 
 We tailor Big Data and AI applications to coexist with their underlying networks and apply networking principles in designing new data systems.
 This boils down to **three** operating regimes: *single-microsecond* latency within a rack, *single-millisecond* latency within a datacenter, and *hundreds-of-milliseconds* latency across the world.
 
-<div class='flex-row'>
-
 ![Overview](images/latency-domains.png)
-</div>
 
 Across these latency domains, our research falls into one of the four overarching projects.
 
