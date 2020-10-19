@@ -23,16 +23,18 @@
     var CONFIG = {"hostname":"symbioticlab.github.io","root":"/","scheme":"Mist","version":"8.0.1","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="Work in progress">
+  <meta name="description" content="Data systems are eating the world. They leverage Big Data and AI tools to extract value out of data, be it local or distributed across the world. Our work in the SymbioticLab has shown that network-in">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Projects">
 <meta property="og:url" content="https://symbioticlab.github.io/projects/index.html">
 <meta property="og:site_name" content="SymbioticLab">
-<meta property="og:description" content="Work in progress">
+<meta property="og:description" content="Data systems are eating the world. They leverage Big Data and AI tools to extract value out of data, be it local or distributed across the world. Our work in the SymbioticLab has shown that network-in">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-23T03:09:52.000Z">
-<meta property="article:modified_time" content="2020-07-23T03:09:52.000Z">
+<meta property="og:image" content="https://symbioticlab.github.io/projects/images/latency-domains.png">
+<meta property="article:published_time" content="2020-10-17T03:09:52.000Z">
+<meta property="article:modified_time" content="2020-10-17T03:09:52.000Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://symbioticlab.github.io/projects/images/latency-domains.png">
 
 
 <link rel="canonical" href="https://symbioticlab.github.io/projects/">
@@ -205,7 +207,35 @@
       
       
       <div class="post-body">
-          <p>Work in progress</p>
+          <p>Data systems are eating the world.
+They leverage Big Data and AI tools to extract value out of data, be it local or distributed across the world.
+Our work in the SymbioticLab has shown that <em>network-informed data systems design</em> can yield order-of-magnitude performance and efficiency improvements.
+We tailor Big Data and AI applications to coexist with their underlying networks and apply networking principles in designing new data systems.
+This boils down to <strong>three</strong> operating regimes: <em>single-microsecond</em> latency within a rack, <em>single-millisecond</em> latency within a datacenter, and <em>hundreds-of-milliseconds</em> latency across the world.</p>
+<p><img src="images/latency-domains.png" alt="Overview" /></p>
+<p>Across these latency domains, our research falls into one of the four overarching projects.</p>
+<h2 id="disaggregation">Disaggregation<a class="headerlink" href="#disaggregation"></a></h2>
+<p>High-performance data systems strive to keep data in the main memory.
+They often over-provision to avoid running out of memory, leading to a 50% average underutilization in Google, Facebook, and Alibaba datacenters.
+The root cause is simple: applications today cannot access otherwise unused memory beyond their machine boundaries even when their performance grinds to a halt.
+But could they?
+Our research addresses this fundamental question regarding memory disaggregation, whereby an application can leverage both local and remote memory by leveraging emerging high-speed networks.</p>
+<h2 id="federated-computation">Federated Computation<a class="headerlink" href="#federated-computation"></a></h2>
+<p>Most data are not generated inside datacenters.
+They may be created, among others, by smartphone users, collected by a network of telescopes, or generated in medical research campuses from genome sequencing.
+Collecting voluminous remote data to a central location not only presents a bandwidth and storage problem but increasingly is likely to violate privacy regulations such as General Data Protection Regulation (GDPR).
+In these settings, data systems must minimize communication instead.
+We are developing systems and algorithms to analyze real-time data distributed across the globe to enable geo-distributed analytics and federated learning.</p>
+<h2 id="systems-for-ai">Systems for AI<a class="headerlink" href="#systems-for-ai"></a></h2>
+<p>A large number of AI applications still run in traditional cloud datacenters.
+We have focused on heterogeneous resource management for AI systems.
+GPUs have emerged as a popular choice for AI-related data systems, with new hardware accelerators appearing every month.
+Few of them, if any, support software-defined resource sharing.
+We focus on multi-scale resource sharing for AI accelerators for training, inference, and hyperparameter tuning workloads.</p>
+<h2 id="datacenter">Datacenter<a class="headerlink" href="#datacenter"></a></h2>
+<p>Our work has brought network-inspired redesign of data systems into the mainstream.
+For Big Data applications, we have designed new algorithms for resource scheduling, caching data in memory, and dynamic query planning that apply well-established networking principles such as statistical multiplexing, traffic management, and rerouting into data systems design.
+We also work on network resource management schemes to isolate Big Data systems at the edge and inside the datacenter network too.</p>
 
       </div>
       
