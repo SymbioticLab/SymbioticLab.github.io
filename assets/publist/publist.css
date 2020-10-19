@@ -117,13 +117,11 @@
 }
 
 /* The publication block */
+.pub-block {
+    text-align: left;
+}
 .pub-block .pub-title {
     font-weight: bold;
-}
-.pub-block .pub-badge {
-    color: red;
-    font-weight: bold;
-    font-size: 0.9em;
 }
 .pub-block .pub-authors,
 .pub-block .pub-conference,
@@ -158,13 +156,48 @@
     font-weight: bold;
 }
 
-/* timeline search panel */
-.timeline-search-panel {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+/* Filter */
+.filter-hide {
+    display: none !important;
+}
 
-    padding: 1em 0em 1em 0em;
+/* Adapt primer css to our theme */
+.publist-search-panel .SelectMenu-modal {
+    /* our theme is rectangular */
+    border-radius: 0;
+    /* we want the modal width to fit its content */
+    width: auto;
+}
+.publist-search-panel .SelectMenu {
+    min-width: 100%;
+}
+.publist-search-panel details {
+    position: relative;
+}
+.publist-search-panel .SelectMenu-list--borderless .SelectMenu-divider:first-child {
+    /* Do not show duplicate top border */
+    border-top: 0;
+}
+.publist-search-panel .SelectMenu-divider[aria-checked=true] .SelectMenu-icon--check {
+    /* Also show checked mark in divider */
+    visibility: visible;
+    transition: transform .12s cubic-bezier(0,0,.2,1),visibility 0s linear;
+    transform: scale(1);
+}
+.publist-search-panel .SelectMenu-divider {
+    /* Vertically center the checked mark in divider */
+    display: flex;
+    align-items: center;
+    /* Our divider is also clickable */
+    cursor: pointer;
+}
+
+.publist-search-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding: 1em 0em 0.5em 0em;
     margin-top: -1em;
 
     border-bottom: dashed 1px #ccc;
@@ -173,84 +206,111 @@
     top: 0px;
 
     background: white;
-    z-index: 10;
+    z-index: 11;
 }
-.timeline-search-panel h4 {
-    margin: 0em 1em 0em .5em;
+
+.publist-search-panel .publist-filters-header {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.publist-search-panel .publist-filters-header footer {
+    align-self: center;
+    font-size: small;
+}
+
+.publist-filters-header .publist-filters-header-hwrapper {
+    /* same height as a detail, which is summary 1.5rem + border 2px * 2 */
+    height: calc(1.5rem + 4px);
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.publist-filters-header h4 {
+    margin: 0px;
     padding: 0px;
 }
 
-/* The select box */
-.select-box {
-    position: relative;
+.publist-search-panel .publist-filters-row {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+
+    /* absorbe deuplicated margin in rows */
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.publist-search-panel details {
+    margin: 0.5rem;
+}
+
+.publist-search-panel details > summary[aria-haspopup=true] {
     display: flex;
     align-items: center;
-}
-.select-box .select-arrow {
-    position: relative;
-    height: 1.5em;
-    width: 0em;
+    cursor: pointer;
 
-    left: -2em;
-
-    pointer-events: none;
-    z-index: 2;
-    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
-    opacity: 0.6;
-}
-.select-box .select-arrow svg {
-    width: 1.5em;
-    height: auto;
-    fill: #a0a0a0;
-}
-.select-box select {
-    /* No default arrow */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    /* control the height, align with filter title header */
+    height: 1.5rem;
     outline: none;
-
-    border: 2px solid rgba(.3, .3, .3, .3);
-    background: #fff;
-    padding-left: 1em;
-    padding-right: 2.5em;
 }
 
-/* The checkbox */
-.check-box {
-    margin: 0em 1em 0em 2em;
-    display: flex;
-    align-items: center;
+.publist-search-panel details summary span {
+    white-space: nowrap;
 }
 
-.check-box ~ .check-box {
-    margin: 0em 1em;
+.publist-search-panel [role="menuitem"] {
+    white-space: nowrap;
 }
 
-.check-box input[type="checkbox"] {
-    margin-right: .2em;
+.publist-search-panel .SelectMenu-item .Counter {
+    margin-left: auto;
 }
 
-/* Copied tooltip */
-#copied-tooltip .jBox-container {
-    background: #222;
-    color: #eee;
-    line-height: 1;
-    display: flex;
-}
-#copied-tooltip .jBox-pointer::after {
-    background: #222;
-}
-#copied-tooltip .jBox-content {
-    display: inline;
-    padding: 7px 7px;
-    font-size: .8em;
-}
-#copied-tooltip .jBox-pointer {
-    height: 7px;
+/* The animated arrow */
+.publist-search-panel .dropdown-caret {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
 }
 
-/* Filter */
-.filter-hide {
-    display: none !important;
+.publist-search-panel .dropdown-caret::before {
+    top: .6rem;
+    position: absolute;
+    width: .75rem;
+    height: .1rem;
+    background-color: var(--btn-default-border-color);
+    display: inline-block;
+    transition: all .2s ease;
+
+    content: '';
+    left: 0;
+    transform: rotate(45deg);
+}
+.publist-search-panel .dropdown-caret::after {
+    top: .6rem;
+    position: absolute;
+    width: .75rem;
+    height: .1rem;
+    background-color: var(--btn-default-border-color);
+    display: inline-block;
+    transition: all .2s ease;
+    
+    content: '';
+    right: 0;
+    transform: rotate(-45deg);
+}
+
+.publist-search-panel details[open] .dropdown-caret::before {
+    transform: rotate(-45deg);
+}
+.publist-search-panel details[open] .dropdown-caret::after {
+    transform: rotate(45deg);
 }
