@@ -1,13 +1,10 @@
 ---
 title: Publications
+notitle: true
 date: 2020-07-22 23:10:02
 publist: true
 mathjax: true
 ---
-{% note warning %}
-Work in progress
-{% endnote %}
-
 {% publist MCPubs %}
 # directory used for relative links in publication items
 pub_dir: publications/files
