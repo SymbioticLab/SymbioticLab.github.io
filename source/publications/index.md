@@ -1,6 +1,5 @@
 ---
 title: Publications
-notitle: true
 date: 2020-07-22 23:10:02
 publist: true
 mathjax: true
@@ -242,8 +241,14 @@ venues:
       date: 2017-08-21
       # workshop website (optional)
       url: https://conferences.sigcomm.org/sigcomm/2017/workshop-kbnets.html
-  Posters: {}
-  Demos: {}
+  'Technical Reports':
+    arXiv:
+      # workshop id
+      venue: arXiv
+      # workshop full name
+      name: arXiv
+      # workshop website (optional)
+      url: https://arxiv.org
   Journals:
     'USENIX ;login:':
       # journal id
