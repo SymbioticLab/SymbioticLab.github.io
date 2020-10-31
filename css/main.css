@@ -2728,7 +2728,7 @@ hr {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5bc9fe;
+  background: #8bffd0;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2757,4 +2757,10 @@ hr {
 }
 .post-header {
   display: none;
+}
+.post-body {
+/* use medium font size no matter what screen resolution is */
+  font-size: 1em !important;
+/* default is 2 in hexo-theme-next */
+  line-height: 1.5;
 }
