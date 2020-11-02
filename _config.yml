@@ -256,7 +256,7 @@ theme_config:
   # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
   android_chrome_color: "#fe6600"
 
-  # Custom Logo (Do not support scheme Mist)
+  # Custom Logo (Do not support scheme Mist natively, we use custom header to workaround this)
   custom_logo: /assets/logo.svg
 
   codeblock:
