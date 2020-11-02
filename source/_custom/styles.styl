@@ -7,3 +7,30 @@
     /* default is 2 in hexo-theme-next */
     line-height: 1.5;
 }
+
+.site-title {
+    display: flex;
+    align-items: center;
+}
+.site-title::before {
+    display: inline-block;
+    content: '';
+    /* keep the same aspect ratio as the logo */
+    height: 1.5rem;
+    width: 1.06rem;
+    
+    background: url(hexo-config('custom_logo'));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-right: 8px;
+}
+.brand .logo-line {
+    display: none;
+}
+.header-inner {
+    /* reduce the vertical padding around the header bar,
+       which is too large when the logo line is removed */
+    padding: 10px 0;
+}
