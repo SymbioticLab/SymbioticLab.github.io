@@ -8,6 +8,7 @@
 
   publist_confkey = {NSDI'16},
   publist_link = {paper || hug-nsdi16.pdf},
+  publist_topic = {Datacenter Networking},
   Abstract                 = {In this paper, we study how to optimally provide isolation guarantees in multi-resource environments, such as public clouds, where a tenant's demands on different resources (links) are correlated. Unlike prior work such as Dominant Resource Fairness (DRF) that assumes static and fixed demands, we consider elastic demands. Our approach generalizes canonical max-min fairness to the multi-resource setting with correlated demands, and extends DRF to elastic demands. We consider two natural optimization objectives: isolation guarantee from a tenant's viewpoint and system utilization (work conservation) from an operator's perspective. We prove that in non-cooperative environments like public cloud networks, there is a strong tradeoff between optimal isolation guarantee and work conservation when demands are elastic. Even worse, work conservation can even decrease network utilization instead of improving it when demands are inelastic. We identify the root cause behind the tradeoff and present a provably optimal allocation algorithm, High Utilization with Guarantees (HUG), to achieve maximum attainable network utilization without sacrificing the optimal isolation guarantee, strategy-proofness, and other useful properties of DRF. In cooperative environments like private datacenter networks, HUG achieves both the optimal isolation guarantee and work conservation. Analyses, simulations, and experiments show that HUG provides better isolation guarantees, higher system utilization, and better tenant-level performance than its counterparts.}
 }
 
@@ -20,6 +21,7 @@
 
   publist_confkey = {OSDI'16},
   publist_link = {paper || carbyne-osdi16.pdf},
+  publist_topic = {Big Data Systems},
   Abstract                 = {Given the well-known tradeoffs between fairness, performance, and efficiency, modern cluster schedulers often prefer instantaneous fairness as their primary objective to ensure performance isolation between users and groups. However, instantaneous, short-term convergence to fairness often does not result in noticeable long-term benefits. Instead, we propose an altruistic, long-term approach, Carbyne, where jobs yield fractions of their allocated resources without impacting their own completion times. We show that leftover resources collected via altruisms of many jobs can then be rescheduled to further secondary goals such as application-level performance and cluster efficiency without impacting performance isolation. Deployments and large-scale simulations show that Carbyne closely approximates the state-of-the-art solutions (e.g., DRF) in terms of performance isolation, while providing 1.26X better efficiency and 1.59X lower average job completion time.}
 }
 
@@ -35,6 +37,7 @@
   Volume                   = {42},
   publist_confkey = {USENIX ;login:},
   publist_link = {paper || infiniswap-login17.pdf},
+  publist_topic = {Disaggregation},
   Abstract                 = {Memory disaggregation can expose remote memory across a cluster to local applications. However, existing proposals call for new architectures and/or new programming models, making them infeasible. We have developed a practical memory disaggregation solution, Infiniswap, which is a remote memory paging system for clusters with lowlatency, kernel-bypass networks such as RDMA. Infiniswap opportunistically harvests and transparently exposes unused memory across the cluster to unmodified applications by dividing the swap space of each machine into many chunks and distributing them to unused memory of many remote machines. For scalability, it leverages the power of many choices to perform decentralized memory chunk placements and evictions. Applications using Infiniswap receive large performance boosts when their working sets are larger than their physical memory allocations.}
 }
 
@@ -51,6 +54,7 @@
   publist_link = {code || https://github.com/SymbioticLab/Infiniswap},
   publist_link = {website || https://infiniswap.github.io/},
   publist_link = {media || https://blog.acolyer.org/2017/05/05/efficient-memory-disaggregation-with-infiniswap/},
+  publist_topic = {Disaggregation},
   publist_abstract = {
   Memory-intensive applications suffer large performance loss when their working sets do not fully fit in memory. Yet, they cannot leverage otherwise unused remote memory when paging out to disks even in the presence of large imbalance in memory utilizations across a cluster. Existing proposals for memory disaggregation call for new architectures, new hardware designs, and/or new programming models, making them infeasible.
   This paper describes the design and implementation of Infiniswap, a remote memory paging system designed specifically for an RDMA network. Infiniswap opportunistically harvests and transparently exposes unused memory to unmodified applications by dividing the swap space of each machine into many slabs and distributing them across many machines' remote memory. Because one-sided RDMA operations bypass remote CPUs, Infiniswap leverages the power of many choices to perform decentralized slab placements and evictions.
@@ -67,6 +71,7 @@
 
   publist_confkey = {arXiv},
   publist_link = {paper || https://arxiv.org/abs/1605.04652},
+  publist_topic = {Wide-Area Computing},
   Abstract                 = {An increasing amount of analytics is performed on data that is procured in a real-time fashion to make real-time decisions. Such tasks include simple reporting on streams to sophisticated model building. However, the practicality of such analyses are impeded in several domains because they are faced with a fundamental trade-off between data collection latency and analysis accuracy.
 
 In this paper, we study this trade-off in the context of a specific domain, Cellular Radio Access Networks (RAN). Our choice of this domain is influenced by its commonalities with several other domains that produce real-time data, our access to a large live dataset, and their real-time nature and dimensionality which makes it a natural fit for a popular analysis technique, machine learning (ML). We find that the latency accuracy trade-off can be resolved using two broad, general techniques: intelligent data grouping and task formulations that leverage domain characteristics. Based on this, we present CellScope, a system that addresses this challenge by applying a domain specific formulation and application of Multi-task Learning (MTL) to RAN performance analysis. It achieves this goal using three techniques: feature engineering to transform raw data into effective features, a PCA inspired similarity metric to group data from geographically nearby base stations sharing performance commonalities, and a hybrid online-offline model for efficient model updates. Our evaluation of CellScope shows that its accuracy improvements over direct application of ML range from 2.5x to 4.4x while reducing the model update overhead by up to 4.8x. We have also used CellScope to analyze a live LTE consisting of over 2 million subscribers for a period of over 10 months, where it uncovered several problems and insights, some of them previously unknown.}
@@ -81,6 +86,7 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
 
   publist_confkey = {HotOS'17},
   publist_link = {paper || deepstack-hotos17.pdf},
+  publist_topic = {Systems for AI},
   publist_abstract = {
     In recent years, deep learning has pervaded many areas of computing due to the confluence of an explosive growth of large-scale computing capabilities, availability of datasets, and advances in learning techniques.
     While this rapid growth has resulted in diverse deep learning frameworks, it has also led to inefficiencies for both the users and developers of these frameworks.
@@ -101,6 +107,7 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
 
   publist_confkey = {OSDI'16},
   publist_link = {paper || eccache-osdi16.pdf},
+  publist_topic = {Big Data Systems},
   Abstract                 = {Data-intensive clusters and object stores are increasingly relying on in-memory object caching to meet the I/O performance demands. These systems routinely face the challenges of popularity skew, background load imbalance, and server failures, which result in severe load imbalance across storage servers and degraded I/O performance. Selective replication is a commonly used technique to tackle these challenges, where the number of cached replicas of an object is proportional to its popularity. In this paper, we explore an alternative approach using erasure coding.
 
 EC-Cache is a load-balanced, low latency cluster cache that uses online erasure coding to overcome the limitations of selective replication. EC-Cache employs erasure coding by: (i) splitting and erasure coding individual objects during writes, and (ii) late binding, wherein obtaining any k out of (k + r) splits of an object are sufficient, during reads. As compared to selective replication, EC-Cache improves load balancing by more than 3X and reduces the median and tail read latencies by more than 2X, while using the same amount of memory. EC-Cache does so using 10% additional bandwidth and a small increase in the amount of stored metadata. The benefits offered by EC-Cache are further amplified in the presence of background network load imbalance and server failures.}
@@ -115,6 +122,7 @@ EC-Cache is a load-balanced, low latency cluster cache that uses online erasure 
 
   publist_confkey = {SIGCOMM'16},
   publist_link = {paper || coda-sigcomm16.pdf},
+  publist_topic = {Datacenter Networking},  
   Abstract                 = {Leveraging application-level requirements using coflows has recently been shown to improve application-level communication performance in data-parallel clusters. However, existing coflow-based solutions rely on modifying applications to extract coflows, making them inapplicable to many practical scenarios.
 
 In this paper, we present CODA, a first attempt at automatically identifying and scheduling coflows without any application modifications. We employ an incremental clustering algorithm to perform fast, application-transparent coflow identification and complement it by proposing an error-tolerant coflow scheduler to mitigate occasional identification errors. Testbed experiments and large-scale simulations with production workloads show that CODA can identify coflows with over 90% accuracy, and its scheduler is robust to inaccuracies, enabling communication stages to complete 2.4X (5.1X) faster on average (95th percentile) compared to per-flow mechanisms. Overall, CODA's performance is comparable to that of solutions requiring application modifications.}
@@ -129,6 +137,7 @@ In this paper, we present CODA, a first attempt at automatically identifying and
 
   publist_confkey = {SIGCOMM'17},
   publist_link = {paper || hermes-sigcomm17.pdf},
+  publist_topic = {Datacenter Networking},
   Abstract                 = {Production datacenters operate under various uncertainties such as traffic dynamics, topology asymmetry, and failures. Therefore, datacenter load balancing schemes must be resilient to these uncertainties; i.e., they should accurately sense path conditions and timely react to mitigate the fallouts. Despite significant efforts, prior solutions have important drawbacks. On the one hand, solutions such as Presto and DRB are oblivious to path conditions and blindly reroute at fixed granularity. On the other hand, solutions such as CONGA and CLOVE can sense congestion, but they can only reroute when flowlets emerge; thus, they cannot always react timely to uncertainties. To make things worse, these solutions fail to detect/handle failures such as blackholes and random packet drops, which greatly degrades their performance.
 
 In this paper, we introduce Hermes, a datacenter load balancer that is resilient to the aforementioned uncertainties. At its heart, Hermes leverages comprehensive sensing to detect path conditions including failures unattended before, and it reacts using timely yet cautious rerouting. Hermes is a practical edge-based solution with no switch modification. We have implemented Hermes with commodity switches and evaluated it through both testbed experiments and large-scale simulations. Our results show that Hermes achieves comparable performance to CONGA and Presto in normal cases, and well handles uncertainties: under asymmetries, Hermes achieves up to 10% and 20% better flow completion time (FCT) than CONGA and CLOVE; under switch failures, it outperforms all other schemes by over 32%.}
@@ -144,6 +153,7 @@ In this paper, we introduce Hermes, a datacenter load balancer that is resilient
   publist_confkey          = {KBNets'17},
   publist_link             = {paper || frdma-kbnets2017.pdf},
   publist_link             = {slides || frdma-kbnets2017-slides.pdf},
+  publist_topic = {Datacenter Networking},
   Abstract                 = {To meet the increasing throughput and latency demands of modern applications, many operators are rapidly deploying RDMA in their datacenters. At the same time, developers are re-designing their software to take advantage of RDMA's benefits for individual applications. However, when it comes to RDMA's performance, many simple questions remain open.
 
 In this paper, we consider the performance isolation characteristics of RDMA. Specifically, we conduct three sets of experiments -- three combinations of one throughput-sensitive flow and one latency-sensitive flow -- in a controlled environment, observe large discrepancies in RDMA performance with and without the presence of a competing flow, and describe our progress in identifying plausible root-causes.}
@@ -158,6 +168,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {APNet'18},
   publist_link = {paper || pdd-apnet18.pdf},
+  publist_topic = {Datacenter Networking},
   Abstract                 = {Despite continued efforts toward building high bandwidth, low cost datacenter networks with reconfigurable optical fabrics, the impact of optical networks on datacenter applications has received little attention. Given the constraints of optical networks and the semantics of datacenter applications, we believe the network-application intersection to be the next innovation hotspot. In this paper, we specifically focus on data-parallel applications for two primary reasons: they are a natural fit to exploit high bandwidth optical fabrics, and they often form structured communication patterns or coflows.
 
     We show that configuring circuits in reaction to changing traffic patterns is not enough. Efficient scheduling of even a single coflow in optical networks should be a "Pas de deux" – a joint shaping of not only the underlying circuit, but also the application’s traffic demand. Our preliminary evaluation with a production trace shows that joint shaping is on average within 1.18X of the optimal and performs 30% better than solu- tions that configure circuits in application-agnostic fashions. We further extend our analysis to inter-coflow scheduling and propose a layered solution that jointly considers circuit reconfiguration, coflow prioritization, as well as flow rate and route assignments.}
@@ -172,6 +183,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   publist_confkey = {GRADES-NDA'18},
   publist_link = {paper || aga-grades-nda18.pdf},
   publist_badge = {Best Paper Award},
+  publist_topic = {Big Data Systems},
   Abstract                 = {While there has been a tremendous interest in processing data that has an underlying graph structure, existing distributed graph processing systems take several minutes or even hours to execute popular graph algorithms. However, in several cases, providing an approximate answer is good enough. Approximate analytics is seeing considerable attention in big data due to its ability to produce timely results by trading accuracy, but they do not support graph analytics. In this paper, we bridge this gap and take a first attempt at realizing approximate graph analytics. We discuss how traditional approximate analytics techniques do not carry over to the graph usecase. Leveraging the characteristics of graph properties and algorithms, we propose a graph sparsification technique, and a machine learning based approach to choose the apt amount of sparsification required to meet a given budget. Our preliminary evaluations show encouraging results.}
 }
 
@@ -183,6 +195,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {HotCloud'18},
   publist_link = {paper || monarch-hotcloud18.pdf},
+  publist_topic = {Wide-Area Computing},
   Abstract                 = {A number of existing and emerging application scenarios generate graph-structured data in a geo-distributed fashion. Although there is a lot of interest in distributed graph processing systems, none of them support geo-distributed graph processing. Geo-distributed analytics, on the other hand, has not focused on iterative workloads such as distributed graph processing.
 
     In this paper, we look at the problem of efficient geo-distributed graph analytics. We find that optimizing the iterative processing style of graph-parallel systems is the key to achieving this goal rather than extending existing geo-distributed techniques to graph processing. Based on this, we discuss our proposal on building Monarch, the first system to our knowledge that focuses on geo-distributed graph processing. Our preliminary evaluation of Monarch shows encouraging results.}
@@ -197,6 +210,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   publist_confkey = {HotCloud'18},
   publist_link = {paper || relay-hotcloud18.pdf},
   publist_link = {slides || relay-hotcloud18-slides.pdf},
+  publist_topic = {Wide-Area Computing},
   Abstract    = {
     Efficient big data analytics over the wide-area network (WAN) is becoming increasingly more popular. Current geo-distributed analytics (GDA) systems employ WANaware optimizations to tackle WAN heterogeneities. Although extensive measurements on public clouds suggest the potential for improving inter-datacenter data transfers via detours, we show that such optimizations are unlikely to work in practice. This is because the widely accepted mantra used in a large body of literature – WAN bandwidth has high variability – can be misleading. Instead, our measurements across 40 datacenters belonging to Amazon EC2, Microsoft Azure, and Google Cloud Platform show that the available WAN bandwidth is often spatially homogeneous and temporally stable between two virtual machines (VMs) in different datacenters, even though it can be heterogeneous at the TCP flow level. Moreover, there is little scope for either bandwidth or latency optimization in a cost-effective manner via relaying. We believe that these findings will motivate the community to rethink the design rationales of GDA systems and geo-distributed services.
   }
@@ -211,6 +225,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {MobiCom'18},
   publist_link = {paper || cellscope-mobicom18.pdf},
+  publist_topic = {Wide-Area Computing},
   Abstract                 = {An increasing amount of mobile analytics is performed on data that is procured in a real-time fashion to make real-time decisions. Such tasks include simple reporting on streams to sophisticated model building. However, the practicality of these analyses are impeded in several domains because they are faced with a fundamental trade-off between data collection latency and analysis accuracy.
 
     In this paper, we first study this trade-off in the context of a specific domain, Cellular Radio Access Networks (RAN). We find that the trade-off can be resolved using two broad, general techniques: intelligent data grouping and task formulations that leverage domain characteristics. Based on this, we present CellScope, a system that applies a domain specific formulation and application of Multi-task Learning (MTL) to RAN performance analysis. It uses three techniques: feature engineering to transform raw data into effective features, a PCA inspired similarity metric to group data from geographically nearby base stations sharing performance commonalities, and a hybrid online-offline model for efficient model updates. Our evaluation shows that CellScope's accuracy improvements over direct application of ML range from 2.5X to 4.4X while reducing the model update overhead by up to 4.8X. We have also used CellScope to analyze an LTE network of over 2 million subscribers, where it reduced troubleshooting efforts by several magnitudes.}
@@ -225,6 +240,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {OSDI'18},
   publist_link = {paper || qoop-osdi18.pdf},
+  publist_topic = {Big Data Systems},
   Abstract                 = {Modern data processing clusters are highly dynamic – both in terms of the number of concurrently running jobs and their resource usage. To improve job performance, recent works have focused on optimizing the cluster scheduler and the jobs' query planner with a focus on picking the right query execution plan (QEP) – represented as a directed acyclic graph – for a job in a resource-aware manner, and scheduling jobs in a QEP-aware manner. However, because existing solutions use a fixed QEP throughout the entire execution, the inability to adapt a QEP in reaction to resource changes often leads to large performance inefficiencies.
 
     This paper argues for dynamic query re-planning, wherein we re-evaluate and re-plan a job's QEP during its execution. We show that designing for re-planning requires fundamental changes to the interfaces between key layers of data analytics stacks today, i.e., the query planner, the execution engine, and the cluster scheduler. Instead of pushing more complexity into the scheduler or the query planner, we argue for a redistribution of responsibilities between the three components to simplify their designs. Under this redesign, we analytically show that a greedy algorithm for re-planning and execution alongside a simple max-min fair scheduler can offer provably competitive behavior even under adversarial resource changes. We prototype our algorithms atop Apache Hive and Tez. Via extensive experiments, we show that our design can offer a median performance improvement of 1.47X compared to state-of-the-art alternatives.}
@@ -239,6 +255,8 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {SIGMOD'18},
   publist_link = {paper || dslr-sigmod18.pdf},
+  publist_topic = {Datacenter Networking},
+  publist_topic = {Disaggregation},
   Abstract                 = {Lock managers are a crucial component of modern distributed systems. However, with the increasing availability of fast RDMA-enabled networks, traditional lock managers can no longer keep up with the latency and throughput requirements of modern systems. Centralized lock managers can ensure fairness and prevent starvation using global knowledge of the system, but are themselves single points of contention and failure. Consequently, they fall short in leveraging the full potential of RDMA networks. On the other hand, decentralized (RDMA-based) lock managers either completely sacrifice global knowledge to achieve higher throughput at the risk of starvation and higher tail latencies, or they resort to costly communications in order to maintain global knowledge, which can result in significantly lower throughput.
   
     In this paper, we show that it is possible for a lock manager to be fully decentralized and yet exchange the partial knowledge necessary for preventing starvation and thereby reducing tail latencies. Our main observation is that we can design a lock manager primarily using RDMA's fetch-and-add (FA) operations, which always succeed, rather than compare-and-swap (CAS) operations, which only succeed if a given condition is satisfied. While this requires us to rethink the locking mechanism from the ground up, it enables us to sidestep the performance drawbacks of the previous CAS-based proposals that relied solely on blind retries upon lock conflicts.
@@ -254,6 +272,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {MAMA'18},
   publist_link = {paper || allox-mama18.pdf},
+  publist_topic = {Systems for AI},
   Abstract                 = {Motivated by the proliferation of heterogeneous processors such as multi-core CPUs, GPUs, TPUs, and other accelerators for machine learning, we formulate a novel multi-interchangeable resource allocation (MIRA) problem where some resources are interchangeable. The challenge is how to allocate interchangeable resources to users in a sharing system while maintaining desirable properties such as sharing incentive, Pareto efficiency, and envy-freeness. In this paper, we first show that existing algorithms, including the Dominant Resource Fairness used in production systems, fail to provide these properties for interchangeable resources. Then we characterize the tradeoff between performance and strategyproofness, and design the Budget-based (BUD) algorithm, which preserves Pareto efficiency, sharing incentive and envy-freeness while providing better performance over currently used algorithms.
 }
 }
@@ -270,6 +289,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   publist_link = {slides || tiresias-nsdi19-slides.pdf},
   publist_link = {pps || tiresias-nsdi19-slides.ppsx},
   publist_link = {code || https://github.com/SymbioticLab/Tiresias},
+  publist_topic = {Systems for AI},
   publist_abstract = {
   Deep learning (DL) training jobs bring some unique challenges to existing cluster managers, such as unpredictable training times, an all-or-nothing execution model, and inflexibility in GPU sharing. Our analysis of a large GPU cluster in production shows that existing big data schedulers cause long queueing delays and low overall performance.
   
@@ -285,6 +305,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {SPAA'19},
   publist_link = {paper || nocs-spaa19.pdf},
+  publist_topic = {Wide-Area Computing},
   publist_abstract  = {The coflow scheduling problem has emerged as a popular abstraction in the last few years to study data communication problems within a data center. In this basic framework, each coflow has a set of communication demands and the goal is to schedule many coflows in a manner that minimizes the total weighted completion time. A coflow is said to complete when all its communication needs are met. This problem has been extremely well studied for the case of complete bipartite graphs that model a data center with full bisection bandwidth and several approximation algorithms and effective heuristics have been proposed recently. In this work, we study a slightly different model of coflow scheduling in general graphs (to capture traffic between data centers) and develop practical and efficient approximation algorithms for it. Our main result is a randomized 2 approximation algorithm for the single path and free path model, significantly improving prior work. In addition, we demonstrate via extensive experiments that the algorithm is practical, easy to implement and performs well in practice.
   }
 }
@@ -304,6 +325,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {arXiv},
   publist_link = {paper || https://arxiv.org/abs/1902.04610},
+  publist_topic = {Systems for AI},
   publist_abstract = {
     GPU computing is becoming increasingly more popular with the proliferation of deep learning (DL) applications.
     However, unlike traditional resources such as CPU or the network, modern GPUs do not natively support fine-grained sharing primitives.
@@ -333,6 +355,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   url           = {https://arxiv.org/abs/1904.08480},
   publist_confkey = {arXiv},
   publist_link = {paper || https://arxiv.org/abs/1904.08480},
+  publist_topic = {Wide-Area Computing},
   publist_abstract  = {Geo-distributed analytics (GDA) frameworks transfer large datasets over the wide-area network (WAN). Yet existing frameworks often ignore the WAN topology. This disconnect between WAN-bound applications and the WAN itself results in missed opportunities for cross-layer optimizations. In this paper, we present Terra to bridge this gap. Instead of decoupled WAN routing and GDA transfer scheduling, Terra applies scalable cross-layer optimizations to minimize WAN transfer times for GDA jobs. We present a two-pronged approach: (i) a scalable algorithm for joint routing and scheduling to make fast decisions; and (ii) a scalable, overlay-based enforcement mechanism that avoids expensive switch rule updates in the WAN. Together, they enable Terra to quickly react to WAN uncertainties such as large bandwidth fluctuations and failures in an application-aware manner as well. Integration with the FloodLight SDN controller and Apache YARN, and evaluation on 4 workloads and 3 WAN topologies show that Terra improves the average completion times of GDA jobs by 1.55x-3.43x. GDA jobs running with Terra meets 2.82x-4.29x more deadlines and can quickly react to WAN-level events in an application-aware manner.
   }
 }
@@ -352,6 +375,8 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 
   publist_confkey = {arXiv},
   publist_link = {paper || justitia-arxiv19.pdf},
+  publist_topic = {Datacenter Networking},
+  publist_topic = {Disaggregation},
   publist_abstract = {
     Despite its increasing popularity, most of RDMA’s benefits such as ultra-low latency can be achieved only when running an application in isolation. Using microbenchmarks and real open-source RDMA applications, we identify a series of performance anomalies when multiple applications coexist and show that such anomalies are pervasive across InfiniBand, RoCEv2, and iWARP. They arise due to a fundamental tradeoff between performance isolation and work conservation, which the state-of-the-art RDMA congestion control protocols such as DCQCN cannot resolve.
 
@@ -373,6 +398,7 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   url           = {https://arxiv.org/abs/1906.06851},
   publist_confkey = {arXiv},
   publist_link = {paper || https://arxiv.org/abs/1906.06851},
+  publist_topic = {Wide-Area Computing},
   publist_abstract = { The coflow scheduling problem has emerged as a popular abstraction in the last few years to study data communication problems within a data center. In this basic framework, each coflow has a set of communication demands and the goal is to schedule many coflows in a manner that minimizes the total weighted completion time. A coflow is said to complete when all its communication needs are met. This problem has been extremely well studied for the case of complete bipartite graphs that model a data center with full bisection bandwidth and several approximation algorithms and effective heuristics have been proposed recently.
 In this work, we study a slightly different model of coflow scheduling in general graphs (to capture traffic between data centers) and develop practical and efficient approximation algorithms for it. Our main result is a randomized 2 approximation algorithm for the single path and free path model, significantly improving prior work. In addition, we demonstrate via extensive experiments that the algorithm is practical, easy to implement and performs well in practice.
 }
@@ -393,6 +419,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
 
   publist_confkey = {arXiv},
   publist_link = {paper || https://arxiv.org/abs/1910.09727},
+  publist_topic = {Disaggregation},
   publist_abstract = {
     Memory disaggregation has received attention in recent years as a promising idea to reduce the total cost of ownership (TCO) of memory in modern datacenters. However, relying on remote memory expands an application’s failure domain and makes it susceptible to tail latency variations. In attempts to making disaggregated memory resilient, stateof-the-art solutions face the classic tradeoff between performance and efficiency: some double the memory overhead of disaggregation by replicating to remote memory, while many others limit performance by replicating to the local disk.
 
@@ -415,6 +442,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
 
   publist_confkey = {arXiv},
   publist_link = {paper || https://arxiv.org/abs/1912.03523},
+  publist_topic = {Big Data Systems},
   publist_abstract = {
     Simultaneously supporting latency- and throughout-sensitive workloads in a shared environment is an increasingly more common challenge in big data clusters. Despite many advances, existing cluster schedulers force the same performance goal - fairness in most cases - on all jobs. Latency-sensitive jobs suffer, while throughput-sensitive ones thrive. Using prioritization does the opposite: it opens up a path for latency-sensitive jobs to dominate. In this paper, we tackle the challenges in supporting both short-term performance and long-term fairness simultaneously with high resource utilization by proposing Bounded Priority Fairness (BoPF). BoPF provides short-term resource guarantees to latency-sensitive jobs and maintains long-term fairness for throughput-sensitive jobs. BoPF is the first scheduler that can provide long-term fairness, burst guarantee, and Pareto efficiency in a strategyproof manner for multi-resource scheduling. Deployments and large-scale simulations show that BoPF closely approximates the performance of Strict Priority as well as the fairness characteristics of DRF. In deployments, BoPF speeds up latency-sensitive jobs by 5.38 times compared to DRF, while still maintaining long-term fairness. In the meantime, BoPF improves the average completion times of throughput-sensitive jobs by up to 3.05 times compared to Strict Priority.
   }
@@ -429,6 +457,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
 
   publist_confkey = {EuroSys'20},
   publist_link = {paper || allox-eurosys20.pdf},
+  publist_topic = {Systems for AI},
   publist_abstract = {
     Modern deep learning frameworks support a variety of hardware, including CPU, GPU, and other accelerators, to perform computation. In this paper, we study how to schedule jobs over such interchangeable resources – each with a different rate of computation – to optimize performance while providing fairness among users in a shared cluster. We demonstrate theoretically and empirically that existing solutions and their straightforward modifications perform poorly in the presence of interchangeable resources, which motivates the design and implementation of AlloX. At its core, AlloX transforms the scheduling problem into a min-cost bipartite matching problem and provides dynamic fair allocation over time. We theoretically prove its optimality in an ideal, offline setting and show empirically that it works well in the online scenario by incorporating with Kubernetes. Evaluations on a small-scale CPU-GPU hybrid cluster and large-scale simulations highlight that AlloX can reduce the average job completion time significantly (by up to 95% when the system load is high) while providing fairness and preventing starvation.  }
 }
@@ -446,6 +475,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
   publist_badge = {Artifacts Available},
   publist_badge = {Artifacts Evaluated Functional},
   publist_badge = {Artifacts Replicated},
+  publist_topic = {Systems for AI},
   publist_abstract = {
     Unlike traditional resources such as CPU or the network, modern GPUs do not natively support
     fine-grained sharing primitives.
@@ -478,6 +508,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
   publist_link = {paper || sol-nsdi20.pdf},
   publist_link = {slides || sol-nsdi20-slides.pdf},
   publist_link = {code || https://github.com/SymbioticLab/Sol},
+  publist_topic = {Wide-Area Computing},
   publist_abstract = {
     The popularity of big data and AI has led to many optimizations at different layers of distributed computation stacks. Despite – or perhaps, because of – its role as the narrow waist of such software stacks, the design of the execution engine, which is in charge of executing every single task of a job, has mostly remained unchanged. As a result, the execution engines available today are ones primarily designed for low latency and high bandwidth datacenter networks. When either or both of the network assumptions do not hold, CPUs are significantly underutilized.
 
@@ -494,6 +525,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
 
   publist_confkey = {NSDI'20},
   publist_link = {paper || pando-nsdi20.pdf},
+  publist_topic = {Wide-Area Computing},
   publist_abstract = {
     By replicating data across sites in multiple geo- graphic regions, web services can maximize availability and minimize latency for their users. However, when sacrificing data consistency is not an option, we show that service providers have to today incur significantly higher cost to meet desired la- tency goals than the lowest cost theoretically feasible. We show that the key to addressing this sub-optimality is to 1) allow for erasure coding, not just replication, of data across data cen- ters, and 2) mitigate the resultant increase in read and write la- tencies by rethinking how to enable consensus across the wide- area network. Our extensive evaluation mimicking web service deployments on the Azure cloud service shows that we enable near-optimal latency versus cost tradeoffs.
   }
@@ -508,6 +540,8 @@ In this work, we study a slightly different model of coflow scheduling in genera
 
   publist_confkey = {SIGCOMM'20},
   publist_link = {paper || netlock-sigcomm20.pdf},
+  publist_topic = {Datacenter Networking},
+  publist_topic = {Disaggregation},
   publist_abstract = {
   
     Lock managers are widely used by distributed systems. Traditional centralized lock managers can easily support policies between multiple users using global knowledge, but they suffer from low performance. In contrast, emerging decentralized approaches are faster but cannot provide flexible policy support. Furthermore, performance in both cases is limited by the server capability.
@@ -528,6 +562,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
   publist_link = {slides || leap-atc20-slides.pdf},
   publist_link = {code || https://github.com/SymbioticLab/Leap},
   publist_badge = {Best Paper Award},
+  publist_topic = {Disaggregation},
   publist_abstract = {
     Memory disaggregation over RDMA can improve the performance of memory-constrained applications by replacing disk swapping with remote memory accesses. However, state-of-the-art memory disaggregation solutions still use data path components designed for slow disks. As a result, applications experience remote memory access latency significantly higher than that of the underlying low-latency network, which itself can be too high for many applications.
 
