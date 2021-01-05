@@ -19,7 +19,7 @@ But could they?
 Our research addresses this fundamental question regarding memory disaggregation, whereby an application can leverage both local and remote memory by leveraging emerging high-speed networks. 
 Naturally, we are interesting in disaggregating compute and storage as well.
 
-## Federated Computation
+## Wide-Area Computation
 Most data are not generated inside cloud datacenters. 
 They may be created, among others, by smartphone users, collected by a network of telescopes, or generated in medical research campuses from genome sequencing. 
 Collecting voluminous remote data to a central location not only presents a bandwidth and storage problem but increasingly is likely to violate privacy regulations such as General Data Protection Regulation (GDPR). 
