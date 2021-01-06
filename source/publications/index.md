@@ -259,4 +259,13 @@ venues:
       date: 2017-12-30
       # journal website (optional)
       url: https://www.usenix.org/publications/login
+    'Sensors':
+      # journal id
+      venue: 'Sensors'
+      # journal full name
+      name: 'Sensors 2020, 20(21), 6100'
+      # date for sorting
+      date: 2020-10-27
+      # journal website (optional)
+      url: https://www.mdpi.com/journal/sensors
 {% endpublist %}
