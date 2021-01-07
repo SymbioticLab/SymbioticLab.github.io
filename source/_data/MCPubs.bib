@@ -310,6 +310,31 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   }
 }
 
+
+@Article{oort:arxiv20,
+  author        = {Fan Lai and Xiangfeng Zhu and Harsha V. Madhyastha and Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {Oort: Informed Participant Selection for Scalable Federated Learning},
+  year          = {2020},
+  month         = {Oct},
+  volume        = {abs/2010.06081},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2010-06081.bib},
+  eprint        = {2010.06081},
+  url           = {https://arxiv.org/abs/2010.06081},
+
+  publist_confkey = {arXiv},
+  publist_link = {paper || oort-arxiv20.pdf},
+  publist_topic = {Wide-Area Computing},
+  publist_topic = {Systems for AI},
+  publist_abstract = {
+    Federated Learning (FL) is an emerging direction in distributed machine learning (ML) that enables in-situ model training and testing on edge data. Despite having the same end goals as traditional ML, FL executions differ significantly in scale, spanning thousands to millions of participating devices. As a result, data characteristics and device capabilities vary widely across clients. Yet, existing efforts randomly select FL participants, which leads to poor model and system efficiency.
+    
+    In this paper, we propose Kuiper to improve the performance of federated training and testing with guided participant selection. With an aim to improve time-to-accuracy performance in model training, Kuiper prioritizes the use of those clients who have both data that offers the greatest utility in improving model accuracy and the capability to run training quickly. To enable FL developers to interpret their results in model testing, Kuiper enforces their requirements on the distribution of participant data while improving the duration of federated testing by cherry-picking clients. Our evaluation shows that, compared to existing participant selection mechanisms, Kuiper improves time-to-accuracy performance by 1.2x-14.1x and final model accuracy by 1.3%-9.8%, while efficiently enforcing developer-specified model testing criteria at the scale of millions of clients.
+  }
+}
+
 @Article{salus:arxiv19,
   author        = {Peifeng Yu and Mosharaf Chowdhury},
   journal       = {CoRR},
