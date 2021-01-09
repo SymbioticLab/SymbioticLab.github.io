@@ -15,6 +15,7 @@ date: 2020-07-22 23:09:46
 * [Fan Lai](http://www-personal.umich.edu/~fanlai/)
 * [Peifeng Yu](https://unlimitedcodeworks.xyz/)
 * [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
+* Sanjay S. Singapuram
 * [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
 
 ## Current Master’s and Undergraduate Students
