@@ -2147,6 +2147,13 @@ pre code {
 .post-block:last-of-type .post-eof {
   display: none;
 }
+.post-copyright ul {
+  list-style: none;
+  padding: 0.5em 1em;
+  background: var(--card-bg-color);
+  border-left: 3px solid #ff2a2a;
+  margin: 1em 0 0;
+}
 .post-tags {
   margin-top: 40px;
   text-align: center;
@@ -2720,7 +2727,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #91393c;
+  background: #a7d085;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2746,7 +2753,7 @@ hr {
 .sub-menu .menu-item {
   display: inline-block;
 }
-.post-header {
+.page .post-header {
   display: none;
 }
 .post-body {
@@ -2779,4 +2786,8 @@ hr {
 /* reduce the vertical padding around the header bar,
        which is too large when the logo line is removed */
   padding: 10px 0;
+}
+.footer .footer-inner {
+/* center the footer text block */
+  text-align: center;
 }
