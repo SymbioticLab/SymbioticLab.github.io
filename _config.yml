@@ -299,6 +299,10 @@ theme_config:
       # Only for Pisces | Gemini.
       sidebar: fadeInUp
 
+  # Easily enable fast Ajax navigation on your website.
+  # For more information: https://github.com/next-theme/pjax
+  pjax: true
+
   # ---------------------------------------------------------------
   # Math Formulas Render Support
   # ---------------------------------------------------------------
