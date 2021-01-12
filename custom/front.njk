@@ -1,0 +1,50 @@
+{% extends '_layout.njk' %}
+{% import '_macro/sidebar.njk' as sidebar_template with context %}
+{% import '_macro/post-collapse.njk' as post_template with context %}
+
+{% block title %}{{ title }}{%- if theme.index_with_subtitle and subtitle %} - {{ subtitle }}{%- endif %}{% endblock %}
+
+{% block class %}index posts-expand{% endblock %}
+
+{% block content %}
+<div class="post-block" lang="{{ page.lang }}">
+  {#################}
+  {### PAGE BODY ###}
+  {#################}
+  <div class="post-body{%- if page.direction and page.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}">
+      {{ page.content }}
+
+      <h2>News</h2>
+      <ul>
+
+      {%- for post in site.categories.findOne({name: 'News'}).posts.sort('date', -1).toArray() %}
+      <li>
+              <time itemprop="dateCreated"
+                    datetime="{{ moment(post.date).format() }}"
+                    content="{{ date(post.date, config.date_format) }}">
+                {{ date(post.date, 'YYYY-MM-DD') }}
+              </time>
+
+              {%- if post.link %}{# Link posts #}
+                {%- set postTitleIcon = '<i class="fa fa-external-link-alt"></i>' %}
+                {%- set postText = post.title or post.link %}
+                {{ next_url(post.link, postText + postTitleIcon, {class: 'post-title-link post-title-link-external', itemprop: 'url'}) }}
+              {% else %}
+                <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">
+                  <span itemprop="name">{{ post.title or __('post.untitled') }}</span>
+                </a>
+              {%- endif %}
+              </li>
+      {%- endfor %}
+      </ul>
+  </div>
+  {#####################}
+  {### END PAGE BODY ###}
+  {#####################}
+  {%- include '_partials/pagination.njk' -%}
+</div>
+{% endblock %}
+
+{% block sidebar %}
+  {{ sidebar_template.render(false) }}
+{% endblock %}
