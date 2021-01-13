@@ -127,9 +127,7 @@ publist:
 # See: https://theme-next.org/docs/theme-settings/
 # ---------------------------------------------------------------
 theme_plus:
-  views:
-    - file: 'custom/front.njk'
-      path: 'front.njk'
+  custom_path: 'custom/layouts'
 theme: next
 theme_config:
   custom_file_path:

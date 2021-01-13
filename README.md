@@ -30,14 +30,21 @@ in the markdown.
 Tweaks can be made in its own repo. @Aetf will maintain the plugin.
 
 ### Adding new page with custom layout
+[`hexo-extend-theme`](https://github.com/jiangtj/hexo-extend-theme) makes it possible to develop or override theme's layout templates.
+
+Layout templates in `custom/layouts/*.njk` will have higher priority than theme's builtin ones in `node_modules/hexo-theme-next/layouts/*`.
+By default, a post (`source/_posts/*.md`) uses `post.njk` and other markdowns uses `page.njk`.
+
 To create a new page similar to the front page with custom layout and everything, follow the steps below:
 
-* Create a new layout template under `custom/layout-name.njk`
-* Edit the config to inject the template by adding a new entry in `_config.yml`
-```yaml
-theme_plus:
-  views:
-    - file: 'custom/layout-name.njk'
-      path: 'layout-name.njk'
+* Create a new layout template under `custom/layouts/my-custom.njk`
+* Create a new markdown file at desired location under `source` and set `layout: my-custom` in front matter
 ```
-* Create a new markdown file at desired location under `source` and set the layout to `layout-name` in front matter
+---
+title: A new page
+layout: my-custom
+date: 2020-01-01
+---
+
+This is my new page!
+```
