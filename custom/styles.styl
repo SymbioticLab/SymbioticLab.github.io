@@ -1,3 +1,4 @@
+/* remove the page title and top margin all together on custom pages */
 .page .post-header {
     display: none;
 }
@@ -8,34 +9,134 @@
     line-height: 1.5;
 }
 
-.site-title {
-    /* has to be inline to not break centering in mobile layout */
-    display: inline-flex;
-    align-items: center;
-}
-.site-title::before {
-    display: inline-block;
-    content: '';
-    /* keep the same aspect ratio as the logo */
-    height: 1.5rem;
-    width: 1.06rem;
-    
-    background: url(hexo-config('custom_logo'));
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    margin-right: 8px;
-}
-.brand .logo-line {
-    display: none;
-}
-.header-inner {
-    /* reduce the vertical padding around the header bar,
-       which is too large when the logo line is removed */
-    padding: 10px 0;
-}
 .footer .footer-inner {
     /* center the footer text block */
     text-align: center;
+}
+
+// reduce the vertical padding around the header bar
+.header-inner {
+    padding: 5px 0; // hexo-theme-next default: 10px 0
+}
+
+// the logo
+.site-brand-container {
+    padding-left: 0px;
+
+    &::before {
+        display: inline-block;
+        content: '';
+        // make sure the logo always fills the entire height of .header-inner
+        align-self: stretch;
+        width: 2.12rem; // logo aspect ratio: 1.5x1.06 (hxw)
+
+        background: url(hexo-config('custom_logo'));
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        margin-right: 18px;
+    }
+
+    // reorder things on smaller screen
+    +mobile() {
+        .site-nav-toggle {
+            order: 1;
+        }
+        &::before {
+            order: 2;
+            width: 1.06rem;
+            margin-right: 8px;
+            // the auto margin centeres the logo and title
+            margin-left: auto;
+        }
+        .site-meta {
+            order: 3;
+            // the auto margin centeres the logo and title
+            margin-right: auto;
+            flex-grow: 0;
+        }
+        .site-nav-right {
+            order: 4;
+        }
+    }
+}
+
+// the site title
+.brand {
+    .logo-line {
+        // remove logo-line coming from the hexo-theme-next
+        display: none;
+    }
+
+    // decorate the text color of the title with a little hover effect
+    // there are 3 pieces
+    // 1) the .site-title text is $brand-hover-color
+    // 2) the ::before text is $brand-color, and will animate to width 0 on hover, revealing
+    //    the .site-title underneath
+    // 3) the ::after text is $brand-hover-color and is still
+    .site-title {
+        font-family: Helvetica;
+
+        /* has to be inline to not break centering in mobile layout */
+        display: inline-flex;
+        align-items: center;
+
+        // for position the ::before and ::after elements
+        position: relative;
+
+        overflow: hidden;
+        color: var(--brand-hover-color);
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "SymbioticLab";
+            color: var(--brand-color);
+
+            overflow: hidden;
+            white-space: nowrap;
+
+            width: 100%;
+            transition: width $transition-ease;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            content: "Lab";
+            color: var(--brand-hover-color);
+        }
+    }
+
+    &:hover .site-title::before {
+        width: 0;
+    }
+
+}
+
+// Tweak the site brand placement on desktop
++tablet-desktop() {
+    // override the hexo-theme-next/Mist default to show the subtitle
+    .site-subtitle {
+        display: block;
+
+        // make the subtitle exactly the same height as the menu,
+        // which has line-height: 2rem
+        margin: 0;
+        line-height: 2rem;
+    }
+
+    // the menu
+    .site-nav {
+        // right align the menu
+        flex-grow: 1;
+        justify-content: flex-end;
+
+        // the menu taks the second row
+        align-self: flex-end;
+    }
 }
