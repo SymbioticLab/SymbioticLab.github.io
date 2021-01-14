@@ -9,11 +9,6 @@
     line-height: 1.5;
 }
 
-.footer .footer-inner {
-    /* center the footer text block */
-    text-align: center;
-}
-
 // reduce the vertical padding around the header bar
 .header-inner {
     padding: 5px 0; // hexo-theme-next default: 10px 0
@@ -138,5 +133,23 @@
 
         // the menu taks the second row
         align-self: flex-end;
+    }
+}
+
+// the archive timeline margin
+.posts-collapse .post-content {
+    // align the bullet points with a normal ul list
+    // a normal list has padding-inline-start = 40px
+    // and each .post-header has 15px padding-left and
+    // 2px margin-left
+    // so we need 40-15-2 = 23px
+    margin-left: 23px;
+
+    .collection-year {
+        margin: 20px 0;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
     }
 }
