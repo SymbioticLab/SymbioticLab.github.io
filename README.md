@@ -21,6 +21,7 @@ The site is based on `hexo-theme-next`, with the following tweaks:
 * Custom page layout injected using `hexo-extend-theme`. The templates `custom/*.njk` can be used by setting the layout name in the front matter.
 * Paginated front page with news. This uses a simple generator in `scripts/front-page-generator.js` to generate multiple routes which are then
 rendered using a custom page layout `custom/front.njk`. The generator also reads in `source/_front.md` for contents before the news section.
+* Posts with empty body are skipped. They will only show up in the list, but no link is generated. This is done by `scripts/skip-empty.js`.
 
 ### Tweaking Styles
 Page styles can be modified in `custom/styles.styl` and `custom/variables.styl`. More is possible and the `theme-next` [documentation](https://theme-next.js.org/docs/advanced-settings/custom-files.html) has more details.

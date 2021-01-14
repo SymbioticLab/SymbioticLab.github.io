@@ -5,8 +5,6 @@
 const pagination = require('hexo-pagination');
 
 async function generate(locals) {
-  console.log("Goes here");
-
   const config = this.config;
   const posts = locals.categories.findOne({name: 'News'}).posts.sort('-date');
 

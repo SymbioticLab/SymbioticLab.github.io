@@ -9,6 +9,12 @@
     line-height: 1.5;
 }
 
+// make empty post nonclickable
+.post-title-link.post-empty {
+    pointer-events: none;
+    cursor: default;
+}
+
 // reduce the vertical padding around the header bar
 .header-inner {
     padding: 5px 0; // hexo-theme-next default: 10px 0
