@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#fe6600">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#fe6600">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"symbioticlab.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+  </script>
+<meta name="description" content="High-throughput, low-latency lock managers are useful for building a variety of distributed applications. Traditionally, a key tradeoff in this context had been expressed in terms of the amount of kno">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NetLock Accepted to Appear at SIGCOMM&#39;2020">
+<meta property="og:url" content="https://symbioticlab.github.io/2020/06/25/NetLock-Accepted-to-Appear-at-SIGCOMM-2020/index.html">
+<meta property="og:site_name" content="SymbioticLab">
+<meta property="og:description" content="High-throughput, low-latency lock managers are useful for building a variety of distributed applications. Traditionally, a key tradeoff in this context had been expressed in terms of the amount of kno">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-25T04:00:00.000Z">
+<meta property="article:modified_time" content="2020-06-25T04:00:00.000Z">
+<meta property="article:tag" content="Datacenter Networking">
+<meta property="article:tag" content="Disaggregation">
+<meta property="article:tag" content="Locking">
+<meta property="article:tag" content="Programmable Networks">
+<meta property="article:tag" content="SIGCOMM">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://symbioticlab.github.io/2020/06/25/NetLock-Accepted-to-Appear-at-SIGCOMM-2020/">
+
+
+<script data-pjax class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+<title>NetLock Accepted to Appear at SIGCOMM'2020 | SymbioticLab</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">SymbioticLab</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">University of Michigan</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-projects"><a href="/projects" rel="section"><i class="fa fa-code fa-fw"></i>Projects</a></li>
+        <li class="menu-item menu-item-publications"><a href="/publications" rel="section"><i class="fa fa-book fa-fw"></i>Publications</a></li>
+        <li class="menu-item menu-item-people"><a href="/people" rel="section"><i class="fa fa-user fa-fw"></i>People</a></li>
+        <li class="menu-item menu-item-funding"><a href="/funding" rel="section"><i class="fa fa-info fa-fw"></i>Funding</a></li>
+        <li class="menu-item menu-item-github"><a href="https://github.com/SymbioticLab" rel="noopener" target="_blank"><i class="fab fa-github-alt fa-fw"></i>Github</a></li>
+        <li class="menu-item menu-item-wiki"><a href="https://symbiotic.eecs.umich.edu/wiki" rel="noopener" target="_blank"><i class="fab fa-wikipedia-w fa-fw"></i>Wiki</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://symbioticlab.github.io/2020/06/25/NetLock-Accepted-to-Appear-at-SIGCOMM-2020/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SymbioticLab">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          NetLock Accepted to Appear at SIGCOMM'2020
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-06-25 00:00:00" itemprop="dateCreated datePublished" datetime="2020-06-25T00:00:00-04:00">2020-06-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/News/" itemprop="url" rel="index"><span itemprop="name">News</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>High-throughput, low-latency lock managers are useful for building a variety of distributed applications. Traditionally, a key tradeoff in this context had been expressed in terms of the amount of knowledge available to the lock manager. On the one hand, a decentralized lock manager can increase throughput by parallelization, but it can starve certain categories of applications. On the other hand, a centralized lock manager can avoid starvation and impose resource sharing policies, but it can be limited in throughput. In SIGMOD’18, we presented <a target="_blank" rel="noopener" href="https://www.mosharaf.com/blog/2018/03/20/dslr-accepted-to-appear-at-sigmod2018/">DSLR</a> that attempted to mitigate this tradeoff in clusters with fast RDMA networks by adapting Lamport’s bakery algorithm in the context of RDMA’s fetch-and-add (FA) operations to design a decentralized solution. The downside is that we couldn’t implement complex policies that need centralized information.</p>
+<p>What if we could have a high-speed centralized point that all remote traffic must go through anyway? NetLock is our attempt at doing just that by implementing a centralized lock manager in a programmable switch by working at tandem with the servers. The co-design is important to go around the resource limitations of the switch. By carefully caching hot locks and moving warm and cold ones to the servers, we can meet both the performance and policy goals of a lock manager without significant compromise in either.</p>
+<blockquote>
+<p>Lock managers are widely used by distributed systems. Traditional centralized lock managers can easily support policies between multiple users using global knowledge, but they suffer from low performance. In contrast, emerging decentralized approaches are faster but cannot provide flexible policy support. Furthermore, performance in both cases is limited by the server capability.</p>
+<p>We present NetLock, a new centralized lock manager that co-designs servers and network switches to achieve high performance without sacrificing flexibility in policy support. The key idea of NetLock is to exploit the capability of emerging programmable switches to directly process lock requests in the switch data plane. Due to the limited switch memory, we design a memory management mechanism to seamlessly integrate the switch and server memory. To realize the locking functionality in the switch, we design a custom data plane module that efficiently pools multiple register arrays together to maximize memory utilization We have implemented a NetLock prototype with a Barefoot Tofino switch and a cluster of commodity servers. Evaluation results show that NetLock improves the throughput by 14.0–18.4×, and reduces the average and 99% latency by 4.7–20.3× and 10.4–18.7× over DSLR, a state-of-the-art RDMA-based solution, while providing flexible policy support.</p>
+</blockquote>
+<p>Xin and I came up with the idea of this project over a couple meals in San Diego at OSDI’18, and later Zhuolong and Yiwen expanded and successfully executed our ideas that lead to NetLock. Similar to DSLR, NetLock explores a different design point in our larger memory disaggregation vision.</p>
+<p>This year’s SIGCOMM probably has the highest acceptance rate in 25 years, if not more. After a long successful run at SIGCOMM and a small break doing many other exciting things, it’s great to be back to some networking research! But going forward, I’m hoping for much more along these lines both inside the network and at the edge.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://symbioticlab.github.io/2020/06/25/NetLock-Accepted-to-Appear-at-SIGCOMM-2020/" title="NetLock Accepted to Appear at SIGCOMM&#39;2020">https://symbioticlab.github.io/2020/06/25/NetLock-Accepted-to-Appear-at-SIGCOMM-2020/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Datacenter-Networking/" rel="tag"># Datacenter Networking</a>
+              <a href="/tags/Disaggregation/" rel="tag"># Disaggregation</a>
+              <a href="/tags/Locking/" rel="tag"># Locking</a>
+              <a href="/tags/Programmable-Networks/" rel="tag"># Programmable Networks</a>
+              <a href="/tags/SIGCOMM/" rel="tag"># SIGCOMM</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/07/15/Leap-Wins-the-Best-Paper-Award-at-ATC-2020-Congrats-Hasan/" rel="prev" title="Leap Wins the Best Paper Award at ATC'2020. Congrats Hasan!">
+                  <i class="fa fa-chevron-left"></i> Leap Wins the Best Paper Award at ATC'2020. Congrats Hasan!
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/04/25/Leap-Accepted-to-Appear-at-ATC-2020/" rel="next" title="Leap Accepted to Appear at ATC'2020">
+                  Leap Accepted to Appear at ATC'2020 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SymbioticLab</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollRestoration: false,
+  scrollTo: !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+    <div class="pjax">
+
+  
+
+
+
+    </div>
+</body>
+</html>

@@ -2727,7 +2727,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #296025;
+  background: #7d2dff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2762,10 +2762,6 @@ hr {
   font-size: 1em !important;
 /* default is 2 in hexo-theme-next */
   line-height: 1.5;
-}
-.footer .footer-inner {
-/* center the footer text block */
-  text-align: center;
 }
 .header-inner {
   padding: 5px 0;
@@ -2847,4 +2843,13 @@ hr {
     justify-content: flex-end;
     align-self: flex-end;
   }
+}
+.posts-collapse .post-content {
+  margin-left: 23px;
+}
+.posts-collapse .post-content .collection-year {
+  margin: 20px 0;
+}
+.posts-collapse .post-content .collection-year:first-of-type {
+  margin-top: 0;
 }
