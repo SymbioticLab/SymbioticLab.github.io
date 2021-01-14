@@ -2727,7 +2727,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #7d2dff;
+  background: #573eff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2762,6 +2762,10 @@ hr {
   font-size: 1em !important;
 /* default is 2 in hexo-theme-next */
   line-height: 1.5;
+}
+.post-title-link.post-empty {
+  pointer-events: none;
+  cursor: default;
 }
 .header-inner {
   padding: 5px 0;
