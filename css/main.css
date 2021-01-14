@@ -2727,7 +2727,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #573eff;
+  background: #ff52de;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2752,6 +2752,9 @@ hr {
 }
 .sub-menu .menu-item {
   display: inline-block;
+}
+html {
+  width: 100vw;
 }
 /* remove the page title and top margin all together on custom pages */
 .page .post-header {
