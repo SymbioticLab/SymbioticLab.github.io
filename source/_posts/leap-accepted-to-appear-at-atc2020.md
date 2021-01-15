@@ -1,5 +1,5 @@
 ---
-title: Leap Accepted to Appear at ATC'2020
+title: Leap Accepted to Appear at ATC'2020. Congrats Hasan!
 date: '2020-04-25 11:53:34'
 categories:
 - News

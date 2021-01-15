@@ -1,5 +1,5 @@
 ---
-title: Received Google Faculty Research Award
+title: Mosharaf Received Google Faculty Research Award!
 date: '2016-02-16 22:25:32'
 categories:
 - News
