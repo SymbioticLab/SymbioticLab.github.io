@@ -1,5 +1,5 @@
 ---
-title: Sol and Pando Accepted to Appear at NSDI'2020
+title: Sol and Pando Accepted to Appear at NSDI'2020. Congrats Fan, Jie, and Xinagfeng!
 date: '2019-12-17 16:05:41'
 categories:
 - News

@@ -1,5 +1,5 @@
 ---
-title: NetLock Accepted to Appear at SIGCOMM'2020
+title: NetLock Accepted to Appear at SIGCOMM'2020. Congrats Yiwen!
 date: '2020-06-25 11:38:36'
 categories:
 - News

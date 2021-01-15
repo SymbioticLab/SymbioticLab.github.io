@@ -1,5 +1,5 @@
 ---
-title: "Presented Keynote Talk at CloudNet\u20192020"
+title: Mosharaf Presented Keynote Talk at CloudNet'2020
 date: '2020-11-14 16:20:16'
 categories:
 - News
