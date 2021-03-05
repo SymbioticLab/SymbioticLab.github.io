@@ -21,6 +21,15 @@ venues:
   # key is also used in display
   Conferences:
     # conference short name
+    NSDI'21:
+      # conference id
+      venue: NSDI
+      # conference full name
+      name: The 18th USENIX Symposium on Networked Systems Design and Implementation
+      # date for sorting
+      date: 2021-04-12
+      # conference website (optional)
+      url: https://www.usenix.org/conference/nsdi21
     ATC'20:
       # conference id
       venue: ATC

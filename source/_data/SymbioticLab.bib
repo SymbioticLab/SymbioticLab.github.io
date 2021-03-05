@@ -611,3 +611,18 @@ In this work, we study a slightly different model of coflow scheduling in genera
     Machine learning techniques are widely used nowadays in the healthcare domain for the diagnosis, prognosis, and treatment of diseases. These techniques have applications in the field of hematopoietic cell transplantation (HCT), which is a potentially curative therapy for hematological malignancies. Herein, a systematic review of the application of machine learning (ML) techniques in the HCT setting was conducted. We examined the type of data streams included, specific ML techniques used, and type of clinical outcomes measured. A systematic review of English articles using PubMed, Scopus, Web of Science, and IEEE Xplore databases was performed. Search terms included "hematopoietic cell transplantation (HCT)," "autologous HCT," "allogeneic HCT," "machine learning," and "artificial intelligence." Only full-text studies reported between January 2015 and July 2020 were included. Data were extracted by two authors using predefined data fields. Following PRISMA guidelines, a total of 242 studies were identified, of which 27 studies met the inclusion criteria. These studies were sub-categorized into three broad topics and the type of ML techniques used included ensemble learning (63%), regression (44%), Bayesian learning (30%), and support vector machine (30%). The majority of studies examined models to predict HCT outcomes (e.g., survival, relapse, graft-versus-host disease). Clinical and genetic data were the most commonly used predictors in the modeling process. Overall, this review provided a systematic review of ML techniques applied in the context of HCT. The evidence is not sufficiently robust to determine the optimal ML technique to use in the HCT setting and/or what minimal data variables are required.  
   }
 }
+
+@InProceedings{kayak:nsdi21,
+  author    = {Jie You and Jingfeng Wu and Xin Jin and Mosharaf Chowdhury},
+  booktitle = {USENIX NSDI},
+  title     = {Ship Compute or Ship Data? Why Not Both?},
+  year      = {2021},
+
+  publist_confkey = {NSDI'21},
+  publist_link = {paper || kayak-nsdi21.pdf},
+  publist_link = {code || https://github.com/SymbioticLab/Kayak},
+  publist_topic = {Disaggregation},
+  publist_abstract = {
+    How cloud applications should interact with their data re-mains an active area of research. Over the last decade, manyhave suggested relying on a key-value (KV) interface to inter-act with data stored in remote storage servers, while othershave vouched for the benefits of using remote procedure call(RPC). Instead of choosing one over the other, in this paper,we observe that an ideal solution must adaptively combineboth of them in order to maximize throughput while meetingapplication latency requirements. To this end, we proposea new system called Kayak that proactively adjusts the rateof requests and the fraction of requests to be executed usingRPC or KV, all in a fully decentralized and self-regulated man-ner. We theoretically prove that Kayak can quickly convergeto the optimal parameters.  We implement a system proto-type of Kayak. Our evaluations show that Kayak achievessub-second convergence  and improves  overall throughputby 32.5%-63.4% for compute-intensive workloads and upto 12.2% for non-compute-intensive and transactional work-loads over the state-of-the-art.
+  }
+}
