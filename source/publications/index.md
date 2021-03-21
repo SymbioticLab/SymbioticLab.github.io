@@ -21,6 +21,17 @@ venues:
   # key is also used in display
   Conferences:
     # conference short name
+    MLSys'22:
+      # conference id
+      venue: MLSys
+      # conference full name
+      name: The 4rd Conference on Machine Learning and Systems
+      # date for sorting
+      date: 2021-03-02
+      # conference website (optional)
+      url: https://mlsys.org/Conferences/2021
+      # conference acceptance rate (optional)
+      # acceptance: "19.2%"
     NSDI'21:
       # conference id
       venue: NSDI
