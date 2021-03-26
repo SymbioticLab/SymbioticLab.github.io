@@ -30,6 +30,8 @@ venues:
       date: 2021-04-12
       # conference website (optional)
       url: https://www.usenix.org/conference/nsdi21
+      # conference acceptance rate (optional)
+      acceptance: "15.99%"
     ATC'20:
       # conference id
       venue: ATC
