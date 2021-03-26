@@ -10,7 +10,7 @@ date: 2020-07-22 23:09:46
 ## Current Phd Students
 
 * [Juncheng Gu](https://web.eecs.umich.edu/~jcgu/)
-* Jie You
+* [Jie You](https://web.eecs.umich.edu/~jieyou/)
 * [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
 * [Fan Lai](http://www-personal.umich.edu/~fanlai/)
 * [Peifeng Yu](https://unlimitedcodeworks.xyz/)
