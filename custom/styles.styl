@@ -3,7 +3,7 @@ html {
     width: 100vw;
 }
 
-/* remove the page title and top margin all together on custom pages */
+/* remove the page title and top margin all together on all pages */
 .page .post-header {
     display: none;
 }
@@ -12,6 +12,14 @@ html {
     font-size: $font-size-medium !important;
     /* default is 2 in hexo-theme-next */
     line-height: 1.5;
+
+    /* if the heading is the first child, do not use extra top margin */
+    h1, h2, h3, h4, h5 {
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
 }
 
 // make empty post nonclickable
