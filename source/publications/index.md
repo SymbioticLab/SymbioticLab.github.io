@@ -17,6 +17,7 @@ extra_filters:
   path: meta.tag
 - name: Badge
   path: badges
+show_unpublished: true
 # mapping from general conference name to details
 venues:
   arXiv:
