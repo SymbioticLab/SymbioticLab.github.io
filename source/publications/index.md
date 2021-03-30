@@ -5,280 +5,191 @@ publist: true
 mathjax: true
 ---
 {% publist SymbioticLab %}
+version: 2
 # directory used for relative links in publication items
 pub_dir: publications/files
 # which author name to highlight
 highlight_authors: []
 extra_filters:
-  - name: Topic
-    path: meta.topic
-  - name: Tag
-    path: meta.tag
-  - name: Badge
-    path: badges
-# Map of venue types to venues
+- name: Topic
+  path: meta.topic
+- name: Tag
+  path: meta.tag
+- name: Badge
+  path: badges
+# mapping from general conference name to details
 venues:
-  # key is also used in display
-  Conferences:
-    # conference short name
-    NSDI'21:
-      # conference id
-      venue: NSDI
-      # conference full name
-      name: The 18th USENIX Symposium on Networked Systems Design and Implementation
-      # date for sorting
-      date: 2021-04-12
-      # conference website (optional)
-      url: https://www.usenix.org/conference/nsdi21
-      # conference acceptance rate (optional)
-      acceptance: "15.99%"
-    ATC'20:
-      # conference id
-      venue: ATC
-      # conference full name
-      name: The 2020 USENIX Annual Technical Conference
-      # date for sorting
-      date: 2020-07-15
-      # conference website (optional)
-      url: https://www.usenix.org/conference/atc20
-      # conference acceptance rate (optional)
-      acceptance: "18.68%"
-    EuroSys'20:
-      # conference id
-      venue: EuroSys
-      # conference full name
-      name: The Fifteenth European Conference on Computer Systems
-      # date for sorting
-      date: 2020-04-27
-      # conference website (optional)
-      url: https://www.eurosys2020.org/
-      # conference acceptance rate (optional)
-      acceptance: "18.38%"
-    MLSys'20:
-      # conference id
-      venue: MLSys
-      # conference full name
-      name: The 3rd Conference on Machine Learning and Systems
-      # date for sorting
-      date: 2020-03-02
-      # conference website (optional)
-      url: https://mlsys.org/Conferences/2020
-      # conference acceptance rate (optional)
-      acceptance: "19.2%"
-    NSDI'20:
-      # conference id
-      venue: NSDI
-      # conference full name
-      name: The 17th USENIX Symposium on Networked Systems Design and Implementation
-      # date for sorting
-      date: 2020-02-25
-      # conference website (optional)
-      url: https://www.usenix.org/conference/nsdi20
-      # conference acceptance rate (optional)
-      acceptance: "18.36%"
-    SIGCOMM'20:
-      # conference id
-      venue: SIGCOMM
-      # conference full name
-      name: The 2020 ACM SIGCOMM Conference
-      # date for sorting
-      date: 2020-08-11
-      # conference website (optional)
-      url: https://conferences.sigcomm.org/sigcomm/2020/
-      # conference acceptance rate (optional)
-      acceptance: "21.6%"
-    SPAA'19:
-      # conference id
-      venue: SPAA
-      # conference full name
-      name: The 31st ACM Symposium on Parallelism in Algorithms and Architectures
-      # date for sorting
-      date: 2019-06-22
-      # conference website (optional)
-      url: https://spaa.acm.org/2019/
-      # conference acceptance rate (optional)
-      acceptance: "33%"
-    NSDI'19:
-      # conference id
-      venue: NSDI
-      # conference full name
-      name: The 16th USENIX Symposium on Networked Systems Design and Implementation
-      # date for sorting
-      date: 2019-02-26
-      # conference website (optional)
-      url: https://www.usenix.org/conference/nsdi19
-      # conference acceptance rate (optional)
-      acceptance: "14.76%"
-    MobiCom'18:
-      # conference id
-      venue: MobiCom
-      # conference full name
-      name: The 24th Annual International Conference on Mobile Computing and Networking
-      # date for sorting
-      date: 2018-10-29
-      # conference website (optional)
-      url: https://sigmobile.org/mobicom/2018/
-      # conference acceptance rate (optional)
-      acceptance: "22.46%"
-    OSDI'18:
-      # conference id
-      venue: OSDI
-      # conference full name
-      name: The 13th USENIX Symposium on Operating Systems Design and Implementation
-      # date for sorting
-      date: 2018-10-08
-      # conference website (optional)
-      url: https://www.usenix.org/conference/osdi18
-      # conference acceptance rate (optional)
-      acceptance: "18.29%"
-    SIGMOD'18:
-      # conference id
-      venue: SIGMOD
-      # conference full name
-      name: The 2018 ACM SIGMOD/PODS Conference
-      # date for sorting
-      date: 2018-06-10
-      # conference website (optional)
-      url: http://sigmod2018.org/
-      # conference acceptance rate (optional)
-      acceptance: "19.52%"
-    SIGCOMM'17:
-      # conference id
-      venue: SIGCOMM
-      # conference full name
-      name: The 2017 ACM SIGCOMM Conference
-      # date for sorting
-      date: 2017-08-22
-      # conference website (optional)
-      url: http://conferences.sigcomm.org/sigcomm/2017/
-      # conference acceptance rate (optional)
-      acceptance: "14.4%"
-    NSDI'17:
-      # conference id
-      venue: NSDI
-      # conference full name
-      name: The 14th USENIX Symposium on Networked Systems Design and Implementation
-      # date for sorting
-      date: 2017-03-27
-      # conference website (optional)
-      url: https://www.usenix.org/conference/nsdi17
-      # conference acceptance rate (optional)
-      acceptance: "18.04%"
-    OSDI'16:
-      # conference id
-      venue: OSDI
-      # conference full name
-      name: The 12th USENIX Symposium on Operating Systems Design and Implementation
-      # date for sorting
-      date: 2016-11-02
-      # conference website (optional)
-      url: https://www.usenix.org/conference/osdi16
-      # conference acceptance rate (optional)
-      acceptance: "18.08%"
-    SIGCOMM'16:
-      # conference id
-      venue: SIGCOMM
-      # conference full name
-      name: The 2016 ACM SIGCOMM Conference
-      # date for sorting
-      date: 2016-08-23
-      # conference website (optional)
-      url: http://conferences.sigcomm.org/sigcomm/2016/
-      # conference acceptance rate (optional)
-      acceptance: "17.33%"
-    NSDI'16:
-      # conference id
-      venue: NSDI
-      # conference full name
-      name: The 13th USENIX Symposium on Networked Systems Design and Implementation
-      # date for sorting
-      date: 2016-03-13
-      # conference website (optional)
-      url: https://www.usenix.org/conference/nsdi16
-      # conference acceptance rate (optional)
-      acceptance: "19.74%"
-  Workshops:
-    APNet'18:
-      # workshop id
-      venue: APNet
-      # workshop full name
-      name: The 2nd Asia-Pacific Workshop on Networking
-      # date for sorting
-      date: 2018-08-02
-      # workshop website (optional)
-      url: https://conferences.sigcomm.org/events/apnet2018/index.html
-    HotCloud'18:
-      # workshop id
-      venue: HotCloud
-      # workshop full name
-      name: The 10th USENIX Workshop on Hot Topics in Cloud Computing
-      # date for sorting
-      date: 2018-07-09
-      # workshop website (optional)
-      url: https://www.usenix.org/conference/hotcloud18
-    MAMA'18:
-      # workshop id
-      venue: MAMA
-      # workshop full name
-      name: The 20th Workshop on MAthematical performance Modeling and Analysis (MAMA)
-      # date for sorting
-      date: 2018-06-18
-      # workshop website (optional)
-      url: http://www.sigmetrics.org/mama/2018/
-    GRADES-NDA'18:
-      # workshop id
-      venue: GRADES-NDA
-      # workshop full name
-      name: The 1st Joint International Workshop on Graph Data Management Experiences & Systems (GRADES) and Network Data Analytics (NDA)
-      # date for sorting
-      date: 2018-06-10
-      # workshop website (optional)
-      url: https://sites.google.com/site/gradesnda2018/
-    HotOS'17:
-      # workshop id
-      venue: HotOS
-      # workshop full name
-      name: The 16th Workshop on Hot Topics in Operating Systems
-      # date for sorting
-      date: 2017-05-07
-      # workshop website (optional)
-      url: https://www.sigops.org/s/conferences/hotos/2017
-    KBNets'17:
-      # workshop id
-      venue: KBNets
-      # workshop full name
-      name: ACM SIGCOMM 2017 Workshop on Kernel-Bypass Networks
-      # date for sorting
-      date: 2017-08-21
-      # workshop website (optional)
-      url: https://conferences.sigcomm.org/sigcomm/2017/workshop-kbnets.html
-  'Technical Reports':
-    arXiv:
-      # workshop id
-      venue: arXiv
-      # workshop full name
+  arXiv:
+    category: Technical Reports
+    occurrences:
+    - key: arXiv-all
+      matches: ^arXiv:(.+)$
       name: arXiv
-      # workshop website (optional)
-      url: https://arxiv.org
-  Journals:
-    'USENIX ;login:':
-      # journal id
-      venue: 'USENIX ;login:'
-      # journal full name
+      url: https://arxiv.org/abs/$1
+  NSDI:
+    category: Conferences
+    occurrences:
+    - key: NSDI'21
+      name: The 18th USENIX Symposium on Networked Systems Design and Implementation
+      date: 2021-04-12
+      url: https://www.usenix.org/conference/nsdi21
+      acceptance: 15.99%
+    - key: NSDI'20
+      name: The 17th USENIX Symposium on Networked Systems Design and Implementation
+      date: 2020-02-25
+      url: https://www.usenix.org/conference/nsdi20
+      acceptance: 18.36%
+    - key: NSDI'19
+      name: The 16th USENIX Symposium on Networked Systems Design and Implementation
+      date: 2019-02-26
+      url: https://www.usenix.org/conference/nsdi19
+      acceptance: 14.76%
+    - key: NSDI'17
+      name: The 14th USENIX Symposium on Networked Systems Design and Implementation
+      date: 2017-03-27
+      url: https://www.usenix.org/conference/nsdi17
+      acceptance: 18.04%
+    - key: NSDI'16
+      name: The 13th USENIX Symposium on Networked Systems Design and Implementation
+      date: 2016-03-13
+      url: https://www.usenix.org/conference/nsdi16
+      acceptance: 19.74%
+  ATC:
+    category: Conferences
+    occurrences:
+    - key: ATC'20
+      name: The 2020 USENIX Annual Technical Conference
+      date: 2020-07-15
+      url: https://www.usenix.org/conference/atc20
+      acceptance: 18.68%
+  EuroSys:
+    category: Conferences
+    occurrences:
+    - key: EuroSys'20
+      name: The Fifteenth European Conference on Computer Systems
+      date: 2020-04-27
+      url: https://www.eurosys2020.org/
+      acceptance: 18.38%
+  MLSys:
+    category: Conferences
+    occurrences:
+    - key: MLSys'20
+      name: The 3rd Conference on Machine Learning and Systems
+      date: 2020-03-02
+      url: https://mlsys.org/Conferences/2020
+      acceptance: 19.2%
+  SIGCOMM:
+    category: Conferences
+    occurrences:
+    - key: SIGCOMM'20
+      name: The 2020 ACM SIGCOMM Conference
+      date: 2020-08-11
+      url: https://conferences.sigcomm.org/sigcomm/2020/
+      acceptance: 21.6%
+    - key: SIGCOMM'17
+      name: The 2017 ACM SIGCOMM Conference
+      date: 2017-08-22
+      url: http://conferences.sigcomm.org/sigcomm/2017/
+      acceptance: 14.4%
+    - key: SIGCOMM'16
+      name: The 2016 ACM SIGCOMM Conference
+      date: 2016-08-23
+      url: http://conferences.sigcomm.org/sigcomm/2016/
+      acceptance: 17.33%
+  SPAA:
+    category: Conferences
+    occurrences:
+    - key: SPAA'19
+      name: The 31st ACM Symposium on Parallelism in Algorithms and Architectures
+      date: 2019-06-22
+      url: https://spaa.acm.org/2019/
+      acceptance: 33%
+  MobiCom:
+    category: Conferences
+    occurrences:
+    - key: MobiCom'18
+      name: The 24th Annual International Conference on Mobile Computing and Networking
+      date: 2018-10-29
+      url: https://sigmobile.org/mobicom/2018/
+      acceptance: 22.46%
+  OSDI:
+    category: Conferences
+    occurrences:
+    - key: OSDI'18
+      name: The 13th USENIX Symposium on Operating Systems Design and Implementation
+      date: 2018-10-08
+      url: https://www.usenix.org/conference/osdi18
+      acceptance: 18.29%
+    - key: OSDI'16
+      name: The 12th USENIX Symposium on Operating Systems Design and Implementation
+      date: 2016-11-02
+      url: https://www.usenix.org/conference/osdi16
+      acceptance: 18.08%
+  SIGMOD:
+    category: Conferences
+    occurrences:
+    - key: SIGMOD'18
+      name: The 2018 ACM SIGMOD/PODS Conference
+      date: 2018-06-10
+      url: http://sigmod2018.org/
+      acceptance: 19.52%
+  APNet:
+    category: Workshops
+    occurrences:
+    - key: APNet'18
+      name: The 2nd Asia-Pacific Workshop on Networking
+      date: 2018-08-02
+      url: https://conferences.sigcomm.org/events/apnet2018/index.html
+  HotCloud:
+    category: Workshops
+    occurrences:
+    - key: HotCloud'18
+      name: The 10th USENIX Workshop on Hot Topics in Cloud Computing
+      date: 2018-07-09
+      url: https://www.usenix.org/conference/hotcloud18
+  MAMA:
+    category: Workshops
+    occurrences:
+    - key: MAMA'18
+      name: The 20th Workshop on MAthematical performance Modeling and Analysis (MAMA)
+      date: 2018-06-18
+      url: http://www.sigmetrics.org/mama/2018/
+  GRADES-NDA:
+    category: Workshops
+    occurrences:
+    - key: GRADES-NDA'18
+      name: The 1st Joint International Workshop on Graph Data Management Experiences
+        & Systems (GRADES) and Network Data Analytics (NDA)
+      date: 2018-06-10
+      url: https://sites.google.com/site/gradesnda2018/
+  HotOS:
+    category: Workshops
+    occurrences:
+    - key: HotOS'17
+      name: The 16th Workshop on Hot Topics in Operating Systems
+      date: 2017-05-07
+      url: https://www.sigops.org/s/conferences/hotos/2017
+  KBNets:
+    category: Workshops
+    occurrences:
+    - key: KBNets'17
+      name: ACM SIGCOMM 2017 Workshop on Kernel-Bypass Networks
+      date: 2017-08-21
+      url: https://conferences.sigcomm.org/sigcomm/2017/workshop-kbnets.html
+  'USENIX ;login:':
+    category: Journals
+    occurrences:
+    - key: 'USENIX ;login: Winter 2017'
       name: 'USENIX ;login: Winter 2017, VOL. 42, NO. 4'
-      # date for sorting
       date: 2017-12-30
-      # journal website (optional)
-      url: https://www.usenix.org/publications/login
-    'Sensors':
-      # journal id
-      venue: 'Sensors'
-      # journal full name
-      name: 'Sensors 2020, 20(21), 6100'
-      # date for sorting
+      url: https://www.usenix.org/publications/login/winter2017
+  Sensors:
+    category: Journals
+    occurrences:
+    - key: 'Sensors 20(21)'
+      name: Sensors 2020, 20(21), 6100
       date: 2020-10-27
-      # journal website (optional)
-      url: https://www.mdpi.com/journal/sensors
+      url: https://www.mdpi.com/1424-8220/20/21
 {% endpublist %}
 
 ---
