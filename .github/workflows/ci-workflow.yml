@@ -28,18 +28,24 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
+
     - name: Install Dependencies
       run: npm ci
-
-    # Deploy hexo blog website.
-    - name: Deploy
-      id: deploy
-      #uses: sma11black/hexo-action@v1.0.1
-      uses: ./.github/actions/hexo-action
-      with:
-        deploy_key: ${{ secrets.DEPLOY_KEY }}
-        commit_msg: ${{ github.event.head_commit.message }}
-    # Use the output from the `deploy` step(use for test action)
-    - name: Get the output
+    
+    - name: Configure environment
+      env:
+        INPUT_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
       run: |
-        echo "${{ steps.deploy.outputs.notify }}"
+        mkdir -p ~/.ssh
+        echo "$INPUT_DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+    # Deploy to master branch
+    # clone the repo first to keep history
+    - name: Deploy
+      run: |
+        git clone --branch $(hexo config deploy.branch --silent) $(hexo config deploy.rpeo --silent) .deploy_git
+        npm run deploy --msg ${{ github.event.head_commit.message }}
