@@ -47,5 +47,5 @@ jobs:
     # clone the repo first to keep history
     - name: Deploy
       run: |
-        git clone --branch $(hexo config deploy.branch --silent) $(hexo config deploy.rpeo --silent) .deploy_git
+        git clone --branch $(hexo config deploy.branch --silent) $(hexo config deploy.repo --silent) .deploy_git
         npm run deploy --msg ${{ github.event.head_commit.message }}
