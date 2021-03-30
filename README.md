@@ -18,10 +18,13 @@ The site is based on `hexo-theme-next`, with the following tweaks:
 
 * Small tweaks in css styling are in `custom/*.styl`. They are read by the theme and merged with theme's own styling.
 * Publist tag plugin provided by `hexo-next-publist`. This powers the publication list in `publication/index.md`.
-* Custom page layout injected using `hexo-extend-theme`. The templates `custom/*.njk` can be used by setting the layout name in the front matter.
+* Custom page layout injected using `hexo-extend-theme`. The templates `custom/layouts/*.njk` can be used by setting the layout name in the front matter.
 * Paginated front page with news. This uses a simple generator in `scripts/front-page-generator.js` to generate multiple routes which are then
 rendered using a custom page layout `custom/front.njk`. The generator also reads in `source/_front.md` for contents before the news section.
 * Posts with empty body are skipped. They will only show up in the list, but no link is generated. This is done by `scripts/skip-empty.js`.
+* A fix to the pjax scroll position restoration, by replacing the theme layout file `_scripts/index.njk` with our own version.
+Ideally, we only want to replace `_scripts/pjax.njk`, but due to limitations in `hexo-extend-theme`, that's not possible.
+Because `pjax.njk` is pulled in by the `include` tag, rather than the `partial` helper.
 
 ### Tweaking Styles
 Page styles can be modified in `custom/styles.styl` and `custom/variables.styl`. More is possible and the `theme-next` [documentation](https://theme-next.js.org/docs/advanced-settings/custom-files.html) has more details.
