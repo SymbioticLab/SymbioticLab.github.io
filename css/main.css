@@ -223,6 +223,7 @@ p {
 a {
   border-bottom: 1px solid #ccc;
   color: var(--link-color);
+  cursor: pointer;
   outline: 0;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -2727,7 +2728,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #664afe;
+  background: #28ffc6;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2756,7 +2757,7 @@ hr {
 html {
   width: 100vw;
 }
-/* remove the page title and top margin all together on custom pages */
+/* remove the page title and top margin all together on all pages */
 .page .post-header {
   display: none;
 }
@@ -2765,6 +2766,23 @@ html {
   font-size: 1em !important;
 /* default is 2 in hexo-theme-next */
   line-height: 1.5;
+/* if the heading is the first child, do not use extra top margin */
+}
+.post-body h1:first-child,
+.post-body h2:first-child,
+.post-body h3:first-child,
+.post-body h4:first-child,
+.post-body h5:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.archive .pagination,
+.tag .pagination,
+.category .pagination {
+  text-align: center;
+}
+.footer .footer-inner {
+  text-align: center;
 }
 .post-title-link.post-empty {
   pointer-events: none;

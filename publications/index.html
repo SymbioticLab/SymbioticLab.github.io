@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#fe6600">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
-
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
@@ -17,18 +17,20 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"symbioticlab.org","root":"/","images":"/images","scheme":"Mist","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"symbioticlab.org","root":"/","images":"/images","scheme":"Mist","version":"8.2.2","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="Filters:                          (34&#x2F;34)                                                                                  Venue:">
+<meta name="description" content="Filters:                          (                 35&#x2F;35             )                                                                                  V">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Publications">
 <meta property="og:url" content="https://symbioticlab.org/publications/index.html">
 <meta property="og:site_name" content="SymbioticLab">
-<meta property="og:description" content="Filters:                          (34&#x2F;34)                                                                                  Venue:">
+<meta property="og:description" content="Filters:                          (                 35&#x2F;35             )                                                                                  V">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-23T03:10:02.000Z">
 <meta property="article:modified_time" content="2020-07-23T03:10:02.000Z">
@@ -47,13 +49,6 @@
     lang   : 'en'
   };
 </script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/tooltips.min.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/select-menu.min.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/utilities.min.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/labels.min.css" rel="stylesheet" />
-<link href="/assets/publist/publist.css" rel="stylesheet" />
-
-
 <title>Publications | SymbioticLab
 </title>
   
@@ -179,20 +174,24 @@
       
       
       <div class="post-body">
-          <div class="publist">
+          <!-- begin-publist-b14835ea -->
+<link href="/assets/publist/main.css" rel="stylesheet" />
+<div class="publist">
     <div class="publist-search-panel">
         <div class="publist-filters-header">
             <div class="publist-filters-header-hwrapper">
                 <h4>Filters:</h4>
             </div>
-            <footer>(<span class="selected-value">34</span>/34)</footer>
+            <footer>(<a title="Reset Filters" href="#">
+                <span class="selected-value">35</span>/35
+            </a>)</footer>
         </div>
         <div class="publist-filters-row">
             <details class="details-reset details-overlay" data-select-for="venue">
             <summary class="btn" aria-haspopup="true">
                 <span>
                     Venue:
-                    <span class="summary-value"></span>
+                    <span class="summary-value">All</span>
                 </span>
                 <span class="dropdown-caret"></span>
             </summary>
@@ -203,14 +202,16 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="!all"
+                            aria-checked="true"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">All</span>
-                            <span class="Counter">34</span>
+                            <span class="Counter">35</span>
                         </button>
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="!others"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Others</span>
@@ -222,6 +223,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="ATC"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">ATC</span>
@@ -230,6 +232,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="EuroSys"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">EuroSys</span>
@@ -238,6 +241,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="MLSys"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">MLSys</span>
@@ -246,6 +250,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="MobiCom"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">MobiCom</span>
@@ -254,14 +259,16 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="NSDI"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">NSDI</span>
-                            <span class="Counter">5</span>
+                            <span class="Counter">6</span>
                         </button>
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="OSDI"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">OSDI</span>
@@ -270,6 +277,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="SIGCOMM"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">SIGCOMM</span>
@@ -278,6 +286,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="SIGMOD"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">SIGMOD</span>
@@ -286,6 +295,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Conferences"
                             data-value="SPAA"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">SPAA</span>
@@ -297,6 +307,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Journals"
                             data-value="Sensors"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Sensors</span>
@@ -305,6 +316,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Journals"
                             data-value="USENIX ;login:"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">USENIX ;login:</span>
@@ -316,6 +328,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Technical Reports"
                             data-value="arXiv"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">arXiv</span>
@@ -327,6 +340,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Workshops"
                             data-value="APNet"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">APNet</span>
@@ -335,6 +349,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Workshops"
                             data-value="GRADES-NDA"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">GRADES-NDA</span>
@@ -343,6 +358,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Workshops"
                             data-value="HotCloud"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">HotCloud</span>
@@ -351,6 +367,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Workshops"
                             data-value="HotOS"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">HotOS</span>
@@ -359,6 +376,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Workshops"
                             data-value="KBNets"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">KBNets</span>
@@ -367,6 +385,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@Workshops"
                             data-value="MAMA"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">MAMA</span>
@@ -379,7 +398,7 @@
             <summary class="btn" aria-haspopup="true">
                 <span>
                     Topic:
-                    <span class="summary-value"></span>
+                    <span class="summary-value">All</span>
                 </span>
                 <span class="dropdown-caret"></span>
             </summary>
@@ -390,14 +409,16 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="!all"
+                            aria-checked="true"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">All</span>
-                            <span class="Counter">34</span>
+                            <span class="Counter">35</span>
                         </button>
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="!others"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Others</span>
@@ -406,6 +427,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Big Data Systems"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Big Data Systems</span>
@@ -414,6 +436,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Datacenter Networking"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Datacenter Networking</span>
@@ -422,14 +445,16 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Disaggregation"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Disaggregation</span>
-                            <span class="Counter">7</span>
+                            <span class="Counter">8</span>
                         </button>
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Systems for AI"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Systems for AI</span>
@@ -438,6 +463,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Wide-Area Computing"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Wide-Area Computing</span>
@@ -450,7 +476,7 @@
             <summary class="btn" aria-haspopup="true">
                 <span>
                     Tag:
-                    <span class="summary-value"></span>
+                    <span class="summary-value">All</span>
                 </span>
                 <span class="dropdown-caret"></span>
             </summary>
@@ -461,18 +487,20 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="!all"
+                            aria-checked="true"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">All</span>
-                            <span class="Counter">34</span>
+                            <span class="Counter">35</span>
                         </button>
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="!others"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Others</span>
-                            <span class="Counter">34</span>
+                            <span class="Counter">35</span>
                         </button>
                     </div>
                 </div>
@@ -481,7 +509,7 @@
             <summary class="btn" aria-haspopup="true">
                 <span>
                     Badge:
-                    <span class="summary-value"></span>
+                    <span class="summary-value">All</span>
                 </span>
                 <span class="dropdown-caret"></span>
             </summary>
@@ -492,22 +520,25 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="!all"
+                            aria-checked="true"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">All</span>
-                            <span class="Counter">34</span>
+                            <span class="Counter">35</span>
                         </button>
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="!others"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Others</span>
-                            <span class="Counter">31</span>
+                            <span class="Counter">32</span>
                         </button>
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Artifacts Available"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Artifacts Available</span>
@@ -516,6 +547,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Artifacts Evaluated Functional"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Artifacts Evaluated Functional</span>
@@ -524,6 +556,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Artifacts Replicated"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Artifacts Replicated</span>
@@ -532,6 +565,7 @@
                         <button class="SelectMenu-item" role="menuitem"
                             data-value-cat="@"
                             data-value="Best Paper Award"
+                            aria-checked="false"
                         >
                             <svg class="SelectMenu-icon SelectMenu-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z"></path></svg>
                             <span class="display-value">Best Paper Award</span>
@@ -544,6 +578,56 @@
         </div>
     </div> <!-- publist-search-panel -->
     <div class="pub-list">
+        <section class="year">
+            <div class="year-mark-wrapper">
+                <span class="year-mark" data-year="2021"></span>
+            </div>
+            <ul>
+                <li data-pub-venue="NSDI"
+                    data-pub-cat="Conferences"
+                    data-pub-extra='{&quot;topic&quot;:[&quot;Disaggregation&quot;],&quot;tag&quot;:[],&quot;badge&quot;:[]}'
+                >
+                    <div class="pub-block">
+                        <div class="pub-title">
+                            <a target="_blank" href="/publications/files/kayak:nsdi21/kayak-nsdi21.pdf">Ship compute or ship data? Why not both?</a>
+                            <span class="Label Label--info">New</span>
+                        </div>
+                        
+                        <div class="pub-authors">
+                            <span class="pub-author pub-author-Jie-You ">Jie&nbspYou</span>, 
+                            <span class="pub-author pub-author-Jingfeng-Wu ">Jingfeng&nbspWu</span>, 
+                            <span class="pub-author pub-author-Xin-Jin ">Xin&nbspJin</span>, and 
+                            <span class="pub-author pub-author-Mosharaf-Chowdhury ">Mosharaf&nbspChowdhury</span>
+                        </div>
+                        <div class="pub-conference">
+                            The 18th USENIX Symposium on Networked Systems Design and Implementation
+                            (<a target="_blank" title="15.99%"
+                                href="https://www.usenix.org/conference/nsdi21">NSDI'21</a>)
+                            <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp15.99%)</span>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/kayak:nsdi21/kayak-nsdi21.pdf">[paper]</a>
+                            <a target="_blank" href="https://github.com/SymbioticLab/Kayak">[code]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{kayak:nsdi21,
+    author    = {Jie You and Jingfeng Wu and Xin Jin and Mosharaf Chowdhury},
+    booktitle = {USENIX NSDI},
+    title     = {Ship Compute or Ship Data? Why Not Both?},
+    year      = {2021},
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>How cloud applications should interact with their data re-mains an active area of research. Over the last decade, manyhave suggested relying on a key-value (KV) interface to inter-act with data stored in remote storage servers, while othershave vouched for the benefits of using remote procedure call(RPC). Instead of choosing one over the other, in this paper,we observe that an ideal solution must adaptively combineboth of them in order to maximize throughput while meetingapplication latency requirements. To this end, we proposea new system called Kayak that proactively adjusts the rateof requests and the fraction of requests to be executed usingRPC or KV, all in a fully decentralized and self-regulated man-ner. We theoretically prove that Kayak can quickly convergeto the optimal parameters.  We implement a system proto-type of Kayak. Our evaluations show that Kayak achievessub-second convergence  and improves  overall throughputby 32.5%-63.4% for compute-intensive workloads and upto 12.2% for non-compute-intensive and transactional work-loads over the state-of-the-art.</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
         <section class="year">
             <div class="year-mark-wrapper">
                 <span class="year-mark" data-year="2020"></span>
@@ -569,15 +653,8 @@
                         <div class="pub-conference">
                             Sensors 2020, 20(21), 6100
                             (<a target="_blank" title=""
-                                href="https://www.mdpi.com/journal/sensors">Sensors</a>)
+                                href="https://www.mdpi.com/1424-8220/20/21">Sensors 20(21)</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Machine learning techniques are widely used nowadays in the healthcare domain for the diagnosis, prognosis, and treatment of diseases. These techniques have applications in the field of hematopoietic cell transplantation (HCT), which is a potentially curative therapy for hematological malignancies. Herein, a systematic review of the application of machine learning (ML) techniques in the HCT setting was conducted. We examined the type of data streams included, specific ML techniques used, and type of clinical outcomes measured. A systematic review of English articles using PubMed, Scopus, Web of Science, and IEEE Xplore databases was performed. Search terms included “hematopoietic cell transplantation (HCT),” “autologous HCT,” “allogeneic HCT,” “machine learning,” and “artificial intelligence.” Only full-text studies reported between January 2015 and July 2020 were included. Data were extracted by two authors using predefined data fields. Following PRISMA guidelines, a total of 242 studies were identified, of which 27 studies met the inclusion criteria. These studies were sub-categorized into three broad topics and the type of ML techniques used included ensemble learning (63%), regression (44%), Bayesian learning (30%), and support vector machine (30%). The majority of studies examined models to predict HCT outcomes (e.g., survival, relapse, graft-versus-host disease). Clinical and genetic data were the most commonly used predictors in the modeling process. Overall, this review provided a systematic review of ML techniques applied in the context of HCT. The evidence is not sufficiently robust to determine the optimal ML technique to use in the HCT setting and/or what minimal data variables are required.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="https://www.mdpi.com/1424-8220/20/21/6100">[paper]</a>
@@ -593,6 +670,13 @@
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Machine learning techniques are widely used nowadays in the healthcare domain for the diagnosis, prognosis, and treatment of diseases. These techniques have applications in the field of hematopoietic cell transplantation (HCT), which is a potentially curative therapy for hematological malignancies. Herein, a systematic review of the application of machine learning (ML) techniques in the HCT setting was conducted. We examined the type of data streams included, specific ML techniques used, and type of clinical outcomes measured. A systematic review of English articles using PubMed, Scopus, Web of Science, and IEEE Xplore databases was performed. Search terms included “hematopoietic cell transplantation (HCT),” “autologous HCT,” “allogeneic HCT,” “machine learning,” and “artificial intelligence.” Only full-text studies reported between January 2015 and July 2020 were included. Data were extracted by two authors using predefined data fields. Following PRISMA guidelines, a total of 242 studies were identified, of which 27 studies met the inclusion criteria. These studies were sub-categorized into three broad topics and the type of ML techniques used included ensemble learning (63%), regression (44%), Bayesian learning (30%), and support vector machine (30%). The majority of studies examined models to predict HCT outcomes (e.g., survival, relapse, graft-versus-host disease). Clinical and genetic data were the most commonly used predictors in the modeling process. Overall, this review provided a systematic review of ML techniques applied in the context of HCT. The evidence is not sufficiently robust to determine the optimal ML technique to use in the HCT setting and/or what minimal data variables are required.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -615,16 +699,8 @@
                         <div class="pub-conference">
                             arXiv
                             (<a target="_blank" title=""
-                                href="https://arxiv.org">arXiv</a>)
+                                href="https://arxiv.org/abs/2010.06081">arXiv:2010.06081</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Federated Learning (FL) is an emerging direction in distributed machine learning (ML) that enables in-situ model training and testing on edge data. Despite having the same end goals as traditional ML, FL executions differ significantly in scale, spanning thousands to millions of participating devices. As a result, data characteristics and device capabilities vary widely across clients. Yet, existing efforts randomly select FL participants, which leads to poor model and system efficiency.</p>
-<p>In this paper, we propose Kuiper to improve the performance of federated training and testing with guided participant selection. With an aim to improve time-to-accuracy performance in model training, Kuiper prioritizes the use of those clients who have both data that offers the greatest utility in improving model accuracy and the capability to run training quickly. To enable FL developers to interpret their results in model testing, Kuiper enforces their requirements on the distribution of participant data while improving the duration of federated testing by cherry-picking clients. Our evaluation shows that, compared to existing participant selection mechanisms, Kuiper improves time-to-accuracy performance by 1.2x-14.1x and final model accuracy by 1.3%-9.8%, while efficiently enforcing developer-specified model testing criteria at the scale of millions of clients.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/oort:arxiv20/oort-arxiv20.pdf">[paper]</a>
@@ -643,6 +719,14 @@
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Federated Learning (FL) is an emerging direction in distributed machine learning (ML) that enables in-situ model training and testing on edge data. Despite having the same end goals as traditional ML, FL executions differ significantly in scale, spanning thousands to millions of participating devices. As a result, data characteristics and device capabilities vary widely across clients. Yet, existing efforts randomly select FL participants, which leads to poor model and system efficiency.</p>
+<p>In this paper, we propose Kuiper to improve the performance of federated training and testing with guided participant selection. With an aim to improve time-to-accuracy performance in model training, Kuiper prioritizes the use of those clients who have both data that offers the greatest utility in improving model accuracy and the capability to run training quickly. To enable FL developers to interpret their results in model testing, Kuiper enforces their requirements on the distribution of participant data while improving the duration of federated testing by cherry-picking clients. Our evaluation shows that, compared to existing participant selection mechanisms, Kuiper improves time-to-accuracy performance by 1.2x-14.1x and final model accuracy by 1.3%-9.8%, while efficiently enforcing developer-specified model testing criteria at the scale of millions of clients.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -669,14 +753,6 @@
                                 href="https://conferences.sigcomm.org/sigcomm/2020/">SIGCOMM'20</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp21.6%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Lock managers are widely used by distributed systems. Traditional centralized lock managers can easily support policies between multiple users using global knowledge, but they suffer from low performance. In contrast, emerging decentralized approaches are faster but cannot provide flexible policy support. Furthermore, performance in both cases is limited by the server capability.</p>
-<p>We present NetLock, a new centralized lock manager that co-designs servers and network switches to achieve high performance without sacrificing flexibility in policy support. The key idea of NetLock is to exploit the capability of emerging programmable switches to directly process lock requests in the switch data plane. Due to the limited switch memory, we design a memory management mechanism to seamlessly integrate the switch and server memory. To realize the locking functionality in the switch, we design a custom data plane module that efficiently pools multiple register arrays together to maximize memory utilization We have implemented a NetLock prototype with a Barefoot Tofino switch and a cluster of commodity servers. Evaluation results show that NetLock improves the throughput by 14.0-18.4x, and reduces the average and 99% latency by 4.7-20.3x and 10.4-18.7x over DSLR, a state-of-the-art RDMA-based solution, while providing flexible policy support.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/netlock:sigcomm20/netlock-sigcomm20.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{netlock:sigcomm20,
@@ -688,6 +764,14 @@
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Lock managers are widely used by distributed systems. Traditional centralized lock managers can easily support policies between multiple users using global knowledge, but they suffer from low performance. In contrast, emerging decentralized approaches are faster but cannot provide flexible policy support. Furthermore, performance in both cases is limited by the server capability.</p>
+<p>We present NetLock, a new centralized lock manager that co-designs servers and network switches to achieve high performance without sacrificing flexibility in policy support. The key idea of NetLock is to exploit the capability of emerging programmable switches to directly process lock requests in the switch data plane. Due to the limited switch memory, we design a memory management mechanism to seamlessly integrate the switch and server memory. To realize the locking functionality in the switch, we design a custom data plane module that efficiently pools multiple register arrays together to maximize memory utilization We have implemented a NetLock prototype with a Barefoot Tofino switch and a cluster of commodity servers. Evaluation results show that NetLock improves the throughput by 14.0-18.4x, and reduces the average and 99% latency by 4.7-20.3x and 10.4-18.7x over DSLR, a state-of-the-art RDMA-based solution, while providing flexible policy support.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -701,7 +785,7 @@
                             
                         </div>
                         <div class="pub-badges">
-                            <span class="Label Label--red pub-badge">Best Paper Award</span>
+                            <span class="Label Label--danger pub-badge">Best Paper Award</span>
                         </div>
                         <div class="pub-authors">
                             <span class="pub-author pub-author-Hasan-Al Maruf ">Hasan&nbspAl&nbspMaruf</span>, and 
@@ -712,14 +796,6 @@
                             (<a target="_blank" title="18.68%"
                                 href="https://www.usenix.org/conference/atc20">ATC'20</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp18.68%)</span>
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Memory disaggregation over RDMA can improve the performance of memory-constrained applications by replacing disk swapping with remote memory accesses. However, state-of-the-art memory disaggregation solutions still use data path components designed for slow disks. As a result, applications experience remote memory access latency significantly higher than that of the underlying low-latency network, which itself can be too high for many applications.</p>
-<p>In this paper, we propose Leap, a prefetching solution for remote memory accesses due to memory disaggregation. At its core, Leap employs an online, majority-based prefetching algorithm, which increases the page cache hit rate. We complement it with a lightweight and efficient data path in the kernel that isolates each application’s data path to the disaggregated memory and mitigates latency bottlenecks arising from legacy throughput-optimizing operations. Integration of Leap in the Linux kernel improves the median and tail remote page access latencies of memory-bound applications by up to 104.04× and 22.62×, respectively, over the default data path. This leads to up to 10.16× performance improvements for applications using disaggregated memory in comparison to the state-of-the-art solutions.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/leap:atc20/leap-atc20.pdf">[paper]</a>
@@ -734,6 +810,14 @@
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Memory disaggregation over RDMA can improve the performance of memory-constrained applications by replacing disk swapping with remote memory accesses. However, state-of-the-art memory disaggregation solutions still use data path components designed for slow disks. As a result, applications experience remote memory access latency significantly higher than that of the underlying low-latency network, which itself can be too high for many applications.</p>
+<p>In this paper, we propose Leap, a prefetching solution for remote memory accesses due to memory disaggregation. At its core, Leap employs an online, majority-based prefetching algorithm, which increases the page cache hit rate. We complement it with a lightweight and efficient data path in the kernel that isolates each application’s data path to the disaggregated memory and mitigates latency bottlenecks arising from legacy throughput-optimizing operations. Integration of Leap in the Linux kernel improves the median and tail remote page access latencies of memory-bound applications by up to 104.04× and 22.62×, respectively, over the default data path. This leads to up to 10.16× performance improvements for applications using disaggregated memory in comparison to the state-of-the-art solutions.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -759,13 +843,6 @@
                                 href="https://www.eurosys2020.org/">EuroSys'20</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp18.38%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Modern deep learning frameworks support a variety of hardware, including CPU, GPU, and other accelerators, to perform computation. In this paper, we study how to schedule jobs over such interchangeable resources – each with a different rate of computation – to optimize performance while providing fairness among users in a shared cluster. We demonstrate theoretically and empirically that existing solutions and their straightforward modifications perform poorly in the presence of interchangeable resources, which motivates the design and implementation of AlloX. At its core, AlloX transforms the scheduling problem into a min-cost bipartite matching problem and provides dynamic fair allocation over time. We theoretically prove its optimality in an ideal, offline setting and show empirically that it works well in the online scenario by incorporating with Kubernetes. Evaluations on a small-scale CPU-GPU hybrid cluster and large-scale simulations highlight that AlloX can reduce the average job completion time significantly (by up to 95% when the system load is high) while providing fairness and preventing starvation.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/allox:eurosys20/allox-eurosys20.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{allox:eurosys20,
@@ -777,6 +854,13 @@
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Modern deep learning frameworks support a variety of hardware, including CPU, GPU, and other accelerators, to perform computation. In this paper, we study how to schedule jobs over such interchangeable resources – each with a different rate of computation – to optimize performance while providing fairness among users in a shared cluster. We demonstrate theoretically and empirically that existing solutions and their straightforward modifications perform poorly in the presence of interchangeable resources, which motivates the design and implementation of AlloX. At its core, AlloX transforms the scheduling problem into a min-cost bipartite matching problem and provides dynamic fair allocation over time. We theoretically prove its optimality in an ideal, offline setting and show empirically that it works well in the online scenario by incorporating with Kubernetes. Evaluations on a small-scale CPU-GPU hybrid cluster and large-scale simulations highlight that AlloX can reduce the average job completion time significantly (by up to 95% when the system load is high) while providing fairness and preventing starvation.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -790,9 +874,9 @@
                             
                         </div>
                         <div class="pub-badges">
-                            <span class="Label Label--red pub-badge">Artifacts Available</span>
-                            <span class="Label Label--red pub-badge">Artifacts Evaluated Functional</span>
-                            <span class="Label Label--red pub-badge">Artifacts Replicated</span>
+                            <span class="Label Label--danger pub-badge">Artifacts Available</span>
+                            <span class="Label Label--danger pub-badge">Artifacts Evaluated Functional</span>
+                            <span class="Label Label--danger pub-badge">Artifacts Replicated</span>
                         </div>
                         <div class="pub-authors">
                             <span class="pub-author pub-author-Peifeng-Yu ">Peifeng&nbspYu</span>, and 
@@ -803,6 +887,19 @@
                             (<a target="_blank" title="19.2%"
                                 href="https://mlsys.org/Conferences/2020">MLSys'20</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp19.2%)</span>
+                        </div>
+                        <div class="pub-links">
+                            <a target="_blank" href="/publications/files/salus:mlsys20/salus-mlsys20.pdf">[paper]</a>
+                            <a target="_blank" href="/publications/files/salus:mlsys20/salus-mlsys20-talk.pptm">[slides]</a>
+                            <a target="_blank" href="/publications/files/salus:mlsys20/salus-mlsys20-poster.pdf">[poster]</a>
+                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{salus:mlsys20,
+    author    = {Peifeng Yu and Mosharaf Chowdhury},
+    booktitle = {MLSys},
+    title     = {Salus: Fine-Grained {GPU} Sharing Primitives for Deep Learning Applications},
+    year      = {2020},
+}
+">[bibtex]</a>
+                            <a class="pub-link-abstract">[abstract]</a>
                         </div>
                         <div class="pub-abstract-frame">
                             <div class="pub-abstract">
@@ -825,19 +922,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 
                                 </blockquote>
                             </div>
-                        </div>
-                        <div class="pub-links">
-                            <a target="_blank" href="/publications/files/salus:mlsys20/salus-mlsys20.pdf">[paper]</a>
-                            <a target="_blank" href="/publications/files/salus:mlsys20/salus-mlsys20-talk.pptm">[slides]</a>
-                            <a target="_blank" href="/publications/files/salus:mlsys20/salus-mlsys20-poster.pdf">[poster]</a>
-                            <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{salus:mlsys20,
-    author    = {Peifeng Yu and Mosharaf Chowdhury},
-    booktitle = {MLSys},
-    title     = {Salus: Fine-Grained {GPU} Sharing Primitives for Deep Learning Applications},
-    year      = {2020},
-}
-">[bibtex]</a>
-                            <a class="pub-link-abstract">[abstract]</a>
                         </div>
                     </div>
                 </li>
@@ -864,14 +948,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                                 href="https://www.usenix.org/conference/nsdi20">NSDI'20</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp18.36%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>The popularity of big data and AI has led to many optimizations at different layers of distributed computation stacks. Despite – or perhaps, because of – its role as the narrow waist of such software stacks, the design of the execution engine, which is in charge of executing every single task of a job, has mostly remained unchanged. As a result, the execution engines available today are ones primarily designed for low latency and high bandwidth datacenter networks. When either or both of the network assumptions do not hold, CPUs are significantly underutilized.</p>
-<p>In this paper, we take a first-principles approach toward developing an execution engine that can adapt to diverse network conditions. Sol, our federated execution engine architecture, flips the status quo in two respects. First, to mitigate the impact of high latency, Sol proactively assigns tasks, but does so judiciously to be resilient to uncertainties. Second, to improve the overall resource utilization, Sol decouples communication from computation internally instead of committing resources to both aspects of a task simultaneously. Our evaluations on EC2 show that, compared to Apache Spark in resource-constrained networks, Sol improves SQL and machine learning jobs by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.4</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">16.4\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">6</span><span class="mord">.</span><span class="mord">4</span><span class="mord">×</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.2</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">4.2\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mord">.</span><span class="mord">2</span><span class="mord">×</span></span></span></span> on average.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/sol:nsdi20/sol-nsdi20.pdf">[paper]</a>
                             <a target="_blank" href="/publications/files/sol:nsdi20/sol-nsdi20-slides.pdf">[slides]</a>
@@ -885,6 +961,14 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>The popularity of big data and AI has led to many optimizations at different layers of distributed computation stacks. Despite – or perhaps, because of – its role as the narrow waist of such software stacks, the design of the execution engine, which is in charge of executing every single task of a job, has mostly remained unchanged. As a result, the execution engines available today are ones primarily designed for low latency and high bandwidth datacenter networks. When either or both of the network assumptions do not hold, CPUs are significantly underutilized.</p>
+<p>In this paper, we take a first-principles approach toward developing an execution engine that can adapt to diverse network conditions. Sol, our federated execution engine architecture, flips the status quo in two respects. First, to mitigate the impact of high latency, Sol proactively assigns tasks, but does so judiciously to be resilient to uncertainties. Second, to improve the overall resource utilization, Sol decouples communication from computation internally instead of committing resources to both aspects of a task simultaneously. Our evaluations on EC2 show that, compared to Apache Spark in resource-constrained networks, Sol improves SQL and machine learning jobs by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.4</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">16.4\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">6</span><span class="mord">.</span><span class="mord">4</span><span class="mord">×</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.2</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">4.2\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mord">.</span><span class="mord">2</span><span class="mord">×</span></span></span></span> on average.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -911,13 +995,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                                 href="https://www.usenix.org/conference/nsdi20">NSDI'20</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp18.36%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>By replicating data across sites in multiple geo- graphic regions, web services can maximize availability and minimize latency for their users. However, when sacrificing data consistency is not an option, we show that service providers have to today incur significantly higher cost to meet desired la- tency goals than the lowest cost theoretically feasible. We show that the key to addressing this sub-optimality is to 1) allow for erasure coding, not just replication, of data across data cen- ters, and 2) mitigate the resultant increase in read and write la- tencies by rethinking how to enable consensus across the wide- area network. Our extensive evaluation mimicking web service deployments on the Azure cloud service shows that we enable near-optimal latency versus cost tradeoffs.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/pando:nsdi20/pando-nsdi20.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{pando:nsdi20,
@@ -929,6 +1006,13 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>By replicating data across sites in multiple geo- graphic regions, web services can maximize availability and minimize latency for their users. However, when sacrificing data consistency is not an option, we show that service providers have to today incur significantly higher cost to meet desired la- tency goals than the lowest cost theoretically feasible. We show that the key to addressing this sub-optimality is to 1) allow for erasure coding, not just replication, of data across data cen- ters, and 2) mitigate the resultant increase in read and write la- tencies by rethinking how to enable consensus across the wide- area network. Our extensive evaluation mimicking web service deployments on the Azure cloud service shows that we enable near-optimal latency versus cost tradeoffs.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -958,15 +1042,8 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         <div class="pub-conference">
                             arXiv
                             (<a target="_blank" title=""
-                                href="https://arxiv.org">arXiv</a>)
+                                href="https://arxiv.org/abs/1912.03523">arXiv:1912.03523</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Simultaneously supporting latency- and throughout-sensitive workloads in a shared environment is an increasingly more common challenge in big data clusters. Despite many advances, existing cluster schedulers force the same performance goal - fairness in most cases - on all jobs. Latency-sensitive jobs suffer, while throughput-sensitive ones thrive. Using prioritization does the opposite: it opens up a path for latency-sensitive jobs to dominate. In this paper, we tackle the challenges in supporting both short-term performance and long-term fairness simultaneously with high resource utilization by proposing Bounded Priority Fairness (BoPF). BoPF provides short-term resource guarantees to latency-sensitive jobs and maintains long-term fairness for throughput-sensitive jobs. BoPF is the first scheduler that can provide long-term fairness, burst guarantee, and Pareto efficiency in a strategyproof manner for multi-resource scheduling. Deployments and large-scale simulations show that BoPF closely approximates the performance of Strict Priority as well as the fairness characteristics of DRF. In deployments, BoPF speeds up latency-sensitive jobs by 5.38 times compared to DRF, while still maintaining long-term fairness. In the meantime, BoPF improves the average completion times of throughput-sensitive jobs by up to 3.05 times compared to Strict Priority.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="https://arxiv.org/abs/1912.03523">[paper]</a>
@@ -985,6 +1062,13 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Simultaneously supporting latency- and throughout-sensitive workloads in a shared environment is an increasingly more common challenge in big data clusters. Despite many advances, existing cluster schedulers force the same performance goal - fairness in most cases - on all jobs. Latency-sensitive jobs suffer, while throughput-sensitive ones thrive. Using prioritization does the opposite: it opens up a path for latency-sensitive jobs to dominate. In this paper, we tackle the challenges in supporting both short-term performance and long-term fairness simultaneously with high resource utilization by proposing Bounded Priority Fairness (BoPF). BoPF provides short-term resource guarantees to latency-sensitive jobs and maintains long-term fairness for throughput-sensitive jobs. BoPF is the first scheduler that can provide long-term fairness, burst guarantee, and Pareto efficiency in a strategyproof manner for multi-resource scheduling. Deployments and large-scale simulations show that BoPF closely approximates the performance of Strict Priority as well as the fairness characteristics of DRF. In deployments, BoPF speeds up latency-sensitive jobs by 5.38 times compared to DRF, while still maintaining long-term fairness. In the meantime, BoPF improves the average completion times of throughput-sensitive jobs by up to 3.05 times compared to Strict Priority.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1007,16 +1091,8 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         <div class="pub-conference">
                             arXiv
                             (<a target="_blank" title=""
-                                href="https://arxiv.org">arXiv</a>)
+                                href="https://arxiv.org/abs/1910.09727">arXiv:1910.09727</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Memory disaggregation has received attention in recent years as a promising idea to reduce the total cost of ownership (TCO) of memory in modern datacenters. However, relying on remote memory expands an application’s failure domain and makes it susceptible to tail latency variations. In attempts to making disaggregated memory resilient, stateof-the-art solutions face the classic tradeoff between performance and efficiency: some double the memory overhead of disaggregation by replicating to remote memory, while many others limit performance by replicating to the local disk.</p>
-<p>We present Hydra, a configurable, erasure-coded resilience mechanism for common memory disaggregation solutions. It can transparently handle uncertainties arising from remote failures, evictions, memory corruptions, and stragglers from network imbalance with a significantly better performanceefficiency tradeoff than the state-of-the-art. We design a finetuned data path to achieve single µs read/write latency to remote memory, develop decentralized algorithms for clusterwide memory management, and analyze how to select parameters to mitigate independent and correlated uncertainties. Our integration of Hydra with two major memory disaggregation systems and evaluation on a 50-machine RDMA cluster demonstrates that it achieves the best of both worlds: it improves the latency and throughput of memory-intensive applications by up to 64.78× and 20.61×, respectively, over the state-of-the-art disk backup-based solution. At the same time, it provides performance similar to that of in-memory replication with 1.6× lower memory overhead.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="https://arxiv.org/abs/1910.09727">[paper]</a>
@@ -1035,6 +1111,14 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Memory disaggregation has received attention in recent years as a promising idea to reduce the total cost of ownership (TCO) of memory in modern datacenters. However, relying on remote memory expands an application’s failure domain and makes it susceptible to tail latency variations. In attempts to making disaggregated memory resilient, stateof-the-art solutions face the classic tradeoff between performance and efficiency: some double the memory overhead of disaggregation by replicating to remote memory, while many others limit performance by replicating to the local disk.</p>
+<p>We present Hydra, a configurable, erasure-coded resilience mechanism for common memory disaggregation solutions. It can transparently handle uncertainties arising from remote failures, evictions, memory corruptions, and stragglers from network imbalance with a significantly better performanceefficiency tradeoff than the state-of-the-art. We design a finetuned data path to achieve single µs read/write latency to remote memory, develop decentralized algorithms for clusterwide memory management, and analyze how to select parameters to mitigate independent and correlated uncertainties. Our integration of Hydra with two major memory disaggregation systems and evaluation on a 50-machine RDMA cluster demonstrates that it achieves the best of both worlds: it improves the latency and throughput of memory-intensive applications by up to 64.78× and 20.61×, respectively, over the state-of-the-art disk backup-based solution. At the same time, it provides performance similar to that of in-memory replication with 1.6× lower memory overhead.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1061,13 +1145,6 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                                 href="https://spaa.acm.org/2019/">SPAA'19</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp33%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>The coflow scheduling problem has emerged as a popular abstraction in the last few years to study data communication problems within a data center. In this basic framework, each coflow has a set of communication demands and the goal is to schedule many coflows in a manner that minimizes the total weighted completion time. A coflow is said to complete when all its communication needs are met. This problem has been extremely well studied for the case of complete bipartite graphs that model a data center with full bisection bandwidth and several approximation algorithms and effective heuristics have been proposed recently. In this work, we study a slightly different model of coflow scheduling in general graphs (to capture traffic between data centers) and develop practical and efficient approximation algorithms for it. Our main result is a randomized 2 approximation algorithm for the single path and free path model, significantly improving prior work. In addition, we demonstrate via extensive experiments that the algorithm is practical, easy to implement and performs well in practice.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/nocs:spaa19/nocs-spaa19.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{nocs:spaa19,
@@ -1079,6 +1156,13 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>The coflow scheduling problem has emerged as a popular abstraction in the last few years to study data communication problems within a data center. In this basic framework, each coflow has a set of communication demands and the goal is to schedule many coflows in a manner that minimizes the total weighted completion time. A coflow is said to complete when all its communication needs are met. This problem has been extremely well studied for the case of complete bipartite graphs that model a data center with full bisection bandwidth and several approximation algorithms and effective heuristics have been proposed recently. In this work, we study a slightly different model of coflow scheduling in general graphs (to capture traffic between data centers) and develop practical and efficient approximation algorithms for it. Our main result is a randomized 2 approximation algorithm for the single path and free path model, significantly improving prior work. In addition, we demonstrate via extensive experiments that the algorithm is practical, easy to implement and performs well in practice.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1102,16 +1186,8 @@ the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://w
                         <div class="pub-conference">
                             arXiv
                             (<a target="_blank" title=""
-                                href="https://arxiv.org">arXiv</a>)
+                                href="https://arxiv.org/abs/1906.06851">arXiv:1906.06851</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>The coflow scheduling problem has emerged as a popular abstraction in the last few years to study data communication problems within a data center. In this basic framework, each coflow has a set of communication demands and the goal is to schedule many coflows in a manner that minimizes the total weighted completion time. A coflow is said to complete when all its communication needs are met. This problem has been extremely well studied for the case of complete bipartite graphs that model a data center with full bisection bandwidth and several approximation algorithms and effective heuristics have been proposed recently.
-In this work, we study a slightly different model of coflow scheduling in general graphs (to capture traffic between data centers) and develop practical and efficient approximation algorithms for it. Our main result is a randomized 2 approximation algorithm for the single path and free path model, significantly improving prior work. In addition, we demonstrate via extensive experiments that the algorithm is practical, easy to implement and performs well in practice.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="https://arxiv.org/abs/1906.06851">[paper]</a>
@@ -1130,6 +1206,14 @@ In this work, we study a slightly different model of coflow scheduling in genera
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>The coflow scheduling problem has emerged as a popular abstraction in the last few years to study data communication problems within a data center. In this basic framework, each coflow has a set of communication demands and the goal is to schedule many coflows in a manner that minimizes the total weighted completion time. A coflow is said to complete when all its communication needs are met. This problem has been extremely well studied for the case of complete bipartite graphs that model a data center with full bisection bandwidth and several approximation algorithms and effective heuristics have been proposed recently.
+In this work, we study a slightly different model of coflow scheduling in general graphs (to capture traffic between data centers) and develop practical and efficient approximation algorithms for it. Our main result is a randomized 2 approximation algorithm for the single path and free path model, significantly improving prior work. In addition, we demonstrate via extensive experiments that the algorithm is practical, easy to implement and performs well in practice.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1152,16 +1236,8 @@ In this work, we study a slightly different model of coflow scheduling in genera
                         <div class="pub-conference">
                             arXiv
                             (<a target="_blank" title=""
-                                href="https://arxiv.org">arXiv</a>)
+                                href="https://arxiv.org/abs/1905.04437">arXiv:1905.04437</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Despite its increasing popularity, most of RDMA’s benefits such as ultra-low latency can be achieved only when running an application in isolation. Using microbenchmarks and real open-source RDMA applications, we identify a series of performance anomalies when multiple applications coexist and show that such anomalies are pervasive across InfiniBand, RoCEv2, and iWARP. They arise due to a fundamental tradeoff between performance isolation and work conservation, which the state-of-the-art RDMA congestion control protocols such as DCQCN cannot resolve.</p>
-<p>We present Justitia to address these performance anomalies. Justitia is a software-only, host-based, and easy-to-deploy solution that maximizes RNIC utilization while guaranteeing performance isolation via shaping, rate limiting, and pacing at senders. Our evaluation of Justitia on multiple RDMA implementations show that Justitia effectively isolates different types of traffic and significantly improves latency (by up to 56.9×) and throughput (by up to 9.7×) of real-world RDMAbased applications without compromising low CPU usage or modifying the applications.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/justitia:arxiv19/justitia-arxiv19.pdf">[paper]</a>
@@ -1180,6 +1256,14 @@ In this work, we study a slightly different model of coflow scheduling in genera
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Despite its increasing popularity, most of RDMA’s benefits such as ultra-low latency can be achieved only when running an application in isolation. Using microbenchmarks and real open-source RDMA applications, we identify a series of performance anomalies when multiple applications coexist and show that such anomalies are pervasive across InfiniBand, RoCEv2, and iWARP. They arise due to a fundamental tradeoff between performance isolation and work conservation, which the state-of-the-art RDMA congestion control protocols such as DCQCN cannot resolve.</p>
+<p>We present Justitia to address these performance anomalies. Justitia is a software-only, host-based, and easy-to-deploy solution that maximizes RNIC utilization while guaranteeing performance isolation via shaping, rate limiting, and pacing at senders. Our evaluation of Justitia on multiple RDMA implementations show that Justitia effectively isolates different types of traffic and significantly improves latency (by up to 56.9×) and throughput (by up to 9.7×) of real-world RDMAbased applications without compromising low CPU usage or modifying the applications.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1200,15 +1284,8 @@ In this work, we study a slightly different model of coflow scheduling in genera
                         <div class="pub-conference">
                             arXiv
                             (<a target="_blank" title=""
-                                href="https://arxiv.org">arXiv</a>)
+                                href="https://arxiv.org/abs/1904.08480">arXiv:1904.08480</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Geo-distributed analytics (GDA) frameworks transfer large datasets over the wide-area network (WAN). Yet existing frameworks often ignore the WAN topology. This disconnect between WAN-bound applications and the WAN itself results in missed opportunities for cross-layer optimizations. In this paper, we present Terra to bridge this gap. Instead of decoupled WAN routing and GDA transfer scheduling, Terra applies scalable cross-layer optimizations to minimize WAN transfer times for GDA jobs. We present a two-pronged approach: (i) a scalable algorithm for joint routing and scheduling to make fast decisions; and (ii) a scalable, overlay-based enforcement mechanism that avoids expensive switch rule updates in the WAN. Together, they enable Terra to quickly react to WAN uncertainties such as large bandwidth fluctuations and failures in an application-aware manner as well. Integration with the FloodLight SDN controller and Apache YARN, and evaluation on 4 workloads and 3 WAN topologies show that Terra improves the average completion times of GDA jobs by 1.55x-3.43x. GDA jobs running with Terra meets 2.82x-4.29x more deadlines and can quickly react to WAN-level events in an application-aware manner.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="https://arxiv.org/abs/1904.08480">[paper]</a>
@@ -1227,6 +1304,13 @@ In this work, we study a slightly different model of coflow scheduling in genera
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Geo-distributed analytics (GDA) frameworks transfer large datasets over the wide-area network (WAN). Yet existing frameworks often ignore the WAN topology. This disconnect between WAN-bound applications and the WAN itself results in missed opportunities for cross-layer optimizations. In this paper, we present Terra to bridge this gap. Instead of decoupled WAN routing and GDA transfer scheduling, Terra applies scalable cross-layer optimizations to minimize WAN transfer times for GDA jobs. We present a two-pronged approach: (i) a scalable algorithm for joint routing and scheduling to make fast decisions; and (ii) a scalable, overlay-based enforcement mechanism that avoids expensive switch rule updates in the WAN. Together, they enable Terra to quickly react to WAN uncertainties such as large bandwidth fluctuations and failures in an application-aware manner as well. Integration with the FloodLight SDN controller and Apache YARN, and evaluation on 4 workloads and 3 WAN topologies show that Terra improves the average completion times of GDA jobs by 1.55x-3.43x. GDA jobs running with Terra meets 2.82x-4.29x more deadlines and can quickly react to WAN-level events in an application-aware manner.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1256,14 +1340,6 @@ In this work, we study a slightly different model of coflow scheduling in genera
                                 href="https://www.usenix.org/conference/nsdi19">NSDI'19</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp14.76%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Deep learning (DL) training jobs bring some unique challenges to existing cluster managers, such as unpredictable training times, an all-or-nothing execution model, and inflexibility in GPU sharing. Our analysis of a large GPU cluster in production shows that existing big data schedulers cause long queueing delays and low overall performance.</p>
-<p>We present Tiresias, a GPU cluster manager tailored for distributed DL training jobs, which efficiently schedules and places DL jobs to reduce their job completion times (JCTs). Given that a DL job’s execution time is often unpredictable, we propose two scheduling algorithms – Discretized Two-Dimensional Gittins index relies on partial information and Discretized Two-Dimensional LAS is information-agnostic – that aim to minimize the average JCT. Additionally, we describe when the consolidated placement constraint can be relaxed, and present a placement algorithm to leverage these observations without any user input. Experiments on the Michigan ConFlux cluster with 60 P100 GPUs and large-scale trace-driven simulations show that Tiresias improves the average JCT by up to 5.5× over an Apache YARN-based resource manager used in production. More importantly, Tiresias’s performance is comparable to that of solutions assuming perfect knowledge.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/tiresias:nsdi19/tiresias-nsdi19.pdf">[paper]</a>
                             <a target="_blank" href="/publications/files/tiresias:nsdi19/tiresias-nsdi19-slides.pdf">[slides]</a>
@@ -1278,6 +1354,14 @@ In this work, we study a slightly different model of coflow scheduling in genera
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Deep learning (DL) training jobs bring some unique challenges to existing cluster managers, such as unpredictable training times, an all-or-nothing execution model, and inflexibility in GPU sharing. Our analysis of a large GPU cluster in production shows that existing big data schedulers cause long queueing delays and low overall performance.</p>
+<p>We present Tiresias, a GPU cluster manager tailored for distributed DL training jobs, which efficiently schedules and places DL jobs to reduce their job completion times (JCTs). Given that a DL job’s execution time is often unpredictable, we propose two scheduling algorithms – Discretized Two-Dimensional Gittins index relies on partial information and Discretized Two-Dimensional LAS is information-agnostic – that aim to minimize the average JCT. Additionally, we describe when the consolidated placement constraint can be relaxed, and present a placement algorithm to leverage these observations without any user input. Experiments on the Michigan ConFlux cluster with 60 P100 GPUs and large-scale trace-driven simulations show that Tiresias improves the average JCT by up to 5.5× over an Apache YARN-based resource manager used in production. More importantly, Tiresias’s performance is comparable to that of solutions assuming perfect knowledge.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1298,24 +1382,8 @@ In this work, we study a slightly different model of coflow scheduling in genera
                         <div class="pub-conference">
                             arXiv
                             (<a target="_blank" title=""
-                                href="https://arxiv.org">arXiv</a>)
+                                href="https://arxiv.org/abs/1902.04610">arXiv:1902.04610</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>GPU computing is becoming increasingly more popular with the proliferation of deep learning (DL) applications.
-However, unlike traditional resources such as CPU or the network, modern GPUs do not natively support fine-grained sharing primitives.
-Consequently, implementing common policies such as time sharing and preemption are expensive.
-Worse, when a DL application cannot completely use a GPU’s resources, the GPU cannot be efficiently shared between multiple applications, leading to GPU underutilization.</p>
-<p>We present Salus to enable two GPU sharing primitives: fast job switching and memory sharing, in order to achieve fine-grained GPU sharing among multiple DL applications.
-Salus implements an efficient, consolidated execution service that exposes the GPU to different DL applications, and enforces fine-grained sharing by performing iteration scheduling and addressing associated memory management issues.
-We show that these primitives can then be used to implement flexible sharing policies such as fairness, prioritization, and packing for various use cases.
-Our integration of Salus with TensorFlow and evaluation on popular DL jobs show that Salus can improve the average completion time of DL training jobs by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3.19</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">3.19\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mord">.</span><span class="mord">1</span><span class="mord">9</span><span class="mord">×</span></span></span></span>,
-GPU utilization for hyper-parameter tuning by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.38</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">2.38\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord">.</span><span class="mord">3</span><span class="mord">8</span><span class="mord">×</span></span></span></span>,
-and GPU utilization of DL inference applications by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>42</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">42\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mord">2</span><span class="mord">×</span></span></span></span> over not sharing the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">7\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">7</span><span class="mord">×</span></span></span></span> over NVIDIA MPS with small overhead.</p>
-
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="https://arxiv.org/abs/1902.04610">[paper]</a>
@@ -1334,6 +1402,22 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>GPU computing is becoming increasingly more popular with the proliferation of deep learning (DL) applications.
+However, unlike traditional resources such as CPU or the network, modern GPUs do not natively support fine-grained sharing primitives.
+Consequently, implementing common policies such as time sharing and preemption are expensive.
+Worse, when a DL application cannot completely use a GPU’s resources, the GPU cannot be efficiently shared between multiple applications, leading to GPU underutilization.</p>
+<p>We present Salus to enable two GPU sharing primitives: fast job switching and memory sharing, in order to achieve fine-grained GPU sharing among multiple DL applications.
+Salus implements an efficient, consolidated execution service that exposes the GPU to different DL applications, and enforces fine-grained sharing by performing iteration scheduling and addressing associated memory management issues.
+We show that these primitives can then be used to implement flexible sharing policies such as fairness, prioritization, and packing for various use cases.
+Our integration of Salus with TensorFlow and evaluation on popular DL jobs show that Salus can improve the average completion time of DL training jobs by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3.19</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">3.19\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mord">.</span><span class="mord">1</span><span class="mord">9</span><span class="mord">×</span></span></span></span>,
+GPU utilization for hyper-parameter tuning by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.38</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">2.38\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord">.</span><span class="mord">3</span><span class="mord">8</span><span class="mord">×</span></span></span></span>,
+and GPU utilization of DL inference applications by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>42</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">42\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mord">2</span><span class="mord">×</span></span></span></span> over not sharing the GPU and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">7\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">7</span><span class="mord">×</span></span></span></span> over NVIDIA MPS with small overhead.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1366,12 +1450,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="https://sigmobile.org/mobicom/2018/">MobiCom'18</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp22.46%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>An increasing amount of mobile analytics is performed on data that is procured in a real-time fashion to make real-time decisions. Such tasks include simple reporting on streams to sophisticated model building. However, the practicality of these analyses are impeded in several domains because they are faced with a fundamental trade-off between data collection latency and analysis accuracy. In this paper, we first study this trade-off in the context of a specific domain, Cellular Radio Access Networks (RAN). We find that the trade-off can be resolved using two broad, general techniques: intelligent data grouping and task formulations that leverage domain characteristics. Based on this, we present CellScope, a system that applies a domain specific formulation and application of Multi-task Learning (MTL) to RAN performance analysis. It uses three techniques: feature engineering to transform raw data into effective features, a PCA inspired similarity metric to group data from geographically nearby base stations sharing performance commonalities, and a hybrid online-offline model for efficient model updates. Our evaluation shows that CellScope's accuracy improvements over direct application of ML range from 2.5X to 4.4X while reducing the model update overhead by up to 4.8X. We have also used CellScope to analyze an LTE network of over 2 million subscribers, where it reduced troubleshooting efforts by several magnitudes.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/cellscope:mobicom18/cellscope-mobicom18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{cellscope:mobicom18,
@@ -1386,6 +1464,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>An increasing amount of mobile analytics is performed on data that is procured in a real-time fashion to make real-time decisions. Such tasks include simple reporting on streams to sophisticated model building. However, the practicality of these analyses are impeded in several domains because they are faced with a fundamental trade-off between data collection latency and analysis accuracy. In this paper, we first study this trade-off in the context of a specific domain, Cellular Radio Access Networks (RAN). We find that the trade-off can be resolved using two broad, general techniques: intelligent data grouping and task formulations that leverage domain characteristics. Based on this, we present CellScope, a system that applies a domain specific formulation and application of Multi-task Learning (MTL) to RAN performance analysis. It uses three techniques: feature engineering to transform raw data into effective features, a PCA inspired similarity metric to group data from geographically nearby base stations sharing performance commonalities, and a hybrid online-offline model for efficient model updates. Our evaluation shows that CellScope's accuracy improvements over direct application of ML range from 2.5X to 4.4X while reducing the model update overhead by up to 4.8X. We have also used CellScope to analyze an LTE network of over 2 million subscribers, where it reduced troubleshooting efforts by several magnitudes.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1411,12 +1495,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="https://www.usenix.org/conference/osdi18">OSDI'18</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp18.29%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Modern data processing clusters are highly dynamic – both in terms of the number of concurrently running jobs and their resource usage. To improve job performance, recent works have focused on optimizing the cluster scheduler and the jobs' query planner with a focus on picking the right query execution plan (QEP) – represented as a directed acyclic graph – for a job in a resource-aware manner, and scheduling jobs in a QEP-aware manner. However, because existing solutions use a fixed QEP throughout the entire execution, the inability to adapt a QEP in reaction to resource changes often leads to large performance inefficiencies. This paper argues for dynamic query re-planning, wherein we re-evaluate and re-plan a job's QEP during its execution. We show that designing for re-planning requires fundamental changes to the interfaces between key layers of data analytics stacks today, i.e., the query planner, the execution engine, and the cluster scheduler. Instead of pushing more complexity into the scheduler or the query planner, we argue for a redistribution of responsibilities between the three components to simplify their designs. Under this redesign, we analytically show that a greedy algorithm for re-planning and execution alongside a simple max-min fair scheduler can offer provably competitive behavior even under adversarial resource changes. We prototype our algorithms atop Apache Hive and Tez. Via extensive experiments, we show that our design can offer a median performance improvement of 1.47X compared to state-of-the-art alternatives.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/qoop:osdi18/qoop-osdi18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{qoop:osdi18,
@@ -1431,6 +1509,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Modern data processing clusters are highly dynamic – both in terms of the number of concurrently running jobs and their resource usage. To improve job performance, recent works have focused on optimizing the cluster scheduler and the jobs' query planner with a focus on picking the right query execution plan (QEP) – represented as a directed acyclic graph – for a job in a resource-aware manner, and scheduling jobs in a QEP-aware manner. However, because existing solutions use a fixed QEP throughout the entire execution, the inability to adapt a QEP in reaction to resource changes often leads to large performance inefficiencies. This paper argues for dynamic query re-planning, wherein we re-evaluate and re-plan a job's QEP during its execution. We show that designing for re-planning requires fundamental changes to the interfaces between key layers of data analytics stacks today, i.e., the query planner, the execution engine, and the cluster scheduler. Instead of pushing more complexity into the scheduler or the query planner, we argue for a redistribution of responsibilities between the three components to simplify their designs. Under this redesign, we analytically show that a greedy algorithm for re-planning and execution alongside a simple max-min fair scheduler can offer provably competitive behavior even under adversarial resource changes. We prototype our algorithms atop Apache Hive and Tez. Via extensive experiments, we show that our design can offer a median performance improvement of 1.47X compared to state-of-the-art alternatives.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1455,12 +1539,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="https://conferences.sigcomm.org/events/apnet2018/index.html">APNet'18</a>)
                             
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Despite continued efforts toward building high bandwidth, low cost datacenter networks with reconfigurable optical fabrics, the impact of optical networks on datacenter applications has received little attention. Given the constraints of optical networks and the semantics of datacenter applications, we believe the network-application intersection to be the next innovation hotspot. In this paper, we specifically focus on data-parallel applications for two primary reasons: they are a natural fit to exploit high bandwidth optical fabrics, and they often form structured communication patterns or coflows. We show that configuring circuits in reaction to changing traffic patterns is not enough. Efficient scheduling of even a single coflow in optical networks should be a "Pas de deux" – a joint shaping of not only the underlying circuit, but also the application’s traffic demand. Our preliminary evaluation with a production trace shows that joint shaping is on average within 1.18X of the optimal and performs 30% better than solu- tions that configure circuits in application-agnostic fashions. We further extend our analysis to inter-coflow scheduling and propose a layered solution that jointly considers circuit reconfiguration, coflow prioritization, as well as flow rate and route assignments.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/pdd:apnet18/pdd-apnet18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{pdd:apnet18,
@@ -1475,6 +1553,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Despite continued efforts toward building high bandwidth, low cost datacenter networks with reconfigurable optical fabrics, the impact of optical networks on datacenter applications has received little attention. Given the constraints of optical networks and the semantics of datacenter applications, we believe the network-application intersection to be the next innovation hotspot. In this paper, we specifically focus on data-parallel applications for two primary reasons: they are a natural fit to exploit high bandwidth optical fabrics, and they often form structured communication patterns or coflows. We show that configuring circuits in reaction to changing traffic patterns is not enough. Efficient scheduling of even a single coflow in optical networks should be a "Pas de deux" – a joint shaping of not only the underlying circuit, but also the application’s traffic demand. Our preliminary evaluation with a production trace shows that joint shaping is on average within 1.18X of the optimal and performs 30% better than solu- tions that configure circuits in application-agnostic fashions. We further extend our analysis to inter-coflow scheduling and propose a layered solution that jointly considers circuit reconfiguration, coflow prioritization, as well as flow rate and route assignments.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1502,12 +1586,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="https://www.usenix.org/conference/hotcloud18">HotCloud'18</a>)
                             
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>A number of existing and emerging application scenarios generate graph-structured data in a geo-distributed fashion. Although there is a lot of interest in distributed graph processing systems, none of them support geo-distributed graph processing. Geo-distributed analytics, on the other hand, has not focused on iterative workloads such as distributed graph processing. In this paper, we look at the problem of efficient geo-distributed graph analytics. We find that optimizing the iterative processing style of graph-parallel systems is the key to achieving this goal rather than extending existing geo-distributed techniques to graph processing. Based on this, we discuss our proposal on building Monarch, the first system to our knowledge that focuses on geo-distributed graph processing. Our preliminary evaluation of Monarch shows encouraging results.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/monarch:hotcloud18/monarch-hotcloud18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{monarch:hotcloud18,
@@ -1521,6 +1599,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>A number of existing and emerging application scenarios generate graph-structured data in a geo-distributed fashion. Although there is a lot of interest in distributed graph processing systems, none of them support geo-distributed graph processing. Geo-distributed analytics, on the other hand, has not focused on iterative workloads such as distributed graph processing. In this paper, we look at the problem of efficient geo-distributed graph analytics. We find that optimizing the iterative processing style of graph-parallel systems is the key to achieving this goal rather than extending existing geo-distributed techniques to graph processing. Based on this, we discuss our proposal on building Monarch, the first system to our knowledge that focuses on geo-distributed graph processing. Our preliminary evaluation of Monarch shows encouraging results.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1545,12 +1629,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="https://www.usenix.org/conference/hotcloud18">HotCloud'18</a>)
                             
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Efficient big data analytics over the wide-area network (WAN) is becoming increasingly more popular. Current geo-distributed analytics (GDA) systems employ WANaware optimizations to tackle WAN heterogeneities. Although extensive measurements on public clouds suggest the potential for improving inter-datacenter data transfers via detours, we show that such optimizations are unlikely to work in practice. This is because the widely accepted mantra used in a large body of literature – WAN bandwidth has high variability – can be misleading. Instead, our measurements across 40 datacenters belonging to Amazon EC2, Microsoft Azure, and Google Cloud Platform show that the available WAN bandwidth is often spatially homogeneous and temporally stable between two virtual machines (VMs) in different datacenters, even though it can be heterogeneous at the TCP flow level. Moreover, there is little scope for either bandwidth or latency optimization in a cost-effective manner via relaying. We believe that these findings will motivate the community to rethink the design rationales of GDA systems and geo-distributed services.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/relay:hotcloud18/relay-hotcloud18.pdf">[paper]</a>
                             <a target="_blank" href="/publications/files/relay:hotcloud18/relay-hotcloud18-slides.pdf">[slides]</a>
@@ -1565,6 +1643,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Efficient big data analytics over the wide-area network (WAN) is becoming increasingly more popular. Current geo-distributed analytics (GDA) systems employ WANaware optimizations to tackle WAN heterogeneities. Although extensive measurements on public clouds suggest the potential for improving inter-datacenter data transfers via detours, we show that such optimizations are unlikely to work in practice. This is because the widely accepted mantra used in a large body of literature – WAN bandwidth has high variability – can be misleading. Instead, our measurements across 40 datacenters belonging to Amazon EC2, Microsoft Azure, and Google Cloud Platform show that the available WAN bandwidth is often spatially homogeneous and temporally stable between two virtual machines (VMs) in different datacenters, even though it can be heterogeneous at the TCP flow level. Moreover, there is little scope for either bandwidth or latency optimization in a cost-effective manner via relaying. We believe that these findings will motivate the community to rethink the design rationales of GDA systems and geo-distributed services.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1590,12 +1674,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="http://www.sigmetrics.org/mama/2018/">MAMA'18</a>)
                             
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Motivated by the proliferation of heterogeneous processors such as multi-core CPUs, GPUs, TPUs, and other accelerators for machine learning, we formulate a novel multi-interchangeable resource allocation (MIRA) problem where some resources are interchangeable. The challenge is how to allocate interchangeable resources to users in a sharing system while maintaining desirable properties such as sharing incentive, Pareto efficiency, and envy-freeness. In this paper, we first show that existing algorithms, including the Dominant Resource Fairness used in production systems, fail to provide these properties for interchangeable resources. Then we characterize the tradeoff between performance and strategyproofness, and design the Budget-based (BUD) algorithm, which preserves Pareto efficiency, sharing incentive and envy-freeness while providing better performance over currently used algorithms.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/allox:mama18/allox-mama18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{allox:mama18,
@@ -1609,6 +1687,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
                         </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Motivated by the proliferation of heterogeneous processors such as multi-core CPUs, GPUs, TPUs, and other accelerators for machine learning, we formulate a novel multi-interchangeable resource allocation (MIRA) problem where some resources are interchangeable. The challenge is how to allocate interchangeable resources to users in a sharing system while maintaining desirable properties such as sharing incentive, Pareto efficiency, and envy-freeness. In this paper, we first show that existing algorithms, including the Dominant Resource Fairness used in production systems, fail to provide these properties for interchangeable resources. Then we characterize the tradeoff between performance and strategyproofness, and design the Budget-based (BUD) algorithm, which preserves Pareto efficiency, sharing incentive and envy-freeness while providing better performance over currently used algorithms.
+                                </blockquote>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li data-pub-venue="GRADES-NDA"
@@ -1621,7 +1705,7 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                             
                         </div>
                         <div class="pub-badges">
-                            <span class="Label Label--red pub-badge">Best Paper Award</span>
+                            <span class="Label Label--danger pub-badge">Best Paper Award</span>
                         </div>
                         <div class="pub-authors">
                             <span class="pub-author pub-author-Anand-Padmanabha Iyer ">Anand&nbspPadmanabha&nbspIyer</span>, 
@@ -1638,12 +1722,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="https://sites.google.com/site/gradesnda2018/">GRADES-NDA'18</a>)
                             
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>While there has been a tremendous interest in processing data that has an underlying graph structure, existing distributed graph processing systems take several minutes or even hours to execute popular graph algorithms. However, in several cases, providing an approximate answer is good enough. Approximate analytics is seeing considerable attention in big data due to its ability to produce timely results by trading accuracy, but they do not support graph analytics. In this paper, we bridge this gap and take a first attempt at realizing approximate graph analytics. We discuss how traditional approximate analytics techniques do not carry over to the graph usecase. Leveraging the characteristics of graph properties and algorithms, we propose a graph sparsification technique, and a machine learning based approach to choose the apt amount of sparsification required to meet a given budget. Our preliminary evaluations show encouraging results.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/aga:grades-nda18/aga-grades-nda18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{aga:grades-nda18,
@@ -1655,6 +1733,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>While there has been a tremendous interest in processing data that has an underlying graph structure, existing distributed graph processing systems take several minutes or even hours to execute popular graph algorithms. However, in several cases, providing an approximate answer is good enough. Approximate analytics is seeing considerable attention in big data due to its ability to produce timely results by trading accuracy, but they do not support graph analytics. In this paper, we bridge this gap and take a first attempt at realizing approximate graph analytics. We discuss how traditional approximate analytics techniques do not carry over to the graph usecase. Leveraging the characteristics of graph properties and algorithms, we propose a graph sparsification technique, and a machine learning based approach to choose the apt amount of sparsification required to meet a given budget. Our preliminary evaluations show encouraging results.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1679,12 +1763,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="http://sigmod2018.org/">SIGMOD'18</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp19.52%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Lock managers are a crucial component of modern distributed systems. However, with the increasing availability of fast RDMA-enabled networks, traditional lock managers can no longer keep up with the latency and throughput requirements of modern systems. Centralized lock managers can ensure fairness and prevent starvation using global knowledge of the system, but are themselves single points of contention and failure. Consequently, they fall short in leveraging the full potential of RDMA networks. On the other hand, decentralized (RDMA-based) lock managers either completely sacrifice global knowledge to achieve higher throughput at the risk of starvation and higher tail latencies, or they resort to costly communications in order to maintain global knowledge, which can result in significantly lower throughput. In this paper, we show that it is possible for a lock manager to be fully decentralized and yet exchange the partial knowledge necessary for preventing starvation and thereby reducing tail latencies. Our main observation is that we can design a lock manager primarily using RDMA's fetch-and-add (FA) operations, which always succeed, rather than compare-and-swap (CAS) operations, which only succeed if a given condition is satisfied. While this requires us to rethink the locking mechanism from the ground up, it enables us to sidestep the performance drawbacks of the previous CAS-based proposals that relied solely on blind retries upon lock conflicts. Specifically, we present DSLR (Decentralized and Starvation-free Lock management with RDMA), a decentralized lock manager that targets distributed systems running on RDMA-enabled networks. We demonstrate that, despite being fully decentralized, DSLR prevents starvation and blind retries by guaranteeing first-come-first-serve (FCFS) scheduling without maintaining explicit queues. We adapt Lamport's bakery algorithm [36] to an RDMA-enabled environment with multiple bakers, utilizing only one-sided READ and atomic FA operations. Our experiments show that, on average, DSLR delivers 1.8X (and up to 2.8X) higher throughput than all existing RDMA-based lock managers, while reducing their mean and 99.9% latencies by 2.0X and 18.3X (and up to 2.5X and 47X), respectively.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/dslr:sigmod18/dslr-sigmod18.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{dslr:sigmod18,
@@ -1701,6 +1779,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Lock managers are a crucial component of modern distributed systems. However, with the increasing availability of fast RDMA-enabled networks, traditional lock managers can no longer keep up with the latency and throughput requirements of modern systems. Centralized lock managers can ensure fairness and prevent starvation using global knowledge of the system, but are themselves single points of contention and failure. Consequently, they fall short in leveraging the full potential of RDMA networks. On the other hand, decentralized (RDMA-based) lock managers either completely sacrifice global knowledge to achieve higher throughput at the risk of starvation and higher tail latencies, or they resort to costly communications in order to maintain global knowledge, which can result in significantly lower throughput. In this paper, we show that it is possible for a lock manager to be fully decentralized and yet exchange the partial knowledge necessary for preventing starvation and thereby reducing tail latencies. Our main observation is that we can design a lock manager primarily using RDMA's fetch-and-add (FA) operations, which always succeed, rather than compare-and-swap (CAS) operations, which only succeed if a given condition is satisfied. While this requires us to rethink the locking mechanism from the ground up, it enables us to sidestep the performance drawbacks of the previous CAS-based proposals that relied solely on blind retries upon lock conflicts. Specifically, we present DSLR (Decentralized and Starvation-free Lock management with RDMA), a decentralized lock manager that targets distributed systems running on RDMA-enabled networks. We demonstrate that, despite being fully decentralized, DSLR prevents starvation and blind retries by guaranteeing first-come-first-serve (FCFS) scheduling without maintaining explicit queues. We adapt Lamport's bakery algorithm [36] to an RDMA-enabled environment with multiple bakers, utilizing only one-sided READ and atomic FA operations. Our experiments show that, on average, DSLR delivers 1.8X (and up to 2.8X) higher throughput than all existing RDMA-based lock managers, while reducing their mean and 99.9% latencies by 2.0X and 18.3X (and up to 2.5X and 47X), respectively.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1731,14 +1815,8 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                         <div class="pub-conference">
                             USENIX ;login: Winter 2017, VOL. 42, NO. 4
                             (<a target="_blank" title=""
-                                href="https://www.usenix.org/publications/login">USENIX ;login:</a>)
+                                href="https://www.usenix.org/publications/login/winter2017">USENIX ;login: Winter 2017</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Memory disaggregation can expose remote memory across a cluster to local applications. However, existing proposals call for new architectures and/or new programming models, making them infeasible. We have developed a practical memory disaggregation solution, Infiniswap, which is a remote memory paging system for clusters with lowlatency, kernel-bypass networks such as RDMA. Infiniswap opportunistically harvests and transparently exposes unused memory across the cluster to unmodified applications by dividing the swap space of each machine into many chunks and distributing them to unused memory of many remote machines. For scalability, it leverages the power of many choices to perform decentralized memory chunk placements and evictions. Applications using Infiniswap receive large performance boosts when their working sets are larger than their physical memory allocations.
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/infiniswap:login17/infiniswap-login17.pdf">[paper]</a>
@@ -1755,6 +1833,12 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Memory disaggregation can expose remote memory across a cluster to local applications. However, existing proposals call for new architectures and/or new programming models, making them infeasible. We have developed a practical memory disaggregation solution, Infiniswap, which is a remote memory paging system for clusters with lowlatency, kernel-bypass networks such as RDMA. Infiniswap opportunistically harvests and transparently exposes unused memory across the cluster to unmodified applications by dividing the swap space of each machine into many chunks and distributing them to unused memory of many remote machines. For scalability, it leverages the power of many choices to perform decentralized memory chunk placements and evictions. Applications using Infiniswap receive large performance boosts when their working sets are larger than their physical memory allocations.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1781,12 +1865,6 @@ and GPU utilization of DL inference applications by <span class="katex"><span cl
                                 href="http://conferences.sigcomm.org/sigcomm/2017/">SIGCOMM'17</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp14.4%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Production datacenters operate under various uncertainties such as traffic dynamics, topology asymmetry, and failures. Therefore, datacenter load balancing schemes must be resilient to these uncertainties; i.e., they should accurately sense path conditions and timely react to mitigate the fallouts. Despite significant efforts, prior solutions have important drawbacks. On the one hand, solutions such as Presto and DRB are oblivious to path conditions and blindly reroute at fixed granularity. On the other hand, solutions such as CONGA and CLOVE can sense congestion, but they can only reroute when flowlets emerge; thus, they cannot always react timely to uncertainties. To make things worse, these solutions fail to detect/handle failures such as blackholes and random packet drops, which greatly degrades their performance. In this paper, we introduce Hermes, a datacenter load balancer that is resilient to the aforementioned uncertainties. At its heart, Hermes leverages comprehensive sensing to detect path conditions including failures unattended before, and it reacts using timely yet cautious rerouting. Hermes is a practical edge-based solution with no switch modification. We have implemented Hermes with commodity switches and evaluated it through both testbed experiments and large-scale simulations. Our results show that Hermes achieves comparable performance to CONGA and Presto in normal cases, and well handles uncertainties: under asymmetries, Hermes achieves up to 10% and 20% better flow completion time (FCT) than CONGA and CLOVE; under switch failures, it outperforms all other schemes by over 32%.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/hermes:sigcomm17/hermes-sigcomm17.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{hermes:sigcomm17,
@@ -1801,6 +1879,12 @@ In this paper, we introduce Hermes, a datacenter load balancer that is resilient
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Production datacenters operate under various uncertainties such as traffic dynamics, topology asymmetry, and failures. Therefore, datacenter load balancing schemes must be resilient to these uncertainties; i.e., they should accurately sense path conditions and timely react to mitigate the fallouts. Despite significant efforts, prior solutions have important drawbacks. On the one hand, solutions such as Presto and DRB are oblivious to path conditions and blindly reroute at fixed granularity. On the other hand, solutions such as CONGA and CLOVE can sense congestion, but they can only reroute when flowlets emerge; thus, they cannot always react timely to uncertainties. To make things worse, these solutions fail to detect/handle failures such as blackholes and random packet drops, which greatly degrades their performance. In this paper, we introduce Hermes, a datacenter load balancer that is resilient to the aforementioned uncertainties. At its heart, Hermes leverages comprehensive sensing to detect path conditions including failures unattended before, and it reacts using timely yet cautious rerouting. Hermes is a practical edge-based solution with no switch modification. We have implemented Hermes with commodity switches and evaluated it through both testbed experiments and large-scale simulations. Our results show that Hermes achieves comparable performance to CONGA and Presto in normal cases, and well handles uncertainties: under asymmetries, Hermes achieves up to 10% and 20% better flow completion time (FCT) than CONGA and CLOVE; under switch failures, it outperforms all other schemes by over 32%.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1827,12 +1911,6 @@ In this paper, we introduce Hermes, a datacenter load balancer that is resilient
                                 href="https://conferences.sigcomm.org/sigcomm/2017/workshop-kbnets.html">KBNets'17</a>)
                             
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>To meet the increasing throughput and latency demands of modern applications, many operators are rapidly deploying RDMA in their datacenters. At the same time, developers are re-designing their software to take advantage of RDMA's benefits for individual applications. However, when it comes to RDMA's performance, many simple questions remain open. In this paper, we consider the performance isolation characteristics of RDMA. Specifically, we conduct three sets of experiments – three combinations of one throughput-sensitive flow and one latency-sensitive flow – in a controlled environment, observe large discrepancies in RDMA performance with and without the presence of a competing flow, and describe our progress in identifying plausible root-causes.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/frdma:kbnets2017/frdma-kbnets2017.pdf">[paper]</a>
                             <a target="_blank" href="/publications/files/frdma:kbnets2017/frdma-kbnets2017-slides.pdf">[slides]</a>
@@ -1848,6 +1926,12 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>To meet the increasing throughput and latency demands of modern applications, many operators are rapidly deploying RDMA in their datacenters. At the same time, developers are re-designing their software to take advantage of RDMA's benefits for individual applications. However, when it comes to RDMA's performance, many simple questions remain open. In this paper, we consider the performance isolation characteristics of RDMA. Specifically, we conduct three sets of experiments – three combinations of one throughput-sensitive flow and one latency-sensitive flow – in a controlled environment, observe large discrepancies in RDMA performance with and without the presence of a competing flow, and describe our progress in identifying plausible root-causes.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1872,18 +1956,6 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
                                 href="https://www.sigops.org/s/conferences/hotos/2017">HotOS'17</a>)
                             
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>In recent years, deep learning has pervaded many areas of computing due to the confluence of an explosive growth of large-scale computing capabilities, availability of datasets, and advances in learning techniques.
-While this rapid growth has resulted in diverse deep learning frameworks, it has also led to inefficiencies for both the users and developers of these frameworks.
-Specifically, adopting useful techniques across frameworks – both to perform learning tasks and to optimize performance – involves significant repetitions and reinventions.</p>
-<p>In this paper, we observe that despite their diverse origins, many of these frameworks share architectural similarities.
-We argue that by introducing a common representation of learning tasks and a hardware abstraction model to capture compute heterogeneity, we might be able to relieve machine learning researchers from dealing with low-level systems issues and systems researchers from being tied to any specific framework.
-We expect this decoupling to accelerate progress in both domains.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/deepstack:hotos17/deepstack-hotos17.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{deepstack:hotos17,
@@ -1895,6 +1967,18 @@ We expect this decoupling to accelerate progress in both domains.</p>
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>In recent years, deep learning has pervaded many areas of computing due to the confluence of an explosive growth of large-scale computing capabilities, availability of datasets, and advances in learning techniques.
+While this rapid growth has resulted in diverse deep learning frameworks, it has also led to inefficiencies for both the users and developers of these frameworks.
+Specifically, adopting useful techniques across frameworks – both to perform learning tasks and to optimize performance – involves significant repetitions and reinventions.</p>
+<p>In this paper, we observe that despite their diverse origins, many of these frameworks share architectural similarities.
+We argue that by introducing a common representation of learning tasks and a hardware abstraction model to capture compute heterogeneity, we might be able to relieve machine learning researchers from dealing with low-level systems issues and systems researchers from being tied to any specific framework.
+We expect this decoupling to accelerate progress in both domains.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1921,15 +2005,6 @@ We expect this decoupling to accelerate progress in both domains.</p>
                                 href="https://www.usenix.org/conference/nsdi17">NSDI'17</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp18.04%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote><p>Memory-intensive applications suffer large performance loss when their working sets do not fully fit in memory. Yet, they cannot leverage otherwise unused remote memory when paging out to disks even in the presence of large imbalance in memory utilizations across a cluster. Existing proposals for memory disaggregation call for new architectures, new hardware designs, and/or new programming models, making them infeasible.
-This paper describes the design and implementation of Infiniswap, a remote memory paging system designed specifically for an RDMA network. Infiniswap opportunistically harvests and transparently exposes unused memory to unmodified applications by dividing the swap space of each machine into many slabs and distributing them across many machines’ remote memory. Because one-sided RDMA operations bypass remote CPUs, Infiniswap leverages the power of many choices to perform decentralized slab placements and evictions.
-We have implemented and deployed Infiniswap on an RDMA cluster without any modifications to user applications or the OS and evaluated its effectiveness using multiple workloads running on unmodified VoltDB, Memcached, PowerGraph, GraphX, and Apache Spark. Using Infiniswap, throughputs of these applications improve between 4X (0.94X) to 15.4X (7.8X) over disk (Mellanox nbdX), and median and tail latencies between 5.4X (2X) and 61X (2.3X). Infiniswap achieves these with negligible remote CPU usage, whereas nbdX becomes CPU-bound. Infiniswap increases the overall memory utilization of a cluster and works well at scale.</p>
-
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/infiniswap:nsdi17/infiniswap-nsdi17.pdf">[paper]</a>
                             <a target="_blank" href="/publications/files/infiniswap:nsdi17/infiniswap-nsdi17-slides.pdf">[slides]</a>
@@ -1945,6 +2020,15 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote><p>Memory-intensive applications suffer large performance loss when their working sets do not fully fit in memory. Yet, they cannot leverage otherwise unused remote memory when paging out to disks even in the presence of large imbalance in memory utilizations across a cluster. Existing proposals for memory disaggregation call for new architectures, new hardware designs, and/or new programming models, making them infeasible.
+This paper describes the design and implementation of Infiniswap, a remote memory paging system designed specifically for an RDMA network. Infiniswap opportunistically harvests and transparently exposes unused memory to unmodified applications by dividing the swap space of each machine into many slabs and distributing them across many machines’ remote memory. Because one-sided RDMA operations bypass remote CPUs, Infiniswap leverages the power of many choices to perform decentralized slab placements and evictions.
+We have implemented and deployed Infiniswap on an RDMA cluster without any modifications to user applications or the OS and evaluated its effectiveness using multiple workloads running on unmodified VoltDB, Memcached, PowerGraph, GraphX, and Apache Spark. Using Infiniswap, throughputs of these applications improve between 4X (0.94X) to 15.4X (7.8X) over disk (Mellanox nbdX), and median and tail latencies between 5.4X (2X) and 61X (2.3X). Infiniswap achieves these with negligible remote CPU usage, whereas nbdX becomes CPU-bound. Infiniswap increases the overall memory utilization of a cluster and works well at scale.</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1977,12 +2061,6 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                                 href="https://www.usenix.org/conference/osdi16">OSDI'16</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp18.08%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Given the well-known tradeoffs between fairness, performance, and efficiency, modern cluster schedulers often prefer instantaneous fairness as their primary objective to ensure performance isolation between users and groups. However, instantaneous, short-term convergence to fairness often does not result in noticeable long-term benefits. Instead, we propose an altruistic, long-term approach, Carbyne, where jobs yield fractions of their allocated resources without impacting their own completion times. We show that leftover resources collected via altruisms of many jobs can then be rescheduled to further secondary goals such as application-level performance and cluster efficiency without impacting performance isolation. Deployments and large-scale simulations show that Carbyne closely approximates the state-of-the-art solutions (e.g., DRF) in terms of performance isolation, while providing 1.26X better efficiency and 1.59X lower average job completion time.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/carbyne:osdi16/carbyne-osdi16.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{carbyne:osdi16,
@@ -1995,6 +2073,12 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Given the well-known tradeoffs between fairness, performance, and efficiency, modern cluster schedulers often prefer instantaneous fairness as their primary objective to ensure performance isolation between users and groups. However, instantaneous, short-term convergence to fairness often does not result in noticeable long-term benefits. Instead, we propose an altruistic, long-term approach, Carbyne, where jobs yield fractions of their allocated resources without impacting their own completion times. We show that leftover resources collected via altruisms of many jobs can then be rescheduled to further secondary goals such as application-level performance and cluster efficiency without impacting performance isolation. Deployments and large-scale simulations show that Carbyne closely approximates the state-of-the-art solutions (e.g., DRF) in terms of performance isolation, while providing 1.26X better efficiency and 1.59X lower average job completion time.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -2021,12 +2105,6 @@ We have implemented and deployed Infiniswap on an RDMA cluster without any modif
                                 href="https://www.usenix.org/conference/osdi16">OSDI'16</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp18.08%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Data-intensive clusters and object stores are increasingly relying on in-memory object caching to meet the I/O performance demands. These systems routinely face the challenges of popularity skew, background load imbalance, and server failures, which result in severe load imbalance across storage servers and degraded I/O performance. Selective replication is a commonly used technique to tackle these challenges, where the number of cached replicas of an object is proportional to its popularity. In this paper, we explore an alternative approach using erasure coding. EC-Cache is a load-balanced, low latency cluster cache that uses online erasure coding to overcome the limitations of selective replication. EC-Cache employs erasure coding by: (i) splitting and erasure coding individual objects during writes, and (ii) late binding, wherein obtaining any k out of (k + r) splits of an object are sufficient, during reads. As compared to selective replication, EC-Cache improves load balancing by more than 3X and reduces the median and tail read latencies by more than 2X, while using the same amount of memory. EC-Cache does so using 10% additional bandwidth and a small increase in the amount of stored metadata. The benefits offered by EC-Cache are further amplified in the presence of background network load imbalance and server failures.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/eccache:osdi16/eccache-osdi16.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{eccache:osdi16,
@@ -2041,6 +2119,12 @@ EC-Cache is a load-balanced, low latency cluster cache that uses online erasure 
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Data-intensive clusters and object stores are increasingly relying on in-memory object caching to meet the I/O performance demands. These systems routinely face the challenges of popularity skew, background load imbalance, and server failures, which result in severe load imbalance across storage servers and degraded I/O performance. Selective replication is a commonly used technique to tackle these challenges, where the number of cached replicas of an object is proportional to its popularity. In this paper, we explore an alternative approach using erasure coding. EC-Cache is a load-balanced, low latency cluster cache that uses online erasure coding to overcome the limitations of selective replication. EC-Cache employs erasure coding by: (i) splitting and erasure coding individual objects during writes, and (ii) late binding, wherein obtaining any k out of (k + r) splits of an object are sufficient, during reads. As compared to selective replication, EC-Cache improves load balancing by more than 3X and reduces the median and tail read latencies by more than 2X, while using the same amount of memory. EC-Cache does so using 10% additional bandwidth and a small increase in the amount of stored metadata. The benefits offered by EC-Cache are further amplified in the presence of background network load imbalance and server failures.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -2068,12 +2152,6 @@ EC-Cache is a load-balanced, low latency cluster cache that uses online erasure 
                                 href="http://conferences.sigcomm.org/sigcomm/2016/">SIGCOMM'16</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp17.33%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>Leveraging application-level requirements using coflows has recently been shown to improve application-level communication performance in data-parallel clusters. However, existing coflow-based solutions rely on modifying applications to extract coflows, making them inapplicable to many practical scenarios. In this paper, we present CODA, a first attempt at automatically identifying and scheduling coflows without any application modifications. We employ an incremental clustering algorithm to perform fast, application-transparent coflow identification and complement it by proposing an error-tolerant coflow scheduler to mitigate occasional identification errors. Testbed experiments and large-scale simulations with production workloads show that CODA can identify coflows with over 90% accuracy, and its scheduler is robust to inaccuracies, enabling communication stages to complete 2.4X (5.1X) faster on average (95th percentile) compared to per-flow mechanisms. Overall, CODA's performance is comparable to that of solutions requiring application modifications.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/coda:sigcomm16/coda-sigcomm16.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{coda:sigcomm16,
@@ -2088,6 +2166,12 @@ In this paper, we present CODA, a first attempt at automatically identifying and
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>Leveraging application-level requirements using coflows has recently been shown to improve application-level communication performance in data-parallel clusters. However, existing coflow-based solutions rely on modifying applications to extract coflows, making them inapplicable to many practical scenarios. In this paper, we present CODA, a first attempt at automatically identifying and scheduling coflows without any application modifications. We employ an incremental clustering algorithm to perform fast, application-transparent coflow identification and complement it by proposing an error-tolerant coflow scheduler to mitigate occasional identification errors. Testbed experiments and large-scale simulations with production workloads show that CODA can identify coflows with over 90% accuracy, and its scheduler is robust to inaccuracies, enabling communication stages to complete 2.4X (5.1X) faster on average (95th percentile) compared to per-flow mechanisms. Overall, CODA's performance is comparable to that of solutions requiring application modifications.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -2110,14 +2194,8 @@ In this paper, we present CODA, a first attempt at automatically identifying and
                         <div class="pub-conference">
                             arXiv
                             (<a target="_blank" title=""
-                                href="https://arxiv.org">arXiv</a>)
+                                href="https://arxiv.org/abs/1605.04652">arXiv:1605.04652</a>)
                             
-                        </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>An increasing amount of analytics is performed on data that is procured in a real-time fashion to make real-time decisions. Such tasks include simple reporting on streams to sophisticated model building. However, the practicality of such analyses are impeded in several domains because they are faced with a fundamental trade-off between data collection latency and analysis accuracy. In this paper, we study this trade-off in the context of a specific domain, Cellular Radio Access Networks (RAN). Our choice of this domain is influenced by its commonalities with several other domains that produce real-time data, our access to a large live dataset, and their real-time nature and dimensionality which makes it a natural fit for a popular analysis technique, machine learning (ML). We find that the latency accuracy trade-off can be resolved using two broad, general techniques: intelligent data grouping and task formulations that leverage domain characteristics. Based on this, we present CellScope, a system that addresses this challenge by applying a domain specific formulation and application of Multi-task Learning (MTL) to RAN performance analysis. It achieves this goal using three techniques: feature engineering to transform raw data into effective features, a PCA inspired similarity metric to group data from geographically nearby base stations sharing performance commonalities, and a hybrid online-offline model for efficient model updates. Our evaluation of CellScope shows that its accuracy improvements over direct application of ML range from 2.5x to 4.4x while reducing the model update overhead by up to 4.8x. We have also used CellScope to analyze a live LTE consisting of over 2 million subscribers for a period of over 10 months, where it uncovered several problems and insights, some of them previously unknown.
-                                </blockquote>
-                            </div>
                         </div>
                         <div class="pub-links">
                             <a target="_blank" href="https://arxiv.org/abs/1605.04652">[paper]</a>
@@ -2134,6 +2212,12 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
 }
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
+                        </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>An increasing amount of analytics is performed on data that is procured in a real-time fashion to make real-time decisions. Such tasks include simple reporting on streams to sophisticated model building. However, the practicality of such analyses are impeded in several domains because they are faced with a fundamental trade-off between data collection latency and analysis accuracy. In this paper, we study this trade-off in the context of a specific domain, Cellular Radio Access Networks (RAN). Our choice of this domain is influenced by its commonalities with several other domains that produce real-time data, our access to a large live dataset, and their real-time nature and dimensionality which makes it a natural fit for a popular analysis technique, machine learning (ML). We find that the latency accuracy trade-off can be resolved using two broad, general techniques: intelligent data grouping and task formulations that leverage domain characteristics. Based on this, we present CellScope, a system that addresses this challenge by applying a domain specific formulation and application of Multi-task Learning (MTL) to RAN performance analysis. It achieves this goal using three techniques: feature engineering to transform raw data into effective features, a PCA inspired similarity metric to group data from geographically nearby base stations sharing performance commonalities, and a hybrid online-offline model for efficient model updates. Our evaluation of CellScope shows that its accuracy improvements over direct application of ML range from 2.5x to 4.4x while reducing the model update overhead by up to 4.8x. We have also used CellScope to analyze a live LTE consisting of over 2 million subscribers for a period of over 10 months, where it uncovered several problems and insights, some of them previously unknown.
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -2159,12 +2243,6 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
                                 href="https://www.usenix.org/conference/nsdi16">NSDI'16</a>)
                             <span class="pub-conference-acceptance">(Acceptance&nbspRate:&nbsp19.74%)</span>
                         </div>
-                        <div class="pub-abstract-frame">
-                            <div class="pub-abstract">
-                                <blockquote>In this paper, we study how to optimally provide isolation guarantees in multi-resource environments, such as public clouds, where a tenant's demands on different resources (links) are correlated. Unlike prior work such as Dominant Resource Fairness (DRF) that assumes static and fixed demands, we consider elastic demands. Our approach generalizes canonical max-min fairness to the multi-resource setting with correlated demands, and extends DRF to elastic demands. We consider two natural optimization objectives: isolation guarantee from a tenant's viewpoint and system utilization (work conservation) from an operator's perspective. We prove that in non-cooperative environments like public cloud networks, there is a strong tradeoff between optimal isolation guarantee and work conservation when demands are elastic. Even worse, work conservation can even decrease network utilization instead of improving it when demands are inelastic. We identify the root cause behind the tradeoff and present a provably optimal allocation algorithm, High Utilization with Guarantees (HUG), to achieve maximum attainable network utilization without sacrificing the optimal isolation guarantee, strategy-proofness, and other useful properties of DRF. In cooperative environments like private datacenter networks, HUG achieves both the optimal isolation guarantee and work conservation. Analyses, simulations, and experiments show that HUG provides better isolation guarantees, higher system utilization, and better tenant-level performance than its counterparts.
-                                </blockquote>
-                            </div>
-                        </div>
                         <div class="pub-links">
                             <a target="_blank" href="/publications/files/hug:nsdi16/hug-nsdi16.pdf">[paper]</a>
                             <a class="pub-link-bibtex" data-clipboard-text="@inproceedings{hug:nsdi16,
@@ -2178,12 +2256,21 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
 ">[bibtex]</a>
                             <a class="pub-link-abstract">[abstract]</a>
                         </div>
+                        <div class="pub-abstract-frame">
+                            <div class="pub-abstract">
+                                <blockquote>In this paper, we study how to optimally provide isolation guarantees in multi-resource environments, such as public clouds, where a tenant's demands on different resources (links) are correlated. Unlike prior work such as Dominant Resource Fairness (DRF) that assumes static and fixed demands, we consider elastic demands. Our approach generalizes canonical max-min fairness to the multi-resource setting with correlated demands, and extends DRF to elastic demands. We consider two natural optimization objectives: isolation guarantee from a tenant's viewpoint and system utilization (work conservation) from an operator's perspective. We prove that in non-cooperative environments like public cloud networks, there is a strong tradeoff between optimal isolation guarantee and work conservation when demands are elastic. Even worse, work conservation can even decrease network utilization instead of improving it when demands are inelastic. We identify the root cause behind the tradeoff and present a provably optimal allocation algorithm, High Utilization with Guarantees (HUG), to achieve maximum attainable network utilization without sacrificing the optimal isolation guarantee, strategy-proofness, and other useful properties of DRF. In cooperative environments like private datacenter networks, HUG achieves both the optimal isolation guarantee and work conservation. Analyses, simulations, and experiments show that HUG provides better isolation guarantees, higher system utilization, and better tenant-level performance than its counterparts.
+                                </blockquote>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
         </section>
     </div> <!-- pub-list -->
-</div> <!-- publist -->
+</div>
+<!-- end-publist-b14835ea -->
+
+<script data-pjax src="/assets/publist/main.js"></script>
 
 <hr />
 <div class="note default"><h4 id="copyright-notice">Copyright notice<a class="headerlink" href="#copyright-notice"></a></h4>
@@ -2244,9 +2331,10 @@ In this paper, we study this trade-off in the context of a specific domain, Cell
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+  <script>
 var pjax = new Pjax({
   selectors: [
     'head title',
@@ -2258,10 +2346,9 @@ var pjax = new Pjax({
   ],
   analytics: false,
   cacheBust: false,
-  scrollRestoration: false,
-  scrollTo: !CONFIG.bookmark.enable
+  scrollRestoration: !CONFIG.bookmark.enable,
+  scrollTo: false
 });
-
 document.addEventListener('pjax:success', () => {
   pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
   NexT.boot.refresh();
@@ -2287,6 +2374,26 @@ document.addEventListener('pjax:success', () => {
 
 
 
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
 
   
 
@@ -2294,12 +2401,8 @@ document.addEventListener('pjax:success', () => {
 
     <div class="pjax">
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-<script src="/assets/publist/publist.js"></script>
 
 
     </div>
