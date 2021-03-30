@@ -45,13 +45,13 @@ Any opinions, findings, and conclusions of our research projects are those of th
 
 ![NSF](images/nsf.png)
 ![Google](images/google.png)
-![KLA](images/kla.png)
 </div>
 
 ## Past Sponsors
 
 <div class='flex-row'>
 
+![KLA](images/kla.png)
 ![VMware](images/vmware.png)
 ![Chelsio](images/chelsio.png)
 </div>
