@@ -626,3 +626,26 @@ In this work, we study a slightly different model of coflow scheduling in genera
     How cloud applications should interact with their data re-mains an active area of research. Over the last decade, manyhave suggested relying on a key-value (KV) interface to inter-act with data stored in remote storage servers, while othershave vouched for the benefits of using remote procedure call(RPC). Instead of choosing one over the other, in this paper,we observe that an ideal solution must adaptively combineboth of them in order to maximize throughput while meetingapplication latency requirements. To this end, we proposea new system called Kayak that proactively adjusts the rateof requests and the fraction of requests to be executed usingRPC or KV, all in a fully decentralized and self-regulated man-ner. We theoretically prove that Kayak can quickly convergeto the optimal parameters.  We implement a system proto-type of Kayak. Our evaluations show that Kayak achievessub-second convergence  and improves  overall throughputby 32.5%-63.4% for compute-intensive workloads and upto 12.2% for non-compute-intensive and transactional work-loads over the state-of-the-art.
   }
 }
+
+@InProceedings{fluid:mlsys21,
+  author    = {Peifeng Yu and Jiachen Liu and Mosharaf Chowdhury},
+  booktitle = {MLSys},
+  title     = {Fluid: Resource-Aware Hyperparameter Tuning Engine},
+  year      = {2021},
+
+  publist_confkey = {MLSys'21},
+  publist_link = {paper || fluid-mlsys21.pdf},
+  publist_link = {slides || fluid-mlsys21.pptx},
+  publist_link = {code || https://github.com/SymbioticLab/fluid},
+  publist_topic = {Systems for AI},
+  publist_abstract = {
+    Current hyperparameter tuning solutions lack complementary execution engines to efficiently leverage distributed
+    computation, thus ignoring the possibility of intra- and inter-GPU sharing, which exhibits poor resource usage.
+    In this paper, we present Fluid, a generalized hyperparameter tuning execution engine, that coordinates between
+    hyperparameter tuning jobs and cluster resources. Fluid schedules evaluation trials in such jobs using a waterfilling
+    approach to make the best use of resources both at intra- and inter-GPU granularities to speed up the tuning
+    process. By abstracting a hyperparameter tuning job as a sequence of TrialGroup, Fluid can boost the performance
+    of diverse hyperparameter tuning solutions. Our experiments show that Fluid can speed up synchronous BOHB by
+    100\%, and BOHB and ASHA by 30\% while having similar final accuracy.
+  }
+}
