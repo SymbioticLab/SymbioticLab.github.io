@@ -41,7 +41,9 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
-    # Deploy to master branch
-    # clone the repo first to keep history
+    # Deploy. Note to pass commit message via env var such that
+    # it is properly quoted
     - name: Deploy
-      run: npm run deploy -- --msg ${{ github.event.head_commit.message }}
+      env:
+        COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+      run: npm run deploy -- --msg "$COMMIT_MESSAGE"
