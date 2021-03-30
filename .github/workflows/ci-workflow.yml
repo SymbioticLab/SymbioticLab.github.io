@@ -11,32 +11,39 @@ jobs:
     name: A job to deploy blog.
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
       with:
         submodules: true # Checkout private submodules(themes or something else).
+    - name: Setup node
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
 
     # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
     - name: Cache node modules
-      uses: actions/cache@v1
+      uses: actions/cache@v2
       id: cache
       with:
-        path: node_modules
+        path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    - name: Install Dependencies
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm ci
 
-    # Deploy hexo blog website.
-    - name: Deploy
-      id: deploy
-      #uses: sma11black/hexo-action@v1.0.1
-      uses: ./.github/actions/hexo-action
-      with:
-        deploy_key: ${{ secrets.DEPLOY_KEY }}
-        commit_msg: ${{ github.event.head_commit.message }}
-    # Use the output from the `deploy` step(use for test action)
-    - name: Get the output
+    - name: Install Dependencies
+      run: npm ci
+    
+    - name: Setup SSH
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
       run: |
-        echo "${{ steps.deploy.outputs.notify }}"
+        mkdir -p ~/.ssh
+        echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
+    # Deploy. Note to pass commit message via env var such that
+    # it is properly quoted
+    - name: Deploy
+      env:
+        COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+      run: npm run deploy -- --msg "$COMMIT_MESSAGE"

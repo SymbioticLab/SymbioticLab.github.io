@@ -216,7 +216,6 @@ theme_config:
     icons: true
     badges: false
 
-
   # ---------------------------------------------------------------
   # Sidebar Settings
   # See: https://theme-next.org/docs/theme-settings/sidebar
@@ -266,6 +265,10 @@ theme_config:
     # Scroll percent label in b2t button.
     scrollpercent: true
 
+  # Preconnect CDN for fonts and plugins.
+  # For more information: https://www.w3.org/TR/resource-hints/#preconnect
+  preconnect: true
+
   # ---------------------------------------------------------------
   # Animation Settings
   # ---------------------------------------------------------------
@@ -287,6 +290,11 @@ theme_config:
   # Easily enable fast Ajax navigation on your website.
   # For more information: https://github.com/next-theme/pjax
   pjax: true
+
+  # Automatically monitor your Ajax requests, event loop lag, document ready state and elements on
+  # your page to decide on the progress.
+  nprogress:
+    enable: true
 
   # ---------------------------------------------------------------
   # Math Formulas Render Support
