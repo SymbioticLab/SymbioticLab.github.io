@@ -11,6 +11,18 @@ by running
 node_modules/.bin/hexo new news "News Title"
 ```
 
+## Testing Locally
+You can start a server locally.
+```
+npm start
+```
+It will automatically pick up most modifications to posts. So a simple refresh will show the latest content.
+
+When it's not picking up your modifications, do a clean build:
+```
+npm run clean && npm start
+```
+
 ## Development
 Source code is in the `develop` branch. Commits to this branch will be automatically built and pushed to the `master` branch, which will then be served at https://SymbioticLab.github.io.
 

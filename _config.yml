@@ -140,7 +140,7 @@ theme_config:
   # Site Information Settings
   # See: https://theme-next.org/docs/getting-started/
   favicon:
-    small: /assets//favicon/favicon-16x16.png
+    small: /assets/favicon/favicon-16x16.png
     medium: /assets/favicon/favicon-32x32.png
     apple_touch_icon: /assets/favicon/apple-touch-icon.png
     safari_pinned_tab: /assets/favicon/safari-pinned-tab.svg
