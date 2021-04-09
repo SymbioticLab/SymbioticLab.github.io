@@ -83,7 +83,7 @@ venues:
       name: The 4th Conference on Machine Learning and Systems
       date: 2021-04-05
       url: https://mlsys.org/Conferences/2021
-      acceptance: 20.0%
+      acceptance: 23.5%
   SIGCOMM:
     category: Conferences
     occurrences:
