@@ -44,6 +44,8 @@ Any opinions, findings, and conclusions of our research projects are those of th
 <div class='flex-row'>
 
 ![NSF](images/nsf.png)
+![VMware](images/vmware.png)
+![Cisco](images/cisco.png)
 ![Google](images/google.png)
 </div>
 
@@ -52,6 +54,5 @@ Any opinions, findings, and conclusions of our research projects are those of th
 <div class='flex-row'>
 
 ![KLA](images/kla.png)
-![VMware](images/vmware.png)
 ![Chelsio](images/chelsio.png)
 </div>
