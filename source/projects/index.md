@@ -26,7 +26,7 @@ Collecting voluminous remote data to a central location not only presents a band
 In these settings, data systems must minimize communication instead. 
 We are developing systems and algorithms to analyze real-time data distributed across the globe to enable geo-distributed analytics and federated learning.
 
-## Systems for AI
+## Systems + AI
 A large number of AI applications still run in traditional cloud datacenters. 
 We have focused on heterogeneous resource management for AI systems.
 GPUs have emerged as a popular choice for AI-related data systems, with new hardware accelerators appearing every month. 
