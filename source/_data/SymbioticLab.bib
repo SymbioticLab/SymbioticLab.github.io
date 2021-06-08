@@ -498,8 +498,8 @@ In this work, we study a slightly different model of coflow scheduling in genera
   publist_link = {slides || salus-mlsys20-talk.pptm},
   publist_link = {poster || salus-mlsys20-poster.pdf},
   publist_badge = {Artifacts Available},
-  publist_badge = {Artifacts Evaluated Functional},
-  publist_badge = {Results Replicated},
+  publist_badge = {Artifacts Functional},
+  publist_badge = {Results Reproduced},
   publist_topic = {Systems + AI},
   publist_abstract = {
     Unlike traditional resources such as CPU or the network, modern GPUs do not natively support
@@ -567,9 +567,9 @@ In this work, we study a slightly different model of coflow scheduling in genera
   publist_link = {paper || netlock-sigcomm20.pdf},
   publist_topic = {Datacenter Networking},
   publist_topic = {Disaggregation},
-  publist_badge = {Artifact Available},
-  publist_badge = {Artifact Functional},
-  publist_badge = {Artifact Reusable},
+  publist_badge = {Artifacts Available},
+  publist_badge = {Artifacts Functional},
+  publist_badge = {Results Reproduced},
   publist_abstract = {
   
     Lock managers are widely used by distributed systems. Traditional centralized lock managers can easily support policies between multiple users using global knowledge, but they suffer from low performance. In contrast, emerging decentralized approaches are faster but cannot provide flexible policy support. Furthermore, performance in both cases is limited by the server capability.
@@ -653,5 +653,25 @@ In this work, we study a slightly different model of coflow scheduling in genera
     process. By abstracting a hyperparameter tuning job as a sequence of TrialGroup, Fluid can boost the performance
     of diverse hyperparameter tuning solutions. Our experiments show that Fluid can speed up synchronous BOHB by
     100\%, and BOHB and ASHA by 30\% while having similar final accuracy.
+  }
+}
+
+@InProceedings{oort:osdi21,
+  author    = {Fan Lai and Xiangfeng Zhu and Harsha V. Madhyastha and Mosharaf Chowdhury},
+  booktitle = {USENIX OSDI},
+  title     = {Oort: Efficient Federated Learning via Guided Participant Selection},
+  year      = {2021},
+
+  publist_confkey = {OSDI'21},
+  publist_link = {paper || oort-osdi21.pdf},
+  publist_link = {code || https://github.com/SymbioticLab/Oort},
+  publist_badge = {Artifacts Available},
+  publist_badge = {Artifacts Functional},
+  publist_badge = {Results Reproduced},
+  publist_topic = {Wide-Area Computing},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+    Federated Learning (FL) is an emerging direction in distributed machine learning (ML) that enables in-situ model training and testing on edge data. Despite having the same end goals as traditional ML, FL executions differ significantly in scale, spanning thousands to millions of participating devices. As a result, data characteristics and device capabilities vary widely across clients. Yet, existing efforts randomly select FL participants, which leads to poor model and system efficiency.
+    In this paper, we propose Kuiper to improve the performance of federated training and testing with guided participant selection. With an aim to improve time-to-accuracy performance in model training, Kuiper prioritizes the use of those clients who have both data that offers the greatest utility in improving model accuracy and the capability to run training quickly. To enable FL developers to interpret their results in model testing, Kuiper enforces their requirements on the distribution of participant data while improving the duration of federated testing by cherry-picking clients. Our evaluation shows that, compared to existing participant selection mechanisms, Kuiper improves time-to-accuracy performance by 1.2×-14.1× and final model accuracy by 1.3%-9.8%, while efficiently enforcing developer-specified model testing criteria at the scale of millions of clients.
   }
 }

@@ -20,7 +20,7 @@ date: 2020-07-22 23:09:46
 
 ## Current Master’s and Undergraduate Students
 * [Xiangfeng Zhu](https://xzhu27.me/) (CS-LSA BS)
-* Yinwei Dai (CSE MSE)
+* [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
 
 ## Alumni
 * Jack Kosaian (CSE BSE) → PhD @CMU
