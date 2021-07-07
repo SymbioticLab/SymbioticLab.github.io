@@ -704,3 +704,23 @@ In this work, we study a slightly different model of coflow scheduling in genera
     In this paper, we propose Kuiper to improve the performance of federated training and testing with guided participant selection. With an aim to improve time-to-accuracy performance in model training, Kuiper prioritizes the use of those clients who have both data that offers the greatest utility in improving model accuracy and the capability to run training quickly. To enable FL developers to interpret their results in model testing, Kuiper enforces their requirements on the distribution of participant data while improving the duration of federated testing by cherry-picking clients. Our evaluation shows that, compared to existing participant selection mechanisms, Kuiper improves time-to-accuracy performance by 1.2×-14.1× and final model accuracy by 1.3%-9.8%, while efficiently enforcing developer-specified model testing criteria at the scale of millions of clients.
   }
 }
+
+@InProceedings{aifo:sigcomm21,
+  author    = {Zhuolong Yu and Chuheng Hu and Jingfeng Wu and Xiao Sun and Vladimir Braverman and Mosharaf Chowdhury and Zhenhua Liu and Xin Jin},
+  booktitle = {ACM SIGCOMM},
+  title     = {Programmable Packet Scheduling with a Single Queue},
+  year      = {2021},
+
+  publist_confkey = {SIGCOMM'21},
+  publist_link = {paper || aifo-sigcomm21.pdf},
+  publist_topic = {Datacenter Networking},
+  publist_badge = {Artifacts Available},
+  publist_badge = {Artifacts Functional},
+  publist_badge = {Results Reproduced},
+  publist_abstract = {
+  
+    Programmable packet scheduling enables scheduling algorithms to be programmed into the data plane without changing the hardware. Existing proposals either have no hardware implementations for switch ASICs or require multiple strict-priority queues.
+
+    We present Admission-In First-Out (AIFO) queues, a new solution for programmable packet scheduling that uses only a single first-in first-out queue. AIFO is motivated by the confluence of two recent trends: shallow buffers in switches and fast-converging congestion control in end hosts, that together leads to a simple observation: the decisive factor in a flow’s completion time (FCT) in modern datacenter networks is often which packets are enqueued or dropped, not the ordering they leave the switch. The core idea of AIFO is to maintain a sliding window to track the ranks of recent packets and compute the relative rank of an arriving packet in the window for admission control. Theoretically, we prove that AIFO provides bounded performance to Push-In First-Out (PIFO). Empirically, we fully implement AIFO and evaluate AIFO with a range of real workloads, demonstrating AIFO closely approximates PIFO. Importantly, unlike PIFO, AIFO can run at line rate on existing hardware and use minimal switch resources---as few as a single queue.
+  }
+}

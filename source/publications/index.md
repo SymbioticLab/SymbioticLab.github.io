@@ -87,6 +87,11 @@ venues:
   SIGCOMM:
     category: Conferences
     occurrences:
+    - key: SIGCOMM'21
+      name: The 2021 ACM SIGCOMM Conference
+      date: 2021-08-23
+      url: https://conferences.sigcomm.org/sigcomm/2021/
+      acceptance: 22.82%
     - key: SIGCOMM'20
       name: The 2020 ACM SIGCOMM Conference
       date: 2020-08-11
