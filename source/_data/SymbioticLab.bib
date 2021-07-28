@@ -660,6 +660,31 @@ In this work, we study a slightly different model of coflow scheduling in genera
   }
 }
 
+@article{fed-ensemble:arxiv21,
+  title={Fed-ensemble: Improving Generalization through Model Ensembling in Federated Learning}, 
+  author={Naichen Shi and Fan Lai and Raed Al Kontar and Mosharaf Chowdhury},
+  archiveprefix = {arXiv},
+  eprint= {2107.10663},
+  url= {https://arxiv.org/abs/2107.10663},
+  year={2021},
+  month={July},
+  publist_confkey = {arxiv.org:2107.10663},
+  publist_link = {paper || fed-ensemble-arxiv21.pdf},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = {
+    In this paper we propose Fed-ensemble: a simple approach that brings model ensembling to
+    federated learning (FL). Instead of aggregating local models to update a single global model, Fed-ensemble 
+    uses random permutations to update a group of K models and then obtains predictions
+    through model averaging. Fed-ensemble can be readily utilized within established FL methods and
+    does not impose a computational overhead as it only requires one of the K models to be sent to a
+    client in each communication round. Theoretically, we show that predictions on new data from all K
+    models belong to the same predictive posterior distribution under a neural tangent kernel regime.
+    This result in turn sheds light on the generalization advantages of model averaging. We also illustrate
+    that Fed-ensemble has an elegant Bayesian interpretation. Empirical results show that our model
+    has superior performance over several FL algorithms, on a wide range of data sets, and excels in
+    heterogeneous settings often encountered in FL applications.
+  }
+}
 
 @InProceedings{fluid:mlsys21,
   author    = {Peifeng Yu and Jiachen Liu and Mosharaf Chowdhury},
