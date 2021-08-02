@@ -1,15 +1,14 @@
 ---
 title: People
-date: 2020-07-22 23:09:46
+date: 2021-08-02 12:14:00
 ---
 
 ## Faculty
 
 * [Mosharaf Chowdhury](https://www.mosharaf.com/)
 
-## Current Phd Students
+## Current Ph.D. Students
 
-* [Juncheng Gu](https://web.eecs.umich.edu/~jcgu/)
 * [Jie You](https://web.eecs.umich.edu/~jieyou/)
 * [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
 * [Fan Lai](http://www-personal.umich.edu/~fanlai/)
@@ -17,12 +16,20 @@ date: 2020-07-22 23:09:46
 * [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
 * Sanjay S. Singapuram
 * [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
+* [Jae-Won Chung](https://jaewonchung.me/)
+* [Insu Jang](https://insujang.github.io/)
 
 ## Current Master’s and Undergraduate Students
-* [Xiangfeng Zhu](https://xzhu27.me/) (CS-LSA BS)
 * [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
+* Chuheng Hu (CS BS @JHU)
+* Yuqing Qiu (CSE BSE)
+* Qinye Li (CSE MSE)
+* Yash Gaitonde (CS-LSA BS)
 
-## Alumni
+## Ph.D. Alumni
+1. Juncheng Gu → ByteDance
+
+## Past Members
 * Jack Kosaian (CSE BSE) → PhD @CMU
 * Qinye Li (CSE BSE) → Master’s @Michigan
 * Yang Liu (ECE MSE) → Facebook
@@ -38,6 +45,7 @@ date: 2020-07-22 23:09:46
 * Yuchen Wang (CSE BSE) → Quantcast
 * Jingyuan Zhu (CSE BSE) → PhD @Michigan
 * Alexander Neben (CSE BSE) → Ocient
+* Xiangfeng Zhu (CS-LSA BS) → PhD @ UWashington
 * Jiangchen Zhu (CSE BSE) → PhD @Columbia
 * Jiaxing Yang (CSE BSE)
-* Chris Chen (CS-LSA BS) → Uber
+* Zhezheng Chen (CS-LSA BS) → Uber
