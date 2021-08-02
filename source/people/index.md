@@ -21,7 +21,7 @@ date: 2021-08-02 12:14:00
 
 ## Current Master’s and Undergraduate Students
 * [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
-* Chuheng Hu (CS BS @JHU)
+* [Chuheng Hu](https://chuheng001.github.io/) (CS BS @JHU)
 * Yuqing Qiu (CSE BSE)
 * Qinye Li (CSE MSE)
 * Yash Gaitonde (CS-LSA BS)
@@ -45,7 +45,7 @@ date: 2021-08-02 12:14:00
 * Yuchen Wang (CSE BSE) → Quantcast
 * Jingyuan Zhu (CSE BSE) → PhD @Michigan
 * Alexander Neben (CSE BSE) → Ocient
-* Xiangfeng Zhu (CS-LSA BS) → PhD @ UWashington
+* Xiangfeng Zhu (CS-LSA BS) → PhD @UWashington
 * Jiangchen Zhu (CSE BSE) → PhD @Columbia
 * Jiaxing Yang (CSE BSE)
 * Zhezheng Chen (CS-LSA BS) → Uber
