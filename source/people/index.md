@@ -30,22 +30,22 @@ date: 2021-08-02 12:14:00
 1. Juncheng Gu → ByteDance
 
 ## Past Members
-* Jack Kosaian (CSE BSE) → PhD @CMU
+* Jack Kosaian (CSE BSE) → Ph.D. @CMU
 * Qinye Li (CSE BSE) → Master’s @Michigan
 * Yang Liu (ECE MSE) → Facebook
 * Shuoren Fu (CE BSE) → Master’s @Michigan
 * Yilei Xu (ECE MSE) → Intel
-* Yue Tan (CS-LSA BS) → PhD @Princeton
+* Yue Tan (CS-LSA BS) → Ph.D. @Princeton
 * Wenting Tan (CSE BSE) → Master’s @Georgia Tech
 * Songyuan Guan (CSE BSE) → Google
 * Yiwei Zhang (CSE BSE) → Master’s @Northwestern
-* Yuze Lou (CSE BSE) → PhD @Michigan
+* Yuze Lou (CSE BSE) → Ph.D. @Michigan
 * Yujia Xie (CSE BSE)
 * Kaiwei Tu (CSE BSE) → Master’s @UW-Madison
 * Yuchen Wang (CSE BSE) → Quantcast
-* Jingyuan Zhu (CSE BSE) → PhD @Michigan
+* Jingyuan Zhu (CSE BSE) → Ph.D. @Michigan
 * Alexander Neben (CSE BSE) → Ocient
-* Xiangfeng Zhu (CS-LSA BS) → PhD @UWashington
-* Jiangchen Zhu (CSE BSE) → PhD @Columbia
-* Jiaxing Yang (CSE BSE)
+* Xiangfeng Zhu (CS-LSA BS) → Ph.D. @UWashington
+* Jiangchen Zhu (CSE BSE) → Ph.D. @Columbia
+* Jiaxing Yang (CSE BSE) → Master’s @Michigan
 * Zhezheng Chen (CS-LSA BS) → Uber
