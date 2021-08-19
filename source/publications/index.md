@@ -128,7 +128,7 @@ venues:
     occurrences:
     - key: OSDI'21
       name: The 15th USENIX Symposium on Operating Systems Design and Implementation
-      date: 2021-7-14
+      date: 2021-07-14
       url: https://www.usenix.org/conference/osdi21
       acceptance: 18.79%
     - key: OSDI'18
