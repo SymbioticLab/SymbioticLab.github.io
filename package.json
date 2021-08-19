@@ -22,7 +22,7 @@
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-tag": "^1.0.0",
-    "hexo-next-publist": "^2.0.4",
+    "hexo-next-publist": "^2.1.1",
     "hexo-pagination": "^2.0.0",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-markdown-it": "^5.0.0",
