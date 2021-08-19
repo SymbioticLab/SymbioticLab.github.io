@@ -28,7 +28,6 @@ venues:
       name: arXiv
       url: https://arxiv.org/abs/$1
   Dissertation:
-    category: Technical Reports
     occurrences:
     - key: dissertation
       name: PhD Dissertation
