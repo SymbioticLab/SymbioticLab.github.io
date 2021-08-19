@@ -30,8 +30,8 @@ venues:
   Dissertation:
     category: Technical Reports
     occurrences:
-    - key: Dissertation
-      name: Dissertation 
+    - key: dissertation
+      name: PhD Dissertation
   NSDI:
     category: Conferences
     occurrences:
