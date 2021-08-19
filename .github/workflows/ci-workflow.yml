@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: A job to deploy blog.
+    # Do not run publish job in forks
+    if: github.repository_owner == 'SymbioticLab'
     steps:
     - name: Checkout
       uses: actions/checkout@v2
