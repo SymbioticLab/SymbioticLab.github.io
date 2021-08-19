@@ -27,6 +27,11 @@ venues:
       matches: ^arXiv:(.+)$
       name: arXiv
       url: https://arxiv.org/abs/$1
+  Dissertation:
+    category: Technical Reports
+    occurrences:
+    - key: Dissertation
+      name: Dissertation 
   NSDI:
     category: Conferences
     occurrences:
