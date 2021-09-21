@@ -575,6 +575,31 @@ In this work, we study a slightly different model of coflow scheduling in genera
   }
 }
 
+@InProceedings{justitia:nsdi22,
+  author    = {Yiwen Zhang and Yue Tan and Brent Stephens and Mosharaf Chowdhury},
+  booktitle = {USENIX NSDI},
+  title     = {{Justitia}: Software Multi-Tenancy in Hardware Kernel-Bypass Networks},
+  year      = {2022},
+
+  publist_confkey = {NSDI'22},
+  publist_topic = {Datacenter Networking},
+  publist_topic = {Disaggregation},
+  publist_abstract = {
+    Kernel-bypass networking (KBN) is becoming the new norm in modern datacenters.
+    While hardware-based KBN offloads all dataplane tasks to specialized NICs to achieve better latency and CPU efficiency than software-based KBN, it also takes away the operator's control over network sharing policies.
+
+    Providing policy support in multi-tenant hardware KBN brings unique challenges -- namely,
+    preserving ultra-low latency and low CPU cost, finding a well-defined point of mediation, and rethinking traffic shapers.
+    We present Justitia to address these challenges with three key design aspects:
+    (i) Split Connection with message-level shaping,
+    (ii) sender-based resource mediation together with receiver-side updates, and
+    (iii) passive latency monitoring.
+    Using a latency target as its knob, Justitia enables multi-tenancy policies such as predictable latencies and fair/weighted resource sharing.
+    Our evaluation shows Justitia can effectively isolate latency-sensitive applications at the cost of slightly decreased utilization and ensure that throughput and bandwidth of the rest are not unfairly penalized.
+  }
+}
+
+
 @InProceedings{netlock:sigcomm20,
   author    = {Zhuolong Yu and Yiwen Zhang and Vladimir Braverman and Mosharaf Chowdhury and Xin Jin},
   booktitle = {ACM SIGCOMM},

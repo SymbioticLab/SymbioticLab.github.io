@@ -35,6 +35,10 @@ venues:
   NSDI:
     category: Conferences
     occurrences:
+    - key: NSDI'22
+      name: The 19th USENIX Symposium on Networked Systems Design and Implementation
+      date: 2022-04-04
+      url: https://www.usenix.org/conference/nsdi22
     - key: NSDI'21
       name: The 18th USENIX Symposium on Networked Systems Design and Implementation
       date: 2021-04-12
