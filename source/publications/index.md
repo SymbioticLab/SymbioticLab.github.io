@@ -192,6 +192,13 @@ venues:
       name: ACM SIGCOMM 2017 Workshop on Kernel-Bypass Networks
       date: 2017-08-21
       url: https://conferences.sigcomm.org/sigcomm/2017/workshop-kbnets.html
+  ResilientFL:
+    category: Workshops
+    occurrences:
+    - key: ResilientFL'21
+      name: ACM SOSP 21 Workshop on Systems Challenges in Reliable and Secure Federated Learning
+      date: 2021-10-25
+      url: https://resilientfl.org/
   'USENIX ;login:':
     category: Journals
     occurrences:
