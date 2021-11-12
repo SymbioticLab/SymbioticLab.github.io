@@ -21,10 +21,10 @@ date: 2021-08-02 12:14:00
 
 ## Current Master’s and Undergraduate Students
 * [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
-* [Chuheng Hu](https://chuheng001.github.io/) (CS BS @JHU)
 * Yuqing Qiu (CSE BSE)
 * Qinye Li (CSE MSE)
 * Yash Gaitonde (CS-LSA BS)
+* Kaiyang Yu (CS-LSA BS)
 
 ## Ph.D. Alumni
 1. Juncheng Gu → ByteDance
@@ -49,3 +49,4 @@ date: 2021-08-02 12:14:00
 * Jiangchen Zhu (CSE BSE) → Ph.D. @Columbia
 * Jiaxing Yang (CSE BSE) → Master’s @Michigan
 * Zhezheng Chen (CS-LSA BS) → Uber
+* Chuheng Hu (CS BS @JHU)
