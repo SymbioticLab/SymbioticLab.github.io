@@ -16,7 +16,7 @@ date: 2021-08-02 12:14:00
 * [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
 * Sanjay S. Singapuram
 * [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
-* [Jae-Won Chung](https://jaewonchung.me/)
+* [Jae-Won Chung](http://about.jaewonchung.me/)
 * [Insu Jang](https://insujang.github.io/)
 
 ## Current Master’s and Undergraduate Students
