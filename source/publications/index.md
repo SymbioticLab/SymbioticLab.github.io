@@ -226,7 +226,7 @@ venues:
     category: Journals
     occurrences:
     - key: 'IEEEAccess:9'
-      name: IEEE Access 2021, 9, 156071--156113
+      name: IEEE Access 2021, 9, 156071-156113
       date: 2021-12-1
       url: https://doi.org/10.1109/ACCESS.2021.3127448
 {% endpublist %}
