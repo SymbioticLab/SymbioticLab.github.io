@@ -22,27 +22,24 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"symbioticlab.org","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 <meta name="description" content="SymbioticLab focuses on network-informed data systems design that can yield order-of-magnitude performance and efficiency improvements. We tailor Big Data and AI applications to coexist with their und">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Projects">
-<meta property="og:url" content="https://symbioticlab.org/projects/index.html">
+<meta property="og:title" content="SymbioticLab">
+<meta property="og:url" content="https://symbioticlab.org/page/12/index.html">
 <meta property="og:site_name" content="SymbioticLab">
 <meta property="og:description" content="SymbioticLab focuses on network-informed data systems design that can yield order-of-magnitude performance and efficiency improvements. We tailor Big Data and AI applications to coexist with their und">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://symbioticlab.org/projects/images/latency-domains.png">
-<meta property="article:published_time" content="2020-10-17T03:09:52.000Z">
-<meta property="article:modified_time" content="2020-10-17T03:09:52.000Z">
+<meta property="og:image" content="https://symbioticlab.org/assets/latency-domains.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://symbioticlab.org/projects/images/latency-domains.png">
+<meta name="twitter:image" content="https://symbioticlab.org/assets/latency-domains.png">
 
 
-<link rel="canonical" href="https://symbioticlab.org/projects/">
+<link rel="canonical" href="https://symbioticlab.org/page/12/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://symbioticlab.org/projects/index.html","path":"projects/index.html","title":"Projects"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"page/12/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Projects | SymbioticLab
-</title>
+<title>SymbioticLab</title>
   
 
 
@@ -113,67 +110,47 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
-  
-  
+    <div class="main-inner archive posts-collapse">
 
-
-    
-    
-    
-    <div class="post-block" lang="en"><header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">Projects
-</h1>
-
-<div class="post-meta-container">
-</div>
-
-</header>
-
-      
-      
-      <div class="post-body">
-          <p>SymbioticLab focuses on <em>network-informed data systems design</em> that can yield order-of-magnitude performance and efficiency improvements.
+  <div class="post-block">
+    <div class="post-body">
+      <p>SymbioticLab focuses on <em>network-informed data systems design</em> that can yield order-of-magnitude performance and efficiency improvements.
 We tailor Big Data and AI applications to coexist with their underlying networks and apply networking principles in designing new data systems.
 This boils down to <strong>three</strong> operating regimes: <em>single-microsecond</em> latency within a rack, <em>single-millisecond</em> latency within a datacenter, and <em>hundreds-of-milliseconds</em> latency across the world.</p>
-<p><img src="images/latency-domains.png" alt="Overview" /></p>
-<p>Across these latency domains, our research falls into one of the five overarching projects.</p>
-<h2 id="disaggregation">Disaggregation<a class="headerlink" href="#disaggregation"></a></h2>
-<p>High-performance data systems strive to keep data in the main memory.
-They often over-provision to avoid running out of memory, leading to a 50% average underutilization in Google, Facebook, and Alibaba datacenters.
-The root cause is simple: applications today cannot access otherwise unused memory beyond their machine boundaries even when their performance grinds to a halt.
-But could they?
-Our research addresses this fundamental question regarding memory disaggregation, whereby an application can leverage both local and remote memory by leveraging emerging high-speed networks.
-Naturally, we are interesting in disaggregating compute and storage as well.</p>
-<h2 id="wide-area-computation">Wide-Area Computation<a class="headerlink" href="#wide-area-computation"></a></h2>
-<p>Most data are not generated inside cloud datacenters.
-They may be created, among others, by smartphone users, collected by a network of telescopes, or generated in medical research campuses from genome sequencing.
-Collecting voluminous remote data to a central location not only presents a bandwidth and storage problem but increasingly is likely to violate privacy regulations such as General Data Protection Regulation (GDPR).
-In these settings, data systems must minimize communication instead.
-We are developing systems and algorithms to analyze real-time data distributed across the globe to enable geo-distributed analytics and federated learning.</p>
-<h2 id="systems-ai">Systems + AI<a class="headerlink" href="#systems-ai"></a></h2>
-<p>A large number of AI applications still run in traditional cloud datacenters.
-We have focused on heterogeneous resource management for AI systems.
-GPUs have emerged as a popular choice for AI-related data systems, with new hardware accelerators appearing every month.
-Few of them, if any, support software-defined resource sharing.
-We focus on multi-scale resource sharing for AI accelerators for training, inference, and hyperparameter tuning workloads.</p>
-<h2 id="big-data-systems">Big Data Systems<a class="headerlink" href="#big-data-systems"></a></h2>
-<p>Our work has brought network-inspired redesign of data systems into the mainstream.
-For Big Data applications, we have designed new algorithms for resource scheduling, caching data in memory, and dynamic query planning that apply well-established networking principles such as statistical multiplexing, traffic management, and rerouting into data systems design.</p>
-<h2 id="datacenter-networking">Datacenter Networking<a class="headerlink" href="#datacenter-networking"></a></h2>
-<p>Finally, we also work on network scheduling and resource management schemes to isolate Big Data and AI systems at the edge and inside the datacenter network.
-Our recent focus has been on emerging networking technologies such as low-latency RDMA-enabling networks, programmable switches, and Smart NICs.</p>
+<p><img src="/assets/latency-domains.png" alt="Overview" /></p>
+<h2 id="news">News<a class="headerlink" href="#news"></a></h2>
+
+
+      <div class="post-content">
+        
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2015-12-06T22:32:30-05:00"
+              content="2015-12-06">
+          2015-12-06
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link post-empty"
+             href=""
+             itemprop="url">
+            <span itemprop="name">HUG Accepted to Appear at NSDI’2016</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
 
       </div>
-      
-      
-      
     </div>
-
-    
-    
-
+  </div>
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
+  </nav>
 
 </div>
   </main>
