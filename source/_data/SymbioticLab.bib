@@ -484,7 +484,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
 }
 
 @Article{hydra:arxiv19,
-  author        = {Youngmoon Lee and Hasan Al Maruf and Mosharaf Chowdhury and Kang G. Shin},
+  author        = {Youngmoon Lee and Hasan Al Maruf and Mosharaf Chowdhury and Asaf Cidon and Kang G. Shin},
   journal       = {CoRR},
   title         = {Mitigating the Performance-Efficiency Tradeoff in Resilient Memory Disaggregation},
   year          = {2019},
@@ -678,6 +678,21 @@ In this work, we study a slightly different model of coflow scheduling in genera
     Memory disaggregation over RDMA can improve the performance of memory-constrained applications by replacing disk swapping with remote memory accesses. However, state-of-the-art memory disaggregation solutions still use data path components designed for slow disks. As a result, applications experience remote memory access latency significantly higher than that of the underlying low-latency network, which itself can be too high for many applications.
 
     In this paper, we propose Leap, a prefetching solution for remote memory accesses due to memory disaggregation. At its core, Leap employs an online, majority-based prefetching algorithm, which increases the page cache hit rate. We complement it with a lightweight and efficient data path in the kernel that isolates each application’s data path to the disaggregated memory and mitigates latency bottlenecks arising from legacy throughput-optimizing operations. Integration of Leap in the Linux kernel improves the median and tail remote page access latencies of memory-bound applications by up to 104.04× and 22.62×, respectively, over the default data path. This leads to up to 10.16× performance improvements for applications using disaggregated memory in comparison to the state-of-the-art solutions.
+  }
+}
+
+@InProceedings{hydra:fast22,
+  author    = {Youngmoon Lee and Hasan Al Maruf and Mosharaf Chowdhury and Asaf Cidon and Kang G. Shin},
+  booktitle = {USENIX FAST},
+  title     = {{Hydra} : Resilient and Highly Available Remote Memory},
+  year      = {2022},
+
+  publist_confkey = {FAST'22},
+  publist_link = {paper || hydra-fast22.pdf},
+  publist_link = {code || https://github.com/SymbioticLab/hydra},
+  publist_topic = {Disaggregation},
+  publist_abstract = {
+    We present Hydra, a low-latency, low-overhead, and highly available resilience mechanism for remote memory. Hydra can access erasure-coded remote memory within a single-digit $\mu$s read/write latency, significantly improving the performance-efficiency tradeoff over the state-of-the-art -- it performs similar to in-memory replication with 1.6$\times$ lower memory overhead. We also propose CodingSets, a novel coding group placement algorithm for erasure-coded data, that provides load balancing while reducing the probability of data loss under correlated failures by an order of magnitude. With Hydra, even when only 50\% memory is local, unmodified memory-intensive applications achieve performance close to that of the fully in-memory case in the presence of remote failures and outperforms the state-of-the-art remote-memory solutions by up to 4.35$\times$.
   }
 }
 

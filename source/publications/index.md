@@ -72,6 +72,14 @@ venues:
       date: 2020-07-15
       url: https://www.usenix.org/conference/atc20
       acceptance: 18.68%
+  FAST:
+    category: Conferences
+    occurrences:
+    - key: FAST'22
+      name: The 20th USENIX Conference on File and Storage Technologies
+      date: 2022-02-23
+      url: https://www.usenix.org/conference/fast22
+      acceptance: 21.54%
   EuroSys:
     category: Conferences
     occurrences:
