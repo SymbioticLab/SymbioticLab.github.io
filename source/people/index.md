@@ -1,6 +1,6 @@
 ---
 title: People
-date: 2021-08-02 12:14:00
+date: 2022-02-11 10:44:00
 ---
 
 ## Faculty
@@ -9,7 +9,7 @@ date: 2021-08-02 12:14:00
 
 ## Current Ph.D. Students
 
-* [Jie You](https://web.eecs.umich.edu/~jieyou/)
+1. [Jie You](https://web.eecs.umich.edu/~jieyou/)
 * [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
 * [Fan Lai](http://www-personal.umich.edu/~fanlai/)
 * [Peifeng Yu](https://unlimitedcodeworks.xyz/)
@@ -20,20 +20,22 @@ date: 2021-08-02 12:14:00
 * [Insu Jang](https://insujang.github.io/)
 
 ## Current Master’s and Undergraduate Students
-* [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
+1. [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
 * Yuqing Qiu (CSE BSE)
-* Qinye Li (CSE MSE)
 * Yash Gaitonde (CS-LSA BS)
 * Kaiyang Yu (CS-LSA BS)
+* Yuxuan Zhu (CSE BSE)
+* Xiang Shen (CSE BSE)
 
 ## Ph.D. Alumni
-1. Juncheng Gu → ByteDance
+1. Dr. Juncheng Gu → Research Scientist, ByteDance
 
 ## Past Members
-* Jack Kosaian (CSE BSE) → Ph.D. @CMU
+1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
 * Qinye Li (CSE BSE) → Master’s @Michigan
 * Yang Liu (ECE MSE) → Facebook
 * Shuoren Fu (CE BSE) → Master’s @Michigan
+* Yiwen Zhang (ECE BSE → ECE MSE) → Ph.D. @Michigan
 * Yilei Xu (ECE MSE) → Intel
 * Yue Tan (CS-LSA BS) → Ph.D. @Princeton
 * Wenting Tan (CSE BSE) → Master’s @Georgia Tech
@@ -46,7 +48,9 @@ date: 2021-08-02 12:14:00
 * Jingyuan Zhu (CSE BSE) → Ph.D. @Michigan
 * Alexander Neben (CSE BSE) → Ocient
 * Xiangfeng Zhu (CS-LSA BS) → Ph.D. @UWashington
+* Jiachen Liu (CS-LSA BS) → Ph.D. @Michigan
 * Jiangchen Zhu (CSE BSE) → Ph.D. @Columbia
 * Jiaxing Yang (CSE BSE) → Master’s @Michigan
 * Zhezheng Chen (CS-LSA BS) → Uber
 * Chuheng Hu (CS BS @JHU)
+* Qinye Li (CSE MSE)
