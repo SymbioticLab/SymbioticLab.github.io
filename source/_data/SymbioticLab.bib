@@ -365,6 +365,24 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   }
 }
 
+@Article{autops:arxiv22,
+  author        = {Juncheng Gu and Mosharaf Chowdhury and Kang G. Shin and Aditya Akella},
+  journal       = {CoRR},
+  title         = {Elastic Model Aggregation with Parameter Service},
+  year          = {2022},
+  month         = {Apr},
+  volume        = {abs/2204.03211},
+  archiveprefix = {arXiv},
+  eprint        = {2204.03211},
+  url           = {https://arxiv.org/abs/2204.03211},
+  publist_confkey = {arXiv:2204.03211},
+  publist_link = {paper || https://arxiv.org/abs/2204.03211},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+    Model aggregation, the process that updates model parameters, is an important step for model convergence in distributed deep learning (DDL). However, the parameter server (PS), a popular paradigm of performing model aggregation, causes CPU underutilization in deep learning (DL) clusters, due to the bursty nature of aggregation and static resource allocation. To remedy this problem, we propose Parameter Service, an elastic model aggregation framework for DDL training, which decouples the function of model aggregation from individual training jobs and provides a shared model aggregation service to all jobs in the cluster. In Parameter Service, model aggregations are efficiently packed and dynamically migrated to fit into the available CPUs with negligible time overhead. Furthermore, Parameter Service can elastically manage its CPU resources based on its load to enhance resource efficiency. We have implemented Parameter Service in a prototype system called AutoPS and evaluated it via testbed experimentation and trace-driven simulations. AutoPS reduces up to 75% of CPU consumption with little or no performance impact on the training jobs. The design of Parameter Service is transparent to the users and can be incorporated in popular DL frameworks.
+  }
+}
+
 @Article{oort:arxiv20,
   author        = {Fan Lai and Xiangfeng Zhu and Harsha V. Madhyastha and Mosharaf Chowdhury},
   journal       = {CoRR},
