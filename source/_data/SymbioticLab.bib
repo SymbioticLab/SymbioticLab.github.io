@@ -946,3 +946,42 @@ In this work, we study a slightly different model of coflow scheduling in genera
   We observed three major challenges brought by DL jobs. First, data preparation jobs, which prepare training datasets from a large volume of raw data, are memory intensive. DL clusters often over-allocate memory resource to those jobs for protecting their performance, which causes memory underutilization in DL clusters. Second, the execution time of a DL training job is often unknown before job completion. Without such information, existing cluster schedulers are unable to minimize the average Job Completion Time (JCT) of those jobs. Third, model aggregations in Distributed Deep Learning (DDL) training are often assigned with a fixed group of CPUs. However, a large portion of those CPUs are wasted because the bursty model aggregations can not saturate them all the time.
   In this thesis, we propose a suite of techniques to eliminate the mismatches between DL jobs and resource management in DL clusters. First, we bring the idea of memory disaggregation to enhance the memory utilization of DL clusters. The unused memory in data preparation jobs is exposed as remote memory to other machines that are running out of local memory. Second, we design a two-dimensional attained-service-based scheduler to optimize the average JCT of DL training jobs. This scheduler takes the temporal and spatial characteristics of DL training jobs into consideration and can efficiently schedule them without knowing their execution time. Third, we define a shared model aggregation service to reduce the CPU cost of DDL training. Using this service, model aggregations from different DDL training jobs are carefully packed together and use the same group of CPUs in a time-sharing manner. With these techniques, we demonstrate that huge improvements in resource efficiency and job performance can be obtained when the cluster’s resource management matches with the features of DL jobs.}
 }
+
+@PhDThesis{peifeng:dissertation,
+  Title                    = {Application-Aware Scheduling in Deep Learning Software Stacks},
+  Author                   = {Peifeng Yu},
+  Institution              = {University of Michigan},
+  Year                     = {2022},
+  Month                    = {August},
+
+  publist_confkey          = {dissertation},
+  publist_link             = {paper || peifeng-dissertation.pdf},
+  publist_abstract         = {
+    Deep Learning (DL) has pervaded many areas of computing due to the confluence of the explosive growth of large-scale computing capabilities, availability of datasets, and advances in learning techniques.
+    However, the infrastructure that supports DL is still in its early stage, bearing mismatches among the hardware, the software stack, and DL applications.
+    On the one hand, despite the emergence of new unique hardware and new use cases, the software stack that abstracts and schedules these hardware resources remains largely unchanged.
+    On the other hand, user-defined performance metrics common in DL applications urge better schedulers tailored to the application's specific needs.
+    Motivated by the mismatch, this dissertation revisits the system design across the stack, with a focus on the synergy between schedulers and application/system-specific information.
+
+    At the bottom level, the ever-growing adoption of specialized hardware like GPUs poses challenges to efficient usage.
+    Due to the lack of operating system arbitration, applications usually assume exclusive access, making the otherwise underutilized resources unusable for other jobs on the same host.
+    We therefore design Salus to realize proper efficient GPU sharing.
+    It leverages DL applications' specific usage patterns to schedule iterations and manage memory allocations, providing two missing primitives: fast job switching and memory sharing.
+
+    However, even with an efficient execution platform, it is still not trivial to harvest the hardware's full potential for higher-level applications. We investigate two such cases sitting on opposite sides of a model's lifecycle: hyperparameter tuning and inference serving.
+
+    Hyperparameter tuning -- which constitutes a great portion of DL cluster usage given the proliferation of distributed resources in clusters -- generates many small interdependent training trials.
+    Existing tuning algorithms are oblivious of advanced execution strategies like intra-GPU sharing and inter-GPU execution, often causing poor resource utilization.
+    Hence, we propose Fluid as a generalized hyperparameter tuning execution engine, that coordinates between tuning jobs and cluster resources.
+    Fluid schedules training trials in such jobs using a water-filling approach to make the best use of resources at both intra- and inter-GPU granularity to speed up hyperparameter tuning.
+
+    Moving on, inference serving also requires careful scheduling to achieve tight latency guarantees and maintain high utilization.
+    Existing serving solutions assume inference execution times to be data-independent and thus highly predictable.
+    However, with the rise of dynamic neural networks, data-dependent inferences see higher variance in execution times and become less predictable by a single, point estimation of the true running times.
+    With Orloj, we show that treating and modeling inference execution times as probability distributions bring large gains for scheduling inference requests in the presence of SLO constraints.
+
+    In this dissertation, we consider combining application/system-specific information with scheduling design as a means of efficiently supporting new hardware and new DL application use cases.
+    Nevertheless, the pursuit of higher efficiency never ends.
+    This dissertation tries to lay down the necessary mechanisms with the hope that our crude work may be a basis for further research to better scheduling algorithms and more efficient systems in the DL infrastructure.
+  }
+}
