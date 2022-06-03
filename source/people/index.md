@@ -12,7 +12,6 @@ date: 2022-02-11 10:44:00
 1. [Jie You](https://web.eecs.umich.edu/~jieyou/)
 2. [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
 3. [Fan Lai](http://www-personal.umich.edu/~fanlai/)
-4. [Peifeng Yu](https://unlimitedcodeworks.xyz/)
 5. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
 6. Sanjay S. Singapuram
 7. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
@@ -28,7 +27,8 @@ date: 2022-02-11 10:44:00
 6. Xiang Shen (CSE BSE)
 
 ## Ph.D. Alumni
-1. Dr. Juncheng Gu → Research Scientist, ByteDance
+1. Dr. Juncheng Gu (co-advised w/ Kang G. Shin) (2021) → ByteDance
+2. Dr. Peifeng Yu (2022) → Google
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
