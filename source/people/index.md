@@ -1,6 +1,6 @@
 ---
 title: People
-date: 2021-08-02 12:14:00
+date: 2022-02-11 10:44:00
 ---
 
 ## Faculty
@@ -9,44 +9,48 @@ date: 2021-08-02 12:14:00
 
 ## Current Ph.D. Students
 
-* [Jie You](https://web.eecs.umich.edu/~jieyou/)
-* [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
-* [Fan Lai](http://www-personal.umich.edu/~fanlai/)
-* [Peifeng Yu](https://unlimitedcodeworks.xyz/)
-* [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
-* Sanjay S. Singapuram
-* [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
-* [Jae-Won Chung](http://about.jaewonchung.me/)
-* [Insu Jang](https://insujang.github.io/)
+1. [Jie You](https://web.eecs.umich.edu/~jieyou/)
+2. [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
+3. [Fan Lai](http://www-personal.umich.edu/~fanlai/)
+5. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
+6. Sanjay S. Singapuram
+7. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
+8. [Jae-Won Chung](http://about.jaewonchung.me/)
+9. [Insu Jang](https://insujang.github.io/)
 
 ## Current Master’s and Undergraduate Students
-* [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
-* Yuqing Qiu (CSE BSE)
-* Qinye Li (CSE MSE)
-* Yash Gaitonde (CS-LSA BS)
-* Kaiyang Yu (CS-LSA BS)
+1. [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
+2. Yuqing Qiu (CSE BSE)
+3. Yash Gaitonde (CS-LSA BS)
+4. Kaiyang Yu (CS-LSA BS)
+5. Yuxuan Zhu (CSE BSE)
+6. Xiang Shen (CSE BSE)
 
 ## Ph.D. Alumni
-1. Juncheng Gu → ByteDance
+1. Dr. Juncheng Gu (co-advised w/ Kang G. Shin) (2021) → ByteDance
+2. Dr. Peifeng Yu (2022) → Google
 
 ## Past Members
-* Jack Kosaian (CSE BSE) → Ph.D. @CMU
-* Qinye Li (CSE BSE) → Master’s @Michigan
-* Yang Liu (ECE MSE) → Facebook
-* Shuoren Fu (CE BSE) → Master’s @Michigan
-* Yilei Xu (ECE MSE) → Intel
-* Yue Tan (CS-LSA BS) → Ph.D. @Princeton
-* Wenting Tan (CSE BSE) → Master’s @Georgia Tech
-* Songyuan Guan (CSE BSE) → Google
-* Yiwei Zhang (CSE BSE) → Master’s @Northwestern
-* Yuze Lou (CSE BSE) → Ph.D. @Michigan
-* Yujia Xie (CSE BSE)
-* Kaiwei Tu (CSE BSE) → Master’s @UW-Madison
-* Yuchen Wang (CSE BSE) → Quantcast
-* Jingyuan Zhu (CSE BSE) → Ph.D. @Michigan
-* Alexander Neben (CSE BSE) → Ocient
-* Xiangfeng Zhu (CS-LSA BS) → Ph.D. @UWashington
-* Jiangchen Zhu (CSE BSE) → Ph.D. @Columbia
-* Jiaxing Yang (CSE BSE) → Master’s @Michigan
-* Zhezheng Chen (CS-LSA BS) → Uber
-* Chuheng Hu (CS BS @JHU)
+ 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
+ 2. Qinye Li (CSE BSE) → Master’s @Michigan
+ 3. Yang Liu (ECE MSE) → Facebook
+ 4. Shuoren Fu (CE BSE) → Master’s @Michigan
+ 5. Yiwen Zhang (ECE BSE → ECE MSE) → Ph.D. @Michigan
+ 6. Yilei Xu (ECE MSE) → Intel
+ 7. Yue Tan (CS-LSA BS) → Ph.D. @Princeton
+ 8. Wenting Tan (CSE BSE) → Master’s @Georgia Tech
+ 9. Songyuan Guan (CSE BSE) → Google
+10. Yiwei Zhang (CSE BSE) → Master’s @Northwestern
+11. Yuze Lou (CSE BSE) → Ph.D. @Michigan
+12. Yujia Xie (CSE BSE)
+13. Kaiwei Tu (CSE BSE) → Master’s @UW-Madison
+14. Yuchen Wang (CSE BSE) → Quantcast
+15. Jingyuan Zhu (CSE BSE) → Ph.D. @Michigan
+16. Alexander Neben (CSE BSE) → Ocient
+17. Xiangfeng Zhu (CS-LSA BS) → Ph.D. @UWashington
+18. Jiachen Liu (CS-LSA BS) → Ph.D. @Michigan
+19. Jiangchen Zhu (CSE BSE) → Ph.D. @Columbia
+20. Jiaxing Yang (CSE BSE) → Master’s @Michigan
+21. Zhezheng Chen (CS-LSA BS) → Uber
+22. Chuheng Hu (CS BS @JHU)
+23. Qinye Li (CSE MSE)

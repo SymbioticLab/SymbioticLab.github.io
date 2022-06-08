@@ -384,6 +384,24 @@ In this paper, we consider the performance isolation characteristics of RDMA. Sp
   }
 }
 
+@Article{autops:arxiv22,
+  author        = {Juncheng Gu and Mosharaf Chowdhury and Kang G. Shin and Aditya Akella},
+  journal       = {CoRR},
+  title         = {Elastic Model Aggregation with Parameter Service},
+  year          = {2022},
+  month         = {Apr},
+  volume        = {abs/2204.03211},
+  archiveprefix = {arXiv},
+  eprint        = {2204.03211},
+  url           = {https://arxiv.org/abs/2204.03211},
+  publist_confkey = {arXiv:2204.03211},
+  publist_link = {paper || https://arxiv.org/abs/2204.03211},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+    Model aggregation, the process that updates model parameters, is an important step for model convergence in distributed deep learning (DDL). However, the parameter server (PS), a popular paradigm of performing model aggregation, causes CPU underutilization in deep learning (DL) clusters, due to the bursty nature of aggregation and static resource allocation. To remedy this problem, we propose Parameter Service, an elastic model aggregation framework for DDL training, which decouples the function of model aggregation from individual training jobs and provides a shared model aggregation service to all jobs in the cluster. In Parameter Service, model aggregations are efficiently packed and dynamically migrated to fit into the available CPUs with negligible time overhead. Furthermore, Parameter Service can elastically manage its CPU resources based on its load to enhance resource efficiency. We have implemented Parameter Service in a prototype system called AutoPS and evaluated it via testbed experimentation and trace-driven simulations. AutoPS reduces up to 75% of CPU consumption with little or no performance impact on the training jobs. The design of Parameter Service is transparent to the users and can be incorporated in popular DL frameworks.
+  }
+}
+
 @Article{oort:arxiv20,
   author        = {Fan Lai and Xiangfeng Zhu and Harsha V. Madhyastha and Mosharaf Chowdhury},
   journal       = {CoRR},
@@ -724,7 +742,6 @@ In this work, we study a slightly different model of coflow scheduling in genera
   pages={6100},
   year={2020},
   publisher={Multidisciplinary Digital Publishing Institute},
-
   publist_confkey = {Sensors:20(21)},
   publist_link = {paper || https://www.mdpi.com/1424-8220/20/21/6100},
   publist_abstract = {
@@ -834,6 +851,25 @@ In this work, we study a slightly different model of coflow scheduling in genera
   }
 }
 
+@Article{covid-f20:jmirmh,
+    author="Gilley, Kristen N and Baroudi, Loubna and Yu, Miao and Gainsburg, Izzy and Reddy, Niyanth and Bradley, Christina and Cislo, Christine and Rozwadowski, Michelle Lois and Clingan, Caroline Ashley and DeMoss, Matthew Stephen and Churay, Tracey and Birditt, Kira and Colabianchi, Natalie and Chowdhury, Mosharaf and Forger, Daniel and Gagnier, Joel and Zernicke, Ronald F and Cunningham, Julia Lee and Cain, Stephen M and Tewari, Muneesh and Choi, Sung Won",
+    title="Risk Factors for {COVID-19} in College Students Identified by Physical, Mental, and Social Health Reported During the {Fall 2020} Semester: Observational Study Using the {Roadmap} App and {Fitbit} Wearable Sensors",
+    journal="JMIR Mental Health",
+    year="2022",
+    month="Feb",
+    day="10",
+    volume="9",
+    number="2",
+    pages="e34645",
+    publisher={JMIR Publications},
+    publist_confkey = {JMIR-MH:9(2)},
+    publist_link = {paper || https://doi.org/10.2196/34645},
+    abstract="Background: The COVID-19 pandemic triggered a seismic shift in education to web-based learning. With nearly 20 million students enrolled in colleges across the United States, the long-simmering mental health crisis in college students was likely further exacerbated by the pandemic. Objective: This study leveraged mobile health (mHealth) technology and sought to (1) characterize self-reported outcomes of physical, mental, and social health by COVID-19 status; (2) assess physical activity through consumer-grade wearable sensors (Fitbit); and (3) identify risk factors associated with COVID-19 positivity in a population of college students prior to release of the vaccine. Methods: After completing a baseline assessment (ie, at Time 0 [T0]) of demographics, mental, and social health constructs through the Roadmap 2.0 app, participants were instructed to use the app freely, wear the Fitbit, and complete subsequent assessments at T1, T2, and T3, followed by a COVID-19 assessment of history and timing of COVID-19 testing and diagnosis (T4: {\textasciitilde}14 days after T3). Continuous measures were described using mean (SD) values, while categorical measures were summarized as n ({\%}) values. Formal comparisons were made on the basis of COVID-19 status. The multivariate model was determined by entering all statistically significant variables (P<.05) in univariable associations at once and then removing one variable at a time through backward selection until the optimal model was obtained. Results: During the fall 2020 semester, 1997 participants consented, enrolled, and met criteria for data analyses. There was a high prevalence of anxiety, as assessed by the State Trait Anxiety Index, with moderate and severe levels in 465 (24{\%}) and 970 (49{\%}) students, respectively. Approximately one-third of students reported having a mental health disorder (n=656, 33{\%}). The average daily steps recorded in this student population was approximately 6500 (mean 6474, SD 3371). Neither reported mental health nor step count were significant based on COVID-19 status (P=.52). Our analyses revealed significant associations of COVID-19 positivity with the use of marijuana and alcohol (P=.02 and P=.046, respectively) and with lower belief in public health measures (P=.003). In addition, graduate students were less likely and those with ≥20 roommates were more likely to report a COVID-19 diagnosis (P=.009). Conclusions: Mental health problems were common in this student population. Several factors, including substance use, were associated with the risk of COVID-19. These data highlight important areas for further attention, such as prioritizing innovative strategies that address health and well-being, considering the potential long-term effects of COVID-19 on college students. Trial Registration: ClinicalTrials.gov NCT04766788; https://clinicaltrials.gov/ct2/show/NCT04766788 International Registered Report Identifier (IRRID): RR2-10.2196/29561 ",
+    issn="2368-7959",
+    doi="10.2196/34645"
+}
+
+
 @InProceedings{fluid:mlsys21,
   author    = {Peifeng Yu and Jiachen Liu and Mosharaf Chowdhury},
   booktitle = {MLSys},
@@ -928,4 +964,43 @@ In this work, we study a slightly different model of coflow scheduling in genera
   Abstract                 = {Deep Learning (DL) is gaining rapid popularity in various domains, such as computer vision, speech recognition, etc. With the increasing demands, large clusters have been built to develop DL models (i.e., data preparation and model training). DL jobs have some unique features ranging from their hardware requirements to execution patterns. However, the resource management techniques applied in existing DL clusters have not yet been adapted to those new features, which leads to resource inefficiency and hurts the perfor- mance of DL jobs.
   We observed three major challenges brought by DL jobs. First, data preparation jobs, which prepare training datasets from a large volume of raw data, are memory intensive. DL clusters often over-allocate memory resource to those jobs for protecting their performance, which causes memory underutilization in DL clusters. Second, the execution time of a DL training job is often unknown before job completion. Without such information, existing cluster schedulers are unable to minimize the average Job Completion Time (JCT) of those jobs. Third, model aggregations in Distributed Deep Learning (DDL) training are often assigned with a fixed group of CPUs. However, a large portion of those CPUs are wasted because the bursty model aggregations can not saturate them all the time.
   In this thesis, we propose a suite of techniques to eliminate the mismatches between DL jobs and resource management in DL clusters. First, we bring the idea of memory disaggregation to enhance the memory utilization of DL clusters. The unused memory in data preparation jobs is exposed as remote memory to other machines that are running out of local memory. Second, we design a two-dimensional attained-service-based scheduler to optimize the average JCT of DL training jobs. This scheduler takes the temporal and spatial characteristics of DL training jobs into consideration and can efficiently schedule them without knowing their execution time. Third, we define a shared model aggregation service to reduce the CPU cost of DDL training. Using this service, model aggregations from different DDL training jobs are carefully packed together and use the same group of CPUs in a time-sharing manner. With these techniques, we demonstrate that huge improvements in resource efficiency and job performance can be obtained when the cluster’s resource management matches with the features of DL jobs.}
+}
+
+@PhDThesis{peifeng:dissertation,
+  Title                    = {Application-Aware Scheduling in Deep Learning Software Stacks},
+  Author                   = {Peifeng Yu},
+  Institution              = {University of Michigan},
+  Year                     = {2022},
+  Month                    = {August},
+
+  publist_confkey          = {dissertation},
+  publist_link             = {paper || peifeng-dissertation.pdf},
+  publist_abstract         = {
+    Deep Learning (DL) has pervaded many areas of computing due to the confluence of the explosive growth of large-scale computing capabilities, availability of datasets, and advances in learning techniques.
+    However, the infrastructure that supports DL is still in its early stage, bearing mismatches among the hardware, the software stack, and DL applications.
+    On the one hand, despite the emergence of new unique hardware and new use cases, the software stack that abstracts and schedules these hardware resources remains largely unchanged.
+    On the other hand, user-defined performance metrics common in DL applications urge better schedulers tailored to the application's specific needs.
+    Motivated by the mismatch, this dissertation revisits the system design across the stack, with a focus on the synergy between schedulers and application/system-specific information.
+
+    At the bottom level, the ever-growing adoption of specialized hardware like GPUs poses challenges to efficient usage.
+    Due to the lack of operating system arbitration, applications usually assume exclusive access, making the otherwise underutilized resources unusable for other jobs on the same host.
+    We therefore design Salus to realize proper efficient GPU sharing.
+    It leverages DL applications' specific usage patterns to schedule iterations and manage memory allocations, providing two missing primitives: fast job switching and memory sharing.
+
+    However, even with an efficient execution platform, it is still not trivial to harvest the hardware's full potential for higher-level applications. We investigate two such cases sitting on opposite sides of a model's lifecycle: hyperparameter tuning and inference serving.
+
+    Hyperparameter tuning -- which constitutes a great portion of DL cluster usage given the proliferation of distributed resources in clusters -- generates many small interdependent training trials.
+    Existing tuning algorithms are oblivious of advanced execution strategies like intra-GPU sharing and inter-GPU execution, often causing poor resource utilization.
+    Hence, we propose Fluid as a generalized hyperparameter tuning execution engine, that coordinates between tuning jobs and cluster resources.
+    Fluid schedules training trials in such jobs using a water-filling approach to make the best use of resources at both intra- and inter-GPU granularity to speed up hyperparameter tuning.
+
+    Moving on, inference serving also requires careful scheduling to achieve tight latency guarantees and maintain high utilization.
+    Existing serving solutions assume inference execution times to be data-independent and thus highly predictable.
+    However, with the rise of dynamic neural networks, data-dependent inferences see higher variance in execution times and become less predictable by a single, point estimation of the true running times.
+    With Orloj, we show that treating and modeling inference execution times as probability distributions bring large gains for scheduling inference requests in the presence of SLO constraints.
+
+    In this dissertation, we consider combining application/system-specific information with scheduling design as a means of efficiently supporting new hardware and new DL application use cases.
+    Nevertheless, the pursuit of higher efficiency never ends.
+    This dissertation tries to lay down the necessary mechanisms with the hope that our crude work may be a basis for further research to better scheduling algorithms and more efficient systems in the DL infrastructure.
+  }
 }
