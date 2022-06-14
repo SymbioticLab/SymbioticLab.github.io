@@ -27,8 +27,8 @@ date: 2022-02-11 10:44:00
 6. Xiang Shen (CSE BSE)
 
 ## Ph.D. Alumni
-1. Dr. Juncheng Gu (co-advised w/ Kang G. Shin) (2021) → ByteDance
-2. Dr. Peifeng Yu (2022) → Google
+1. [Dr. Juncheng Gu](https://www.linkedin.com/in/juncheng-gu-93960859/) (co-advised w/ Kang G. Shin) (2021) → ByteDance
+2. [Dr. Peifeng Yu](https://www.linkedin.com/in/peifengyu/) (2022) → Google
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
