@@ -1,6 +1,6 @@
 ---
 title: People
-date: 2022-02-11 10:44:00
+date: 2022-05-05 10:44:00
 ---
 
 ## Faculty
@@ -10,21 +10,17 @@ date: 2022-02-11 10:44:00
 ## Current Ph.D. Students
 
 1. [Jie You](https://web.eecs.umich.edu/~jieyou/)
-2. [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
-3. [Fan Lai](http://www-personal.umich.edu/~fanlai/)
-5. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
-6. Sanjay S. Singapuram
-7. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
-8. [Jae-Won Chung](http://about.jaewonchung.me/)
-9. [Insu Jang](https://insujang.github.io/)
+1. [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
+1. [Fan Lai](http://www-personal.umich.edu/~fanlai/)
+1. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
+1. Sanjay S. Singapuram
+1. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
+1. [Jae-Won Chung](http://about.jaewonchung.me/)
+1. [Insu Jang](https://insujang.github.io/)
 
 ## Current Master’s and Undergraduate Students
-1. [Yinwei Dai](https://dywsjtu.github.io/) (CSE MSE)
-2. Yuqing Qiu (CSE BSE)
-3. Yash Gaitonde (CS-LSA BS)
-4. Kaiyang Yu (CS-LSA BS)
-5. Yuxuan Zhu (CSE BSE)
-6. Xiang Shen (CSE BSE)
+1. Yuxuan Zhu (CSE BSE)
+2. Yutong Li (Math & CS-LSA BS)
 
 ## Ph.D. Alumni
 1. Dr. Juncheng Gu (co-advised w/ Kang G. Shin) (2021) → ByteDance
@@ -53,4 +49,10 @@ date: 2022-02-11 10:44:00
 20. Jiaxing Yang (CSE BSE) → Master’s @Michigan
 21. Zhezheng Chen (CS-LSA BS) → Uber
 22. Chuheng Hu (CS BS @JHU)
-23. Qinye Li (CSE MSE)
+23. Qinye Li (CSE MSE) → Snowflake
+24. Yinwei Dai (CSE MSE) → Ph.D. @Princeton
+25. Yuqing Qiu (CSE BSE) → Master's @CMU
+26. Yash Gaitonde (CS-LSA BS)
+27. Kaiyang Yu (CS-LSA BS) → Master's @CMU
+28. Xiang Shen (CSE BSE) → Meta
+29. Churong Ji (CSE BSE) → Master's @CMU
