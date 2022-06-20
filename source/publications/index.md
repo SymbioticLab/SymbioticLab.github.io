@@ -245,6 +245,14 @@ venues:
       name: JMIR Mental Health 2022, 9(2):e34645
       date: 2022-02-10
       url: https://doi.org/10.2196/34645
+  ICML:
+    category: Conferences
+    occurrences:
+    - key: ICML'22
+      name: Thirty-ninth International Conference on Machine Learning
+      date: 2022-07-17
+      url: https://icml.cc/Conferences/2022
+      acceptance: 21.94%
 {% endpublist %}
 
 ---
