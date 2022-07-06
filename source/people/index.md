@@ -18,9 +18,10 @@ date: 2022-05-05 10:44:00
 1. [Jae-Won Chung](http://about.jaewonchung.me/)
 1. [Insu Jang](https://insujang.github.io/)
 
-## Current Master’s and Undergraduate Students
+## Current Non-Ph.D. Students
 1. Yuxuan Zhu (CSE BSE)
 2. Yutong Li (Math & CS-LSA BS)
+3. Zayd Uzzaman (Greenhills School)
 
 ## Ph.D. Alumni
 1. [Dr. Juncheng Gu](https://www.linkedin.com/in/juncheng-gu-93960859/) (co-advised w/ Kang G. Shin) (2021) → ByteDance
