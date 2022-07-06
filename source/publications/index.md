@@ -217,6 +217,13 @@ venues:
       name: ACM SOSP 21 Workshop on Systems Challenges in Reliable and Secure Federated Learning
       date: 2021-10-25
       url: https://resilientfl.org/
+  HotCarbon:
+    category: Workshops
+    occurrences:
+    - key: HotCarbon'22
+      name: 1st Workshop on Sustainable Computer Systems Design and Implementation
+      date: 2022-07-10
+      url: https://hotcarbon.org/
   'USENIX ;login:':
     category: Journals
     occurrences:
