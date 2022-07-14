@@ -105,6 +105,11 @@ venues:
   SIGCOMM:
     category: Conferences
     occurrences:
+    - key: SIGCOMM'22
+      name: The 2022 ACM SIGCOMM Conference
+      date: 2021-08-22
+      url: https://conferences.sigcomm.org/sigcomm/2022/
+      acceptance: 19.57%
     - key: SIGCOMM'21
       name: The 2021 ACM SIGCOMM Conference
       date: 2021-08-23
