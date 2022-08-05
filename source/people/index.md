@@ -9,7 +9,6 @@ date: 2022-05-05 10:44:00
 
 ## Current Ph.D. Students
 
-1. [Jie You](https://web.eecs.umich.edu/~jieyou/)
 1. [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
 1. [Fan Lai](http://www-personal.umich.edu/~fanlai/)
 1. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
@@ -26,6 +25,7 @@ date: 2022-05-05 10:44:00
 ## Ph.D. Alumni
 1. [Dr. Juncheng Gu](https://www.linkedin.com/in/juncheng-gu-93960859/) (co-advised w/ Kang G. Shin) (2021) → ByteDance
 2. [Dr. Peifeng Yu](https://www.linkedin.com/in/peifengyu/) (2022) → Google
+3. [Dr. Jie You](https://www.linkedin.com/in/jimmyyou/) (2022) → Meta
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
