@@ -1091,3 +1091,36 @@ In this work, we study a slightly different model of coflow scheduling in genera
 		    1.2 - 23.3x over the state-of-the-art.
 	  }
 }
+
+@PhDThesis{jieyou:dissertation,
+  Title                    = {Toward Practical Application-Aware Big Data Systems},
+  Author                   = {Jie You},
+  Institution              = {University of Michigan},
+  Year                     = {2022},
+  Month                    = {August},
+  publist_confkey          = {dissertation},
+  publist_link             = {paper || jieyou-dissertation.pdf},
+  publist_abstract         = {
+    The increasing number of Internet of things (IoT) and other connected devices has led to a surge in the amount of data collected and analyzed.
+    Data scientists collect useful insights from these data through data analysis or machine learning, all of which are performed on distributed big data infrastructures. 
+    Improving the performance and efficiency of such systems can, therefore, improve user experience and reduce their operating cost. 
+
+    These big data infrastructures abstract away low-level details such as resource allocation and task placement decisions and expose simple APIs for the users.
+    Despite simplifying the development process, the decoupling between applications and infrastructures complicates the optimization for end-to-end performance and efficiency metrics, as the contextual details and optimization objectives of applications cannot be expressed using the APIs.
+    We observe that system designers often optimize only for common system-level metrics such as throughput and latency, inadvertently ignoring application-level semantics.
+    As a result, these best-effort local optimizations do not always improve in application-level performance or efficiency.
+    Moreover, the situation is exacerbated as new emerging applications become more intricate and their interactions with the infrastructures become more complex.
+
+    To alleviate the mismatch, we focus on bringing application-awareness into the infrastructures.
+    We explore the opportunities of co-optimizing applications and infrastructures for three popular big data use cases: data analytics, transaction processing, and deep learning, and highlight two ways of implementing application-awareness: white-box design and black-box design.
+    For data analytics, we present Terra which explicitly passes application-level context into the infrastructures, adopting the white-box design of application-awareness.
+    For transaction processing, it is impossible to maintain an accurate model of the performance curve capturing the relationship between request rate and latency, rendering the white-box design infeasible.
+    Therefore, we present Kayak with a black-box application-aware design to adaptively arbitrate incoming requests, improving overall throughput and CPU utilization.
+    For deep learning, the white-box solution is intractable due to the increasing depth of the neural network.
+    To this end, we also present Zeus with a black-box design, adopting a Multi-Armed Bandit algorithm to optimize for faster and more energy-efficient DL training.
+
+    In this dissertation, we demonstrate the adoption of application-awareness as a means of optimizing the end-to-end performance and efficiency of the underlying infrastructures with additional information from the application.
+    We discuss two design patterns for implementing application-awareness, along with their tradeoffs, in the context of three popular big data use cases.
+    The insights from this dissertation promote the adoption of application-awareness and can help future system researchers build more performant and efficient big data infrastructures.
+  }
+}
