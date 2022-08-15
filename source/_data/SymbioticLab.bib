@@ -1124,3 +1124,25 @@ In this work, we study a slightly different model of coflow scheduling in genera
     The insights from this dissertation promote the adoption of application-awareness and can help future system researchers build more performant and efficient big data infrastructures.
   }
 }
+
+@Article{zeus:arxiv22,
+  author        = {Jie You and Jae-Won Chung and Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {Zeus: Understanding and Optimizing GPU Energy Consumption of DNN Training},
+  year          = {2022},
+  month         = {Aug},
+  volume        = {abs/2208.06102},
+  archiveprefix = {arXiv},
+  eprint        = {2208.06102},
+  url           = {https://arxiv.org/abs/2208.06102},
+
+  publist_confkey = {arXiv:2208.06102},
+  publist_link = {paper || https://arxiv.org/abs/2208.06102},
+  publist_topic = {Carbon-Aware Systems},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+    Training deep neural networks (DNNs) is becoming more and more resource- and energy-intensive every year. Unfortunately, existing works primarily focus on optimizing DNN training for faster completion, often without considering the impact on energy efficiency.
+
+    In this paper, we observe that common practices to improve training performance can often lead to inefficient energy usage. More importantly, we demonstrate that there is a tradeoff between energy consumption and performance optimization. To this end, we propose an optimization framework, Zeus, to navigate this tradeoff by automatically finding optimal job- and GPU-level configurations for recurring DNN training jobs. Zeus uses an online exploration-exploitation approach in conjunction with just-in-time energy profiling, averting the need for expensive offline measurements, while adapting to data drifts over time. Our evaluation shows that Zeus can improve the energy efficiency of DNN training by 15.3%--75.8% for diverse workloads.
+  }
+}
