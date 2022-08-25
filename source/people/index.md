@@ -12,20 +12,19 @@ date: 2022-05-05 10:44:00
 1. [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
 1. [Fan Lai](http://www-personal.umich.edu/~fanlai/)
 1. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
-1. Sanjay S. Singapuram
 1. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
 1. [Jae-Won Chung](http://about.jaewonchung.me/)
 1. [Insu Jang](https://insujang.github.io/)
-
-## Current Non-Ph.D. Students
-1. Yuxuan Zhu (CSE BSE)
-2. Yutong Li (Math & CS-LSA BS)
-3. Zayd Uzzaman (Greenhills School)
 
 ## Ph.D. Alumni
 1. [Dr. Juncheng Gu](https://www.linkedin.com/in/juncheng-gu-93960859/) (co-advised w/ Kang G. Shin) (2021) → ByteDance
 2. [Dr. Peifeng Yu](https://www.linkedin.com/in/peifengyu/) (2022) → Google
 3. [Dr. Jie You](https://www.linkedin.com/in/jimmyyou/) (2022) → Meta
+
+## Current Non-Ph.D. Students
+1. Yuxuan Zhu (CSE BSE)
+2. Yutong Li (Math & CS-LSA BS)
+3. Zayd Uzzaman (Greenhills School)
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
@@ -57,3 +56,4 @@ date: 2022-05-05 10:44:00
 27. Kaiyang Yu (CS-LSA BS) → Master's @CMU
 28. Xiang Shen (CSE BSE) → Meta
 29. Churong Ji (CSE BSE) → Master's @CMU
+30. Sanjay S. Singapuram (CSE Ph.D.) → Ph.D. @Michigan
