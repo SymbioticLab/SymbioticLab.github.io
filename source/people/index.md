@@ -28,7 +28,9 @@ date: 2022-05-05 10:44:00
 4. Yile Gu (CSE MSE) 
 5. Andrew Li (CSE BSE)
 6. Haochen Zhang (CSE BSE) -->  Master’s@Rice
-
+7. Yutong Li (Math & CS-LSA BS)
+8. Zayd Uzzaman (Greenhills School)
+9. Luoxi Meng (CSE MSE) 
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
