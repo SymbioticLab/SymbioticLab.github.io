@@ -27,10 +27,10 @@ date: 2022-05-05 10:44:00
 1. Zayd Uzzaman (Greenhills School)
 1. Yile Gu (CSE MSE) 
 1. Andrew Li (CSE BSE)
-1. Haochen Zhang (CSE BSE) -->  Master’s@Rice
 1. Yutong Li (Math & CS-LSA BS)
 1. Zayd Uzzaman (Greenhills School)
 1. Luoxi Meng (CSE MSE) 
+1. Haochen Zhang (CSE BSE → Master's @Rice)
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
@@ -63,4 +63,4 @@ date: 2022-05-05 10:44:00
 28. Xiang Shen (CSE BSE) → Meta
 29. Churong Ji (CSE BSE) → Master's @CMU
 30. Sanjay S. Singapuram (CSE Ph.D.) → Ph.D. @Michigan
-31. Hongxi Pu (CSE BSE) → Master’s @Michigan
+31. Hongxi Pu (CSE BSE) → Master's @Michigan
