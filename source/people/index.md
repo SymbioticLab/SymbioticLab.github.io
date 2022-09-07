@@ -23,14 +23,14 @@ date: 2022-05-05 10:44:00
 
 ## Current Non-Ph.D. Students
 1. Yuxuan Zhu (CSE BSE)
-2. Yutong Li (Math & CS-LSA BS)
-3. Zayd Uzzaman (Greenhills School)
-4. Yile Gu (CSE MSE) 
-5. Andrew Li (CSE BSE)
-6. Haochen Zhang (CSE BSE) -->  Master’s@Rice
-7. Yutong Li (Math & CS-LSA BS)
-8. Zayd Uzzaman (Greenhills School)
-9. Luoxi Meng (CSE MSE) 
+1. Yutong Li (Math & CS-LSA BS)
+1. Zayd Uzzaman (Greenhills School)
+1. Yile Gu (CSE MSE) 
+1. Andrew Li (CSE BSE)
+1. Haochen Zhang (CSE BSE) -->  Master’s@Rice
+1. Yutong Li (Math & CS-LSA BS)
+1. Zayd Uzzaman (Greenhills School)
+1. Luoxi Meng (CSE MSE) 
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
