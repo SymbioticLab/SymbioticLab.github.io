@@ -27,8 +27,6 @@ date: 2022-05-05 10:44:00
 1. Zayd Uzzaman (Greenhills School)
 1. Yile Gu (CSE MSE) 
 1. Andrew Li (CSE BSE)
-1. Yutong Li (Math & CS-LSA BS)
-1. Zayd Uzzaman (Greenhills School)
 1. Luoxi Meng (CSE MSE) 
 1. Haochen Zhang (CSE BSE → Master's @Rice)
 
