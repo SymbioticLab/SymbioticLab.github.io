@@ -51,4 +51,3 @@ Major projects include [Aequitas](https://github.com/SymbioticLab/Aequitas) and 
 
 ## [Big Data Systems](/publications/#/topic:Big%20Data%20Systems)
 In the recent past, we worked on designing and improving big data systems via new algorithms for resource scheduling, caching data in memory, and dynamic query planning to improve resource efficiency, application performance, and fairness.
-
