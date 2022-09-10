@@ -172,6 +172,14 @@ venues:
       date: 2018-06-10
       url: http://sigmod2018.org/
       acceptance: 19.52%
+  VLDB:
+    category: Conferences
+    occurrences:
+    - key: VLDB'22
+      name: 48th International Conference on Very Large Databases
+      date: 2022-09-05
+      url: https://vldb.org/2022/
+      acceptance: 36.67%
   APNet:
     category: Workshops
     occurrences:
