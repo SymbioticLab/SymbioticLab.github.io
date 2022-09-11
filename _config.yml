@@ -203,13 +203,14 @@ theme_config:
   menu:
     # home: / || fa fa-home
     # Blog: /blog || fa fa-home
-    Projects: /projects || fa fa-code
+    Research: /research || fa fa-code
     Publications: /publications || fa fa-book
     People: /people || fa fa-user
     Funding: /funding || fa fa-info
     #tags: /tags/ || fa fa-tags
-    Github: https://github.com/SymbioticLab || fab fa-github-alt
-    Wiki: https://symbiotic.eecs.umich.edu/wiki || fab fa-wikipedia-w
+    GitHub: https://github.com/SymbioticLab || fab fa-github-alt
+    # Wiki: https://symbiotic.eecs.umich.edu/wiki || fab fa-wikipedia-w
+    Join us: https://forms.gle/L3Syau9dBzi8eLxQ7 || fa fa-user-plus
 
   # Enable / Disable menu icons / item badges.
   menu_settings:
