@@ -1171,3 +1171,37 @@ In this work, we study a slightly different model of coflow scheduling in genera
     
     In this paper, we describe the architecture of Informatica CDI-E and its novel no-code data engineering interface. The paper highlights some of the key features of CDI-E: simplicity without loss in productivity and extreme elasticity. It concludes with lessons we learned and an outlook of the future.  }
 }
+
+@Article{orloj:arxiv22,
+  author        = {Peifeng Yu and Yuqing Qiu and Xin Jin and Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {{Orloj}: Predictably Serving Unpredictable DNNs},
+  year          = {2022},
+  month         = {Aug},
+  volume        = {abs/2209.00159},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2209-00159.bib},
+  eprint        = {2209.00159},
+  url           = {https://arxiv.org/abs/2209.00159},
+
+  publist_confkey = {arXiv:2209.00159},
+  publist_link = {paper || https://arxiv.org/abs/2209.00159},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+    Existing DNN serving solutions can provide tight latency SLOs while maintaining high throughput via careful
+  scheduling of incoming requests, whose execution times are assumed to be highly predictable and data-independent.
+  However, inference requests to emerging dynamic DNNs -- e.g., popular natural language processing (NLP) models and
+  computer vision (CV) models that skip layers -- are data-dependent. They exhibit poor performance when served using
+  existing solutions because they experience large variance in request execution times depending on the input -- the
+  longest request in a batch inflates the execution times of the smaller ones, causing SLO misses in the absence of
+  careful batching.
+
+    In this paper, we present Orloj, a dynamic DNN serving system, that captures this variance in dynamic DNNs using
+  empirical distributions of expected request execution times, and then efficiently batches and schedules them without
+  knowing a request's precise execution time. Orloj significantly outperforms state-of-the-art serving solutions for
+  high variance dynamic DNN workloads by 51--80% in finish rate under tight SLO constraints, and over 100% under more
+  relaxed SLO settings. For well-studied static DNN workloads, Orloj keeps comparable performance with the
+  state-of-the-art.
+  }
+}
