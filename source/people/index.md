@@ -28,7 +28,10 @@ date: 2022-05-05 10:44:00
 1. Yile Gu (CSE MSE) 
 1. Andrew Li (CSE BSE)
 1. Luoxi Meng (CSE MSE) 
-1. Haochen Zhang (CSE BSE → Master's @Rice)
+1. Chengsong Zhang (CSE BSE)
+1. Junwen Tan (CSE BSE)
+1. Xuye He (CSE BSE)
+1. Yunzhen Liu (CSE BSE)
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
@@ -62,3 +65,4 @@ date: 2022-05-05 10:44:00
 29. Churong Ji (CSE BSE) → Master's @CMU
 30. Sanjay S. Singapuram (CSE Ph.D.) → Ph.D. @Michigan
 31. Hongxi Pu (CSE BSE) → Master's @Michigan
+32. Haochen Zhang (CSE BSE) → Master's @Rice
