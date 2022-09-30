@@ -35,6 +35,11 @@ venues:
   NSDI:
     category: Conferences
     occurrences:
+    - key: NSDI'23
+      name: The 20th USENIX Symposium on Networked Systems Design and Implementation
+      date: 2023-04-17
+      url: https://www.usenix.org/conference/nsdi23
+      acceptance: 18.38%
     - key: NSDI'22
       name: The 19th USENIX Symposium on Networked Systems Design and Implementation
       date: 2022-04-04
