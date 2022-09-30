@@ -47,6 +47,7 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![VMware](images/vmware.png)
 ![Cisco](images/cisco.png)
 ![Nvidia](images/nvidia.png)
+![Meta](images/meta.png)
 </div>
 
 ## Past Sponsors
