@@ -1205,3 +1205,59 @@ In this work, we study a slightly different model of coflow scheduling in genera
   state-of-the-art.
   }
 }
+
+@InProceedings{zeus:nsdi23,
+  author    = {Jie You and Jae-Won Chung and Mosharaf Chowdhury},
+  booktitle = {USENIX NSDI},
+  title     = {Zeus: Understanding and Optimizing {GPU} Energy Consumption of {DNN} Training},
+  year      = {2023},
+
+  publist_confkey = {NSDI'23},
+  publist_link = {paper || zeus-nsdi23.pdf},
+  publist_link = {code || https://github.com/SymbioticLab/Zeus},
+  publist_link = {website || https://ml.energy/zeus},
+  publist_topic = {Carbon-Aware Systems},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+    Training deep neural networks (DNNs) is becoming increasingly more resource- and energy-intensive every year. Unfortunately, existing works primarily focus on optimizing DNN training for faster completion, often without considering the impact on energy efficiency.
+
+    In this paper, we observe that common practices to improve training performance can often lead to inefficient energy usage. More importantly, we demonstrate that there is a tradeoff between energy consumption and performance optimization. To this end, we propose Zeus, an optimization framework to navigate this tradeoff by automatically finding optimal job- and GPU-level configurations for recurring DNN training jobs. Zeus uses an online exploration-exploitation approach in conjunction with just-in-time energy profiling, averting the need for expensive offline measurements, while adapting to data drifts over time. Our evaluation shows that Zeus can improve the energy efficiency of DNN training by 15.3%–75.8% for diverse workloads.
+  }
+}
+
+@InProceedings{modelkeeper:nsdi23,
+  author    = {Fan Lai and Yinwei Dai and Harsha V. Madhyastha and Mosharaf Chowdhury},
+  booktitle = {USENIX NSDI},
+  title     = {{ModelKeeper}: Accelerating {DNN} Training via Automated Training Warmup},
+  year      = {2023},
+
+  publist_confkey = {NSDI'23},
+  publist_link = {paper || modelkeeper-nsdi23.pdf},
+  publist_link = {code || https://github.com/SymbioticLab/ModelKeeper},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+    With growing deployment of machine learning (ML) models,
+    ML developers are training or re-training increasingly more
+    deep neural networks (DNNs). They do so to find the most
+    suitable model that meets their accuracy requirement while
+    satisfying the resource and timeliness constraints of the target
+    environment. In large shared clusters, the growing number
+    of neural architecture search (NAS) and training jobs often
+    result in models sharing architectural similarities with others
+    from the same or a different ML developer. However, existing
+    solutions do not provide a systematic mechanism to identify
+    and leverage such similarities.
+    We present ModelKeeper, the first automated training
+    warmup system that accelerates DNN training by repurposing previously-trained models in a shared cluster. Our key
+    insight is that initializing a training job's model by transforming an already-trained model's weights can jump-start it and
+    reduce the total amount of training needed. However, models submitted over time can differ in their architectures and
+    accuracy. Given a new model to train, ModelKeeper scalably
+    identifies its architectural similarity with previously trained
+    models, selects a parent model with high similarity and good
+    model accuracy, and performs structure-aware transformation
+    of weights to preserve maximal information from the parent
+    model during the warmup of new model weights. Our evaluations across thousands of CV and NLP models show that
+    ModelKeeper achieves 1.3x-4.3x faster training completion
+    with little overhead and no reduction in model accuracy.
+  }
+}
