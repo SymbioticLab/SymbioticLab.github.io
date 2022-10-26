@@ -10,7 +10,7 @@ date: 2022-05-05 10:44:00
 ## Current Ph.D. Students
 
 1. [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
-1. [Fan Lai](http://www-personal.umich.edu/~fanlai/)
+1. [Fan Lai](https://web.eecs.umich.edu/~fanlai/)
 1. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
 1. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
 1. [Jae-Won Chung](https://jaewonchung.me/about)
