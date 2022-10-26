@@ -10,10 +10,10 @@ date: 2022-05-05 10:44:00
 ## Current Ph.D. Students
 
 1. [Hasan Al Maruf](https://web.eecs.umich.edu/~hasanal/)
-1. [Fan Lai](http://www-personal.umich.edu/~fanlai/)
+1. [Fan Lai](https://web.eecs.umich.edu/~fanlai/)
 1. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
 1. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
-1. [Jae-Won Chung](http://about.jaewonchung.me/)
+1. [Jae-Won Chung](https://jaewonchung.me/about)
 1. [Insu Jang](https://insujang.github.io/)
 
 ## Ph.D. Alumni
@@ -31,6 +31,7 @@ date: 2022-05-05 10:44:00
 1. Junwen Tan (CSE BSE)
 1. Xuye He (CSE BSE)
 1. Yunzhen Liu (CSE BSE)
+1. Zhenning Yang (CSE MSE)
 
 ## Past Members
  1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
