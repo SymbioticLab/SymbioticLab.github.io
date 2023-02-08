@@ -4,6 +4,8 @@ This boils down to three operating regimes: single-microsecond latency *within a
 
 ![Overview](/assets/latency-domains.png)
 
-[**Learn about ongoing projects**](https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing) to work on new and exciting projects with us!
+[**Learn about ongoing projects**](https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing) Are you seeking collaboration and already in UMich? Learn about our exciting ongoing projects.
+
+
 
 ## News
