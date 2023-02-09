@@ -7,8 +7,6 @@ SymbioticLab focuses on *large-scale data systems* that can yield order-of-magni
 We tailor existing Big Data and AI/ML applications and design new ones to best leverage their underlying infrastructure.
 This boils down to three operating regimes: single-microsecond latency *within a rack*, single-millisecond latency *within a datacenter*, and hundreds-of-milliseconds latency *across the world*.
 
-Are you seeking collaboration and already in UMich? Learn about exciting ongoing projects [here](https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing).
-
 
 ![Overview](/assets/latency-domains.png)
 
