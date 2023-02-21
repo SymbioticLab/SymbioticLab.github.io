@@ -86,6 +86,14 @@ venues:
       date: 2022-02-23
       url: https://www.usenix.org/conference/fast22
       acceptance: 21.54%
+  ASPLOS:
+    category: Conferences
+    occurrences:
+    - key: ASPLOS'23
+      name: The 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+      date: 2023-03-25
+      url: https://asplos-conference.org/2023/
+      acceptance: 26.67%
   EuroSys:
     category: Conferences
     occurrences:
