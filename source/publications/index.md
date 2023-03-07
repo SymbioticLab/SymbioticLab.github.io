@@ -286,6 +286,13 @@ venues:
       date: 2022-07-17
       url: https://icml.cc/Conferences/2022
       acceptance: 21.94%
+  ClimateML:
+    category: Workshops
+    occurrences:
+    - key: ClimateML-ICLR'23
+      name: ICLR 23 Workshop on Tackling Climate Change with Machine Learning
+      date: 2023-05-04
+      url: https://www.climatechange.ai/events/iclr2023
 {% endpublist %}
 
 ---

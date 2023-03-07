@@ -1338,3 +1338,17 @@ Cross-device federated learning (FL) has been well-studied from algorithmic, sys
   }
 }
 
+@InProceedings{chase:climateml-iclr23,
+  author    = {Yang, Zhenning and Meng, Luoxi and Chung, Jae-Won and Chowdhury, Mosharaf},
+  booktitle = {Tackling Climate Change with Machine Learning},
+  title     = {Chasing Low-Carbon Electricity for Practical and Sustainable {DNN} Training},
+  year      = {2023},
+
+  publist_confkey = {ClimateML-ICLR'23},
+  publist_link = {paper || chase-climateml-iclr23.pdf},
+  publist_topic = {Systems + AI},
+  publist_topic = {Carbon-Aware Systems},
+  publist_abstract = {
+Deep learning has experienced significant growth in recent years, resulting in increased energy consumption and carbon emission from the use of GPUs for training deep neural networks (DNNs). Answering the call for sustainability, conventional solutions have attempted to move training jobs to locations or time frames with lower carbon intensity. However, moving jobs to other locations may not always be feasible due to large dataset sizes or data regulations. Moreover, postponing training can negatively impact application service quality because the DNNs backing the service are not updated in a timely fashion. In this work, we present a practical solution that reduces the carbon footprint of DNN training without migrating or postponing jobs. Specifically, our solution observes real-time carbon intensity shifts during training and controls the energy consumption of GPUs, thereby reducing carbon footprint while maintaining training performance. Furthermore, in order to proactively adapt to shifting carbon intensity, we propose a lightweight machine learning algorithm that predicts the carbon intensity of the upcoming time frame. Our solution, Chase, reduces the total carbon footprint of training ResNet-50 on ImageNet by 13.6\% while only increasing training time by 2.5\%.
+  }
+}
