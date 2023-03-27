@@ -97,6 +97,11 @@ venues:
   EuroSys:
     category: Conferences
     occurrences:
+    - key: EuroSys'23
+      name: The Eighteenth European Conference on Computer Systems
+      date: 2023-05-08
+      url: https://www.eurosys2023.org/
+      acceptance: 16.12%
     - key: EuroSys'20
       name: The Fifteenth European Conference on Computer Systems
       date: 2020-04-27
