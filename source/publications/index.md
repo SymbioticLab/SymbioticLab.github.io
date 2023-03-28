@@ -110,16 +110,21 @@ venues:
   MLSys:
     category: Conferences
     occurrences:
-    - key: MLSys'20
-      name: The 3rd Conference on Machine Learning and Systems
-      date: 2020-03-02
-      url: https://mlsys.org/Conferences/2020
-      acceptance: 19.2%
+    - key: MLSys'23
+      name: The 6th Conference on Machine Learning and Systems
+      date: 2023-06-04
+      url: https://mlsys.org/Conferences/2023
+      acceptance: 22%
     - key: MLSys'21
       name: The 4th Conference on Machine Learning and Systems
       date: 2021-04-05
       url: https://mlsys.org/Conferences/2021
       acceptance: 23.5%
+    - key: MLSys'20
+      name: The 3rd Conference on Machine Learning and Systems
+      date: 2020-03-02
+      url: https://mlsys.org/Conferences/2020
+      acceptance: 19.2%
   SIGCOMM:
     category: Conferences
     occurrences:
