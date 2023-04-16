@@ -62,7 +62,7 @@ date: 2023-04-16 00:44:00
 1. Zayd Uzzaman (Greenhills School)
 1. Yuxuan Zhu (CSE BSE) → Ph.D. @UIUC
 1. Yutong Li (Math & CS-LSA BS)
-1. Yile Gu (CSE MSE) → Ph.D. @ UWashington
+1. Yile Gu (CSE MSE) → Ph.D. @UWashington
 1. Luoxi Meng (CSE MSE) → Ph.D. @UCSD
 1. Chengsong Zhang (CSE BSE) → Master's @UIUC
 1. Junwen Tan (CSE BSE)
