@@ -97,6 +97,11 @@ venues:
   EuroSys:
     category: Conferences
     occurrences:
+    - key: EuroSys'23
+      name: The Eighteenth European Conference on Computer Systems
+      date: 2023-05-08
+      url: https://www.eurosys2023.org/
+      acceptance: 16.12%
     - key: EuroSys'20
       name: The Fifteenth European Conference on Computer Systems
       date: 2020-04-27
@@ -105,16 +110,21 @@ venues:
   MLSys:
     category: Conferences
     occurrences:
-    - key: MLSys'20
-      name: The 3rd Conference on Machine Learning and Systems
-      date: 2020-03-02
-      url: https://mlsys.org/Conferences/2020
-      acceptance: 19.2%
+    - key: MLSys'23
+      name: The 6th Conference on Machine Learning and Systems
+      date: 2023-06-04
+      url: https://mlsys.org/Conferences/2023
+      acceptance: 22%
     - key: MLSys'21
       name: The 4th Conference on Machine Learning and Systems
       date: 2021-04-05
       url: https://mlsys.org/Conferences/2021
       acceptance: 23.5%
+    - key: MLSys'20
+      name: The 3rd Conference on Machine Learning and Systems
+      date: 2020-03-02
+      url: https://mlsys.org/Conferences/2020
+      acceptance: 19.2%
   SIGCOMM:
     category: Conferences
     occurrences:
@@ -286,6 +296,13 @@ venues:
       date: 2022-07-17
       url: https://icml.cc/Conferences/2022
       acceptance: 21.94%
+  ClimateChangeAI:
+    category: Workshops
+    occurrences:
+    - key: CCAI-ICLR'23
+      name: ICLR 23 Workshop on Tackling Climate Change with Machine Learning
+      date: 2023-05-04
+      url: https://www.climatechange.ai/events/iclr2023
 {% endpublist %}
 
 ---
