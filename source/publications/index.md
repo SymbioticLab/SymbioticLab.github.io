@@ -94,6 +94,14 @@ venues:
       date: 2023-03-25
       url: https://asplos-conference.org/2023/
       acceptance: 26.67%
+  SIGMETRICS:
+    category: Conferences
+    occurrences:
+    - key: SIGMETRICS'23
+      name: ACM SIGMETRICS 2023
+      date: 2023-06-19
+      url: https://www.sigmetrics.org/sigmetrics2023/
+      acceptance: 10.00%
   EuroSys:
     category: Conferences
     occurrences:
