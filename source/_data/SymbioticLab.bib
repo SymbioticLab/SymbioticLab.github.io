@@ -1417,3 +1417,23 @@ We also present a decision workflow that leverages the FL-integrated platform to
 Deep learning has experienced significant growth in recent years, resulting in increased energy consumption and carbon emission from the use of GPUs for training deep neural networks (DNNs). Answering the call for sustainability, conventional solutions have attempted to move training jobs to locations or time frames with lower carbon intensity. However, moving jobs to other locations may not always be feasible due to large dataset sizes or data regulations. Moreover, postponing training can negatively impact application service quality because the DNNs backing the service are not updated in a timely fashion. In this work, we present a practical solution that reduces the carbon footprint of DNN training without migrating or postponing jobs. Specifically, our solution observes real-time carbon intensity shifts during training and controls the energy consumption of GPUs, thereby reducing carbon footprint while maintaining training performance. Furthermore, in order to proactively adapt to shifting carbon intensity, we propose a lightweight machine learning algorithm that predicts the carbon intensity of the upcoming time frame. Our solution, Chase, reduces the total carbon footprint of training ResNet-50 on ImageNet by 13.6\% while only increasing training time by 2.5\%.
   }
 }
+
+@Article{disaggregation-future:arxiv23,
+  author        = {Hasan Al Maruf and Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {Memory Disaggregation: Advances and Open Challenges},
+  year          = {2023},
+  month         = {May},
+  volume        = {abs/2305.03943},
+  archiveprefix = {arXiv},
+  eprint        = {2305.03943},
+  url           = {https://arxiv.org/abs/2305.03943},
+  publist_confkey = {arXiv:2305.03943},
+  publist_link = {paper || https://arxiv.org/abs/2305.03943},
+  publist_topic = {Disaggregation},
+  publist_abstract = {
+Compute and memory are tightly coupled within each server in traditional datacenters. Large-scale datacenter operators have identified this coupling as a root cause behind fleet-wide resource underutilization and increasing Total Cost of Ownership (TCO). With the advent of ultra-fast networks and cache-coherent interfaces, memory disaggregation has emerged as a potential solution, whereby applications can leverage available memory even outside server boundaries.
+
+This paper summarizes the growing research landscape of memory disaggregation from a software perspective and introduces the challenges toward making it practical under current and future hardware trends. We also reflect on our seven-year journey in the SymbioticLab to build a comprehensive disaggregated memory system over ultra-fast networks. We conclude with some open challenges toward building next-generation memory disaggregation systems leveraging emerging cache-coherent interconnects.
+  }
+}
