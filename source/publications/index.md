@@ -101,19 +101,19 @@ venues:
       name: ACM SIGMETRICS 2023
       date: 2023-06-19
       url: https://www.sigmetrics.org/sigmetrics2023/
-      acceptance: 10.00%
+      acceptance: 10%
   EuroSys:
     category: Conferences
     occurrences:
     - key: EuroSys'23
       name: The Eighteenth European Conference on Computer Systems
       date: 2023-05-08
-      url: https://www.eurosys2023.org/
+      url: https://2023.eurosys.org/
       acceptance: 16.12%
     - key: EuroSys'20
       name: The Fifteenth European Conference on Computer Systems
       date: 2020-04-27
-      url: https://www.eurosys2020.org/
+      url: https://2020.eurosys.org/
       acceptance: 18.38%
   MLSys:
     category: Conferences
