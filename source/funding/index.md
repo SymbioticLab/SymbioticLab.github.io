@@ -47,6 +47,7 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![VMware](images/vmware.png)
 ![Cisco](images/cisco.png)
 ![Meta](images/meta.png)
+![Google](images/google.png)
 </div>
 
 ## Past Sponsors
@@ -54,7 +55,6 @@ Any opinions, findings, and conclusions of our research projects are those of th
 <div class='flex-row'>
 
 ![Nvidia](images/nvidia.png)
-![Google](images/google.png)
 ![KLA](images/kla.png)
 ![Chelsio](images/chelsio.png)
 </div>
