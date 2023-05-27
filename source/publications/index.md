@@ -180,6 +180,11 @@ venues:
   OSDI:
     category: Conferences
     occurrences:
+    - key: OSDI'23
+      name: The 17th USENIX Symposium on Operating Systems Design and Implementation
+      date: 2023-07-10
+      url: https://www.usenix.org/conference/osdi23
+      acceptance: 19.61%
     - key: OSDI'21
       name: The 15th USENIX Symposium on Operating Systems Design and Implementation
       date: 2021-07-14
