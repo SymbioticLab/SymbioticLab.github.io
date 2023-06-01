@@ -48,6 +48,7 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![Cisco](images/cisco.png)
 ![Meta](images/meta.png)
 ![Google](images/google.png)
+![Ford](images/ford.png)
 </div>
 
 ## Past Sponsors

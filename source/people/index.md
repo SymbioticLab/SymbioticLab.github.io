@@ -23,8 +23,11 @@ date: 2023-04-16 00:44:00
 1. [Dr. Jie You](https://www.linkedin.com/in/jimmyyou/) (2022) → Meta
 
 ## Current Non-Ph.D. Students
-1. Andrew Li (CSE BSE)
-1. Zhenning Yang (CSE MSE)
+1. Aakash Puntambekar (CSE MSE)
+1. Ding Ding (CSE BSE)
+1. Zhiyu Wu (CSE BSE)
+1. Zhixiang Teoh (CSE MSE)
+1. Yunxuan Tang (CSE BSE)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
@@ -69,3 +72,5 @@ date: 2023-04-16 00:44:00
 1. Xuye He (CSE BSE) → Master's @CMU
 1. Yunzhen Liu (CSE BSE)
 1. Xingran Shen (CSE BSE) → Master's @USC
+1. Andrew Li (CSE BSE)
+1. Zhenning Yang (CSE MSE)
