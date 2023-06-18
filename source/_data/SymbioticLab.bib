@@ -768,6 +768,7 @@ In this work, we study a slightly different model of coflow scheduling in genera
 
   publist_confkey = {ASPLOS'23},
   publist_link = {paper || tpp-asplos23.pdf},
+  publist_link = {slides || tpp-slides-asplos23.pdf},
   publist_link = {code || https://lwn.net/Articles/876993/},
   publist_topic = {Disaggregation},
   publist_abstract = {
@@ -1436,6 +1437,23 @@ Deep learning has experienced significant growth in recent years, resulting in i
 Compute and memory are tightly coupled within each server in traditional datacenters. Large-scale datacenter operators have identified this coupling as a root cause behind fleet-wide resource underutilization and increasing Total Cost of Ownership (TCO). With the advent of ultra-fast networks and cache-coherent interfaces, memory disaggregation has emerged as a potential solution, whereby applications can leverage available memory even outside server boundaries.
 
 This paper summarizes the growing research landscape of memory disaggregation from a software perspective and introduces the challenges toward making it practical under current and future hardware trends. We also reflect on our seven-year journey in the SymbioticLab to build a comprehensive disaggregated memory system over ultra-fast networks. We conclude with some open challenges toward building next-generation memory disaggregation systems leveraging emerging cache-coherent interconnects.
+  }
+}
+
+@InProceedings{disaggregation-future:hotinfra23,
+  author        = {Hasan Al Maruf and Mosharaf Chowdhury},
+  title         = {Memory Disaggregation: Open Challenges in the Era of {CXL}},
+  booktitle = {HotInfra},
+  year          = {2023},
+  month         = {June},
+  publist_confkey = {HotInfra'23},
+  publist_link = {paper || memory-disaggregation-hotinfra23.pdf},
+  publist_link = {slides || memory-disaggregation-slides-hotinfra23.pdf},
+  publist_topic = {Disaggregation},
+  publist_abstract = {
+Compute and memory are tightly coupled within traditional
+datacenter servers. Large-scale datacenter operators have
+identified this coupling as a root cause behind fleet-wide resource underutilization and increasing Total Cost of Ownership (TCO). With the advent of ultra-fast networks and cachecoherent interfaces, memory disaggregation has emerged as a potential solution, whereby applications can leverage available memory even outside server boundaries. In this paper, we discuss some open challenges from a software perspective toward building next-generation memory disaggregation systems leveraging emerging cache-coherent interconnects.
   }
 }
 

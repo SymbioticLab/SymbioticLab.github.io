@@ -223,6 +223,13 @@ venues:
       name: The 2nd Asia-Pacific Workshop on Networking
       date: 2018-08-02
       url: https://conferences.sigcomm.org/events/apnet2018/index.html
+ HotInfra:
+    category: Workshops
+    occurrences:
+    - key: HotInfra'23
+      name: Workshop on Hot Topics in System Infrastructure
+      date: 2023-06-18
+      url: https://hotinfra23.github.io/
   HotCloud:
     category: Workshops
     occurrences:
