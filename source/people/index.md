@@ -24,7 +24,7 @@ date: 2023-04-16 00:44:00
 
 ## Current Non-Ph.D. Students
 1. Aakash Puntambekar (CSE MSE)
-1. Ding Ding (CSE BSE)
+1. [Ding (Eric) Ding](https://ericdinging.github.io/mywebsite/) (CSE BSE)
 1. Zhiyu Wu (CSE BSE)
 1. Zhixiang Teoh (CSE MSE)
 1. Yunxuan Tang (CSE BSE)
