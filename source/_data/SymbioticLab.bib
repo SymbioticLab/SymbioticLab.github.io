@@ -1104,6 +1104,28 @@ We evaluate TPP with diverse memory-sensitive workloads in the production server
   }
 }
 
+@PhDThesis{hasanal:dissertation,
+  Title                    = {Practical Memory Disaggregation},
+  Author                   = {Hasan Al Maruf},
+  Institution              = {University of Michigan},
+  Year                     = {2023},
+  Month                    = {August},
+
+  publist_confkey = {dissertation},
+  publist_link = {paper || hasanal-dissertation.pdf},
+  Abstract                 = {In today's datacenters, compute and memory resources are tightly-coupled. This causes fleet-wide resource underutilization and increases the total cost of ownership (TCO) for large-scale datacenters. Modern datacenters are embracing a paradigm shift towards disaggregation, where each resource type is decoupled and connected through a network fabric. As memory is the prime resource for high-performance services, it has become an attractive target for disaggregation. Disaggregating memory from compute enables flexibility to scale them independently and better resource utilization. As memory consumes 30-40% of the total rack power and operating cost, proper utilization of stranded resources through disaggregation can save billions of dollars in TCO.
+
+With the advent of ultra-fast networks and coherent interfaces like CXL, disaggregation has become popular over the last few years. There are, however, many open challenges for its practical adoption, including the latency gap between local and remote memory access, resilience, deployability in existing infrastructure, adaptation of heterogeneity in cluster resources, and isolation while maintaining the quality of service. To make memory disaggregation widely adoptable, besides hardware support, we need to provide performant software stacks considering all these challenges so that such systems do not degrade application performance beyond a noticeable margin.
+
+This dissertation proposes a comprehensive solution to address the host-level, network-level, and end-to-end aspects of practical memory disaggregation. Existing memory disaggregation solutions usually use data path components designed for slow disks. As a result, applications experience remote memory access latency significantly higher than that of the underlying low-latency network. To bridge the still-sizeable latency gap between local vs. remote memory access, we design Leap – a prefetching solution for remote memory accesses. At its core, Leap employs an online, majority-based prefetching algorithm, which increases the page cache hit rate. Next, comes the challenge of providing resilience. Relying on memory across multiple machines in a disaggregated cluster makes applications susceptible to a wide variety of uncertainties, such as independent and correlated failures of remote machines, evictions from and corruptions of remote memory, network partitions, etc. Applications also suffer from stragglers or late-arriving remote responses because of the latency variabilities in a large network due to congestion and background traffic. Hydra addresses these issues by enabling a low-latency, low-overhead, and highly available erasure-coded resilient remote memory datapath at single-digit μs tail latency.
+
+For widespread deployability, besides private clouds, we consider public clouds where prevail a set of unique challenges for resource disaggregation across different tenants, including resource harvesting, isolation, and matching. We design Memtrade to enable memory disaggregation on public clouds even in the absence of the latest networking hardware and protocols (e.g., RDMA, CXL). Memtrade allows producer virtual machines (VMs) to lease both their unallocated memory and allocated-but-idle application memory to remote consumer VMs for a limited period of time.
+
+Emerging coherent interfaces like CXL reduce the remote memory access latency to a few hundred nanoseconds. It enables main memory expansion where different memory technologies with varied characteristics can co-exist. Without efficient memory management, however, such heterogeneous tiered-memory systems can significantly degrade performance. We propose a novel OS-level page placement mechanism, TPP, for tiered-memory systems. TPP employs a lightweight mechanism to identify and place hot/cold pages to appropriate memory tiers.
+
+Altogether, this dissertation presents how to enable practical memory disaggregation for next-generation datacenters through performant, resilient, and easily deployable software stacks.}
+}
+
 @article{swan:arxiv22,
 	  title={Swan: A Neural Engine for Efficient DNN Training on Smartphone SoCs},
 	  author={Sanjay Sri Vallabh Singapuram and Fan Lai and Chuheng Hu and Mosharaf Chowdhury},
