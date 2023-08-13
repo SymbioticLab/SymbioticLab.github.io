@@ -9,7 +9,6 @@ date: 2023-04-16 00:44:00
 
 ## Current Ph.D. Students
 
-1. [Fan Lai](https://web.eecs.umich.edu/~fanlai/)
 1. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
 1. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
 1. [Jae-Won Chung](https://jaewonchung.me/about)
@@ -21,6 +20,7 @@ date: 2023-04-16 00:44:00
 1. [Dr. Peifeng Yu](https://www.linkedin.com/in/peifengyu/) (2022) → Google
 1. [Dr. Jie You](https://www.linkedin.com/in/jimmyyou/) (2022) → Meta
 1. [Dr. Hasan Al Maruf](https://www.linkedin.com/in/hasanalmaruf/) (2023) → AMD
+1. [Prof. Fan Lai](https://www.linkedin.com/in/fan-lai-a27764147/) (2023) → Assistant Professor @UIUC
 
 ## Current Non-Ph.D. Students
 1. Aakash Puntambekar (CSE MSE)
