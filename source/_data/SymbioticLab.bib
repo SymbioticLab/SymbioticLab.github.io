@@ -1126,6 +1126,26 @@ Emerging coherent interfaces like CXL reduce the remote memory access latency to
 Altogether, this dissertation presents how to enable practical memory disaggregation for next-generation datacenters through performant, resilient, and easily deployable software stacks.}
 }
 
+
+@PhDThesis{fanlai:dissertation,
+  Title                    = {Minimalist Systems for Pervasive Machine Learning},
+  Author                   = {Fan Lai},
+  Institution              = {University of Michigan},
+  Year                     = {2023},
+  Month                    = {August},
+
+  publist_confkey = {dissertation},
+  publist_link = {paper || fanlai-dissertation.pdf},
+  Abstract                 = {Skyrocketing data volumes, growing hardware capabilities, and the revolution in machine learning (ML) theory have collectively driven the latest leap forward in ML. Despite our hope to realize the next leap with new hardware and a broader range of data, ML development is reaching scaling limits in both realms. First, the exponential surge in ML workload volumes and their complexity far outstrip hardware improvements, leading to hardware resource demands surpassing the sustainable growth of capacity. Second, the mounting volumes of edge data, increasing awareness of user privacy, and tightening government regulations render conventional ML practices, which centralize all data into the cloud, increasingly unsustainable due to escalating costs and scrutiny.
+
+  This dissertation surmounts these resource and data limits using a minimalist approach – reducing complexity and eliminating bloating features – to develop minimalist systems. The thesis provides evidence that by co-designing ML, systems, and networking, we can (1) minimize ML resource demands by removing bloating system execution without compromising ML performance; (2) minimize data collection by effectively offloading ML to the planet-scale data source; and (3) minimize human effort by automatically discovering the sweet spot of ML and system efficiency.
+
+  The minimalist systems developed in this thesis span each stage of ML development, facilitating the transition to the era of pervasive ML. The thesis commences with the data preprocessing stage and introduces a network-aware execution engine called Sol. Sol empowers distributed ML clusters to efficiently perform collaborative data processing over the Internet to minimize data migration. The second and third parts of this thesis optimize the subsequent training stage, by introducing ModelKeeper and AdaEmbed to minimize ML resource demands. ModelKeeper repurposes the weights of previously trained models to warm up model training, reducing the amount of training execution needed. During model training, AdaEmbed automatically identifies the model weights that contribute more to model accuracy and removes less important weights, reducing model size without compromising model accuracy.
+
+  The fourth and fifth parts introduce FedScale and Oort to complement and extend today’s ML training stage and the subsequent deployment stage up to the planetary scale. They enable federated model training and testing across millions of clients at the edge. FedScale supports on-device model execution and integrates Oort to orchestrate clients. At runtime, Oort cherry-picks the clients, who have the data that offers better utility in improving model accuracy and the capability to execute the ML task quickly, to minimize the performance gap between cloud ML and federated ML.}
+}
+
+
 @article{swan:arxiv22,
 	  title={Swan: A Neural Engine for Efficient DNN Training on Smartphone SoCs},
 	  author={Sanjay Sri Vallabh Singapuram and Fan Lai and Chuheng Hu and Mosharaf Chowdhury},
