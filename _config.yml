@@ -210,8 +210,8 @@ theme_config:
     #tags: /tags/ || fa fa-tags
     GitHub: https://github.com/SymbioticLab || fab fa-github-alt
     # Wiki: https://symbiotic.eecs.umich.edu/wiki || fab fa-wikipedia-w
-    # Join us: https://forms.gle/L3Syau9dBzi8eLxQ7 || fa fa-user-plus
-    Collaboration: https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing || fa fa-user-plus
+    Join us: https://forms.gle/L3Syau9dBzi8eLxQ7 || fa fa-user-plus
+    # Collaboration: https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing || fa fa-user-plus
 
   # Enable / Disable menu icons / item badges.
   menu_settings:
