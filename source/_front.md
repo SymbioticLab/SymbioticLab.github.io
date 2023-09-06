@@ -6,7 +6,7 @@ This boils down to three operating regimes: single-microsecond latency *within a
 
 [**Join SymbioticLab**](https://forms.gle/L3Syau9dBzi8eLxQ7) to work on new and exciting projects with us!
 
-**Learn about ongoing projects:** If you're already in Michigan, you can learn more about our [ongoing projects](https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing) and opportunities here.
+[**Learn about ongoing projects and opportunities**](https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing) if you're already in Michigan.
 
 
 ## News
