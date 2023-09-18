@@ -4,9 +4,9 @@ This boils down to three operating regimes: single-microsecond latency *within a
 
 ![Overview](/assets/latency-domains.png)
 
-[**Join SymbioticLab**](https://forms.gle/L3Syau9dBzi8eLxQ7) to work on new and exciting projects with us!
+[**Join SymbioticLab**](https://forms.gle/L3Syau9dBzi8eLxQ7) to work on first-of-its-kind projects made possible by the [SymbioticLab cluster](/cluster/)!
 
-[**Learn about ongoing projects and opportunities**](https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing) if you're already in Michigan.
+[**Learn about openings in ongoing projects**](https://docs.google.com/document/d/1mVPqfnqLz_CXVz8XyDLcB1BIlUyezY2A-t5mV33JZHw/edit?usp=sharing) if you're already in Michigan.
 
 
 ## News
