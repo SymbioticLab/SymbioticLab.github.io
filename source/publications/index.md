@@ -86,6 +86,14 @@ venues:
       date: 2020-07-15
       url: https://www.usenix.org/conference/atc20
       acceptance: 18.68%
+  SoCC:
+    category: Conferences
+    occurrences:
+    - key: SoCC'23
+      name: The 14th ACM Symposium on Cloud Computing
+      date: 2023-10-30
+      url: https://acmsocc.org/2023/
+      acceptance: 31%
   FAST:
     category: Conferences
     occurrences:
