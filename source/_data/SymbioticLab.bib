@@ -1549,3 +1549,20 @@ This paper summarizes the growing research landscape of memory disaggregation fr
     Oobleck enables resilient distributed training of large DNN models with guaranteed fault tolerance. It takes a planning-execution co-design approach, where it first generates a set of heterogeneous pipeline templates and instantiates at least f+1 logically equivalent pipeline replicas to tolerate any f simultaneous failures. During execution, it relies on already-replicated model states across the replicas to provide fast recovery. Oobleck provably guarantees that some combination of the initially created pipeline templates can be used to cover all available resources after f or fewer simultaneous failures, thereby avoiding resource idling at all times. Evaluation on large DNN models with billions of parameters shows that Oobleck provides consistently high throughput, and it outperforms state-of-the-art fault tolerance solutions like Bamboo and Varuna by up to 13.9x.
   }}
 
+
+
+@InProceedings{auxo:socc23,
+  author    = {Jiachen Liu and Fan Lai and Yinwei Dai and Aditya Akella and Harsha Madhyastha and Mosharaf Chowdhury},
+  booktitle = {SoCC},
+  title     = {{Auxo}: Heterogeneity-Mitigating Federated Learning via Scalable Client Clustering},
+  year      = {2023},
+  publist_confkey = {SoCC'23},
+  publist_link = {paper || auxo-socc23.pdf},
+  publist_topic = {Systems + AI},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = { 
+   Federated learning (FL) is an emerging machine learning (ML) paradigm that enables heterogeneous edge devices to collaboratively train ML models without revealing their raw data to a logically centralized server. However, beyond the heterogeneous device capacity, FL participants often exhibit differences in their data distributions, which are not independent and identically distributed (Non-IID). Many existing works present point solutions to address issues like slow convergence, low final accuracy, and bias in FL, all stemming from client heterogeneity.
+
+In this paper, we explore an additional layer of complexity to mitigate such heterogeneity by grouping clients with statistically similar data distributions (cohorts). We propose Auxo to gradually identify such cohorts in large-scale, low-availability, and resource-constrained FL populations. Auxo then adaptively determines how to train cohort-specific models in order to achieve better model performance and ensure resource efficiency. Our extensive evaluations show that, by identifying cohorts with smaller heterogeneity and performing efficient cohort-based training, Auxo boosts various existing FL solutions in terms of final accuracy (2.1%–8.2%), convergence time (up to 2.2x), and model bias (4.8% - 53.8%).
+  }
+}
