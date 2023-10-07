@@ -6,5 +6,5 @@ categories:
 tags:
 - Awards
 - Systems + AI
-- Carbon-Aware Systems
+- Energy-Efficient Systems
 ---

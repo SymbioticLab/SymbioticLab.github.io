@@ -6,6 +6,6 @@ categories:
 tags:
 - NSDI
 - Systems + AI
-- Carbon-Aware Systems
+- Energy-Efficient Systems
 ---
 
