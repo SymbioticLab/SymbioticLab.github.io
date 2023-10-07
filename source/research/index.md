@@ -35,10 +35,10 @@ We are developing systems, algorithms, and benchmarks to analyze data distribute
 Major projects include [FedScale](https://fedscale.ai/), the largest benchmark and a scalable and extensible platform for federated learning.
 
 
-## [Carbon-Aware Systems](/publications/#/topic:Carbon-Aware%20Systems)
-Carbon footprint and energy consumption are both increasing with the rising popularity of Big Data and AI systems.
+## [Energy-Efficient Systems](/publications/#/topic:Energy-Efficient%20Systems)
+The energy consumption of computing systems is increasing with the rising popularity of Big Data and AI.
 While the hardware community has invested considerable effort in energy optimizations, we observe that similar efforts on the software side are significantly lacking.
-[Our initiative](https://ml.energy) to understand and optimize the energy consumption of modern AI workloads is exposing new ways to understand carbon and energy consumption from software.
+[Our initiative](https://ml.energy) to understand and optimize the energy consumption of modern AI workloads is exposing new ways to understand energy consumption from software.
 Major projects include [Zeus](https://ml.energy/zeus), the first GPU energy-vs-training performance tradeoff optimizer for DNN training.
 
 
