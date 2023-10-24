@@ -3,6 +3,7 @@ title: Publications
 date: 2020-07-22 23:10:02
 publist: true
 mathjax: true
+excerpt: "A list of publications from SymbioticLab"
 ---
 {% publist SymbioticLab %}
 version: 2

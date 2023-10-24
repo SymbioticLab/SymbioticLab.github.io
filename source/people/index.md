@@ -1,6 +1,7 @@
 ---
 title: People
 date: 2023-04-16 00:44:00
+excerpt: "SymbioticLab current & past members"
 ---
 
 ## Faculty
