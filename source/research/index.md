@@ -1,6 +1,7 @@
 ---
 title: Research
 date: 2022-09-10 14:17:52
+excerpt: "SymbioticLab research themes"
 ---
 
 SymbioticLab focuses on *large-scale data systems* that can yield order-of-magnitude performance and efficiency improvements.

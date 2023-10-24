@@ -1,6 +1,7 @@
 ---
 title: cluster
 date: 2023-09-05 10:40:00
+excerpt: "Introducing the powerful SymbioticLab cluster!"
 ---
 
 ![server](server.jpg)
