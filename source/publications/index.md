@@ -269,6 +269,13 @@ venues:
         & Systems (GRADES) and Network Data Analytics (NDA)
       date: 2018-06-10
       url: https://sites.google.com/site/gradesnda2018/
+  DistributedML:
+    category: Workshops
+    occurrences:
+    - key: DistributedML'23
+      name: The 4th International Workshop on Distributed Machine Learning
+      date: 2023-12-08
+      url: https://distributedml.org/archive/2023/
   HotNets:
     category: Workshops
     occurrences:
