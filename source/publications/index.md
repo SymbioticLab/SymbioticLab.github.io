@@ -269,6 +269,13 @@ venues:
         & Systems (GRADES) and Network Data Analytics (NDA)
       date: 2018-06-10
       url: https://sites.google.com/site/gradesnda2018/
+  HotNets:
+    category: Workshops
+    occurrences:
+    - key: HotNets'23
+      name: The 22nd ACM Workshop on Hot Topics in Networks (HotNets'23)
+      date: 2023-11-28
+      url: https://conferences.sigcomm.org/hotnets/2023/
   HotOS:
     category: Workshops
     occurrences:
