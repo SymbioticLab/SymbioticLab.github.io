@@ -269,6 +269,20 @@ venues:
         & Systems (GRADES) and Network Data Analytics (NDA)
       date: 2018-06-10
       url: https://sites.google.com/site/gradesnda2018/
+  DistributedML:
+    category: Workshops
+    occurrences:
+    - key: DistributedML'23
+      name: The 4th International Workshop on Distributed Machine Learning
+      date: 2023-12-08
+      url: https://distributedml.org/archive/2023/
+  HotNets:
+    category: Workshops
+    occurrences:
+    - key: HotNets'23
+      name: The 22nd ACM Workshop on Hot Topics in Networks (HotNets'23)
+      date: 2023-11-28
+      url: https://conferences.sigcomm.org/hotnets/2023/
   HotOS:
     category: Workshops
     occurrences:
@@ -325,6 +339,13 @@ venues:
       name: JMIR Mental Health 2022, 9(2):e34645
       date: 2022-02-10
       url: https://doi.org/10.2196/34645
+  OSR:
+    category: Journals
+    occurrences:
+    - key: 'OSR:57(1)'
+      name: ACM SIGOPS Operating Systems Review
+      date: 2023-06-28
+      url: https://dl.acm.org/doi/abs/10.1145/3606557.3606562
   ICML:
     category: Conferences
     occurrences:
