@@ -332,6 +332,13 @@ venues:
       name: JMIR Mental Health 2022, 9(2):e34645
       date: 2022-02-10
       url: https://doi.org/10.2196/34645
+  OSR:
+    category: Journals
+    occurrences:
+    - key: 'OSR:57(1)'
+      name: ACM SIGOPS Operating Systems Review
+      date: 2023-06-28
+      url: https://dl.acm.org/doi/abs/10.1145/3606557.3606562
   ICML:
     category: Conferences
     occurrences:
