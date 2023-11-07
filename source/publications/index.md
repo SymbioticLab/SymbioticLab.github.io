@@ -331,21 +331,28 @@ venues:
     - key: 'IEEEAccess:9'
       name: IEEE Access 2021, 9, 156071-156113
       date: 2021-12-1
-      url: https://doi.org/10.1109/ACCESS.2021.3127448
+      url: https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=9312710&punumber=6287639&sortType=vol-only-newest&ranges=20211101_20211130_Search%20Latest%20Date
   JMIRMH:
     category: Journals
     occurrences:
     - key: 'JMIR-MH:9(2)'
       name: JMIR Mental Health 2022, 9(2):e34645
       date: 2022-02-10
-      url: https://doi.org/10.2196/34645
+      url: https://mental.jmir.org/2022/2
   OSR:
     category: Journals
     occurrences:
     - key: 'OSR:57(1)'
       name: ACM SIGOPS Operating Systems Review
       date: 2023-06-28
-      url: https://dl.acm.org/doi/abs/10.1145/3606557.3606562
+      url: https://dl.acm.org/toc/sigops/2023/57/1
+  EIR:
+    category: Journals
+    occurrences:
+    - key: 'EIR:3(3)'
+      name: ACM SIGEnergy Energy Informatics Review
+      date: 2023-10-25
+      url: https://dl.acm.org/toc/sigenergy-eir/2023/3/3
   ICML:
     category: Conferences
     occurrences:
