@@ -346,6 +346,13 @@ venues:
       name: ACM SIGOPS Operating Systems Review
       date: 2023-06-28
       url: https://dl.acm.org/doi/abs/10.1145/3606557.3606562
+  EIR:
+    category: Journals
+    occurrences:
+    - key: 'EIR:3(3)'
+      name: ACM SIGEnergy Energy Informatics Review
+      date: 2023-10-25
+      url: https://dl.acm.org/doi/abs/10.1145/3630614.3630626
   ICML:
     category: Conferences
     occurrences:

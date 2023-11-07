@@ -1532,9 +1532,9 @@ This paper summarizes the growing research landscape of memory disaggregation fr
 
 
 @Article{oobleck:arxiv23,
-  author           = {Jang, Insu and Yang, Zhenning and Zhang, Zhen and Jin, Xin and Chowdhury, Mosharaf},
+  author        = {Jang, Insu and Yang, Zhenning and Zhang, Zhen and Jin, Xin and Chowdhury, Mosharaf},
   journal       = {CoRR},
-  title            = {Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates},
+  title         = {Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates},
   year          = {2023},
   month         = {Sep},
   volume        = {abs/2309.08125},
@@ -1608,4 +1608,20 @@ In this paper, we explore an additional layer of complexity to mitigate such het
   publist_abstract = { 
 Training DNNs on a smartphone system-on-a-chip (SoC) without carefully considering its resource constraints leads to suboptimal training performance and significantly affects user experience. To this end, we present Flamingo, a system for smartphones that optimizes DNN training for time and energy under dynamic resource availability, by scaling parallelism and exploiting compute heterogeneity in real-time. As AI becomes a part of the mainstream smartphone experience, the need to train on-device becomes crucial to fine-tune predictive models while ensuring data privacy. Our experiments show that Flamingo achieves significant improvement in reducing time (12×) and energy (8×) for on-device training, while nearly eliminating detrimental user experience. Extensive large-scale evaluations show that Flamingo can improve end-to-end training performance by 1.2–23.3× and energy efficiency by 1.6–7× over the state-of-the-art.
   }
+}
+
+@article{treehouse:eir23,
+  author        = {Thomas Anderson and Adam Belay and Mosharaf Chowdhury and Asaf Cidon and Irene Zhang},
+  title         = {Treehouse: A Case For Carbon-Aware Datacenter Software},
+  journal       = {ACM SIGEnergy Energy Informatics Review},
+  year          = {2023},
+  month         = {Oct},
+  Number        = {3},
+  Pages         = {64--70},
+  Volume        = {3},
+  publist_confkey = {EIR:3(3)},
+  publist_link = {paper || https://dl.acm.org/doi/abs/10.1145/3630614.3630626},
+  publist_topic = {Energy-Efficient Systems},
+  publist_abstract = {
+The end of Dennard scaling and the slowing of Moore's Law has put the energy use of datacenters on an unsustainable path. Datacenters are already a significant fraction of worldwide electricity use, with application demand scaling at a rapid rate. We argue that substantial reductions in the carbon intensity of datacenter computing are possible with a software-centric approach: by making energy and carbon visible to application developers on a fine-grained basis, by modifying system APIs to make it possible to make informed trade offs between performance and carbon emissions, and by raising the level of application programming to allow for flexible use of more energy efficient means of compute and storage. We also lay out a research agenda for systems software to reduce the carbon footprint of datacenter computing.}
 }
