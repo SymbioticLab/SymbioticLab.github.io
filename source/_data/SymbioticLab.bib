@@ -1238,7 +1238,7 @@ Altogether, this dissertation presents how to enable practical memory disaggrega
 
   publist_confkey = {arXiv:2208.06102},
   publist_link = {paper || https://arxiv.org/abs/2208.06102},
-  publist_link = {code || https://github.com/SymbioticLab/Zeus},
+  publist_link = {code || https://github.com/ml-energy/zeus},
   publist_link = {website || https://ml.energy/zeus},
   publist_topic = {Energy-Efficient Systems},
   publist_topic = {Systems + AI},
@@ -1311,7 +1311,7 @@ Altogether, this dissertation presents how to enable practical memory disaggrega
 
   publist_confkey = {NSDI'23},
   publist_link = {paper || zeus-nsdi23.pdf},
-  publist_link = {code || https://github.com/SymbioticLab/Zeus},
+  publist_link = {code || https://github.com/ml-energy/zeus},
   publist_link = {website || https://ml.energy/zeus},
   publist_topic = {Energy-Efficient Systems},
   publist_topic = {Systems + AI},
@@ -1624,4 +1624,28 @@ Training DNNs on a smartphone system-on-a-chip (SoC) without carefully consideri
   publist_topic = {Energy-Efficient Systems},
   publist_abstract = {
 The end of Dennard scaling and the slowing of Moore's Law has put the energy use of datacenters on an unsustainable path. Datacenters are already a significant fraction of worldwide electricity use, with application demand scaling at a rapid rate. We argue that substantial reductions in the carbon intensity of datacenter computing are possible with a software-centric approach: by making energy and carbon visible to application developers on a fine-grained basis, by modifying system APIs to make it possible to make informed trade offs between performance and carbon emissions, and by raising the level of application programming to allow for flexible use of more energy efficient means of compute and storage. We also lay out a research agenda for systems software to reduce the carbon footprint of datacenter computing.}
+}
+
+@Article{perseus:arxiv23,
+  author        = {Jae-Won Chung and Yile Gu and Insu Jang and Luoxi Meng and Nikhil Bansal and Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {Perseus: Removing Energy Bloat from Large Model Training},
+  year          = {2023},
+  month         = {Dec},
+  volume        = {abs/2312.06902},
+  archiveprefix = {arXiv},
+  eprint        = {2312.06902},
+  url           = {https://arxiv.org/abs/2312.06902},
+
+  publist_confkey = {arXiv:2312.06902},
+  publist_link = {paper || https://arxiv.org/abs/2312.06902},
+  publist_link = {code || https://github.com/ml-energy/zeus},
+  publist_link = {website || https://ml.energy/zeus/perseus},
+  publist_topic = {Energy-Efficient Systems},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+Training large AI models on numerous GPUs consumes a massive amount of energy. We observe that not all energy consumed during training directly contributes to end-to-end training throughput, and a significant portion can be removed without slowing down training, which we call energy bloat.
+
+In this work, we identify two independent sources of energy bloat in large model training, intrinsic and extrinsic, and propose Perseus, a unified optimization framework that mitigates both. Perseus obtains the "iteration time–energy" Pareto frontier of any large model training job using an efficient iterative graph cut-based algorithm and schedules energy consumption of its forward and backward computations across time to remove intrinsic and extrinsic energy bloat. Evaluation on large models like GPT-3 and Bloom shows that Perseus reduces energy consumption of large model training by up to 30\%, enabling savings otherwise unobtainable before.
+  }
 }
