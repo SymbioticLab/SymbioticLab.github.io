@@ -1668,3 +1668,23 @@ In this work, we identify two independent sources of energy bloat in large model
   publist_abstract = {
 Large Language Models (LLMs) have demonstrated remarkable capabilities in important tasks such as natural language understanding, language generation, and complex reasoning and have the potential to make a substantial impact on our society. Such capabilities, however, come with the considerable resources they demand, highlighting the strong need to develop effective techniques for addressing their efficiency challenges. In this survey, we provide a systematic and comprehensive review of efficient LLMs research. We organize the literature in a taxonomy consisting of three main categories, covering distinct yet interconnected efficient LLMs topics from model-centric, data-centric, and framework-centric perspective, respectively. We have also created a GitHub repository where we compile the papers featured in this survey, and will actively maintain this repository and incorporate new research as it emerges. We hope our survey can serve as a valuable resource to help researchers and practitioners gain a systematic understanding of the research developments in efficient LLMs and inspire them to contribute to this important and exciting field.  }
 }
+
+@Article{venn:arxiv23,
+  author        = {Jiachen Liu, Fan Lai, Ding Ding, Yiwen Zhang, Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {Venn: Resource Management Across Federated Learning Jobs},
+  year          = {2023},
+  month         = {Dec},
+  volume        = {abs/2312.08298},
+  archiveprefix = {arXiv},
+  eprint        = {2312.08298},
+  url           = {https://arxiv.org/abs/2312.08298},
+  publist_confkey = {arXiv:2312.08298},
+  publist_link = {paper || https://arxiv.org/abs/2312.08298}, 
+  publist_topic = {Systems + AI},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = {In recent years, federated learning (FL) has emerged as a promising approach for machine learning (ML) and data science across distributed edge devices. With the increasing popularity of FL, resource contention between multiple FL jobs training on the same device population is increasing as well. Scheduling edge resources among multiple FL jobs is different from GPU scheduling for cloud ML because of the ephemeral nature and planetary scale of participating devices as well as the overlapping resource requirements of diverse FL jobs. Existing resource managers for FL jobs opt for random assignment of devices to FL jobs for simplicity and scalability, which leads to poor performance. 
+
+In this paper, we present Venn, an FL resource manager, that efficiently schedules ephemeral, heterogeneous devices among many FL jobs, with the goal of reducing their average job completion time (JCT). Venn formulates the Intersection Resource Scheduling (IRS) problem to identify complex resource contention among multiple FL jobs. Then, Venn proposes a contention-aware scheduling heuristic to minimize the average scheduling delay. Furthermore, it proposes a resource-aware device-to-job matching heuristic that focuses on optimizing response collection time by mitigating stragglers. Our evaluation shows that, compared to the state-of-the-art FL resource managers, Venn improves the average JCT by up to 1.88X.
+  }
+}
