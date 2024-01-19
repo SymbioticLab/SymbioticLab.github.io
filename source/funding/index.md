@@ -48,6 +48,7 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![VMware](images/vmware.png)
 ![Google](images/google.png)
 ![Ford](images/ford.png)
+![Salesforce](images/salesforce.png)
 </div>
 
 ## Past Sponsors
