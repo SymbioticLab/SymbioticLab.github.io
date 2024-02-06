@@ -17,7 +17,7 @@ excerpt: "SymbioticLab current & past members"
 1. [Shiqi He](https://tctower.github.io/)
 
 ## Ph.D. Alumni
-1. [Dr. Juncheng Gu](https://www.linkedin.com/in/juncheng-gu-93960859/) (co-advised w/ Kang G. Shin) (2021) → ByteDance
+1. [Dr. Juncheng Gu](https://www.linkedin.com/in/juncheng-gu-93960859/) (co-advised w/ Kang G. Shin) (2021) → ByteDance ➠ Google
 1. [Dr. Peifeng Yu](https://www.linkedin.com/in/peifengyu/) (2022) → Google
 1. [Dr. Jie You](https://www.linkedin.com/in/jimmyyou/) (2022) → Meta
 1. [Dr. Hasan Al Maruf](https://www.linkedin.com/in/hasanalmaruf/) (2023) → AMD
@@ -27,9 +27,9 @@ excerpt: "SymbioticLab current & past members"
 1. Aakash Puntambekar (CSE MSE)
 1. [Ding (Eric) Ding](https://ericdinging.github.io/mywebsite/) (CSE BSE)
 1. Zhiyu Wu (CSE BSE)
-1. Zhixiang Teoh (CSE MSE)
 1. Yunxuan Tang (CSE BSE)
 1. Yong Seung Lee (CSE MSE)
+1. Jiaheng Lu (ECE MSE)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
@@ -76,3 +76,4 @@ excerpt: "SymbioticLab current & past members"
 1. Xingran Shen (CSE BSE) → Master's @USC
 1. Andrew Li (CSE BSE)
 1. Zhenning Yang (CSE MSE)
+1. Zhixiang Teoh (CSE MSE)
