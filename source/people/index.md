@@ -30,6 +30,9 @@ excerpt: "SymbioticLab current & past members"
 1. Zhixiang Teoh (CSE MSE)
 1. Yunxuan Tang (CSE BSE)
 1. Yong Seung Lee (CSE MSE)
+1. Yuxuan Xia (CSE MSE)
+1. Oh Jun Kweon (CSE MSE)
+1. Parth Raut (CSE MSE)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
