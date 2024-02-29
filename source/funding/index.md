@@ -49,6 +49,7 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![Google](images/google.png)
 ![Ford](images/ford.png)
 ![Salesforce](images/salesforce.png)
+![Mozilla](images/mozilla.png)
 </div>
 
 ## Past Sponsors
