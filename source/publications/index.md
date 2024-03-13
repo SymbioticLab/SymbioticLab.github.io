@@ -45,7 +45,7 @@ venues:
     category: Conferences
     occurrences:
     - key: NSDI'24
-      name: The 21th USENIX Symposium on Networked Systems Design and Implementation
+      name: The 21st USENIX Symposium on Networked Systems Design and Implementation
       date: 2024-04-16
       url: https://www.usenix.org/conference/nsdi24
     - key: NSDI'23
