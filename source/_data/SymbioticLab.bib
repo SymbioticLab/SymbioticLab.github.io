@@ -701,6 +701,21 @@ In this work, we study a slightly different model of coflow scheduling in genera
   }
 }
 
+@InProceedings{vulcan:nsdi24,
+  author    = {Yiwen Zhang and Xumiao Zhang and Ganesh Ananthanarayanan and Anand Iyer and Yuanchao Shu and Victor Bahl and Z. Morley Mao and Mosharaf Chowdhury},
+  booktitle = {USENIX NSDI},
+  title     = {Vulcan: Automatic Query Planning for Live ML Analytics},
+  year      = {2024},
+
+  publist_confkey = {NSDI'24},
+  publist_link = {paper || vulcan-nsdi24.pdf},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+      Live ML analytics have gained increasing popularity with large-scale deployments due to recent evolution of ML technologies. To serve live ML queries, experts nowadays still need to perform manual query planning, which involves pipeline construction, query configuration, and pipeline placement across multiple edge tiers in a heterogeneous infrastructure. Finding the best query plan for a live ML query requires navigating a huge search space, calling for an efficient and systematic solution.
+
+    In this paper, we propose Vulcan, a system that automatically generates query plans for live ML queries to optimize their accuracy, latency, and resource consumption. Based on the user query and performance requirements, Vulcan determines the best pipeline, placement, and query configuration for the query with low profiling cost; it also performs fast online adaptation after query deployment. Vulcan outperforms state-of-the-art ML analytics systems by 4.1$\times$-30.1$\times$ in terms of search cost while delivering up to 3.3$\times$ better query latency.
+  }
+}
 
 @InProceedings{netlock:sigcomm20,
   author    = {Zhuolong Yu and Yiwen Zhang and Vladimir Braverman and Mosharaf Chowdhury and Xin Jin},
