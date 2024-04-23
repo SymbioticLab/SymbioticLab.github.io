@@ -376,6 +376,13 @@ venues:
       name: ICLR 23 Workshop on Tackling Climate Change with Machine Learning
       date: 2023-05-04
       url: https://www.climatechange.ai/events/iclr2023
+  TMLR:
+    category: Journals
+    occurrences:
+    - key: TMLR'24
+      name: Transactions on Machine Learning Research 
+      url: https://jmlr.org/tmlr/
+
 {% endpublist %}
 
 ---
