@@ -1722,3 +1722,20 @@ In this paper, we present Venn, an FL resource manager, that efficiently schedul
   publist_abstract = {The enormous energy consumption of machine learning (ML) and generative AI workloads shows no sign of waning, taking a toll on operating costs, power delivery, and environmental sustainability. Despite a long line of research on energy-efficient hardware, we found that software plays a critical role in ML energy optimization through two recent works: Zeus and Perseus. This is especially true for large language models (LLMs) because their model sizes and, therefore, energy demands are growing faster than hardware efficiency improvements. Therefore, we advocate for a cross-layer approach for energy optimizations in ML systems, where hardware provides architectural support that pushes energy-efficient software further, while software leverages and abstracts the hardware to develop techniques that bring hardware-agnostic energy-efficiency gains.
   }
 }
+
+@InProceedings{fedtrans:mlsys24,
+  author    = {Yuxuan Zhu and Jiachen Liu and Fan Lai and Mosharaf Chowdhury},
+  booktitle = {MLSys},
+  title     = {FedTrans: Efficient Federated Learning via Multi-Model Transformation},
+  year      = {2024},	
+  publist_confkey = {MLSys'24},
+  publist_topic = {Systems + AI},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = {
+Federated learning (FL) aims to train machine learning (ML) models across potentially millions of edge client devices. Yet, training and customizing models for FL clients is notoriously challenging due to the heterogeneity of client data, device capabilities, and the massive scale of clients, making individualized model exploration prohibitively expensive. State-of-the-art FL solutions personalize a globally trained model or concurrently train multiple models, but they often incur suboptimal model accuracy and huge training costs.
+
+In this paper, we introduce FedTrans, a multi-model FL training framework that automatically produces and trains high-accuracy, hardware-compatible models for individual clients at scale. FedTrans begins with a basic global model, identifies accuracy bottlenecks in model architectures during training, and then employs model transformation to derive new models for heterogeneous clients on the fly. It judiciously assigns models to individual clients while performing soft aggregation on multi-model updates to minimize total training costs. Our evaluations using realistic settings show that FedTrans improves individual client model accuracy by 13% while slashing training costs by 4x over state-of-the-art solutions.
+  }
+}
+
+
