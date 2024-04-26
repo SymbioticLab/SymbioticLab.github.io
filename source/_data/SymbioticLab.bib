@@ -1723,6 +1723,26 @@ In this paper, we present Venn, an FL resource manager, that efficiently schedul
   }
 }
 
+@Article{fedtrans:arxiv24,
+  author    = {Yuxuan Zhu and Jiachen Liu and Mosharaf Chowdhury and Fan Lai},
+  title     = {{FedTrans}: Efficient Federated Learning Over Heterogeneous Clients via Model Transformation},
+  year          = {2024},
+  month         = {Apr},
+  volume        = {abs/2404.13515},
+  archiveprefix = {arXiv},
+  eprint        = {2404.13515},
+  url           = {https://arxiv.org/abs/2404.13515},
+  publist_confkey = {arXiv:2404.13515},
+  publist_link = {paper || https://arxiv.org/abs/2404.13515}, 
+  publist_topic = {Systems + AI},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = {
+Federated learning (FL) aims to train machine learning (ML) models across potentially millions of edge client devices. Yet, training and customizing models for FL clients is notoriously challenging due to the heterogeneity of client data, device capabilities, and the massive scale of clients, making individualized model exploration prohibitively expensive. State-of-the-art FL solutions personalize a globally trained model or concurrently train multiple models, but they often incur suboptimal model accuracy and huge training costs.
+
+In this paper, we introduce FedTrans, a multi-model FL training framework that automatically produces and trains high-accuracy, hardware-compatible models for individual clients at scale. FedTrans begins with a basic global model, identifies accuracy bottlenecks in model architectures during training, and then employs model transformation to derive new models for heterogeneous clients on the fly. It judiciously assigns models to individual clients while performing soft aggregation on multi-model updates to minimize total training costs. Our evaluations using realistic settings show that FedTrans improves individual client model accuracy by 13% while slashing training costs by 4x over state-of-the-art solutions.
+  }
+} 
+
 @InProceedings{fedtrans:mlsys24,
   author    = {Yuxuan Zhu and Jiachen Liu and Mosharaf Chowdhury and Fan Lai},
   booktitle = {MLSys},
@@ -1737,6 +1757,24 @@ Federated learning (FL) aims to train machine learning (ML) models across potent
 
 In this paper, we introduce FedTrans, a multi-model FL training framework that automatically produces and trains high-accuracy, hardware-compatible models for individual clients at scale. FedTrans begins with a basic global model, identifies accuracy bottlenecks in model architectures during training, and then employs model transformation to derive new models for heterogeneous clients on the fly. It judiciously assigns models to individual clients while performing soft aggregation on multi-model updates to minimize total training costs. Our evaluations using realistic settings show that FedTrans improves individual client model accuracy by 13% while slashing training costs by 4x over state-of-the-art solutions.
   }
-}
+} 
 
+@Article{andes:arxiv24,
+  author        = {Jiachen Liu and Zhiyu Wu and Jae-won Chung and Fan Lai and Myungjin Lee and Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {{Andes}: Defining and Enhancing Quality-of-Experience in {LLM}-Based Text Streaming Services},
+  year          = {2024},
+  month         = {Apr},
+  volume        = {abs/2404.16283},
+  archiveprefix = {arXiv},
+  eprint        = {2404.16283},
+  url           = {https://arxiv.org/abs/2404.16283},
+  publist_confkey = {arXiv:2404.16283},
+  publist_link = {paper || https://arxiv.org/abs/2404.16283}, 
+  publist_topic = {Systems + AI},
+  publist_abstract = {The advent of large language models (LLMs) has transformed text-based services, enabling capabilities ranging from real-time translation to AI-driven chatbots. However, existing serving systems primarily focus on optimizing server-side aggregate metrics like token generation throughput, ignoring individual user experience with streamed text. As a result, under high and/or bursty load, a significant number of users can receive unfavorable service quality or poor Quality-of-Experience (QoE). 
+  
+  In this paper, we first formally define QoE of text streaming services, where text is delivered incrementally and interactively to users, by considering the end-to-end token delivery process throughout the entire interaction with the user. Thereafter, we propose Andes, a QoE-aware serving system that enhances user experience for LLM-enabled text streaming services. At its core, Andes strategically allocates contended GPU resources among multiple requests over time to optimize their QoE. Our evaluations demonstrate that, compared to the state-of-the-art LLM serving systems like vLLM, Andes improves the average QoE by up to 3.2X under high request rate, or alternatively, it attains up to 1.6X higher request rate while preserving high QoE.
+    }
+}
 
