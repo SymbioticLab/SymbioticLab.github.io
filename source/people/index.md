@@ -25,13 +25,8 @@ excerpt: "SymbioticLab current & past members"
 
 ## Current Non-Ph.D. Students
 1. Aakash Puntambekar (CSE MSE)
-1. [Ding (Eric) Ding](https://ericdinging.github.io/mywebsite/) (CSE BSE)
-1. Zhiyu Wu (CSE BSE)
 1. Yunxuan Tang (CSE BSE)
-1. Yong Seung Lee (CSE MSE)
 1. Jiaheng Lu (ECE MSE)
-1. Yuxuan Xia (CSE MSE)
-1. Oh Jun Kweon (CSE MSE)
 1. Parth Raut (CSE MSE)
 
 ## Past Members
@@ -78,5 +73,10 @@ excerpt: "SymbioticLab current & past members"
 1. Yunzhen Liu (CSE BSE)
 1. Xingran Shen (CSE BSE) → Master's @USC
 1. Andrew Li (CSE BSE)
-1. Zhenning Yang (CSE MSE)
+1. Zhenning Yang (CSE MSE) → Ph.D. @Michigan
 1. Zhixiang Teoh (CSE MSE)
+1. Ding (Eric) Ding (CSE BSE) → Ph.D. @Cornell
+1. Zhiyu Wu (CSE BSE) → Master's @UIUC
+1. Yong Seung Lee (CSE MSE) → Bloomberg
+1. Yuxuan Xia (CSE MSE)
+1. Oh Jun Kweon (CSE MSE)
