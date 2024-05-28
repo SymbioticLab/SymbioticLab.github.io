@@ -28,6 +28,8 @@ excerpt: "SymbioticLab current & past members"
 1. Yunxuan Tang (CSE BSE)
 1. Jiaheng Lu (ECE MSE)
 1. Parth Raut (CSE MSE)
+1. Zhenyan Zhu (CSE MSE)
+1. Weiyuan Lyu (CSE MSE)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
