@@ -29,6 +29,7 @@ excerpt: "SymbioticLab current & past members"
 1. Jiaheng Lu (ECE MSE)
 1. Parth Raut (CSE MSE)
 1. Zhenyan Zhu (CSE MSE)
+1. Amanuel Mersha (Addis Ababa University)
 1. Weiyuan Lyu (CSE MSE)
 
 ## Past Members
