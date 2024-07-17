@@ -139,6 +139,10 @@ venues:
   MLSys:
     category: Conferences
     occurrences:
+    - key: MLSys'24
+      name: The 7th Conference on Machine Learning and Systems
+      date: 2024-05-13
+      url: https://mlsys.org/Conferences/2024 
     - key: MLSys'23
       name: The 6th Conference on Machine Learning and Systems
       date: 2023-06-04
@@ -201,6 +205,11 @@ venues:
   OSDI:
     category: Conferences
     occurrences:
+    - key: OSDI'24
+      name: The 18th USENIX Symposium on Operating Systems Design and Implementation
+      date: 2024-07-10
+      url: https://www.usenix.org/conference/osdi24
+      acceptance: 15.6%
     - key: OSDI'23
       name: The 17th USENIX Symposium on Operating Systems Design and Implementation
       date: 2023-07-10

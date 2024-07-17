@@ -1739,3 +1739,75 @@ In this paper, we present Venn, an FL resource manager, that efficiently schedul
   publist_abstract = {The enormous energy consumption of machine learning (ML) and generative AI workloads shows no sign of waning, taking a toll on operating costs, power delivery, and environmental sustainability. Despite a long line of research on energy-efficient hardware, we found that software plays a critical role in ML energy optimization through two recent works: Zeus and Perseus. This is especially true for large language models (LLMs) because their model sizes and, therefore, energy demands are growing faster than hardware efficiency improvements. Therefore, we advocate for a cross-layer approach for energy optimizations in ML systems, where hardware provides architectural support that pushes energy-efficient software further, while software leverages and abstracts the hardware to develop techniques that bring hardware-agnostic energy-efficiency gains.
   }
 }
+
+@Article{fedtrans:arxiv24,
+  author    = {Yuxuan Zhu and Jiachen Liu and Mosharaf Chowdhury and Fan Lai},
+  title     = {{FedTrans}: Efficient Federated Learning Over Heterogeneous Clients via Model Transformation},
+  year          = {2024},
+  month         = {Apr},
+  volume        = {abs/2404.13515},
+  archiveprefix = {arXiv},
+  eprint        = {2404.13515},
+  url           = {https://arxiv.org/abs/2404.13515},
+  publist_confkey = {arXiv:2404.13515},
+  publist_link = {paper || https://arxiv.org/abs/2404.13515}, 
+  publist_topic = {Systems + AI},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = {
+Federated learning (FL) aims to train machine learning (ML) models across potentially millions of edge client devices. Yet, training and customizing models for FL clients is notoriously challenging due to the heterogeneity of client data, device capabilities, and the massive scale of clients, making individualized model exploration prohibitively expensive. State-of-the-art FL solutions personalize a globally trained model or concurrently train multiple models, but they often incur suboptimal model accuracy and huge training costs.
+
+In this paper, we introduce FedTrans, a multi-model FL training framework that automatically produces and trains high-accuracy, hardware-compatible models for individual clients at scale. FedTrans begins with a basic global model, identifies accuracy bottlenecks in model architectures during training, and then employs model transformation to derive new models for heterogeneous clients on the fly. It judiciously assigns models to individual clients while performing soft aggregation on multi-model updates to minimize total training costs. Our evaluations using realistic settings show that FedTrans improves individual client model accuracy by 13% while slashing training costs by 4x over state-of-the-art solutions.
+  }
+} 
+
+@InProceedings{fedtrans:mlsys24,
+  author    = {Yuxuan Zhu and Jiachen Liu and Mosharaf Chowdhury and Fan Lai},
+  booktitle = {MLSys},
+  title     = {{FedTrans}: Efficient Federated Learning via Multi-Model Transformation},
+  year      = {2024},	
+  publist_confkey = {MLSys'24},
+  publist_topic = {Systems + AI},
+  publist_link = {paper || fedtrans-mlsys24.pdf},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = {
+Federated learning (FL) aims to train machine learning (ML) models across potentially millions of edge client devices. Yet, training and customizing models for FL clients is notoriously challenging due to the heterogeneity of client data, device capabilities, and the massive scale of clients, making individualized model exploration prohibitively expensive. State-of-the-art FL solutions personalize a globally trained model or concurrently train multiple models, but they often incur suboptimal model accuracy and huge training costs.
+
+In this paper, we introduce FedTrans, a multi-model FL training framework that automatically produces and trains high-accuracy, hardware-compatible models for individual clients at scale. FedTrans begins with a basic global model, identifies accuracy bottlenecks in model architectures during training, and then employs model transformation to derive new models for heterogeneous clients on the fly. It judiciously assigns models to individual clients while performing soft aggregation on multi-model updates to minimize total training costs. Our evaluations using realistic settings show that FedTrans improves individual client model accuracy by 13% while slashing training costs by 4x over state-of-the-art solutions.
+  }
+} 
+
+@Article{andes:arxiv24,
+  author        = {Jiachen Liu and Zhiyu Wu and Jae-won Chung and Fan Lai and Myungjin Lee and Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {{Andes}: Defining and Enhancing Quality-of-Experience in {LLM}-Based Text Streaming Services},
+  year          = {2024},
+  month         = {Apr},
+  volume        = {abs/2404.16283},
+  archiveprefix = {arXiv},
+  eprint        = {2404.16283},
+  url           = {https://arxiv.org/abs/2404.16283},
+  publist_confkey = {arXiv:2404.16283},
+  publist_link = {paper || https://arxiv.org/abs/2404.16283}, 
+  publist_topic = {Systems + AI},
+  publist_abstract = {The advent of large language models (LLMs) has transformed text-based services, enabling capabilities ranging from real-time translation to AI-driven chatbots. However, existing serving systems primarily focus on optimizing server-side aggregate metrics like token generation throughput, ignoring individual user experience with streamed text. As a result, under high and/or bursty load, a significant number of users can receive unfavorable service quality or poor Quality-of-Experience (QoE). 
+  
+  In this paper, we first formally define QoE of text streaming services, where text is delivered incrementally and interactively to users, by considering the end-to-end token delivery process throughout the entire interaction with the user. Thereafter, we propose Andes, a QoE-aware serving system that enhances user experience for LLM-enabled text streaming services. At its core, Andes strategically allocates contended GPU resources among multiple requests over time to optimize their QoE. Our evaluations demonstrate that, compared to the state-of-the-art LLM serving systems like vLLM, Andes improves the average QoE by up to 3.2X under high request rate, or alternatively, it attains up to 1.6X higher request rate while preserving high QoE.
+    }
+}
+
+@InProceedings{memstrata:osdi24,
+  author    = {Yuhong Zhong and Daniel S. Berger and Carl Waldspurger and Ryan Wee and Ishwar Agarwal and Rajat Agarwal and Frank Hady and Karthik Kumar and Mark D. Hill and Mosharaf Chowdhury and Asaf Cidon},
+  booktitle = {OSDI},
+  title     = {Managing Memory Tiers with {CXL} in Virtualized Environments},
+  year      = {2024},	
+  publist_confkey = {OSDI'24},
+  publist_topic = {Disaggregation},
+  publist_link = {paper || memstrata-osdi24.pdf},
+  publist_abstract = {
+Cloud providers seek to deploy CXL-based memory to increase aggregate memory capacity, reduce costs, and lower carbon emissions. However, CXL accesses incur higher latency than local DRAM. Existing systems use software to manage data placement across memory tiers at page granularity. Cloud providers are reluctant to deploy software-based tiering due to high overheads in virtualized environments. Hardware-based memory tiering could place data at cacheline granularity, mitigating these drawbacks. However, hardware is oblivious to application-level performance.
+
+We propose combining hardware-managed tiering with software-managed performance isolation to overcome the pitfalls of either approach. We introduce Intel® Flat Memory Mode, the first hardware-managed tiering system for CXL. Our evaluation on a full-system prototype demonstrates that it provides performance close to regular DRAM, with no more than 5% degradation for more than 82% of workloads. Despite such small slowdowns, we identify two challenges that can still degrade performance by up to 34% for “outlier” workloads: (1) memory contention across tenants, and (2) intra-tenant contention due to conflicting access patterns.
+
+To address these challenges, we introduce Memstrata, a lightweight multi-tenant memory allocator. Memstrata employs page coloring to eliminate inter-VM contention. It improves performance for VMs with access patterns that are sensitive to hardware tiering by allocating them more local DRAM using an online slowdown estimator. In multi-VM experiments on prototype hardware, Memstrata is able to identify performance outliers and reduce their degradation from above 30% to below 6%, providing consistent performance across a wide range of workloads.
+  }
+} 
