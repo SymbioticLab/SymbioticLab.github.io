@@ -31,6 +31,9 @@ excerpt: "SymbioticLab current & past members"
 1. Zhenyan Zhu (CSE MSE)
 1. Amanuel Mersha (Addis Ababa University)
 1. Weiyuan Lyu (CSE MSE)
+1. Wonbin Jin (CSE BSE)
+1. Daniel Hou (CSE MSE)
+1. Sharon Han (CSE BSE)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
