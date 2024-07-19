@@ -10,7 +10,6 @@ excerpt: "SymbioticLab current & past members"
 
 ## Current Ph.D. Students
 
-1. [Yiwen Zhang](https://web.eecs.umich.edu/~yiwenzhg/)
 1. [Jiachen Liu](http://www-personal.umich.edu/~amberljc/)
 1. [Jae-Won Chung](https://jaewonchung.me/about)
 1. [Insu Jang](https://insujang.github.io/)
@@ -22,6 +21,7 @@ excerpt: "SymbioticLab current & past members"
 1. [Dr. Jie You](https://www.linkedin.com/in/jimmyyou/) (2022) → Meta
 1. [Dr. Hasan Al Maruf](https://www.linkedin.com/in/hasanalmaruf/) (2023) → AMD
 1. [Prof. Fan Lai](https://www.linkedin.com/in/fan-lai-a27764147/) (2023) → Assistant Professor @UIUC
+1. [Dr. Yiwen Zhang](https://www.linkedin.com/in/yiwen-zhang-a75719112/) (2024) → Google
 
 ## Current Non-Ph.D. Students
 1. Aakash Puntambekar (CSE MSE)
