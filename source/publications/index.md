@@ -352,6 +352,13 @@ venues:
       name: IEEE TASE 2023
       date: 2023-05-01
       url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856
+  TMLR:
+    category: Journals
+    occurrences:
+    - key: TMLR
+      name: TMLR 2024
+      date: 2024-05-01
+      url: https://jmlr.org/tmlr/
   JMIRMH:
     category: Journals
     occurrences:
