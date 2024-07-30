@@ -1837,3 +1837,19 @@ The increase in the computational power of edge devices has opened up the possib
   publist_abstract = {
 Large Language Models (LLMs) have demonstrated remarkable capabilities in important tasks such as natural language understanding and language generation, and thus have the potential to make a substantial impact on our society. Such capabilities, however, come with the considerable resources they demand, highlighting the strong need to develop effective techniques for addressing their efficiency challenges. In this survey, we provide a systematic and comprehensive review of efficient LLMs research. We organize the literature in a taxonomy consisting of three main categories, covering distinct yet interconnected efficient LLMs topics from model-centric, data-centric, and framework-centric perspective, respectively. We have also created a GitHub repository where we organize the papers featured in this survey at https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey. We will actively maintain the repository and incorporate new research as it emerges. We hope our survey can serve as a valuable resource to help researchers and practitioners gain a systematic understanding of efficient LLMs research and inspire them to contribute to this important and exciting field.}
 }
+
+@article{pyxis:tpds,
+  author        = {Sheng Qi and Chao Jin and Mosharaf Chowdhury and Zhenming Liu and Xuanzhe Liu and Xin Jin},
+  title         = {Pyxis: Scheduling Mixed Tasks in Disaggregated Datacenters},
+  journal       = {IEEE Transactions on Parallel and Distributed Systems},
+  year          = {2024},
+  month         = {June},
+  volume        = {35},
+  number        = {9},
+  pages         = {1536-1550},
+  publist_confkey = {IEEE TPDS:35(9)},
+  publist_link = {paper || https://doi.org/10.1109/TPDS.2024.3418620},
+  publist_topic = {Disaggregation},
+  publist_abstract = {
+Disaggregating compute from storage is an emerging trend in cloud computing. Effectively utilizing resources in both compute and storage pool is the key to high performance. The state-of-the-art scheduler provides optimal scheduling decisions for workloads with homogeneous tasks. However, cloud applications often generate a mix of tasks with diverse compute and IO characteristics, resulting in sub-optimal performance for existing solutions. We present Pyxis, a system that provides optimal scheduling decisions for mixed workloads in disaggregated datacenters with theoretical guarantees. Pyxis is capable of maximizing overall throughput while meeting latency SLOs. Pyxis decouples the scheduling of different tasks. Our insight is that the optimal solution has an “all-or-nothing” structure that can be captured by a single turning point in the spectrum of tasks. Based on task characteristics, the turning point partitions the tasks either all to storage nodes or all to compute nodes (none to storage nodes). We theoretically prove that the optimal solution has such a structure, and design an online algorithm with sub-second convergence. We implement a prototype of Pyxis. Experiments on CloudLab with various synthetic and application workloads show that Pyxis improves the throughput by 3–21× over the state-of-the-art solution.}
+}

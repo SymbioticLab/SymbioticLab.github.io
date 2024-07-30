@@ -359,6 +359,13 @@ venues:
       name: TMLR 2024
       date: 2024-05-01
       url: https://jmlr.org/tmlr/
+  'IEEE TPDS':
+    category: Journals
+    occurrences:
+    - key: 'IEEE TPDS:35(9)'
+      name: IEEE TPDS 2024, 35(9), 1536-1550
+      date: 2024-06-24
+      url: https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=10601540&punumber=71
   JMIRMH:
     category: Journals
     occurrences:
