@@ -338,10 +338,10 @@ venues:
       name: Sensors 2020, 20(21), 6100
       date: 2020-10-27
       url: https://www.mdpi.com/1424-8220/20/21
-  IEEEAccess:
+  'IEEE Access':
     category: Journals
     occurrences:
-    - key: 'IEEEAccess:9'
+    - key: 'IEEE Access:9'
       name: IEEE Access 2021, 9, 156071-156113
       date: 2021-12-1
       url: https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=9312710&punumber=6287639&sortType=vol-only-newest&ranges=20211101_20211130_Search%20Latest%20Date
