@@ -343,8 +343,15 @@ venues:
     occurrences:
     - key: 'IEEE Access:9'
       name: IEEE Access 2021, 9, 156071-156113
-      date: 2021-12-1
-      url: https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=9312710&punumber=6287639&sortType=vol-only-newest&ranges=20211101_20211130_Search%20Latest%20Date
+      date: 2021-12-01
+      url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639
+  'IEEE TASE':
+    category: Journals
+    occurrences:
+    - key: 'IEEE TASE'
+      name: IEEE TASE 2023
+      date: 2023-05-01
+      url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856
   JMIRMH:
     category: Journals
     occurrences:

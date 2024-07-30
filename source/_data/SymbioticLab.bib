@@ -1810,3 +1810,17 @@ We propose combining hardware-managed tiering with software-managed performance 
 To address these challenges, we introduce Memstrata, a lightweight multi-tenant memory allocator. Memstrata employs page coloring to eliminate inter-VM contention. It improves performance for VMs with access patterns that are sensitive to hardware tiering by allocating them more local DRAM using an online slowdown estimator. In multi-VM experiments on prototype hardware, Memstrata is able to identify performance outliers and reduce their degradation from above 30% to below 6%, providing consistent performance across a wide range of workloads.
   }
 } 
+
+@article{fed-ensemble:ieee-tase,
+  author        = {Naichen Shi and Fan Lai and Raed Al Kontar and Mosharaf Chowdhury},
+  title         = {Fed-ensemble: Ensemble Models in Federated Learning for Improved Generalization and Uncertainty Quantification},
+  journal       = {IEEE Transactions on Automation Science and Engineering},
+  year          = {2023},
+  month         = {May},
+  publist_confkey = {IEEE TASE},
+  publist_link = {paper || https://doi.org/10.1109/TASE.2023.3269639},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = {
+The increase in the computational power of edge devices has opened up the possibility of processing some of the data at the edge and distributing model learning. This paradigm is often called federated learning (FL), where edge devices exploit their local computational resources to train models collaboratively. Though FL has seen recent success, it is unclear how to characterize uncertainties in FL predictions. In this paper, we propose Fed-ensemble : a simple approach that brings model ensembling to FL. Instead of aggregating local models to update a single global model, Fed-ensemble uses random permutations to update a group of $K$ models and then obtains predictions through model averaging. Fed-ensemble can be readily utilized within established FL methods and does not impose a computational overhead compared with single-model methods. Empirical results show that our model has superior performance over several FL algorithms on a wide range of data sets and excels in heterogeneous settings often encountered in FL applications. Also, by carefully choosing client-dependent weights in the inference stage, Fed-ensemble becomes personalized and yields even better performance. Theoretically, we show that predictions on new data from all $K$ models belong to the same predictive posterior distribution under a neural tangent kernel regime. This result, in turn, sheds light on the generalization advantages of model averaging and justifies the uncertainty quantification capability. We also illustrate that Fed-ensemble has an elegant Bayesian interpretation. Note to Practitioners —provides an algorithm that extracts a set of $K$ solutions without imposing any additional communication overhead in FL. Given multiple solutions, Fed-ensemble can be exploited to personalize inference as well as quantify uncertainty. Such capabilities may be beneficial within multiple practical systems that require uncertainty-aware decision-making. Further, Fed-ensemble may be useful for model validation and hypothesis testing.
+}
+}
