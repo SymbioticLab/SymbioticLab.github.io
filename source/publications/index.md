@@ -324,6 +324,13 @@ venues:
       name: 1st Workshop on Sustainable Computer Systems Design and Implementation
       date: 2022-07-10
       url: https://hotcarbon.org/
+  EECS:
+    category: Workshops
+    occurrences:
+    - key: EECS'24
+      name: Energy-Efficient Computing for Science Workshop
+      date: 2024-09-09
+      url: https://web.cvent.com/event/a3dd901a-699e-408c-8a84-81445e6ea64f
   'USENIX ;login:':
     category: Journals
     occurrences:
