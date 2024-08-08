@@ -14,7 +14,7 @@ excerpt: "SymbioticLab current & past members"
 1. [Jae-Won Chung](https://jaewonchung.me/about)
 1. [Insu Jang](https://insujang.github.io/)
 1. [Shiqi He](https://tctower.github.io/)
-1. [Runyu Li](https://lry89757.github.io/) (co-advised w/ Ang Chen)
+1. [Runyu Lu](https://lry89757.github.io/) (co-advised w/ Ang Chen)
 1. [Ruofan Wu](https://ruofan-wu.github.io/)
 1. [Kevin Xue](https://kevinrsx.github.io/) (co-advised w/ Ryan Huang)
 1. [Jeff Ma](https://jeff.junzema.com/)
