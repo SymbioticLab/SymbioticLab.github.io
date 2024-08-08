@@ -14,6 +14,10 @@ excerpt: "SymbioticLab current & past members"
 1. [Jae-Won Chung](https://jaewonchung.me/about)
 1. [Insu Jang](https://insujang.github.io/)
 1. [Shiqi He](https://tctower.github.io/)
+1. [Runyu Li](https://lry89757.github.io/) (co-advised w/ Ang Chen)
+1. [Ruofan Wu](https://ruofan-wu.github.io/)
+1. [Kevin Xue](https://kevinrsx.github.io/) (co-advised w/ Ryan Huang)
+1. [Jeff Ma](https://jeff.junzema.com/)
 
 ## Ph.D. Alumni
 1. [Dr. Juncheng Gu](https://www.linkedin.com/in/juncheng-gu-93960859/) (co-advised w/ Kang G. Shin) (2021) → ByteDance ➠ Google
