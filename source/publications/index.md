@@ -355,9 +355,9 @@ venues:
   'IEEE TASE':
     category: Journals
     occurrences:
-    - key: 'IEEE TASE'
-      name: IEEE TASE 2023
-      date: 2023-05-01
+    - key: 'IEEE TASE:21(3)'
+      name: IEEE TASE 2023, 21(3), 2792-2803
+      date: 2024-07-01
       url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856
   TMLR:
     category: Journals
@@ -371,7 +371,7 @@ venues:
     occurrences:
     - key: 'IEEE TPDS:35(9)'
       name: IEEE TPDS 2024, 35(9), 1536-1550
-      date: 2024-06-24
+      date: 2024-09-01
       url: https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=10601540&punumber=71
   JMIRMH:
     category: Journals
