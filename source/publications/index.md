@@ -356,7 +356,7 @@ venues:
     category: Journals
     occurrences:
     - key: 'IEEE TASE:21(3)'
-      name: IEEE TASE 2023
+      name: IEEE TASE 2023, 21(3), 2792-2803
       date: 2024-07-01
       url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856
   TMLR:
