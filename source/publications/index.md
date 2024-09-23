@@ -36,6 +36,11 @@ venues:
   SOSP:
     category: Conferences
     occurrences:
+    - key: SOSP'24
+      name: The 30th ACM Symposium on Operating Systems and Principles
+      date: 2024-11-04
+      url: https://sigops.org/s/conferences/sosp/2024/
+      acceptance: 17.34%
     - key: SOSP'23
       name: The 29th ACM Symposium on Operating Systems and Principles
       date: 2023-10-26
