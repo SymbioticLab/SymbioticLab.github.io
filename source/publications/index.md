@@ -131,6 +131,10 @@ venues:
   EuroSys:
     category: Conferences
     occurrences:
+    - key: EuroSys'25
+      name: The 20th European Conference on Computer Systems
+      date: 2025-03-30
+      url: https://2025.eurosys.org/
     - key: EuroSys'23
       name: The Eighteenth European Conference on Computer Systems
       date: 2023-05-08
