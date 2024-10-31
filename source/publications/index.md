@@ -265,6 +265,10 @@ venues:
   HotInfra:
     category: Workshops
     occurrences:
+    - key: HotInfra'24
+      name: Workshop on Hot Topics in System Infrastructure
+      date: 2024-11-03
+      url: https://hotinfra24.github.io/
     - key: HotInfra'23
       name: Workshop on Hot Topics in System Infrastructure
       date: 2023-06-18
