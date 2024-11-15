@@ -50,13 +50,13 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![Mozilla](images/mozilla.png)
 ![Ford](images/ford.png)
 ![Cisco](images/cisco.png)
+![Google](images/google.png)
 </div>
 
 ## Past Sponsors
 
 <div class='flex-row'>
 
-![Google](images/google.png)
 ![Meta](images/meta.png)
 ![Nvidia](images/nvidia.png)
 ![KLA](images/kla.png)
