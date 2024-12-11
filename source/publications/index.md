@@ -255,6 +255,14 @@ venues:
       date: 2022-09-05
       url: https://vldb.org/2022/
       acceptance: 36.67%
+  BigData:
+    category: Conferences
+    occurrences:
+    - key: BigData'24
+      name: 2024 IEEE International Conference on Big Data
+      date: 2024-12-15
+      url: http://bigdataieee.org/BigData2024/
+      acceptance: 35.19%
   APNet:
     category: Workshops
     occurrences:
