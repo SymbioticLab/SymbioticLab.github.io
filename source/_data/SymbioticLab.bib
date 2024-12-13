@@ -1936,3 +1936,23 @@ Over the past decade, businesses have migrated to the cloud for its simplicity, 
 In this paper, we describe INFA-FinOps, an automated system that helps Informatica customers strike a balance between cost efficiency and meeting SLAs for Informatica Advanced Data Integration (aka CDI-E) workloads. We first describe common workload patterns observed in CDI-E customers and show how INFA-FinOps selects optimal cloud resources and configurations for each workload, adjusting them as workloads and cloud ecosystems change. It also makes recommendations for actions that require user review or input. Finally, we present performance benchmarks on various enterprise use cases and conclude with lessons learned and potential future enhancements.
 }
 }
+
+
+@Article{mercury:arxiv24,
+  author    = {Jiaheng Lu and Yiwen Zhang and Hasan Al Maruf and Minseo Park and Yunxuan Tang and Fan Lai and Mosharaf Chowdhury},
+  title     = {{Mercury}: {QoS-Aware} Tiered Memory System},
+  year          = {2024},
+  month         = {Dec},
+  volume        = {abs/2412.08938},
+  archiveprefix = {arXiv},
+  eprint        = {2412.08938},
+  url           = {https://arxiv.org/abs/2412.08938},
+  publist_confkey = {arXiv:2412.08938},
+  publist_link = {paper || https://arxiv.org/abs/2412.08938},
+  publist_topic = {Disaggregation},
+  publist_abstract = {
+Memory tiering has received wide adoption in recent years as an effective solution to address the increasing memory demands of memory-intensive workloads. However, existing tiered memory systems often fail to meet service-level objectives (SLOs) when multiple applications share the system because they lack Quality-of-Service (QoS) support. Consequently, applications suffer severe performance drops due to local memory contention and memory bandwidth interference.
+
+In this paper, we present Mercury, a QoS-aware tiered memory system that ensures predictable performance for coexisting memory-intensive applications with different SLOs. Mercury enables per-tier page reclamation for application-level resource management and uses a proactive admission control algorithm to satisfy SLOs via per-tier memory capacity allocation and intra- and inter-tier bandwidth interference mitigation. It reacts to dynamic requirement changes via real-time adaptation. Extensive evaluations show that Mercury improves application performance by up to 53.4% and 20.3% compared to TPP and Colloid, respectively.
+  }
+}
