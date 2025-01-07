@@ -31,7 +31,7 @@ excerpt: "SymbioticLab current & past members"
 1. Aakash Puntambekar (CSE MSE)
 1. Jiaheng Lu (ECE MSE)
 1. Weiyuan Lyu (CSE MSE)
-1. Wonbin Jin (CSE MSE)
+1. Wonbin Jin (CSE BSE)
 1. Divyam Sharma (DS MSE)
 1. Jenny Xun (CE-CoE BSE)
 1. Vishwa Ramanakumar (CSE MSE)
@@ -91,7 +91,6 @@ excerpt: "SymbioticLab current & past members"
 1. Zhenyan Zhu (CSE MSE)
 1. Amanuel Mersha (Addis Ababa University)
 1. Parth Raut (CSE MSE)
-1. Wonbin Jin (CSE BSE) → Master’s @Michigan
 1. Daniel Hou (CSE MSE) → Meta
 1. Sharon Han (CSE BSE)
 1. Oh Jun Kweon (CSE MSE) → Jane Street
