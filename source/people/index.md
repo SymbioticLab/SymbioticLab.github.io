@@ -33,7 +33,7 @@ excerpt: "SymbioticLab current & past members"
 1. Weiyuan Lyu (CSE MSE)
 1. Wonbin Jin (CSE BSE)
 1. Divyam Sharma (DS MSE)
-1. Jenny Xun (CE-CoE BSE)
+1. Jenny Xun (CE BSE)
 1. Vishwa Ramanakumar (CSE MSE)
 1. Jisang Ahn (CS-LSA BS)
 
