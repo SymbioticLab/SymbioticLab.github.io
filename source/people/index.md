@@ -30,12 +30,12 @@ excerpt: "SymbioticLab current & past members"
 ## Current Non-Ph.D. Students
 1. Aakash Puntambekar (CSE MSE)
 1. Jiaheng Lu (ECE MSE)
-1. Weiyuan Lyu (CSE MSE)
 1. Wonbin Jin (CSE BSE)
 1. Divyam Sharma (DS MSE)
 1. Jenny Xun (CE BSE)
 1. Vishwa Ramanakumar (CSE MSE)
 1. Jisang Ahn (CS-LSA BS)
+1. Vatsal Joshi (CSE MSE)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
