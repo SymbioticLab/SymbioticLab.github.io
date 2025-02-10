@@ -436,7 +436,8 @@ venues:
       - key: NeurIPS'24
         name: The Thirty-eight Conference on Neural Information Processing Systems 
         date: 2024-12-09
-        url: https://neurips.cc
+        url: https://neurips.cc/Conferences/2024
+        acceptance: 25.8%
 {% endpublist %}
 
 ---
