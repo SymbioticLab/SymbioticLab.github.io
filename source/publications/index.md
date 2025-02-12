@@ -430,6 +430,14 @@ venues:
       name: ICLR 23 Workshop on Tackling Climate Change with Machine Learning
       date: 2023-05-04
       url: https://www.climatechange.ai/events/iclr2023
+  NeurIPS:
+    category: Conferences
+    occurrences:
+      - key: NeurIPS'24
+        name: The Thirty-eight Conference on Neural Information Processing Systems 
+        date: 2024-12-09
+        url: https://neurips.cc/Conferences/2024
+        acceptance: 25.8%
 {% endpublist %}
 
 ---

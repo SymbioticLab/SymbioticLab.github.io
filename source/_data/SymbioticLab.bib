@@ -1957,6 +1957,19 @@ In this paper, we present Mercury, a QoS-aware tiered memory system that ensures
   }
 }
 
+@InProceedings{autoiac:neurips24,
+  author    = {Patrick TJ Kon and Jiachen Liu and Yiming Qiu and Weijun Fan and Ting He and Lei Lin and Haoran Zhang and Owen M. Park and George Sajan Elengikal and Yuxin Kang and Ang Chen and Mosharaf Chowdhury and Myungjin Lee and Xinyu Wang},
+  title     = {{IaC-Eval}: A code generation benchmark for Infrastructure-as-Code programs},
+  year      = {2024},
+  publist_topic = {Systems + AI},
+  publist_confkey = {NeurIPS'24},
+  booktitle = {NeurIPS},
+  publist_link = {paper || autoiac-neurips24.pdf},
+  publist_link = {code || https://github.com/autoiac-project/iac-eval},
+  publist_abstract = {
+  Infrastructure-as-Code (IaC), an important component of cloud computing, allows the definition of cloud infrastructure in high-level programs. However, developing IaC programs is challenging, complicated by factors that include the burgeoning complexity of the cloud ecosystem (e.g., diversity of cloud services and workloads), and the relative scarcity of IaC-specific code examples and public repositories. While large language models (LLMs) have shown promise in general code generation and could potentially aid in IaC development, no benchmarks currently exist for evaluating their ability to generate IaC code. We present IaC-Eval, a first step in this research direction. IaC-Eval's dataset includes 458 human-curated scenarios covering a wide range of popular AWS services, at varying difficulty levels. Each scenario mainly comprises a natural language IaC problem description and an infrastructure intent specification. The former is fed as user input to the LLM, while the latter is a general notion used to verify if the generated IaC program conforms to the user's intent; by making explicit the problem's requirements that can encompass various cloud services, resources and internal infrastructure details. Our in-depth evaluation shows that contemporary LLMs perform poorly on IaC-Eval, with the top-performing model, GPT-4, obtaining a pass@1 accuracy of 19.36%. In contrast, it scores 86.6% on EvalPlus, a popular Python code generation benchmark, highlighting a need for advancements in this domain. We open-source the IaC-Eval dataset and evaluation framework at https://github.com/autoiac-project/iac-eval to enable future research on LLM-based IaC code generation.}
+}
+
 @Article{mordal:arxiv25,
   author          = {Shiqi He and Insu Jang and Mosharaf Chowdhury},
   title           = {{Mordal}: Automated Pretrained Model Selection for Vision Language Models},
