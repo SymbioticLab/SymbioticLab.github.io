@@ -1969,3 +1969,22 @@ In this paper, we present Mercury, a QoS-aware tiered memory system that ensures
   publist_abstract = {
   Infrastructure-as-Code (IaC), an important component of cloud computing, allows the definition of cloud infrastructure in high-level programs. However, developing IaC programs is challenging, complicated by factors that include the burgeoning complexity of the cloud ecosystem (e.g., diversity of cloud services and workloads), and the relative scarcity of IaC-specific code examples and public repositories. While large language models (LLMs) have shown promise in general code generation and could potentially aid in IaC development, no benchmarks currently exist for evaluating their ability to generate IaC code. We present IaC-Eval, a first step in this research direction. IaC-Eval's dataset includes 458 human-curated scenarios covering a wide range of popular AWS services, at varying difficulty levels. Each scenario mainly comprises a natural language IaC problem description and an infrastructure intent specification. The former is fed as user input to the LLM, while the latter is a general notion used to verify if the generated IaC program conforms to the user's intent; by making explicit the problem's requirements that can encompass various cloud services, resources and internal infrastructure details. Our in-depth evaluation shows that contemporary LLMs perform poorly on IaC-Eval, with the top-performing model, GPT-4, obtaining a pass@1 accuracy of 19.36%. In contrast, it scores 86.6% on EvalPlus, a popular Python code generation benchmark, highlighting a need for advancements in this domain. We open-source the IaC-Eval dataset and evaluation framework at https://github.com/autoiac-project/iac-eval to enable future research on LLM-based IaC code generation.}
 }
+
+@Article{mordal:arxiv25,
+  author          = {Shiqi He and Insu Jang and Mosharaf Chowdhury},
+  title           = {{Mordal}: Automated Pretrained Model Selection for Vision Language Models},
+  year            = {2025},
+  month           = {Feb},
+  volume          = {abs/2502.00241},
+  archivePrefix   = {arXiv},
+  eprint          = {2502.00241},
+  url             = {https://arxiv.org/abs/2502.00241},
+  publist_confkey = {arXiv:2502.00241},
+  publist_link    = {paper || https://arxiv.org/abs/2502.00241},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+    Incorporating multiple modalities into large language models (LLMs) is a powerful way to enhance their understanding of non-textual data, enabling them to perform multimodal tasks. Vision language models (VLMs) form the fastest growing category of multimodal models because of their many practical use cases, including in healthcare, robotics, and accessibility. Unfortunately, even though different VLMs in the literature demonstrate impressive visual capabilities in different benchmarks, they are handcrafted by human experts; there is no automated framework to create task-specific multimodal models.
+    
+    We introduce Mordal, an automated multimodal model search framework that efficiently finds the best VLM for a user-defined task without manual intervention. Mordal achieves this both by reducing the number of candidates to consider during the search process and by minimizing the time required to evaluate each remaining candidate. Our evaluation shows that Mordal can find the best VLM for a given problem using up to 8.9×-11.6× lower GPU hours than grid search. In the process of our evaluation, we have also discovered new VLMs that outperform their state-of-the-art counterparts.
+  }
+}
