@@ -23,7 +23,7 @@ jobs:
 
     # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
     - name: Cache node modules
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       id: cache
       with:
         path: ~/.npm
