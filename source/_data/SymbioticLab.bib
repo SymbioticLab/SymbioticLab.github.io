@@ -2006,3 +2006,22 @@ In this paper, we present Mercury, a QoS-aware tiered memory system that ensures
 Scientific experimentation, a cornerstone of human progress, demands rigor in reliability, methodical control, and interpretability to yield meaningful results. Despite the growing capabilities of large language models (LLMs) in automating different aspects of the scientific process, automating rigorous experimentation remains a significant challenge. To address this gap, we propose Curie, an AI agent framework designed to embed rigor into the experimentation process through three key components: an intra-agent rigor module to enhance reliability, an inter-agent rigor module to maintain methodical control, and an experiment knowledge module to enhance interpretability. To evaluate Curie, we design a novel experimental benchmark composed of 46 questions across four computer science domains, derived from influential research papers, and widely adopted open-source projects. Compared to the strongest baseline tested, we achieve a 3.4× improvement in correctly answering experimental questions. Curie is open-sourced at https://github.com/Just-Curieous/Curie.
   }
 }
+
+@Article{cornstarch:arxiv25,
+  author          = {Insu Jang and Runyu Lu and Nikhil Bansal and Ang Chen and Mosharaf Chowdhury},
+  title           = {Cornstarch: Distributed Multimodal Training Must Be Multimodality-Aware },
+  year            = {2025},
+  month           = {March},
+  volume          = {abs/2503.11367},
+  archivePrefix   = {arXiv},
+  eprint          = {2503.11367},
+  url             = {https://arxiv.org/abs/2503.11367},
+  publist_link = {code || https://github.com/cornstarch-org/Cornstarch},
+  publist_confkey = {arXiv:2503.11367},
+  publist_link    = {paper || https://arxiv.org/abs/2503.11367},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Multimodal large language models (MLLMs) extend the capabilities of large language models (LLMs) by combining heterogeneous model architectures to handle diverse modalities like images and audio. However, this inherent heterogeneity in MLLM model structure and data types makes makeshift extensions to existing LLM training frameworks unsuitable for efficient MLLM training.
+In this paper, we present Cornstarch, the first general-purpose distributed MLLM training framework. Cornstarch facilitates modular MLLM construction, enables composable parallelization of constituent models, and introduces MLLM-specific optimizations to pipeline and context parallelism for efficient distributed MLLM training. Our evaluation shows that Cornstarch outperforms state-of-the-art solutions by up to 1.57x in terms of training throughput.
+  }
+}
