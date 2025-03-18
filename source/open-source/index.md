@@ -22,6 +22,7 @@ sections:
         url: "https://ml.energy/zeus"
         github_url: "https://github.com/ml-energy/zeus"
         logo: "/open-source/logo/zeus.svg"
+        logo_scale: 70%
         description: "Deep learning energy measurement and optimization"
 
   - title: "Systems + AI"
@@ -38,7 +39,7 @@ sections:
         url: "https://fedscale.ai"
         github_url: "https://github.com/SymbioticLab/FedScale"
         logo: "/open-source/logo/fedscale.png"
-        logo_scale: 60%
+        logo_scale: 50%
         description: "A scalable and extensible federated learning platform"
 
   - title: "Memory systems"
