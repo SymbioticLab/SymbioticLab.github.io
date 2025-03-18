@@ -26,7 +26,7 @@ sections:
         description: "Deep learning energy measurement and optimization."
 
   - title: "Systems for AI"
-    description: "Combining AI with traditional systems research."
+    description: "Building efficient systems for AI workloads."
     items:
       - name: "Cornstarch"
         github_url: "https://github.com/cornstarch-org/Cornstarch"
@@ -34,7 +34,7 @@ sections:
         description: "Build, train, and run your own multimodal model."
       - name: "Oobleck"
         github_url: "https://github.com/SymbioticLab/Oobleck"
-        description: "A resilient distributed training framework"
+        description: "A resilient distributed training framework."
       - name: "FedScale"
         url: "https://fedscale.ai"
         github_url: "https://github.com/SymbioticLab/FedScale"
