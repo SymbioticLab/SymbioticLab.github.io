@@ -46,17 +46,17 @@ Any opinions, findings, and conclusions of our research projects are those of th
 
 ![NSF](images/nsf.png)
 ![VMware](images/vmware.png)
-![Salesforce](images/salesforce.png)
 ![Mozilla](images/mozilla.png)
 ![Ford](images/ford.png)
 ![Cisco](images/cisco.png)
+![Google](images/google.png)
 </div>
 
 ## Past Sponsors
 
 <div class='flex-row'>
 
-![Google](images/google.png)
+![Salesforce](images/salesforce.png)
 ![Meta](images/meta.png)
 ![Nvidia](images/nvidia.png)
 ![KLA](images/kla.png)

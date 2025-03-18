@@ -255,6 +255,14 @@ venues:
       date: 2022-09-05
       url: https://vldb.org/2022/
       acceptance: 36.67%
+  BigData:
+    category: Conferences
+    occurrences:
+    - key: BigData'24
+      name: 2024 IEEE International Conference on Big Data
+      date: 2024-12-15
+      url: http://bigdataieee.org/BigData2024/
+      acceptance: 35.19%
   APNet:
     category: Workshops
     occurrences:
@@ -265,6 +273,10 @@ venues:
   HotInfra:
     category: Workshops
     occurrences:
+    - key: HotInfra'24
+      name: Workshop on Hot Topics in System Infrastructure
+      date: 2024-11-03
+      url: https://hotinfra24.github.io/
     - key: HotInfra'23
       name: Workshop on Hot Topics in System Infrastructure
       date: 2023-06-18
@@ -418,6 +430,14 @@ venues:
       name: ICLR 23 Workshop on Tackling Climate Change with Machine Learning
       date: 2023-05-04
       url: https://www.climatechange.ai/events/iclr2023
+  NeurIPS:
+    category: Conferences
+    occurrences:
+      - key: NeurIPS'24
+        name: The Thirty-eight Conference on Neural Information Processing Systems 
+        date: 2024-12-09
+        url: https://neurips.cc/Conferences/2024
+        acceptance: 25.8%
 {% endpublist %}
 
 ---
