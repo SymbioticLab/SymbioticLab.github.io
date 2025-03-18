@@ -23,15 +23,15 @@ sections:
         github_url: "https://github.com/ml-energy/zeus"
         logo: "/open-source/logo/zeus.svg"
         logo_scale: 70%
-        description: "Deep learning energy measurement and optimization"
+        description: "Deep learning energy measurement and optimization."
 
-  - title: "Systems + AI"
+  - title: "Systems for AI"
     description: "Combining AI with traditional systems research."
     items:
       - name: "Cornstarch"
         github_url: "https://github.com/cornstarch-org/Cornstarch"
         logo: "/open-source/logo/cornstarch.svg"
-        description: "Build, train, and run your own multimodal model"
+        description: "Build, train, and run your own multimodal model."
       - name: "Oobleck"
         github_url: "https://github.com/SymbioticLab/Oobleck"
         description: "A resilient distributed training framework"
@@ -39,8 +39,8 @@ sections:
         url: "https://fedscale.ai"
         github_url: "https://github.com/SymbioticLab/FedScale"
         logo: "/open-source/logo/fedscale.png"
-        logo_scale: 50%
-        description: "A scalable and extensible federated learning platform"
+        logo_scale: 45%
+        description: "A scalable and extensible federated learning platform."
 
   - title: "Memory systems"
     description: "Building practical disaggregated and/or tiered memory systems."
