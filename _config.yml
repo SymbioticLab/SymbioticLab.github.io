@@ -208,7 +208,7 @@ theme_config:
     People: /people || fa fa-user
     Funding: /funding || fa fa-info
     #tags: /tags/ || fa fa-tags
-    Open Source: /oss || fab fa-github-alt
+    Open Source: /open-source || fab fa-github-alt
     #GitHub: https://github.com/SymbioticLab || fab fa-github-alt
     # Wiki: https://symbiotic.eecs.umich.edu/wiki || fab fa-wikipedia-w
     # Join us: https://forms.gle/L3Syau9dBzi8eLxQ7 || fa fa-user-plus

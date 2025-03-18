@@ -122,7 +122,7 @@
           <div class="project-header">
             <div class="project-name">{{ item.name }}</div>
             {% if item.logo %}
-              <img src="{{ item.logo }}" alt="{{ item.name }} logo" class="project-logo">
+              <img src="{{ item.logo }}" alt="{{ item.name }} logo" class="project-logo" style="height: {{ item.logo_scale or '100%' }}">
             {% endif %}
           </div>
           <div class="project-description">{{ item.description }}</div>
