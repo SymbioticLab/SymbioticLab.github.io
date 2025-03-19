@@ -194,7 +194,7 @@
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
-<script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
   <script>
 var pjax = new Pjax({
   selectors: [
@@ -221,11 +221,72 @@ document.addEventListener('pjax:success', () => {
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }
-  const hasTOC = document.querySelector('.post-toc');
-  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
-  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
   NexT.utils.updateSidebarPosition();
 });
+
+// Create a persistent cache object for OSS page repos
+if (!window.githubDataCache) {
+  window.githubDataCache = {};
+}
+
+// A hook for fetching and loading data for OSS page
+// Function to update project information from GitHub API
+function updateProjectsFromGitHub() {
+  // Check if we're on the Open Source page
+  if (document.title !== "Open Source") {
+    return;
+  }
+
+  const projects = document.querySelectorAll('.project');
+
+  projects.forEach(project => {
+    const githubUrl = project.getAttribute('data-repo');
+    if (!githubUrl) return;
+
+    // Construct the GitHub API URL
+    const apiUrl = githubUrl.replace('https://github.com/', 'https://api.github.com/repos/');
+    
+    // Use project name or the full URL as a cache key
+    const cacheKey = githubUrl;
+    
+    if (window.githubDataCache[cacheKey]) {
+      // Use cached data if available
+      updateProjectDOM(project, window.githubDataCache[cacheKey]);
+    } else {
+      // Fetch from API if not in cache
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          // Store in cache
+          window.githubDataCache[cacheKey] = data;
+          // Update DOM
+          updateProjectDOM(project, data);
+        })
+        .catch(error => console.error('Error fetching GitHub data:', error));
+    }
+  });
+}
+
+// Helper function to update the DOM for a project
+function updateProjectDOM(project, data) {
+  // Use project name to generate IDs
+  const idPrefix = data.name.toLowerCase().replace(/ /g, '-');
+
+  const languageElement = document.getElementById(`${idPrefix}-language`);
+  const starsElement = document.getElementById(`${idPrefix}-stars`);
+  const forksElement = document.getElementById(`${idPrefix}-forks`);
+
+  // Only update if elements exist
+  if (languageElement) languageElement.textContent = data.language || 'N/A';
+  if (starsElement) starsElement.textContent = data.stargazers_count || 0;
+  if (forksElement) forksElement.textContent = data.forks_count || 0;
+}
+
+// Hook into pjax:success event
+document.addEventListener('pjax:success', updateProjectsFromGitHub);
+
+// Also run on initial page load to handle direct navigation
+updateProjectsFromGitHub();
 </script>
 
 
