@@ -5,10 +5,6 @@
   {{- next_js('motion.js') }}
 {%- endif %}
 
-{%- if theme.scheme === 'Muse' or theme.scheme === 'Mist' %}
-  {{- next_js('schemes/muse.js') }}
-{%- endif %}
-
 {{- next_js('next-boot.js') }}
 {%- if theme.bookmark.enable %}
   {{- next_js('bookmark.js') }}

@@ -145,30 +145,4 @@
   </section>
 {% endfor %}
 
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome Kit -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const projects = document.querySelectorAll('.project');
-
-    projects.forEach(project => {
-      const githubUrl = project.getAttribute('data-repo');
-      if (githubUrl) {
-        // Construct the GitHub API URL by inserting "api." after "https://"
-        const apiUrl = githubUrl.replace('https://github.com/', 'https://api.github.com/repos/');
-
-        fetch(apiUrl)
-          .then(response => response.json())
-          .then(data => {
-            // Use project name to generate IDs
-            const idPrefix = data.name.toLowerCase().replace(/ /g, '-');
-
-            document.getElementById(`${idPrefix}-language`).textContent = data.language || 'N/A';
-            document.getElementById(`${idPrefix}-stars`).textContent = data.stargazers_count || 0;
-            document.getElementById(`${idPrefix}-forks`).textContent = data.forks_count || 0;
-          })
-          .catch(error => console.error('Error fetching GitHub data:', error));
-      }
-    });
-  });
-</script>
 {% endblock %}
