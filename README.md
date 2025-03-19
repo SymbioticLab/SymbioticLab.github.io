@@ -12,7 +12,7 @@ node_modules/.bin/hexo new news "News Title"
 ```
 
 ## Testing Locally
-Use Node.js 16, because there are known issues with newer versions. [nvm](https://github.com/nvm-sh/nvm) is recommended.
+[nvm](https://github.com/nvm-sh/nvm) is recommended.
 
 You can start a server locally.
 ```
