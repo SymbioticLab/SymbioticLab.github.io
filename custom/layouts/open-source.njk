@@ -16,7 +16,6 @@
     margin: 0;
     padding: 0;
   }
-
   .project {
     width: 48%; /* Full width for each project */
     padding: 15px;
@@ -33,35 +32,45 @@
     flex-direction: column;
     gap: 10px;
   }
-
   .project:hover {
     cursor: pointer;
     border-color: #bbb;
   }
-
   .project-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-
+  .logo-container {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Right align the logo */
+    flex-shrink: 0; /* Prevent logo container from shrinking */
+    margin-left: 10px; /* Add some space between text and logo */
+  }
   .project-logo {
-    max-height: 50px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    margin-right: 2px;
   }
 
+  .project-info {
+    flex-grow: 1;
+    overflow: hidden; /* Prevent text from overflowing */
+  }
   .project-name {
     font-size: 20px;
     font-weight: bold;
-    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-
   .project-description {
     font-size: 14px;
   }
-
   .project-details {
     display: flex;
     justify-content: flex-start;
@@ -69,33 +78,41 @@
     font-size: 12px;
     color: #666;
   }
-
   /* Fixed widths for consistent vertical alignment */
   .project-details .language {
     width: 50px; /* Fixed width for language */
   }
-
-  .project-details .stars, .project-details .forks {
+  .project-details .stars {
     width: 30px; /* Fixed width for stars and forks */
   }
-
+  .project-details .forks {
+    width: 30px; /* Fixed width for stars and forks */
+    justify-content: flex-start;
+  }
   .project-details span {
     display: flex;
     align-items: center;
     gap: 5px;
     justify-content: space-between;
   }
-
+  /* Only change the styles for the fork count text */
+  .project-details .forks span {
+    justify-content: flex-start; /* Left-align the text */
+    padding-left: 2px; /* Add a bit of padding */
+  }
+  .project-details .forks span span {
+    text-align: left;
+  }
   .project-details i {
     color: #333;
+    width: 12px; /* Fixed width for icons */
+    text-align: center; /* Center the icon */
   }
-
   @media (max-width: 800px) {
     .project {
       width: calc(100% - 20px); /* Full width on smaller screens */
       margin: 0 auto;
     }
-
     /* Remove fixed widths on smaller screens for flexibility */
     .project-details .language,
     .project-details .stars,
@@ -116,27 +133,26 @@
     {% if section.description %}
       <p>{{ section.description }}</p>
     {% endif %}
-
     <div class="project-container">
       {% for item in section.items %}
         <a href="{{ item.url or item.github_url }}" class="project" data-repo="{{ item.github_url }}">
           <div class="project-header">
-          <span>
-            <div class="project-name">{{ item.name }}</div>
-          {% if item.github_url %}
-            <div class="project-details">
-              <!-- Fixed width for consistent alignment, using FontAwesome icons -->
-              <span class="language"><i class="fas fa-code"></i> <span id="{{ item.name | lower | replace(' ', '-') }}-language">...</span></span>
-              <span class="stars"><i class="far fa-star"></i> <span id="{{ item.name | lower | replace(' ', '-') }}-stars">...</span></span>
-              <span class="forks"><i class="fas fa-code-branch"></i> <span id="{{ item.name | lower | replace(' ', '-') }}-forks">...</span></span>
+            <div class="project-info">
+              <div class="project-name">{{ item.name }}</div>
+              {% if item.github_url %}
+                <div class="project-details">
+                  <!-- Fixed width for consistent alignment, using FontAwesome icons -->
+                  <span class="language"><i class="fas fa-code"></i> <span id="{{ item.name | lower | replace(' ', '-') }}-language">...</span></span>
+                  <span class="stars"><i class="far fa-star"></i> <span id="{{ item.name | lower | replace(' ', '-') }}-stars">...</span></span>
+                  <span class="forks"><i class="fas fa-code-branch"></i> <span id="{{ item.name | lower | replace(' ', '-') }}-forks">...</span></span>
+                </div>
+              {% endif %}
             </div>
-          {% endif %}
-          </span>
-          {% if item.logo %}
-            <span style="width: {{ item.logo_scale or '100%' }}">
-              <img src="{{ item.logo }}" alt="{{ item.name }} logo" class="project-logo">
-            </span>
-          {% endif %}
+            {% if item.logo %}
+              <div class="logo-container">
+                <img src="{{ item.logo }}" alt="{{ item.name }} logo" class="project-logo">
+              </div>
+            {% endif %}
           </div>
           <div class="project-description">{{ item.description }}</div>
         </a>
