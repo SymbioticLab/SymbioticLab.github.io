@@ -23,7 +23,7 @@ sections:
         github_url: "https://github.com/ml-energy/zeus"
         logo: "/open-source/logo/zeus.svg"
         logo_scale: 70%
-        description: "Deep learning energy measurement and optimization."
+        description: "Measure and optimize the energy consumption of your AI application!"
 
   - title: "Systems for AI"
     description: "Building efficient systems for AI workloads."
