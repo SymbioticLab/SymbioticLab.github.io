@@ -23,7 +23,7 @@ excerpt: "SymbioticLab current & past members"
 1. [Dr. Juncheng Gu](https://www.linkedin.com/in/juncheng-gu-93960859/) (co-advised w/ Kang G. Shin) (2021) → ByteDance ➠ Google
 1. [Dr. Peifeng Yu](https://www.linkedin.com/in/peifengyu/) (2022) → Google
 1. [Dr. Jie You](https://www.linkedin.com/in/jimmyyou/) (2022) → Meta
-1. [Dr. Hasan Al Maruf](https://www.linkedin.com/in/hasanalmaruf/) (2023) → AMD
+1. [Dr. Hasan Al Maruf](https://www.linkedin.com/in/hasanalmaruf/) (2023) → AMD ➠ Meta
 1. [Prof. Fan Lai](https://www.linkedin.com/in/fan-lai-a27764147/) (2023) → Assistant Professor @UIUC
 1. [Dr. Yiwen Zhang](https://www.linkedin.com/in/yiwen-zhang-a75719112/) (2024) → Google
 
