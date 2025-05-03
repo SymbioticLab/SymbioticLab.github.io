@@ -148,6 +148,11 @@ venues:
   MLSys:
     category: Conferences
     occurrences:
+    - key: MLSys'25
+      name: The 8th Conference on Machine Learning and Systems
+      date: 2025-05-12
+      url: https://mlsys.org/Conferences/2025
+      acceptance: 22.5%
     - key: MLSys'24
       name: The 7th Conference on Machine Learning and Systems
       date: 2024-05-13
