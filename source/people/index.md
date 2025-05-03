@@ -29,12 +29,6 @@ excerpt: "SymbioticLab current & past members"
 
 ## Current Non-Ph.D. Students
 1. Aakash Puntambekar (CSE MSE)
-1. Jiaheng Lu (ECE MSE)
-1. Wonbin Jin (CSE BSE)
-1. Divyam Sharma (DS MSE)
-1. Jenny Xun (CE BSE)
-1. Vishwa Ramanakumar (CSE MSE)
-1. Jisang Ahn (CS-LSA BS)
 1. Vatsal Joshi (CSE MSE)
 
 ## Past Members
@@ -94,3 +88,9 @@ excerpt: "SymbioticLab current & past members"
 1. Daniel Hou (CSE MSE) → Meta
 1. Sharon Han (CSE BSE)
 1. Oh Jun Kweon (CSE MSE) → Jane Street
+1. Jiaheng Lu (ECE MSE) → Ph.D. @UPenn
+1. Wonbin Jin (CSE BSE)
+1. Divyam Sharma (DS MSE)
+1. Jenny Xun (CE BSE)
+1. Vishwa Ramanakumar (CSE MSE)
+1. Jisang Ahn (CS-LSA BS)
