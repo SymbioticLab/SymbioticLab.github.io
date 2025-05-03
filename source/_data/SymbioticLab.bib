@@ -2001,6 +2001,7 @@ In this paper, we present Mercury, a QoS-aware tiered memory system that ensures
   publist_confkey = {arXiv:2502.16069},
   publist_link    = {paper || https://arxiv.org/abs/2502.16069},
   publist_link    = {code || https://github.com/Just-Curieous/Curie},
+  publist_link    = {blog || https://www.just-curieous.com},
   publist_topic   = {Systems + AI},
   publist_abstract = {
 Scientific experimentation, a cornerstone of human progress, demands rigor in reliability, methodical control, and interpretability to yield meaningful results. Despite the growing capabilities of large language models (LLMs) in automating different aspects of the scientific process, automating rigorous experimentation remains a significant challenge. To address this gap, we propose Curie, an AI agent framework designed to embed rigor into the experimentation process through three key components: an intra-agent rigor module to enhance reliability, an inter-agent rigor module to maintain methodical control, and an experiment knowledge module to enhance interpretability. To evaluate Curie, we design a novel experimental benchmark composed of 46 questions across four computer science domains, derived from influential research papers, and widely adopted open-source projects. Compared to the strongest baseline tested, we achieve a 3.4× improvement in correctly answering experimental questions. Curie is open-sourced at https://github.com/Just-Curieous/Curie.
@@ -2042,3 +2043,28 @@ In this paper, we present Cornstarch, the first general-purpose distributed MLLM
 Generative AI (GenAI) models have become vital across industries, yet current evaluation methods have not adapted to their widespread use. Traditional evaluations often rely on benchmarks and fixed datasets, frequently failing to reflect real-world performance, which creates a gap between lab-tested outcomes and practical applications. This white paper proposes a comprehensive framework for how we should evaluate real-world GenAI systems, emphasizing diverse, evolving inputs and holistic, dynamic, and ongoing assessment approaches. The paper offers guidance for practitioners on how to design evaluation methods that accurately reflect real-time capabilities, and provides policymakers with recommendations for crafting GenAI policies focused on societal impacts, rather than fixed performance numbers or parameter sizes. We advocate for holistic frameworks that integrate performance, fairness, and ethics and the use of continuous, outcome-oriented methods that combine human and automated assessments while also being transparent to foster trust among stakeholders. Implementing these strategies ensures GenAI models are not only technically proficient but also ethically responsible and impactful.
   }
 }
+
+@Article{venn:mlsys25,
+  author        = {Jiachen Liu and Fan Lai and Ding Ding and Yiwen Zhang and Mosharaf Chowdhury},
+  title         = {Venn: Resource Management for Collaborative Learning Jobs},
+  booktitle     = {MLSys},
+  volume        = {abs/2312.08298v2},
+  year          = {2025},
+  month         = {April},
+  archivePrefix = {arXiv},
+  eprint        = {2312.08298v2},
+  url           = {https://arxiv.org/abs/2312.08298v2},
+  publist_link  = {paper || venn-mlsys25.pdf},
+  publist_link  = {code || https://github.com/SymbioticLab/Venn},
+  publist_confkey = {arXiv:2312.08298v2},
+  publist_topic = {Systems + AI},
+  publist_topic = {Wide-Area Computing},
+  publist_abstract = {
+    In recent years, collaborative learning (CL) has emerged as a promising approach for machine learning (ML) and data science across distributed edge devices. As the deployment of CL jobs increases, they inevitably contend for limited resources. However, efficient resource scheduling in this context is challenging because of the ephemeral nature and resource heterogeneity of devices, coupled with the overlapping resource requirements of diverse CL jobs. Existing resource managers often assign devices to CL jobs randomly for simplicity and scalability, but this approach compromises job efficiency.
+
+    In this paper, we present Venn, a CL resource manager that efficiently schedules ephemeral, heterogeneous devices among multiple CL jobs to reduce the average job completion time (JCT). Venn formulates the Intersection Resource Scheduling (IRS) problem to identify complex resource contention among multiple CL jobs. It then proposes a contention-aware scheduling heuristic to minimize the average scheduling delay. Furthermore, it proposes a resource-aware device-to-job matching heuristic to optimize response collection time by mitigating stragglers. Our evaluation shows that, compared to the state-of-the-art CL resource managers, Venn improves the average JCT by up to 1.88x. The code is available at {https://github.com/SymbioticLab/Venn}.
+  }
+}
+
+
+
