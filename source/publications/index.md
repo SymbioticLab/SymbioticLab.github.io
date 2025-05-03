@@ -53,6 +53,7 @@ venues:
       name: The 21st USENIX Symposium on Networked Systems Design and Implementation
       date: 2024-04-16
       url: https://www.usenix.org/conference/nsdi24
+      acceptance: 18.63%
     - key: NSDI'23
       name: The 20th USENIX Symposium on Networked Systems Design and Implementation
       date: 2023-04-17
@@ -135,6 +136,7 @@ venues:
       name: The 20th European Conference on Computer Systems
       date: 2025-03-30
       url: https://2025.eurosys.org/
+      acceptance: 12.4%
     - key: EuroSys'23
       name: The Eighteenth European Conference on Computer Systems
       date: 2023-05-08
