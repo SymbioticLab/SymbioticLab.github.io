@@ -80,7 +80,7 @@ excerpt: "SymbioticLab current & past members"
 1. Ding (Eric) Ding (CSE BSE) → Ph.D. @Cornell
 1. Zhiyu Wu (CSE BSE) → Master's @UIUC
 1. Yong Seung Lee (CSE MSE) → Bloomberg
-1. Yuxuan Xia (CSE MSE)
+1. Yuxuan Xia (CSE MSE) → Windsurf
 1. Yunxuan Tang (CSE BSE)
 1. Zhenyan Zhu (CSE MSE)
 1. Amanuel Mersha (Addis Ababa University)
