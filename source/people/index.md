@@ -86,7 +86,7 @@ excerpt: "SymbioticLab current & past members"
 1. Amanuel Mersha (Addis Ababa University)
 1. Parth Raut (CSE MSE)
 1. Daniel Hou (CSE MSE) → Meta
-1. Sharon Han (CSE BSE)
+1. Sharon Han (CSE BSE) → Citi
 1. Oh Jun Kweon (CSE MSE) → Jane Street
 1. Jiaheng Lu (ECE MSE) → Ph.D. @UPenn
 1. Wonbin Jin (CSE BSE)
