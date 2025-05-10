@@ -20,13 +20,18 @@ One of our key focus areas is multi-scale resource sharing for AI accelerators f
 We also work on planning and optimizing executions of distributed AI systems.
 Major projects include [Salus](https://github.com/SymbioticLab/Salus) and [Tiresias](https://github.com/SymbioticLab/Tiresias).
 
+## [Energy-Efficient Systems](/publications/#/topic:Energy-Efficient%20Systems)
+The energy consumption of computing systems is increasing with the rising popularity of Big Data and AI.
+While the hardware community has invested considerable effort in energy optimizations, we observe that similar efforts on the software side are significantly lacking.
+[Our initiative](https://ml.energy) to understand and optimize the energy consumption of modern AI workloads is exposing new ways to understand energy consumption from software.
+Major projects include [Zeus](https://ml.energy/zeus), the first GPU energy-vs-training performance tradeoff optimizer for DNN training.
+
 ## [Disaggregation](/publications/#/topic:Disaggregation)
 Modern datacenters often overprovision application memory to avoid performance cliffs, leading to 50% underutilization on average.
 Our research addresses this fundamental problem via practical memory disaggregation, whereby an application can leverage both local and remote memory by leveraging high-speed networks, and more recently with emerging CXL technology.
 We are building systems that can ensure a disaggregated system with 100s of nanoseconds latency.
 We are generally interested in disaggregating all resources for fully utilized datacenters.
 Major projects include [Infiniswap](https://infiniswap.github.io/), the first practical memory disaggregation software, and [TPP](https://arxiv.org/abs/2206.02878).
-
 
 ## [Wide-Area Computing](/publications/#/topic:Wide-Area%20Computing)
 Most data is generated outside cloud datacenters.
@@ -35,20 +40,11 @@ In these settings, data systems must minimize communication instead.
 We are developing systems, algorithms, and benchmarks to analyze data distributed across multiple cloud datacenters and end-user devices to enable geo-distributed/federated learning and analytics.
 Major projects include [FedScale](https://fedscale.ai/), the largest benchmark and a scalable and extensible platform for federated learning.
 
-
-## [Energy-Efficient Systems](/publications/#/topic:Energy-Efficient%20Systems)
-The energy consumption of computing systems is increasing with the rising popularity of Big Data and AI.
-While the hardware community has invested considerable effort in energy optimizations, we observe that similar efforts on the software side are significantly lacking.
-[Our initiative](https://ml.energy) to understand and optimize the energy consumption of modern AI workloads is exposing new ways to understand energy consumption from software.
-Major projects include [Zeus](https://ml.energy/zeus), the first GPU energy-vs-training performance tradeoff optimizer for DNN training.
-
-
 ## [Datacenter Networking](/publications/#/topic:Datacenter%20Networking)
 We also work on network resource management schemes to isolate Big Data and AI systems at the edge and inside the datacenter network.
 Our recent focus has primarily been on emerging networking technologies such as low-latency RDMA-enabled networks, programmable switches, and SmartNICs.
 We are also interested in improving the existing networking infrastructure such as improving QoS for low-latency RPCs in datacenters.
 Major projects include [Aequitas](https://github.com/SymbioticLab/Aequitas) and [Justitia](https://github.com/SymbioticLab/Justitia).
-
 
 ## [Big Data Systems](/publications/#/topic:Big%20Data%20Systems)
 In the recent past, we worked on designing and improving big data systems via new algorithms for resource scheduling, caching data in memory, and dynamic query planning to improve resource efficiency, application performance, and fairness.
