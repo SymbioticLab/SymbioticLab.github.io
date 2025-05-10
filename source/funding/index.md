@@ -49,13 +49,13 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![Ford](images/ford.png)
 ![Cisco](images/cisco.png)
 ![Google](images/google.png)
-![Slalom](images/slalom.png)
 </div>
 
 ## Past Sponsors
 
 <div class='flex-row'>
 
+![Slalom](images/slalom.png)
 ![VMware](images/vmware.png)
 ![Salesforce](images/salesforce.png)
 ![Meta](images/meta.png)
