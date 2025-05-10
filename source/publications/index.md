@@ -159,6 +159,7 @@ venues:
       name: The 7th Conference on Machine Learning and Systems
       date: 2024-05-13
       url: https://mlsys.org/Conferences/2024 
+      acceptance: 22.02%
     - key: MLSys'23
       name: The 6th Conference on Machine Learning and Systems
       date: 2023-06-04
