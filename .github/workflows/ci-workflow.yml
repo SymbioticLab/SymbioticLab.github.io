@@ -48,4 +48,6 @@ jobs:
     - name: Deploy
       env:
         COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
-      run: npm run deploy -- --msg "$COMMIT_MESSAGE"
+      run: |
+        set -e
+        npm run deploy -- --msg "$COMMIT_MESSAGE"
