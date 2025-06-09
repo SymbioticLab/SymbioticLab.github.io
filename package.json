@@ -9,7 +9,7 @@
     "deploy:setup-user": "git config --global user.name 'github-actions[bot]'",
     "deploy:setup-email": "git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'",
     "deploy:setup-history": "rm -rf .deploy_git && git clone --branch $(hexo config deploy.branch --silent) $(hexo config deploy.repo --silent) .deploy_git",
-    "predeploy": "(npm run deploy:setup-user & npm run deploy:setup-email) && npm run deploy:setup-history",
+    "predeploy": "npm run deploy:setup-user && npm run deploy:setup-email && npm run deploy:setup-history",
     "deploy": "hexo generate --deploy"
   },
   "hexo": {
