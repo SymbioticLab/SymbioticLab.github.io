@@ -2102,3 +2102,27 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
 	Automating AI research holds immense potential for accelerating scientific progress, yet current AI agents struggle with the complexities of rigorous, end-to-end experimentation. We introduce EXP-Bench, a novel benchmark designed to systematically evaluate AI agents on complete research experiments sourced from influential AI publications. Given a research question and incomplete starter code, EXP-Bench challenges AI agents to formulate hypotheses, design and implement experimental procedures, execute them, and analyze results. To enable the creation of such intricate and authentic tasks with high-fidelity, we design a semi-autonomous pipeline to extract and structure crucial experimental details from these research papers and their associated open-source code. With the pipeline, EXP-Bench curated 461 AI research tasks from 51 top-tier AI research papers. Evaluations of leading LLM-based agents, such as OpenHands and IterativeAgent on EXP-Bench demonstrate partial capabilities: while scores on individual experimental aspects such as design or implementation correctness occasionally reach 20-35%, the success rate for complete, executable experiments was a mere 0.5%. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve their ability to conduct AI research experiments. EXP-Bench is open-sourced at https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench.
   }
 }
+
+@PhDThesis{jiachen:dissertation,
+  author          = {Jiachen Liu},
+  title           = {User-Centric Machine Learning Systems},
+  year            = {2025},
+  month           = {June},
+  institution     = {University of Michigan},
+  publist_link    = {paper || jiachen-dissertation.pdf},
+  publist_confkey = {dissertation},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+      Over the past five years, artificial intelligence (AI) has evolved from a specialized technology confined to large corporations and research labs into a ubiquitous tool integrated into everyday life. While AI extends its reach beyond niche domains to individual users across diverse contexts, the widespread adoption has given rise to new needs for machine learning (ML) systems to balance user-centric experiences—such as real-time responsiveness, accessibility and personalization—with system efficiency, including operational cost and resource utilization.
+      However, designing such systems is complex due to diverse AI workloads—spanning conversational services, collaborative learning, and large-scale training—as well as the heterogeneous resources, ranging from cloud data centers to resource-constrained edge devices. My research addresses these challenges to achieve these dual objectives through a set of design principles centered on a sophisticated resource scheduler with a server-client co-design paradigm.
+
+      Our contributions are threefold. First, we propose Andes to address the critical need for real-time responsiveness in LLM-backed conversational AI by introducing the concept of QoE tailored for such text streaming service. Our server-side token-level scheduling algorithm dynamically prioritizes token generation based on user-centric metrics, while a co-designed client-side token buffer smooths the streaming experience. This approach significantly improves user experience during peak demand and achieves substantial GPU resource savings.
+
+      Second, we propose Auxo to deliver personalized AI services to a diverse set of end users through scalable collaborative learning. We propose a novel client-clustering mechanism that adapts to statistical data heterogeneity and resource constraints, complemented by a cohort affinity mechanism that empowers clients to join preferred groups while preserving privacy. This approach improves the personalized model performance, adapting to varying needs and contexts of end users.
+
+      Third, we propose Venn, to handle escalating demand for efficient resource sharing in multi-job collaborative learning environments. Our resource scheduler resolves complex resource contention proactively and introduces a novel job offer abstraction that allows client resources to identify eligible jobs based on their local resources. This significantly reduces job completion times and improves resource efficiency.
+  }
+}
+
+
+
