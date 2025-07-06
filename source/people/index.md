@@ -95,3 +95,4 @@ excerpt: "SymbioticLab current & past members"
 1. Vishwa Ramanakumar (CSE MSE)
 1. Jisang Ahn (CS-LSA BS)
 1. Vatsal Joshi (CSE MSE) → Meta
+1. Wenxuan Tan (CS & Math BS@UW-Madison)
