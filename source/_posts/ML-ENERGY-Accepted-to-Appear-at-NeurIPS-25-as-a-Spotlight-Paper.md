@@ -1,6 +1,6 @@
 ---
 title: >-
-  The ML.ENERGY Benchmark Accepted to Appear at NeurIPS'25 as a Spotlight Paper. Congrats
+  The ML.ENERGY Benchmark Accepted to Appear at NeurIPS'25 D&B as a Spotlight Paper. Congrats
   Jae-Won, Jiachen, Jeff, Ruofan, Oh Jun, Yuxuan, and Zhiyu!
 categories:
   - News
