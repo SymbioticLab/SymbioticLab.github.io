@@ -93,7 +93,7 @@ excerpt: "SymbioticLab current & past members"
 1. Oh Jun Kweon (CSE MSE) → Jane Street
 1. Jiaheng Lu (ECE MSE) → Ph.D. @UPenn
 1. Wonbin Jin (CSE BSE) → Master’s @Michigan
-1. Divyam Sharma (DS MSE)
+1. Divyam Sharma (DS MSE) → AWS
 1. Jenny Xun (CE BSE)
 1. Vishwa Ramanakumar (CSE MSE)
 1. Vatsal Joshi (CSE MSE) → Meta
