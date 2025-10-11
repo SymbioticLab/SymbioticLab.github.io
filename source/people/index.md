@@ -33,6 +33,7 @@ excerpt: "SymbioticLab current & past members"
 1. Wonbin Jin (CSE MSE)
 1. Jisang Ahn (CS-LSA BS)
 1. Letian Ruan (CSE BSE)
+1. Rishika Kalidindi (CSE MSE)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
