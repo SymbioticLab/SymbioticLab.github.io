@@ -446,6 +446,14 @@ venues:
         date: 2024-12-09
         url: https://neurips.cc/Conferences/2024
         acceptance: 25.8%
+  'NeurIPS D&B':
+    category: Conferences
+    occurrences:
+      - key: NeurIPS'25 D&B
+        name: The Thirty-ninth Conference on Neural Information Processing Systems Track on Datasets and Benchmarks
+        date: 2025-12-02
+        url: https://neurips.cc/Conferences/2025
+        acceptance: 24.91%
 {% endpublist %}
 
 ---

@@ -2125,19 +2125,35 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
 }
 
 @Article{tetriserve:arxiv25,
-author          = {Runyu Lu and Shiqi He and Wenxuan Tan and Shenggui Li and Ruofan Wu and Jeff J. Ma and Ang Chen and Mosharaf Chowdhury},
-title           = {{TetriServe}: Efficient {DiT} Serving for Heterogeneous Image Generation},
-year            = {2025},
-month           = {Oct},
-volume          = {abs/2510.01565},
-archivePrefix   = {arXiv},
-eprint          = {2510.01565},
-url             = {https://arxiv.org/abs/2510.01565},
-publist_confkey = {arXiv:2510.01565},
-publist_link    = {paper || https://arxiv.org/abs/2510.01565},
-publist_topic   = {Systems + AI},
-publist_abstract = {
-Diffusion Transformer (DiT) models excel at generating high-quality images through iterative denoising steps, but serving them under strict Service Level Objectives (SLOs) is challenging due to their high computational cost, particularly at large resolutions. Existing serving systems use fixed degree sequence parallelism, which is inefficient for heterogeneous workloads with mixed resolutions and deadlines, leading to poor GPU utilization and low SLO attainment. In this paper, we propose step-level sequence parallelism to dynamically adjust the parallel degree of individual requests according to their deadlines. We present TetriServe, a DiT serving system that implements this strategy for highly efficient image generation. Specifically, TetriServe introduces a novel round-based scheduling mechanism that improves SLO attainment: (1) discretizing time into fixed rounds to make deadline-aware scheduling tractable, (2) adapting parallelism at the step level and minimize GPU hour consumption, and (3) jointly packing requests to minimize late completions. Extensive evaluation on state-of-the-art DiT models shows that TetriServe achieves up to 32% higher SLO attainment compared to existing solutions without degrading image quality.
-}
+  author          = {Runyu Lu and Shiqi He and Wenxuan Tan and Shenggui Li and Ruofan Wu and Jeff J. Ma and Ang Chen and Mosharaf Chowdhury},
+  title           = {{TetriServe}: Efficient {DiT} Serving for Heterogeneous Image Generation},
+  year            = {2025},
+  month           = {Oct},
+  volume          = {abs/2510.01565},
+  archivePrefix   = {arXiv},
+  eprint          = {2510.01565},
+  url             = {https://arxiv.org/abs/2510.01565},
+  publist_confkey = {arXiv:2510.01565},
+  publist_link    = {paper || https://arxiv.org/abs/2510.01565},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+  Diffusion Transformer (DiT) models excel at generating high-quality images through iterative denoising steps, but serving them under strict Service Level Objectives (SLOs) is challenging due to their high computational cost, particularly at large resolutions. Existing serving systems use fixed degree sequence parallelism, which is inefficient for heterogeneous workloads with mixed resolutions and deadlines, leading to poor GPU utilization and low SLO attainment. In this paper, we propose step-level sequence parallelism to dynamically adjust the parallel degree of individual requests according to their deadlines. We present TetriServe, a DiT serving system that implements this strategy for highly efficient image generation. Specifically, TetriServe introduces a novel round-based scheduling mechanism that improves SLO attainment: (1) discretizing time into fixed rounds to make deadline-aware scheduling tractable, (2) adapting parallelism at the step level and minimize GPU hour consumption, and (3) jointly packing requests to minimize late completions. Extensive evaluation on state-of-the-art DiT models shows that TetriServe achieves up to 32% higher SLO attainment compared to existing solutions without degrading image quality.
+  }
 }
 
+@InProceedings{mlenergy-benchmark:neuripsdb25,
+  title           = {The {ML.ENERGY} Benchmark: Toward Automated Inference Energy Measurement and Optimization}, 
+  author          = {Jae-Won Chung and Jiachen Liu and Jeff J. Ma and Ruofan Wu and Oh Jun Kweon and Yuxuan Xia and Zhiyu Wu and Mosharaf Chowdhury},
+  year            = {2025},
+  month           = {Dec},
+  booktitle       = {NeurIPS D\&B},
+  publist_topic   = {Systems + AI},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_confkey = {NeurIPS'25 D&B},
+  publist_link    = {paper || mlenergy-benchmark-neuripsdb25.pdf},
+  publist_link    = {code || https://github.com/ml-energy/benchmark},
+  publist_badge   = {Spotlight Paper (acceptance rate: 2.81%)},
+  publist_abstract = {
+    As the adoption of Generative AI in real-world services grow explosively, energy has emerged as a critical bottleneck resource. However, energy remains a metric that is often overlooked, under-explored, or poorly understood in the context of building ML systems. We present the ML.ENERGY Benchmark, a benchmark suite and tool for measuring inference energy consumption under realistic service environments, and the corresponding ML.ENERGY Leaderboard, which have served as a valuable resource for those hoping to understand and optimize the energy consumption of their generative AI services. In this paper, we explain four key design principles for benchmarking ML energy we have acquired over time, and then describe how they are implemented in the ML.ENERGY Benchmark. We then highlight results from the early 2025 iteration of the benchmark, including energy measurements of 40 widely used model architectures across 6 different tasks, case studies of how ML design choices impact energy consumption, and how automated optimization recommendations can lead to significant (sometimes more than 40\%) energy savings without changing what is being computed by the model. The ML.ENERGY Benchmark is open-source and can be easily extended to various customized models and application scenarios.
+  }
+}
