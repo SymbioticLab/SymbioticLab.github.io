@@ -321,6 +321,10 @@ venues:
   HotNets:
     category: Workshops
     occurrences:
+    - key: HotNets'25
+      name: The 24th ACM Workshop on Hot Topics in Networks (HotNets'25)
+      date: 2025-11-17
+      url: https://conferences.sigcomm.org/hotnets/2025/
     - key: HotNets'23
       name: The 22nd ACM Workshop on Hot Topics in Networks (HotNets'23)
       date: 2023-11-28
