@@ -2109,9 +2109,9 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
   year            = {2025},
   month           = {June},
   institution     = {University of Michigan},
+
   publist_link    = {paper || amberljc-dissertation.pdf},
   publist_confkey = {dissertation},
-  publist_topic   = {Systems + AI},
   publist_abstract = {
       Over the past five years, artificial intelligence (AI) has evolved from a specialized technology confined to large corporations and research labs into a ubiquitous tool integrated into everyday life. While AI extends its reach beyond niche domains to individual users across diverse contexts, the widespread adoption has given rise to new needs for machine learning (ML) systems to balance user-centric experiences—such as real-time responsiveness, accessibility and personalization—with system efficiency, including operational cost and resource utilization.
       However, designing such systems is complex due to diverse AI workloads—spanning conversational services, collaborative learning, and large-scale training—as well as the heterogeneous resources, ranging from cloud data centers to resource-constrained edge devices. My research addresses these challenges to achieve these dual objectives through a set of design principles centered on a sophisticated resource scheduler with a server-client co-design paradigm.
@@ -2168,5 +2168,22 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
   publist_topic = {Datacenter Networking},
   publist_abstract = { 
     We make a case for remote direct code execution (RDX)—a vision that elevates the power of RDMA from memory access to code execution. Concretely, we target runtime extension frameworks such as Wasm filters, BPF programs, and UDF functions, where RDX enables an agent-less architecture that unlocks capabilities such as fast extension injection, update consistency guarantees, and minimal resource contentions. We envision a technical roadmap for RDX around a new CodeFlow abstraction, encompassing programming remote extensions, exposing management stubs, remotely validating and JIT compiling code, seamlessly linking code to local context, managing remote extension state, and synchronizing code to targets. The case studies and initial results demonstrate the end-to-end feasibility of RDX, and its potential to spark the next wave of RDMA innovations.
+  }
+}
+
+@Article{sphinx:arxiv25,
+  author          = {Yuchen Xia and Souvik Kundu and Mosharaf Chowdhury and Nishil Talati},
+  title           = {Sphinx: Efficiently Serving Novel View Synthesis using Regression-Guided Selective Refinement},
+  year            = {2025},
+  month           = {Nov},
+  volume          = {abs/2511.18672},
+  archivePrefix   = {arXiv},
+  eprint          = {2511.18672},
+  url             = {https://arxiv.org/abs/2511.18672},
+  publist_confkey = {arXiv:2511.18672},
+  publist_link    = {paper || https://arxiv.org/abs/2511.18672},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Novel View Synthesis (NVS) is the task of generating new images of a scene from viewpoints that were not part of the original input. Diffusion-based NVS can generate high-quality, temporally consistent images, however, remains computationally prohibitive. Conversely, regression-based NVS offers suboptimal generation quality despite requiring significantly lower compute; leaving the design objective of a high-quality, inference-efficient NVS framework an open challenge. To close this critical gap, we present Sphinx, a training-free hybrid inference framework that achieves diffusion-level fidelity at a significantly lower compute. Sphinx proposes to use regression-based fast initialization to guide and reduce the denoising workload for the diffusion model. Additionally, it integrates selective refinement with adaptive noise scheduling, allowing more compute to uncertain regions and frames. This enables Sphinx to provide flexible navigation of the performance-quality trade-off, allowing adaptation to latency and fidelity requirements for dynamically changing inference scenarios. Our evaluation shows that Sphinx achieves an average 1.8x speedup over diffusion model inference with negligible perceptual degradation of less than 5%, establishing a new Pareto frontier between quality and latency in NVS serving.
   }
 }
