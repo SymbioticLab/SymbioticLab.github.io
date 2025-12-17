@@ -2187,3 +2187,26 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
 Novel View Synthesis (NVS) is the task of generating new images of a scene from viewpoints that were not part of the original input. Diffusion-based NVS can generate high-quality, temporally consistent images, however, remains computationally prohibitive. Conversely, regression-based NVS offers suboptimal generation quality despite requiring significantly lower compute; leaving the design objective of a high-quality, inference-efficient NVS framework an open challenge. To close this critical gap, we present Sphinx, a training-free hybrid inference framework that achieves diffusion-level fidelity at a significantly lower compute. Sphinx proposes to use regression-based fast initialization to guide and reduce the denoising workload for the diffusion model. Additionally, it integrates selective refinement with adaptive noise scheduling, allowing more compute to uncertain regions and frames. This enables Sphinx to provide flexible navigation of the performance-quality trade-off, allowing adaptation to latency and fidelity requirements for dynamically changing inference scenarios. Our evaluation shows that Sphinx achieves an average 1.8x speedup over diffusion model inference with negligible perceptual degradation of less than 5%, establishing a new Pareto frontier between quality and latency in NVS serving.
   }
 }
+
+@Article{cornserve:arxiv25,
+  author        = {Jeff J. Ma and Jae-Won Chung and Jisang Ahn and Yizhuo Liang and Akshay Jajoo and Myungjin Lee and Mosharaf Chowdhury},
+  journal       = {CoRR},
+  title         = {Cornserve: Efficiently Serving Any-to-Any Multimodal Models},
+  year          = {2025},
+  month         = {Dec},
+  volume        = {abs/2512.14098},
+  archiveprefix = {arXiv},
+  eprint        = {2512.14098},
+  url           = {https://arxiv.org/abs/2512.14098},
+
+  publist_confkey = {arXiv:2512.14098},
+  publist_link = {paper || https://arxiv.org/abs/2512.14098},
+  publist_link = {code || https://github.com/cornserve-ai/cornserve},
+  publist_link = {website || https://cornserve.ai},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+We present Cornserve, an efficient online serving system for an emerging class of multimodal models called Any-to-Any models. Any-to-Any models accept combinations of text and multimodal data (e.g., image, video, audio) as input and also generate combinations of text and multimodal data as output, introducing request type, computation path, and computation scaling heterogeneity in model serving.
+
+Cornserve allows model developers to describe the computation graph of generic Any-to-Any models, which consists of heterogeneous components such as multimodal encoders, autoregressive models like Large Language Models (LLMs), and multimodal generators like Diffusion Transformers (DiTs). Given this, Cornserve's planner automatically finds an optimized deployment plan for the model, including whether and how to disaggregate the model into smaller components based on model and workload characteristics. Cornserve's distributed runtime then executes the model per the plan, efficiently handling Any-to-Any model heterogeneity during online serving. Evaluations show that Cornserve can efficiently serve diverse Any-to-Any models and workloads, delivering up to 3.81x throughput improvement and up to 5.79x tail latency reduction over existing solutions.
+  }
+}
