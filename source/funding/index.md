@@ -45,11 +45,11 @@ Any opinions, findings, and conclusions of our research projects are those of th
 <div class='flex-row'>
 
 ![NSF](images/nsf.png)
-![Mozilla](images/mozilla.png)
 ![Ford](images/ford.png)
 ![Cisco](images/cisco.png)
 ![Google](images/google.png)
 ![GitHub](images/github.png)
+![Laude](images/laude.png)
 </div>
 
 ## Past Sponsors
@@ -63,4 +63,5 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![Nvidia](images/nvidia.png)
 ![KLA](images/kla.png)
 ![Chelsio](images/chelsio.png)
+![Mozilla](images/mozilla.png)
 </div>
