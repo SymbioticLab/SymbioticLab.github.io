@@ -427,6 +427,13 @@ venues:
       name: ACM SIGEnergy Energy Informatics Review
       date: 2023-10-25
       url: https://dl.acm.org/toc/sigenergy-eir/2023/3/3
+  CACM:
+    category: Journals
+    occurrences:
+    - key: 'CACM:69(1)'
+      name: Communications of the ACM
+      date: 2025-12-04
+      url: https://dl.acm.org/doi/full/10.1145/3736713
   ICML:
     category: Conferences
     occurrences:
