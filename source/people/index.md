@@ -25,7 +25,7 @@ excerpt: "SymbioticLab current & past members"
 1. [Dr. Hasan Al Maruf](https://www.linkedin.com/in/hasanalmaruf/) (2023) → AMD ➠ Meta
 1. [Prof. Fan Lai](https://www.linkedin.com/in/fan-lai-a27764147/) (2023) → Assistant Professor @UIUC
 1. [Dr. Yiwen Zhang](https://www.linkedin.com/in/yiwen-zhang-a75719112/) (2024) → Google
-1. [Dr. Jiachen Liu](https://www.linkedin.com/in/jiachen-amber-liu-872506169/) → Meta
+1. [Dr. Jiachen Liu](https://www.linkedin.com/in/jiachen-amber-liu-872506169/) (2025) → Meta
 
 
 ## Current Non-Ph.D. Students
@@ -34,6 +34,7 @@ excerpt: "SymbioticLab current & past members"
 1. Jisang Ahn (CS-LSA BS)
 1. Letian Ruan (CSE BSE)
 1. Rishika Kalidindi (CSE MSE)
+1. David McDermott (CS-LSA & Interdisciplinary Physics BS)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
