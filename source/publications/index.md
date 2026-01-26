@@ -116,6 +116,10 @@ venues:
   ASPLOS:
     category: Conferences
     occurrences:
+    - key: ASPLOS'26
+      name: The 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+      date: 2026-03-22
+      url: https://asplos-conference.org/2026/
     - key: ASPLOS'23
       name: The 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems
       date: 2023-03-25
