@@ -2238,3 +2238,23 @@ Cornserve allows model developers to describe the computation graph of generic A
   publist_confkey = {CACM:69(1)},
   publist_link = {paper || https://dl.acm.org/doi/full/10.1145/3736713},
 }
+
+@Article{kareus:arxiv26,
+  author          = {Ruofan Wu and Jae-Won Chung and Mosharaf Chowdhury},
+  title           = {{Kareus}: Joint Reduction of Dynamic and Static Energy in Large Model Training},
+  year            = {2026},
+  month           = {Jan},
+  volume          = {abs/2601.17654},
+  archivePrefix   = {arXiv},
+  eprint          = {2601.17654},
+  url             = {https://arxiv.org/abs/2601.17654},
+  publist_confkey = {arXiv:2601.17654},
+  publist_link    = {paper || https://arxiv.org/abs/2601.17654},
+  publist_topic   = {Systems + AI},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_abstract = {
+The computing demand of AI is growing at an unprecedented rate, but energy supply is not keeping pace. As a result, energy has become an expensive, contended resource that requires explicit management and optimization. Although recent works have made significant progress in large model training optimization, they focus only on a single aspect of energy consumption: dynamic or static energy.
+
+We find that fine-grained kernel scheduling and frequency scaling jointly and interdependently impact both dynamic and static energy consumption. Based on this finding, we design Kareus, a training system that pushes the time--energy tradeoff frontier by optimizing both aspects. Kareus decomposes the intractable joint optimization problem into local, partition-based subproblems. It then uses a multi-pass multi-objective optimization algorithm to find execution schedules that push the time--energy tradeoff frontier. Compared to the state of the art, Kareus reduces training energy by up to 28.3% at the same training time, or reduces training time by up to 27.5% at the same energy consumption.
+  }
+}
