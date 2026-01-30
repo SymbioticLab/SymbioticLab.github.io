@@ -2075,7 +2075,7 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
   month={May},
   publist_confkey = {arXiv:2505.06371},
   publist_link = {paper || https://arxiv.org/abs/2505.06371},
-  publist_link = {code || https://github.com/ml-energy/leaderboard},
+  publist_link = {code || https://github.com/ml-energy/benchmark},
   publist_link = {website || https://ml.energy/leaderboard},
   publist_topic = {Energy-Efficient Systems},
   publist_topic = {Systems + AI},
@@ -2166,6 +2166,7 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
   publist_confkey = {NeurIPS'25 D&B},
   publist_link    = {paper || mlenergy-benchmark-neuripsdb25.pdf},
   publist_link    = {code || https://github.com/ml-energy/benchmark},
+  publist_link    = {website || https://ml.energy/leaderboard},
   publist_badge   = {Spotlight},
   publist_abstract = {
     As the adoption of Generative AI in real-world services grow explosively, energy has emerged as a critical bottleneck resource. However, energy remains a metric that is often overlooked, under-explored, or poorly understood in the context of building ML systems. We present the ML.ENERGY Benchmark, a benchmark suite and tool for measuring inference energy consumption under realistic service environments, and the corresponding ML.ENERGY Leaderboard, which have served as a valuable resource for those hoping to understand and optimize the energy consumption of their generative AI services. In this paper, we explain four key design principles for benchmarking ML energy we have acquired over time, and then describe how they are implemented in the ML.ENERGY Benchmark. We then highlight results from the early 2025 iteration of the benchmark, including energy measurements of 40 widely used model architectures across 6 different tasks, case studies of how ML design choices impact energy consumption, and how automated optimization recommendations can lead to significant (sometimes more than 40\%) energy savings without changing what is being computed by the model. The ML.ENERGY Benchmark is open-source and can be easily extended to various customized models and application scenarios.
@@ -2256,5 +2257,24 @@ Cornserve allows model developers to describe the computation graph of generic A
 The computing demand of AI is growing at an unprecedented rate, but energy supply is not keeping pace. As a result, energy has become an expensive, contended resource that requires explicit management and optimization. Although recent works have made significant progress in large model training optimization, they focus only on a single aspect of energy consumption: dynamic or static energy.
 
 We find that fine-grained kernel scheduling and frequency scaling jointly and interdependently impact both dynamic and static energy consumption. Based on this finding, we design Kareus, a training system that pushes the time--energy tradeoff frontier by optimizing both aspects. Kareus decomposes the intractable joint optimization problem into local, partition-based subproblems. It then uses a multi-pass multi-objective optimization algorithm to find execution schedules that push the time--energy tradeoff frontier. Compared to the state of the art, Kareus reduces training energy by up to 28.3% at the same training time, or reduces training time by up to 27.5% at the same energy consumption.
+  }
+}
+
+@article{mlenergy-benchmark-v3:arxiv26,
+  title={Where Do the Joules Go? Diagnosing Inference Energy Consumption},
+  author={Jae-Won Chung and Ruofan Wu and Jeff J. Ma and Mosharaf Chowdhury},
+  archiveprefix = {arXiv},
+  eprint= {2601.22076},
+  url= {https://arxiv.org/abs/2601.22076},
+  year={2026},
+  month={Jan},
+  publist_confkey = {arXiv:2601.22076},
+  publist_link = {paper || https://arxiv.org/abs/2601.22076},
+  publist_link = {code || https://github.com/ml-energy/benchmark},
+  publist_link = {website || https://ml.energy/leaderboard},
+  publist_topic = {Energy-Efficient Systems},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+Energy is now a critical ML computing resource. While measuring energy consumption and observing trends is a valuable first step, accurately understanding and diagnosing why those differences occur is crucial for optimization. To that end, we begin by presenting a large-scale measurement study of inference time and energy across the generative AI landscape with 46 models, 7 tasks, and 1,858 different configurations on NVIDIA H100 and B200 GPUs. Our empirical findings span order-of-magnitude variations: LLM task type can lead to 25x energy differences, video generation sometimes consumes more than 100x the energy of images, and GPU utilization differences can result in 3--5x energy differences. Based on our observations, we present a framework for reasoning about the underlying mechanisms that govern time and energy consumption. The essence is that time and energy are determined by latent metrics like memory and utilization, which are in turn affected by various factors across the algorithm, software, and hardware layers. Our framework also extends directly to throughput per watt, a critical metric for power-constrained datacenters.
   }
 }
