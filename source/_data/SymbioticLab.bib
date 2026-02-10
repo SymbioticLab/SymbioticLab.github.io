@@ -2295,3 +2295,20 @@ We find that fine-grained kernel scheduling and frequency scaling jointly and in
 Energy is now a critical ML computing resource. While measuring energy consumption and observing trends is a valuable first step, accurately understanding and diagnosing why those differences occur is crucial for optimization. To that end, we begin by presenting a large-scale measurement study of inference time and energy across the generative AI landscape with 46 models, 7 tasks, and 1,858 different configurations on NVIDIA H100 and B200 GPUs. Our empirical findings span order-of-magnitude variations: LLM task type can lead to 25x energy differences, video generation sometimes consumes more than 100x the energy of images, and GPU utilization differences can result in 3--5x energy differences. Based on our observations, we present a framework for reasoning about the underlying mechanisms that govern time and energy consumption. The essence is that time and energy are determined by latent metrics like memory and utilization, which are in turn affected by various factors across the algorithm, software, and hardware layers. Our framework also extends directly to throughput per watt, a critical metric for power-constrained datacenters.
   }
 }
+
+@Article{gputogrid:arxiv26,
+  author          = {Zhirui Liang and Jae-Won Chung and Mosharaf Chowdhury and Jiasi Chen and Vladimir Dvorkin},
+  title           = {{GPU-to-Grid}: Voltage Regulation via GPU Utilization Control},
+  year            = {2026},
+  month           = {Feb},
+  volume          = {abs/2602.05116},
+  archivePrefix   = {arXiv},
+  eprint          = {2602.05116},
+  url             = {https://arxiv.org/abs/2602.05116},
+  publist_confkey = {arXiv:2602.05116},
+  publist_link    = {paper || https://arxiv.org/abs/2602.05116},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_abstract = {
+While the rapid expansion of data centers poses challenges for power grids, it also offers new opportunities as potentially flexible loads. Existing power system research often abstracts data centers as aggregate resources, while computer system research primarily focuses on optimizing GPU energy efficiency and largely ignores the grid impacts of optimized GPU power consumption. To bridge this gap, we develop a GPU-to-Grid framework that couples device-level GPU control with power system objectives. We study distribution-level voltage regulation enabled by flexibility in LLM inference, using batch size as a control knob that trades off the voltage impacts of GPU power consumption against inference latency and token throughput. We first formulate this problem as an optimization problem and then realize it as an online feedback optimization controller that leverages measurements from both the power grid and GPU systems. Our key insight is that reducing GPU power consumption alleviates violations of lower voltage limits, while increasing GPU power mitigates violations near upper voltage limits in distribution systems; this runs counter to the common belief that minimizing GPU power consumption is always beneficial to power grids.
+  }
+}
