@@ -2313,3 +2313,24 @@ Energy is now a critical ML computing resource. While measuring energy consumpti
 While the rapid expansion of data centers poses challenges for power grids, it also offers new opportunities as potentially flexible loads. Existing power system research often abstracts data centers as aggregate resources, while computer system research primarily focuses on optimizing GPU energy efficiency and largely ignores the grid impacts of optimized GPU power consumption. To bridge this gap, we develop a GPU-to-Grid framework that couples device-level GPU control with power system objectives. We study distribution-level voltage regulation enabled by flexibility in LLM inference, using batch size as a control knob that trades off the voltage impacts of GPU power consumption against inference latency and token throughput. We first formulate this problem as an optimization problem and then realize it as an online feedback optimization controller that leverages measurements from both the power grid and GPU systems. Our key insight is that reducing GPU power consumption alleviates violations of lower voltage limits, while increasing GPU power mitigates violations near upper voltage limits in distribution systems; this runs counter to the common belief that minimizing GPU power consumption is always beneficial to power grids.
   }
 }
+
+@InProceedings{mordal:iclr26,
+  author          = {Shiqi He and Insu Jang and Mosharaf Chowdhury},
+  booktitle       = {ICLR},
+  title           = {{Mordal}: Automated Pretrained Model Selection for Vision Language Models},
+  year            = {2026},
+  month           = {April},
+  publist_confkey = {ICLR'26},
+  publist_link    = {paper || mordal-iclr26.pdf},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+  Incorporating multiple modalities into large language models (LLMs) is a powerful way to enhance their understanding of non-textual data, enabling them to perform multimodal tasks.
+  Vision language models (VLMs) form the fastest growing category of multimodal models because of their many practical use cases, including in healthcare, robotics, and accessibility.
+  Unfortunately, even though different VLMs in the literature demonstrate impressive visual capabilities in different benchmarks, they are handcrafted by human experts; there is no automated framework to create task-specific multimodal models.
+  
+  We introduce Mordal, an automated multimodal model search framework that efficiently finds the best VLM for a user-defined task without manual intervention.
+  Mordal achieves this both by reducing the number of candidates to consider during the search process and by minimizing the time required to evaluate each remaining candidate.
+  Our evaluation shows that Mordal can find the best VLM for a given problem using $8.9\times$--$11.6\times$ lower GPU hours than grid search.
+  We have also discovered that Mordal achieves about 69\% higher weighted Kendall’s $\tau$ on average than the state-of-the-art model selection method across diverse tasks.
+  }
+}
