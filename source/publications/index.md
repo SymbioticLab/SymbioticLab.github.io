@@ -466,6 +466,14 @@ venues:
         date: 2025-12-02
         url: https://neurips.cc/Conferences/2025
         acceptance: 24.91%
+  ICLR:
+    category: Conferences
+    occurrences:
+      - key: ICLR'26
+        name: The 14th International Conference on Learning Representations
+        date: 2026-04-23
+        url: https://iclr.cc/Conferences/2026
+        acceptance: 26.97%
 {% endpublist %}
 
 ---
