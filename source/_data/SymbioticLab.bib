@@ -2334,3 +2334,17 @@ While the rapid expansion of data centers poses challenges for power grids, it a
   We have also discovered that Mordal achieves about 69\% higher weighted Kendall’s $\tau$ on average than the state-of-the-art model selection method across diverse tasks.
   }
 }
+
+@InProceedings{expbench:iclr26,
+  author          = {Patrick Tser Jern Kon and Qiuyi Ding and Jiachen Liu and Xinyi Zhu and Jingjia Peng and Jiarong Xing and Yibo Huang and Yiming Qiu and Jayanth Srinivasa and Myungjin Lee and Mosharaf Chowdhury and Matei Zaharia and Ang Chen},
+  booktitle       = {ICLR},
+  title           = {{EXP-BENCH}: Can {AI} Conduct {AI} Research Experiments?},
+  year            = {2026},
+  month           = {April},
+  publist_confkey = {ICLR'26},
+  publist_link    = {paper || expbench-iclr26.pdf},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Automating AI research holds immense potential for accelerating scientific progress, yet current AI agents struggle with the complexities of rigorous, end-to-end experimentation. We introduce EXP-Bench, a novel benchmark designed to systematically evaluate AI agents on complete research experiments sourced from influential AI publications. Given a research question and incomplete starter code, EXP-Bench challenges AI agents to formulate hypotheses, design and implement experimental procedures, execute them, and analyze results. To enable the creation of such intricate and authentic tasks with high-fidelity, we design a semi-autonomous pipeline to extract and structure crucial experimental details from these research papers and their associated open source code. With the pipeline, EXP-Bench curated 461 AI research tasks from 51 top-tier AI research papers. Evaluations of leading LLM-based agents, such as OpenHands and IterativeAgents on EXP-Bench demonstrate partial capabilities: while scores on individual experimental aspects such as design or implementation correctness occasionally reach 20–35%, the success rate for complete, executable experiments was a mere 0.5%. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve targeted research components and agent planning ability.
+  }
+}
