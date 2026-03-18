@@ -1,0 +1,141 @@
+{% extends '_layout.njk' %}
+{% import '_macro/sidebar.njk' as sidebar_template with context %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block class %}archive posts-collapse{% endblock %}
+
+{% block content %}
+
+<style>
+  .award-list {
+    line-height: 1.5;
+  }
+
+  .award-list section.year {
+    position: relative;
+    padding: 1em 0em 0em 0em;
+    margin-left: 3.5em;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* The vertical line */
+  .award-list section.year ul li {
+    position: relative;
+  }
+  .award-list section.year ul li::before {
+    content: ' ';
+    background: rgba(.3, .3, .3, .3);
+    z-index: -1;
+    position: absolute;
+    left: calc(-2em + -2px);
+    width: 2px;
+    top: -1px;
+    bottom: 0px;
+  }
+  .award-list section.year ul li:first-child::before {
+    top: calc(-1em + -1px);
+  }
+  .award-list section.year ul li:first-child ~ li::before {
+    top: -1px;
+  }
+  .award-list section.year:last-child ul li:last-child::before {
+    background: linear-gradient(to bottom, rgba(.3, .3, .3, .3) 60%, rgba(.3, .3, .3, 0));
+  }
+
+  /* The circle and year */
+  .award-list .year-mark-wrapper {
+    display: flex;
+    align-items: center;
+    width: 0px;
+    position: sticky;
+    top: 5em;
+  }
+  .award-list .year-mark-wrapper::before {
+    content: "A";
+    width: 0px;
+    visibility: hidden;
+  }
+  .award-list .year-mark {
+    position: relative;
+    left: -8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10px;
+    height: 10px;
+    background: #C5C5C5;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  .award-list .year-mark::before {
+    content: attr(data-year);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1em;
+  }
+  @media (min-width: 62em) {
+    .award-list .year-mark::before {
+      font-size: 1.1rem;
+    }
+  }
+
+  /* The styling of the list */
+  .award-list section.year ul {
+    padding: 0 0 0 2em;
+    margin: 0em;
+    font-size: 1em;
+    width: 100%;
+  }
+  .award-list section.year ul li {
+    list-style-type: none;
+    padding: 0.6rem 0rem 0.8rem 0rem;
+    border-bottom: 1px dashed #ccc;
+  }
+  .award-list section.year ul li:first-child {
+    padding-top: 0rem;
+  }
+  .award-list section.year:last-child ul li:last-child {
+    border-bottom: none;
+  }
+
+  /* Award-specific content styling */
+  .award-title {
+    font-weight: 600;
+  }
+  .award-detail {
+    font-size: 0.9em;
+    color: #666;
+    margin: 2px 0;
+  }
+</style>
+
+<h1>Awards & Honors</h1>
+
+<div class="award-list">
+  {% for group in page.awards %}
+    <section class="year">
+      <div class="year-mark-wrapper">
+        <span class="year-mark" data-year="{{ group.year }}"></span>
+      </div>
+      <ul>
+        {% for award in group.items %}
+          <li>
+            <div class="award-title">{{ award.title }}</div>
+            {% if award.description %}
+              <div class="award-detail">{{ award.description }}</div>
+            {% endif %}
+            {% if award.recipient %}
+              <div class="award-detail">{{ award.recipient }}</div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>
+
+{% endblock %}
