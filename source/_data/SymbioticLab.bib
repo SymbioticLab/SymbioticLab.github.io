@@ -2075,7 +2075,7 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
   month={May},
   publist_confkey = {arXiv:2505.06371},
   publist_link = {paper || https://arxiv.org/abs/2505.06371},
-  publist_link = {code || https://github.com/ml-energy/leaderboard},
+  publist_link = {code || https://github.com/ml-energy/benchmark},
   publist_link = {website || https://ml.energy/leaderboard},
   publist_topic = {Energy-Efficient Systems},
   publist_topic = {Systems + AI},
@@ -2167,6 +2167,7 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
   publist_confkey = {NeurIPS'25 D&B},
   publist_link    = {paper || mlenergy-benchmark-neuripsdb25.pdf},
   publist_link    = {code || https://github.com/ml-energy/benchmark},
+  publist_link    = {website || https://ml.energy/leaderboard},
   publist_badge   = {Spotlight},
   publist_abstract = {
     As the adoption of Generative AI in real-world services grow explosively, energy has emerged as a critical bottleneck resource. However, energy remains a metric that is often overlooked, under-explored, or poorly understood in the context of building ML systems. We present the ML.ENERGY Benchmark, a benchmark suite and tool for measuring inference energy consumption under realistic service environments, and the corresponding ML.ENERGY Leaderboard, which have served as a valuable resource for those hoping to understand and optimize the energy consumption of their generative AI services. In this paper, we explain four key design principles for benchmarking ML energy we have acquired over time, and then describe how they are implemented in the ML.ENERGY Benchmark. We then highlight results from the early 2025 iteration of the benchmark, including energy measurements of 40 widely used model architectures across 6 different tasks, case studies of how ML design choices impact energy consumption, and how automated optimization recommendations can lead to significant (sometimes more than 40\%) energy savings without changing what is being computed by the model. The ML.ENERGY Benchmark is open-source and can be easily extended to various customized models and application scenarios.
@@ -2185,6 +2186,23 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
     We make a case for remote direct code execution (RDX)—a vision that elevates the power of RDMA from memory access to code execution. Concretely, we target runtime extension frameworks such as Wasm filters, BPF programs, and UDF functions, where RDX enables an agent-less architecture that unlocks capabilities such as fast extension injection, update consistency guarantees, and minimal resource contentions. We envision a technical roadmap for RDX around a new CodeFlow abstraction, encompassing programming remote extensions, exposing management stubs, remotely validating and JIT compiling code, seamlessly linking code to local context, managing remote extension state, and synchronizing code to targets. The case studies and initial results demonstrate the end-to-end feasibility of RDX, and its potential to spark the next wave of RDMA innovations.
   }
 }
+
+@Article{branchandbrowse:arxiv25,
+  author        = {Shiqi He and Yue Cui and Xinyu Ma and Yaliang Li and Bolin Ding and Mosharaf Chowdhury},
+  title         = {{Branch-and-Browse}: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory},
+  year          = {2025},
+  month         = {Oct},
+  volume        = {abs/2510.19838},
+  archiveprefix = {arXiv},
+  eprint        = {2510.19838},
+  url           = {https://arxiv.org/abs/2510.19838},
+  publist_confkey = {arXiv:2510.19838},
+  publist_link = {paper || https://arxiv.org/abs/2510.19838},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+Autonomous web agents powered by large language models (LLMs) show strong potential for performing goal-oriented tasks such as information retrieval, report generation, and online transactions. These agents mark a key step toward practical embodied reasoning in open web environments. However, existing approaches remain limited in reasoning depth and efficiency: vanilla linear methods fail at multi-step reasoning and lack effective backtracking, while other search strategies are coarse-grained and computationally costly. We introduce Branch-and-Browse, a fine-grained web agent framework that unifies structured reasoning-acting, contextual memory, and efficient execution. It (i) employs explicit subtask management with tree-structured exploration for controllable multi-branch reasoning, (ii) bootstraps exploration through efficient web state replay with background reasoning, and (iii) leverages a page action memory to share explored actions within and across sessions. On the WebArena benchmark, Branch-and-Browse achieves a task success rate of 35.8% and reduces execution time by up to 40.4% relative to state-of-the-art methods. These results demonstrate that Branch-and-Browse is a reliable and efficient framework for LLM-based web agents.
+  }
+} 
 
 @Article{sphinx:arxiv25,
   author          = {Yuchen Xia and Souvik Kundu and Mosharaf Chowdhury and Nishil Talati},
@@ -2238,4 +2256,96 @@ Cornserve allows model developers to describe the computation graph of generic A
 
   publist_confkey = {CACM:69(1)},
   publist_link = {paper || https://dl.acm.org/doi/full/10.1145/3736713},
+}
+
+@Article{kareus:arxiv26,
+  author          = {Ruofan Wu and Jae-Won Chung and Mosharaf Chowdhury},
+  title           = {{Kareus}: Joint Reduction of Dynamic and Static Energy in Large Model Training},
+  year            = {2026},
+  month           = {Jan},
+  volume          = {abs/2601.17654},
+  archivePrefix   = {arXiv},
+  eprint          = {2601.17654},
+  url             = {https://arxiv.org/abs/2601.17654},
+  publist_confkey = {arXiv:2601.17654},
+  publist_link    = {paper || https://arxiv.org/abs/2601.17654},
+  publist_topic   = {Systems + AI},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_abstract = {
+The computing demand of AI is growing at an unprecedented rate, but energy supply is not keeping pace. As a result, energy has become an expensive, contended resource that requires explicit management and optimization. Although recent works have made significant progress in large model training optimization, they focus only on a single aspect of energy consumption: dynamic or static energy.
+
+We find that fine-grained kernel scheduling and frequency scaling jointly and interdependently impact both dynamic and static energy consumption. Based on this finding, we design Kareus, a training system that pushes the time--energy tradeoff frontier by optimizing both aspects. Kareus decomposes the intractable joint optimization problem into local, partition-based subproblems. It then uses a multi-pass multi-objective optimization algorithm to find execution schedules that push the time--energy tradeoff frontier. Compared to the state of the art, Kareus reduces training energy by up to 28.3% at the same training time, or reduces training time by up to 27.5% at the same energy consumption.
+  }
+}
+
+@article{mlenergy-benchmark-v3:arxiv26,
+  title={Where Do the Joules Go? Diagnosing Inference Energy Consumption},
+  author={Jae-Won Chung and Ruofan Wu and Jeff J. Ma and Mosharaf Chowdhury},
+  archiveprefix = {arXiv},
+  eprint= {2601.22076},
+  url= {https://arxiv.org/abs/2601.22076},
+  year={2026},
+  month={Jan},
+  publist_confkey = {arXiv:2601.22076},
+  publist_link = {paper || https://arxiv.org/abs/2601.22076},
+  publist_link = {code || https://github.com/ml-energy/benchmark},
+  publist_link = {website || https://ml.energy/leaderboard},
+  publist_topic = {Energy-Efficient Systems},
+  publist_topic = {Systems + AI},
+  publist_abstract = {
+Energy is now a critical ML computing resource. While measuring energy consumption and observing trends is a valuable first step, accurately understanding and diagnosing why those differences occur is crucial for optimization. To that end, we begin by presenting a large-scale measurement study of inference time and energy across the generative AI landscape with 46 models, 7 tasks, and 1,858 different configurations on NVIDIA H100 and B200 GPUs. Our empirical findings span order-of-magnitude variations: LLM task type can lead to 25x energy differences, video generation sometimes consumes more than 100x the energy of images, and GPU utilization differences can result in 3--5x energy differences. Based on our observations, we present a framework for reasoning about the underlying mechanisms that govern time and energy consumption. The essence is that time and energy are determined by latent metrics like memory and utilization, which are in turn affected by various factors across the algorithm, software, and hardware layers. Our framework also extends directly to throughput per watt, a critical metric for power-constrained datacenters.
+  }
+}
+
+@Article{gputogrid:arxiv26,
+  author          = {Zhirui Liang and Jae-Won Chung and Mosharaf Chowdhury and Jiasi Chen and Vladimir Dvorkin},
+  title           = {{GPU-to-Grid}: Voltage Regulation via GPU Utilization Control},
+  year            = {2026},
+  month           = {Feb},
+  volume          = {abs/2602.05116},
+  archivePrefix   = {arXiv},
+  eprint          = {2602.05116},
+  url             = {https://arxiv.org/abs/2602.05116},
+  publist_confkey = {arXiv:2602.05116},
+  publist_link    = {paper || https://arxiv.org/abs/2602.05116},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+While the rapid expansion of data centers poses challenges for power grids, it also offers new opportunities as potentially flexible loads. Existing power system research often abstracts data centers as aggregate resources, while computer system research primarily focuses on optimizing GPU energy efficiency and largely ignores the grid impacts of optimized GPU power consumption. To bridge this gap, we develop a GPU-to-Grid framework that couples device-level GPU control with power system objectives. We study distribution-level voltage regulation enabled by flexibility in LLM inference, using batch size as a control knob that trades off the voltage impacts of GPU power consumption against inference latency and token throughput. We first formulate this problem as an optimization problem and then realize it as an online feedback optimization controller that leverages measurements from both the power grid and GPU systems. Our key insight is that reducing GPU power consumption alleviates violations of lower voltage limits, while increasing GPU power mitigates violations near upper voltage limits in distribution systems; this runs counter to the common belief that minimizing GPU power consumption is always beneficial to power grids.
+  }
+}
+
+@InProceedings{mordal:iclr26,
+  author          = {Shiqi He and Insu Jang and Mosharaf Chowdhury},
+  booktitle       = {ICLR},
+  title           = {{Mordal}: Automated Pretrained Model Selection for Vision Language Models},
+  year            = {2026},
+  month           = {April},
+  publist_confkey = {ICLR'26},
+  publist_link    = {paper || mordal-iclr26.pdf},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+  Incorporating multiple modalities into large language models (LLMs) is a powerful way to enhance their understanding of non-textual data, enabling them to perform multimodal tasks.
+  Vision language models (VLMs) form the fastest growing category of multimodal models because of their many practical use cases, including in healthcare, robotics, and accessibility.
+  Unfortunately, even though different VLMs in the literature demonstrate impressive visual capabilities in different benchmarks, they are handcrafted by human experts; there is no automated framework to create task-specific multimodal models.
+  
+  We introduce Mordal, an automated multimodal model search framework that efficiently finds the best VLM for a user-defined task without manual intervention.
+  Mordal achieves this both by reducing the number of candidates to consider during the search process and by minimizing the time required to evaluate each remaining candidate.
+  Our evaluation shows that Mordal can find the best VLM for a given problem using $8.9\times$--$11.6\times$ lower GPU hours than grid search.
+  We have also discovered that Mordal achieves about 69\% higher weighted Kendall’s $\tau$ on average than the state-of-the-art model selection method across diverse tasks.
+  }
+}
+
+@InProceedings{expbench:iclr26,
+  author          = {Patrick Tser Jern Kon and Qiuyi Ding and Jiachen Liu and Xinyi Zhu and Jingjia Peng and Jiarong Xing and Yibo Huang and Yiming Qiu and Jayanth Srinivasa and Myungjin Lee and Mosharaf Chowdhury and Matei Zaharia and Ang Chen},
+  booktitle       = {ICLR},
+  title           = {{EXP-BENCH}: Can {AI} Conduct {AI} Research Experiments?},
+  year            = {2026},
+  month           = {April},
+  publist_confkey = {ICLR'26},
+  publist_link    = {paper || expbench-iclr26.pdf},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Automating AI research holds immense potential for accelerating scientific progress, yet current AI agents struggle with the complexities of rigorous, end-to-end experimentation. We introduce EXP-Bench, a novel benchmark designed to systematically evaluate AI agents on complete research experiments sourced from influential AI publications. Given a research question and incomplete starter code, EXP-Bench challenges AI agents to formulate hypotheses, design and implement experimental procedures, execute them, and analyze results. To enable the creation of such intricate and authentic tasks with high-fidelity, we design a semi-autonomous pipeline to extract and structure crucial experimental details from these research papers and their associated open source code. With the pipeline, EXP-Bench curated 461 AI research tasks from 51 top-tier AI research papers. Evaluations of leading LLM-based agents, such as OpenHands and IterativeAgents on EXP-Bench demonstrate partial capabilities: while scores on individual experimental aspects such as design or implementation correctness occasionally reach 20–35%, the success rate for complete, executable experiments was a mere 0.5%. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve targeted research components and agent planning ability.
+  }
 }
