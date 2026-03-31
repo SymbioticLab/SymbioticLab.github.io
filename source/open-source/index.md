@@ -59,6 +59,9 @@ sections:
 
   - title: "Selected Software Artifacts"
     items:
+      - name: "TetriServe"
+        github_url: "https://github.com/DiT-Serving/TetriServe"
+        description: "Efficient serving system for mixed DiT workloads."
       - name: "Venn"
         github_url: "https://github.com/SymbioticLab/Venn"
         description: "Resource management for collaborative learning jobs."
