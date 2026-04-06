@@ -2349,3 +2349,22 @@ While the rapid expansion of data centers poses challenges for power grids, it a
 Automating AI research holds immense potential for accelerating scientific progress, yet current AI agents struggle with the complexities of rigorous, end-to-end experimentation. We introduce EXP-Bench, a novel benchmark designed to systematically evaluate AI agents on complete research experiments sourced from influential AI publications. Given a research question and incomplete starter code, EXP-Bench challenges AI agents to formulate hypotheses, design and implement experimental procedures, execute them, and analyze results. To enable the creation of such intricate and authentic tasks with high-fidelity, we design a semi-autonomous pipeline to extract and structure crucial experimental details from these research papers and their associated open source code. With the pipeline, EXP-Bench curated 461 AI research tasks from 51 top-tier AI research papers. Evaluations of leading LLM-based agents, such as OpenHands and IterativeAgents on EXP-Bench demonstrate partial capabilities: while scores on individual experimental aspects such as design or implementation correctness occasionally reach 20–35%, the success rate for complete, executable experiments was a mere 0.5%. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve targeted research components and agent planning ability.
   }
 }
+
+@Article{cornserve:arxiv26,
+  author          = {Jae-Won Chung and Jeff J. Ma and Jisang Ahn and Yizhuo Liang and Akshay Jajoo and Myungjin Lee and Mosharaf Chowdhury},
+  title           = {Cornserve: A Distributed Serving System for Any-to-Any Multimodal Models},
+  year            = {2026},
+  month           = {Mar},
+  volume          = {abs/2603.12118},
+  archivePrefix   = {arXiv},
+  eprint          = {2603.12118},
+  url             = {https://arxiv.org/abs/2603.12118},
+  publist_confkey = {arXiv:2603.12118},
+  publist_link    = {paper || https://arxiv.org/abs/2603.12118},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Any-to-Any models are an emerging class of multimodal models that accept combinations of multimodal data (e.g., text, image, video, audio) as input and generate them as output. Serving these models are challenging; different requests with different input and output modalities traverse different paths through the model computation graph, and each component of the model have different scaling characteristics.
+
+We present Cornserve, a distributed serving system for generic Any-to-Any models. Cornserve provides a flexible task abstraction for expressing Any-to-Any model computation graphs, enabling component disaggregation and independent scaling. The distributed runtime dispatches compute to the data plane via an efficient record-and-replay execution model that keeps track of data dependencies, and forwards tensor data between components directly from the producer to the consumer. Built on Kubernetes with approximately 23K new lines of Python, Cornserve supports diverse Any-to-Any models and delivers up to 3.81x higher throughput and 5.79x lower tail latency.
+  }
+}
