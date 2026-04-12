@@ -33,7 +33,6 @@ excerpt: "SymbioticLab current & past members"
 1. Wonbin Jin (CSE MSE)
 1. Jisang Ahn (CS-LSA BS)
 1. Letian Ruan (CSE BSE)
-1. Rishika Kalidindi (CSE MSE)
 1. David McDermott (CS-LSA & Interdisciplinary Physics BS)
 
 ## Past Members
@@ -100,3 +99,4 @@ excerpt: "SymbioticLab current & past members"
 1. Vishwa Ramanakumar (CSE MSE)
 1. Vatsal Joshi (CSE MSE) → Meta
 1. Wenxuan Tan (CS & Math BS@UW-Madison)
+1. Rishika Kalidindi (CSE MSE) → Ph.D. @UT Austin
