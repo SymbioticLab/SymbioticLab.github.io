@@ -2368,3 +2368,22 @@ Any-to-Any models are an emerging class of multimodal models that accept combina
 We present Cornserve, a distributed serving system for generic Any-to-Any models. Cornserve provides a flexible task abstraction for expressing Any-to-Any model computation graphs, enabling component disaggregation and independent scaling. The distributed runtime dispatches compute to the data plane via an efficient record-and-replay execution model that keeps track of data dependencies, and forwards tensor data between components directly from the producer to the consumer. Built on Kubernetes with approximately 23K new lines of Python, Cornserve supports diverse Any-to-Any models and delivers up to 3.81x higher throughput and 5.79x lower tail latency.
   }
 }
+
+@Article{kairos:arxiv26,
+  author          = {Yichao Yuan and Mosharaf Chowdhury and Nishil Talati},
+  title           = {{KAIROS}: Stateful, Context-Aware Power-Efficient Agentic Inference Serving},
+  year            = {2026},
+  month           = {Apr},
+  volume          = {abs/2604.16682},
+  archivePrefix   = {arXiv},
+  eprint          = {2604.16682},
+  url             = {https://arxiv.org/abs/2604.16682},
+  publist_confkey = {arXiv:2604.16682},
+  publist_link    = {paper || https://arxiv.org/abs/2604.16682},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Power has become a central bottleneck for AI inference. This problem is becoming more urgent as agentic AI emerges as a major workload class, yet prior power-management techniques focus almost entirely on single-turn LLM serving. Our analysis shows that agentic serving behaves fundamentally differently: each request carries long-lived context that evolves across tool-interleaved turns, and lowering GPU frequency can push the system into a thrashing regime where memory pressure sharply worsens both performance and power efficiency. These observations show that power optimization for agentic serving requires rethinking.
+We present KAIROS, a context-aware power optimization system for agentic AI serving. KAIROS uses agent context as a first-class control signal to jointly manage GPU frequency, per-instance concurrency, and multi-instance request placement. This enables KAIROS to save power when memory headroom exists while avoiding thrashing and preserving performance targets. At a high level, KAIROS tracks requests at agent granularity, adapts local control to context growth and agent progress, and routes agents across instances to jointly improve power efficiency and memory stability. Evaluated across diverse software and data engineering agentic tasks, KAIROS achieves an average of 27% (up to 39.8%) power reduction while meeting the performance targets.
+  }
+}
