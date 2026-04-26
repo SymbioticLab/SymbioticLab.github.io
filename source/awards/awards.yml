@@ -1,4 +1,9 @@
 - year: 2026
+  title: Best Poster, CSE Undergraduate Research Symposium
+  description: "Prepack: Efficient Microbatch Configuration Storage for Pretraining Large Language Models"
+  recipient: David McDermott
+
+- year: 2026
   title: Rackham Predoctoral Fellowship
   recipient: Jae-Won Chung
 
@@ -35,7 +40,7 @@
   recipient: Fan Lai
 
 - year: 2024
-  title: UM CSE DEI Service Award
+  title: CSE DEI Service Award
   recipient: Jiachen Liu
 
 - year: 2024
