@@ -1,4 +1,8 @@
 - year: 2026
+  title: MLCommons ML and Systems Rising Stars
+  recipient: Jae-Won Chung
+
+- year: 2026
   title: Best Poster, CSE Undergraduate Research Symposium
   description: "Prepack: Efficient Microbatch Configuration Storage for Pretraining Large Language Models"
   recipient: David McDermott
