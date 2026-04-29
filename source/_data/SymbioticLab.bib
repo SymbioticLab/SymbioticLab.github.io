@@ -2361,11 +2361,31 @@ Automating AI research holds immense potential for accelerating scientific progr
   url             = {https://arxiv.org/abs/2603.12118},
   publist_confkey = {arXiv:2603.12118},
   publist_link    = {paper || https://arxiv.org/abs/2603.12118},
+  publist_link    = {code || https://github.com/cornserve-ai/cornserve},
+  publist_link    = {demo || https://www.youtube.com/watch?v=nb8R-vztLRg},
   publist_topic   = {Systems + AI},
   publist_abstract = {
 Any-to-Any models are an emerging class of multimodal models that accept combinations of multimodal data (e.g., text, image, video, audio) as input and generate them as output. Serving these models are challenging; different requests with different input and output modalities traverse different paths through the model computation graph, and each component of the model have different scaling characteristics.
 
 We present Cornserve, a distributed serving system for generic Any-to-Any models. Cornserve provides a flexible task abstraction for expressing Any-to-Any model computation graphs, enabling component disaggregation and independent scaling. The distributed runtime dispatches compute to the data plane via an efficient record-and-replay execution model that keeps track of data dependencies, and forwards tensor data between components directly from the producer to the consumer. Built on Kubernetes with approximately 23K new lines of Python, Cornserve supports diverse Any-to-Any models and delivers up to 3.81x higher throughput and 5.79x lower tail latency.
+  }
+}
+
+@InProceedings{cornserve:caisdemo26,
+  author          = {Jae-Won Chung and Jeff J. Ma and Jisang Ahn and Yizhuo Liang and Akshay Jajoo and Myungjin Lee and Mosharaf Chowdhury},
+  booktitle       = {CAIS Demo Track},
+  title           = {Cornserve: A Distributed Serving System for Any-to-Any Multimodal Models},
+  year            = {2026},
+  month           = {May},
+  publist_confkey = {CAIS'26 Demo},
+  publist_link    = {paper || cornserve-cais26.pdf},
+  publist_link    = {code || https://github.com/cornserve-ai/cornserve},
+  publist_link    = {demo || https://www.youtube.com/watch?v=nb8R-vztLRg},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Any-to-Any models are an emerging class of multimodal models that accept combinations of multimodal data (e.g., text, image, video, audio) as input and generate them as output. Serving these models are challenging; different requests with different input and output modalities traverse different paths through the model computation graph, and each component of the model have different scaling characteristics.
+
+We present Cornserve, a distributed serving system for generic Any-to-Any models. Cornserve provides a flexible task abstraction for expressing Any-to-Any model computation graphs, enabling component disaggregation and independent scaling. The distributed runtime dispatches compute to the data plane via an efficient record-and-replay execution model that keeps track of data dependencies, and forwards tensor data between components directly from the producer to the consumer. Built on Kubernetes with approximately 23K new lines of Python, Cornserve supports diverse Any-to-Any models and delivers up to 3.81× higher throughput and 5.79× lower tail latency.
   }
 }
 
