@@ -475,6 +475,13 @@ venues:
         date: 2026-04-23
         url: https://iclr.cc/Conferences/2026
         acceptance: 26.97%
+  'CAIS Demo':
+    category: Conferences
+    occurrences:
+      - key: CAIS'26 Demo
+        name: ACM Conference on AI and Agentic Systems Demo Track
+        date: 2026-05-26
+        url: https://caisconf.org
 {% endpublist %}
 
 ---
