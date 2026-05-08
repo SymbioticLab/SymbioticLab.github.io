@@ -2424,3 +2424,25 @@ We present KAIROS, a context-aware power optimization system for agentic AI serv
 Scientific publication compresses a branching, iterative research process into a linear narrative, discarding the majority of what was discovered along the way. This compilation imposes two structural costs: a Storytelling Tax, where failed experiments, rejected hypotheses, and the branching exploration process are discarded to fit a linear narrative; and an Engineering Tax, where the gap between reviewer-sufficient prose and agent-sufficient specification leaves critical implementation details unwritten. Tolerable for human readers, these costs become critical when AI agents must understand, reproduce, and extend published work. We introduce the Agent-Native Research Artifact (ARA), a protocol that replaces the narrative paper with a machine-executable research package structured around four layers: scientific logic, executable code with full specifications, an exploration graph that preserves the failures compilation discards, and evidence grounding every claim in raw outputs. Three mechanisms support the ecosystem: a Live Research Manager that captures decisions and dead ends during ordinary development; an ARA Compiler that translates legacy PDFs and repos into ARAs; and an ARA-native review system that automates objective checks so human reviewers can focus on significance, novelty, and taste. On PaperBench and RE-Bench, ARA raises question-answering accuracy from 72.4% to 93.7% and reproduction success from 57.4% to 64.4%. On RE-Bench's five open-ended extension tasks, preserved failure traces in ARA accelerate progress, but can also constrain a capable agent from stepping outside the prior-run box depending on the agent's capabilities.
   }
 }
+
+@Article{openg2g:arxiv26,
+  author          = {Jae-Won Chung and Zhirui Liang and Yanyong Mao and Jiasi Chen and Mosharaf Chowdhury and Vladimir Dvorkin},
+  title           = {{OpenG2G}: A Simulation Platform for AI Datacenter-Grid Runtime Coordination},
+  year            = {2026},
+  month           = {May},
+  volume          = {abs/2605.05519},
+  archivePrefix   = {arXiv},
+  eprint          = {2605.05519},
+  url             = {https://arxiv.org/abs/2605.05519},
+  publist_confkey = {arXiv:2605.05519},
+  publist_link    = {paper || https://arxiv.org/abs/2605.05519},
+  publist_link    = {code || https://github.com/gpu2grid/openg2g},
+  publist_link    = {website || https://gpu2grid.io/openg2g/},
+  publist_topic   = {Systems + AI},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_abstract = {
+AI's growing compute demand and new datacenter buildouts present major capacity and reliability challenges for the electricity grid, leading to multi-year interconnection delays for new datacenters and bottlenecking AI growth. To ease this strain, datacenters increasingly offer rapid power flexibility in response to grid signals, where the datacenter can increase or decrease its power consumption by adapting its workload in real time.
+
+In order to understand the impact of large datacenters on the grid and to facilitate the design of effective coordination strategies, we build OpenG2G, a simulation platform for AI datacenter-grid runtime coordination. We show that OpenG2G is capable of answering a wide range of coordination questions by allowing users to implement and compare various control paradigms (including classic, optimization, and learning-based controllers), and quantify how AI model and deployment choices affect datacenter flexibility and coordination outcomes. This versatility is enabled by OpenG2G's modular and extensible architecture: a datacenter backend driven by real measurements of production-grade AI services, a grid backend built on high-fidelity grid simulators, and a generic controller interface that closes the loop between them. We describe the design of OpenG2G and demonstrate its usefulness through realistic grid scenarios and AI workloads.
+  }
+}
