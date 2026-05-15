@@ -59,6 +59,9 @@ sections:
 
   - title: "Selected Software Artifacts"
     items:
+      - name: "Mordal"
+        github_url: "https://github.com/SymbioticLab/Mordal"
+        description: "Automated pretrained model selection for VLMs."
       - name: "TetriServe"
         github_url: "https://github.com/DiT-Serving/TetriServe"
         description: "Efficient serving system for mixed DiT workloads."
