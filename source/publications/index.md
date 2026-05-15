@@ -482,6 +482,14 @@ venues:
         name: ACM Conference on AI and Agentic Systems Demo Track
         date: 2026-05-26
         url: https://caisconf.org
+  ACL:
+    category: Conferences
+    occurrences:
+      - key: ACL'26
+        name: The 64th Annual Meeting of the Association for Computational Linguistics
+        date: 2026-07-02
+        url: https://2026.aclweb.org/
+        acceptance: 19%
 {% endpublist %}
 
 ---
