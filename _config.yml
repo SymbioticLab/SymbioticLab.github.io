@@ -131,6 +131,7 @@ theme_plus:
 theme: next
 theme_config:
   custom_file_path:
+    head: custom/head.njk
     style: custom/styles.styl
     variable: custom/variables.styl
 
