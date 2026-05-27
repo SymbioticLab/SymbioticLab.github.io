@@ -446,7 +446,7 @@ venues:
       name: Forty-Third International Conference on Machine Learning
       date: 2026-07-06
       url: https://icml.cc/Conferences/2026
-      acceptance: 
+      acceptance: 26.56%
     - key: ICML'22
       name: Thirty-ninth International Conference on Machine Learning
       date: 2022-07-17
