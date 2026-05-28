@@ -2476,3 +2476,20 @@ Multimodal large language models (MLLMs) extend the capabilities of large langua
 In this paper, we present Cornstarch, an efficient distributed MLLM training framework that contemplates MLLM's unique characteristics in both model and data parallelization. Cornstarch introduces frozen-aware pipeline parallelism and workload-balanced context parallelism to improve MLLM training throughput. Our extensive evaluation shows that Cornstarch outperforms state-of-the-art solutions by 2.26x on average in terms of MLLM training throughput.
   }
 }
+
+@Article{entrain:arxiv26,
+  author          = {Insu Jang and Mosharaf Chowdhury},
+  title           = {Addressing Variable Heterogeneity in Distributed Multimodal Training with {Entrain}},
+  year            = {2026},
+  month           = {May},
+  volume          = {abs/2605.27918},
+  archivePrefix   = {arXiv},
+  eprint          = {2605.27918},
+  url             = {https://arxiv.org/abs/2605.27918},
+  publist_confkey = {arXiv:2605.27918},
+  publist_link    = {paper || https://arxiv.org/abs/2605.27918},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Multimodal LLM datasets are inherently heterogeneous, with significant data variability. Although each modality exhibits independent variability, sample-level entanglement makes it difficult to balance workloads across both modalities and batches. We present Entrain, a distributed MLLM training framework that addresses both heterogeneity and variability in multimodal training workloads. Entrain challenges the intuition that dynamic data variability requires dynamic model parallelism by shifting the profiling paradigm from micro-level samples to macroscopic batches. We prove that a single, static model-parallel configuration suffices for optimal load balancing under this paradigm. At the microscopic scale, Entrain introduces a hierarchical microbatch assignment algorithm that defers excess workload within each iteration to stabilize variability across microbatches. Evaluations show that Entrain reduces workload variability across microbatches by up to 10.6x, improving end-to-end training throughput by up to 1.40x over existing baselines.
+  }
+}
