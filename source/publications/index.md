@@ -495,6 +495,13 @@ venues:
         date: 2026-07-02
         url: https://2026.aclweb.org/
         acceptance: 19%
+  'Agent Skills':
+    category: Workshops
+    occurrences:
+      - key: Agent Skills'26
+        name: The First Workshop on Agent Skills
+        date: 2026-05-26
+        url: https://www.agentskills-workshop.org/
 {% endpublist %}
 
 ---
