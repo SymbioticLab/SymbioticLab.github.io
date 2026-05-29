@@ -2448,7 +2448,7 @@ In order to understand the impact of large datacenters on the grid and to facili
   }
 }
 
-@Article{branchandbrowse:acl26,
+@InProceedings{branchandbrowse:acl26,
   author        = {Shiqi He and Yue Cui and Xinyu Ma and Yaliang Li and Bolin Ding and Mosharaf Chowdhury},
   title         = {{Branch-and-Browse}: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory},
   year          = {2026},
@@ -2491,5 +2491,18 @@ In this paper, we present Cornstarch, an efficient distributed MLLM training fra
   publist_topic   = {Systems + AI},
   publist_abstract = {
 Multimodal LLM datasets are inherently heterogeneous, with significant data variability. Although each modality exhibits independent variability, sample-level entanglement makes it difficult to balance workloads across both modalities and batches. We present Entrain, a distributed MLLM training framework that addresses both heterogeneity and variability in multimodal training workloads. Entrain challenges the intuition that dynamic data variability requires dynamic model parallelism by shifting the profiling paradigm from micro-level samples to macroscopic batches. We prove that a single, static model-parallel configuration suffices for optimal load balancing under this paradigm. At the microscopic scale, Entrain introduces a hierarchical microbatch assignment algorithm that defers excess workload within each iteration to stabilize variability across microbatches. Evaluations show that Entrain reduces workload variability across microbatches by up to 10.6x, improving end-to-end training throughput by up to 1.40x over existing baselines.
+  }
+}
+
+@InProceedings{ara:agentskills26,
+  author    = {Jiachen Liu and Jiaxin Pei and Chenglei Si and Alex Pentland and Zexue He and Zhenyu Zhang and Ao Qu and Haizhong Zheng and Beidi Chen and Xiangru Tang and Ruihao Zhu and Xiaoyan Bai and Mingyuan Wu and Fan Lai and Zijian Jin and Zhiyang Chen and Jintao Huang and Yujuan Fu and Haojie Ye and Jiachen Sun and Yuan Yuan and Baoyu Zhou and Yao Li and Chenyu You and Junyuan Hong and Shangquan Sun and Shijian Lu and Yiming Qiu and Dianzhuo Wang and Qian-ze Zhu and Lichang Chen and Runyu Lu and Ang Chen and Mosharaf Chowdhury and Zechen Zhang},
+  booktitle = {Agent Skills},
+  title     = {Agent-Native Research Artifacts},
+  year      = {2026},
+  publist_confkey = {Agent Skills'26},
+  publist_link = {paper || ara-agentskills26.pdf},
+  publist_topic = {Systems + AI},
+  publist_abstract = { 
+    Scientific publication compresses a branching, iterative research process into a linear narrative, discarding the majority of what was discovered along the way. This compilation imposes two structural costs: a Storytelling Tax, where failed experiments, rejected hypotheses, and the branching exploration process are discarded to fit a linear narrative; and an Engineering Tax, where the gap between reviewer-sufficient prose and agent-sufficient specification leaves critical implementation details unwritten. Tolerable for human readers, these costs become critical when AI agents must understand, reproduce, and extend published work. We introduce the Agent-Native Research Artifact (Ara), a protocol that replaces the narrative paper with an agent-executable research package structured around four layers: scientific logic, executable code with full specifications, an exploration graph that preserves the failures compilation discards, and evidence grounding every claim in raw outputs. We complement the protocol with the Ara ecosystem, a coordinated set of agent skills—the Live Research Manager (LRM) that captures decisions and dead ends during ordinary development, the Ara Compiler that translates legacy PDFs and repos into Aras, and the Ara Seal, a three-level review pipeline (analogous to a grammar checker for prose)—so artifacts are produced, imported, and verified automatically while human reviewers focus on significance, novelty, and taste. On PaperBench and RE-Bench, Ara raises question-answering accuracy from 72.4% to 93.7% and reproduction success from 57.4% to 64.4%. On RE-Bench's five open-ended extension tasks, preserved failure traces in Ara accelerate progress, but can also constrain a capable agent from stepping outside the prior-run box depending on the agent's capabilities.
   }
 }
