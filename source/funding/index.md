@@ -46,15 +46,16 @@ Any opinions, findings, and conclusions of our research projects are those of th
 
 ![NSF](images/nsf.png)
 ![Ford](images/ford.png)
-![Cisco](images/cisco.png)
 ![GitHub](images/github.png)
 ![Laude](images/laude.png)
+![DARPA](images/darpa.png)
 </div>
 
 ## Past Sponsors
 
 <div class='flex-row'>
 
+![Cisco](images/cisco.png)
 ![Google](images/google.png)
 ![Mozilla](images/mozilla.png)
 ![Slalom](images/slalom.png)
