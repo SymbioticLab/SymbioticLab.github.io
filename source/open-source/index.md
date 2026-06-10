@@ -30,6 +30,11 @@ sections:
       - name: "Cornserve"
         github_url: "https://github.com/cornserve-ai/cornserve"
         description: "Easy, fast, and scalable multimodal AI."
+      - name: "OpenG2G"
+        url: "https://gpu2grid.io/openg2g"
+        github_url: "https://github.com/gpu2grid/openg2g"
+        logo: "/open-source/logo/openg2g.png"
+        description: "Simulate datacenter-grid interaction for LLM workloads."
 
   - title: "Major Past Projects"
     items:
