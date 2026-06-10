@@ -39,7 +39,6 @@ sections:
         logo: ""
         description: "TPP (Transparent Page Placement) introduced CXL support to the Linux kernel from v5.18 and onward."
       - name: "FedScale"
-        url: "https://fedscale.ai"
         github_url: "https://github.com/SymbioticLab/FedScale"
         logo: "/open-source/logo/fedscale.png"
         logo_scale: 45%
