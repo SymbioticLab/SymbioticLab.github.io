@@ -34,7 +34,7 @@ sections:
         url: "https://gpu2grid.io/openg2g"
         github_url: "https://github.com/gpu2grid/openg2g"
         logo: "/open-source/logo/openg2g.png"
-        description: "Simulate datacenter-grid interaction for LLM workloads."
+        description: "Simulate datacenter-grid interaction for AI workloads."
 
   - title: "Major Past Projects"
     items:
