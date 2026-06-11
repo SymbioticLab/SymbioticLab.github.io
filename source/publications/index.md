@@ -227,6 +227,10 @@ venues:
   OSDI:
     category: Conferences
     occurrences:
+    - key: OSDI'26
+      name: The 20th USENIX Symposium on Operating Systems Design and Implementation
+      date: 2026-07-13
+      url: https://www.usenix.org/conference/osdi26
     - key: OSDI'24
       name: The 18th USENIX Symposium on Operating Systems Design and Implementation
       date: 2024-07-10

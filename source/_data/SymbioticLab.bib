@@ -2278,6 +2278,24 @@ We find that fine-grained kernel scheduling and frequency scaling jointly and in
   }
 }
 
+@InProceedings{kareus:osdi26,
+  author          = {Ruofan Wu and Jae-Won Chung and Mosharaf Chowdhury},
+  booktitle       = {OSDI},
+  title           = {{Kareus}: Joint Reduction of Dynamic and Static Energy in Large Model Training},
+  year            = {2026},
+  month           = {Jul},
+  publist_confkey = {OSDI'26},
+  publist_link    = {paper || kareus-osdi26.pdf},
+  publist_link    = {code || https://github.com/ml-energy/kareus},
+  publist_topic   = {Systems + AI},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_abstract = {
+The computing demand of AI is growing at an unprecedented rate, but energy supply is not keeping pace. As a result, energy has become an expensive and contended resource that requires explicit management and optimization. Although recent works have made significant progress in large model training optimization, they focus on optimizing either dynamic or static energy consumption.
+
+We find that fine-grained kernel scheduling and frequency scaling jointly and interdependently impact both dynamic and static energy consumption. Based on this finding, we design Kareus, a training system that pushes the time--energy tradeoff frontier by optimizing both aspects. Kareus decomposes the intractable joint optimization problem into local, partition-based subproblems. It then uses a multi-pass multi-objective optimization algorithm to find execution schedules that push the time--energy tradeoff frontier. Compared to the state of the art, Kareus reduces training energy by up to 28.3% at the same training time, or reduces training time by up to 27.5% at the same energy consumption.
+  }
+}
+
 @article{mlenergy-benchmark-v3:arxiv26,
   title={Where Do the Joules Go? Diagnosing Inference Energy Consumption},
   author={Jae-Won Chung and Ruofan Wu and Jeff J. Ma and Mosharaf Chowdhury},
