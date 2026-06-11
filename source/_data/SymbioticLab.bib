@@ -589,9 +589,6 @@ In this work, we study a slightly different model of coflow scheduling in genera
   publist_link = {paper || salus-mlsys20.pdf},
   publist_link = {slides || salus-mlsys20-talk.pptm},
   publist_link = {poster || salus-mlsys20-poster.pdf},
-  publist_badge = {Artifacts Available},
-  publist_badge = {Artifacts Functional},
-  publist_badge = {Results Reproduced},
   publist_topic = {Systems + AI},
   publist_abstract = {
     Unlike traditional resources such as CPU or the network, modern GPUs do not natively support
@@ -685,9 +682,6 @@ In this work, we study a slightly different model of coflow scheduling in genera
   publist_link = {code || https://github.com/SymbioticLab/Aequitas},
   publist_topic = {Datacenter Networking},
   publist_topic = {Disaggregation},
-  publist_badge = {Artifacts Available},
-  publist_badge = {Artifacts Functional},
-  publist_badge = {Results Reproduced},
   publist_abstract = {
     With the increasing popularity of disaggregated storage and microservice architectures, high fan-out and fan-in Remote Procedure Calls (RPCs) now generate most of the traffic in modern datacenters. 
     While the network plays a crucial role in RPC performance, traditional traffic classification categories cannot sufficiently capture their importance due to wide variations in RPC characteristics.
@@ -729,9 +723,6 @@ In this work, we study a slightly different model of coflow scheduling in genera
   publist_link = {code || https://github.com/netx-repo/NetLock},
   publist_topic = {Datacenter Networking},
   publist_topic = {Disaggregation},
-  publist_badge = {Artifacts Available},
-  publist_badge = {Artifacts Functional},
-  publist_badge = {Results Reproduced},
   publist_abstract = {
   
     Lock managers are widely used by distributed systems. Traditional centralized lock managers can easily support policies between multiple users using global knowledge, but they suffer from low performance. In contrast, emerging decentralized approaches are faster but cannot provide flexible policy support. Furthermore, performance in both cases is limited by the server capability.
@@ -983,9 +974,6 @@ We evaluate TPP with diverse memory-sensitive workloads in the production server
   publist_confkey = {OSDI'21},
   publist_link = {paper || oort-osdi21.pdf},
   publist_link = {code || https://github.com/SymbioticLab/Oort},
-  publist_badge = {Artifacts Available},
-  publist_badge = {Artifacts Functional},
-  publist_badge = {Results Reproduced},
   publist_badge = {Distinguished Artifact Award},
   publist_topic = {Wide-Area Computing},
   publist_topic = {Systems + AI},
@@ -1033,9 +1021,6 @@ We evaluate TPP with diverse memory-sensitive workloads in the production server
   publist_link = {paper || aifo-sigcomm21.pdf},
   publist_link = {code || https://github.com/netx-repo/AIFO},
   publist_topic = {Datacenter Networking},
-  publist_badge = {Artifacts Available},
-  publist_badge = {Artifacts Functional},
-  publist_badge = {Results Reproduced},
   publist_abstract = {
   
     Programmable packet scheduling enables scheduling algorithms to be programmed into the data plane without changing the hardware. Existing proposals either have no hardware implementations for switch ASICs or require multiple strict-priority queues.
@@ -1594,9 +1579,6 @@ This paper summarizes the growing research landscape of memory disaggregation fr
   publist_confkey  = {SOSP'23},
   publist_link     = {paper || oobleck-sosp23.pdf},
   publist_topic    = {Systems + AI},
-  publist_badge    = {Artifacts Available},
-  publist_badge    = {Artifacts Functional},
-  publist_badge    = {Results Reproduced},
   publist_abstract = {
     Oobleck enables resilient distributed training of large DNN models with guaranteed fault tolerance. It takes a planning-execution co-design approach, where it first generates a set of heterogeneous pipeline templates and instantiates at least f+1 logically equivalent pipeline replicas to tolerate any f simultaneous failures. During execution, it relies on already-replicated model states across the replicas to provide fast recovery. Oobleck provably guarantees that some combination of the initially created pipeline templates can be used to cover all available resources after f or fewer simultaneous failures, thereby avoiding resource idling at all times. Evaluation on large DNN models with billions of parameters shows that Oobleck provides consistently high throughput, and it outperforms state-of-the-art fault tolerance solutions like Bamboo and Varuna by up to 29.6x.
   }}
@@ -1697,9 +1679,6 @@ In this work, we identify two independent sources of energy bloat in large model
   publist_link     = {website || https://ml.energy/zeus/research_overview/perseus},
   publist_topic    = {Energy-Efficient Systems},
   publist_topic    = {Systems + AI},
-  publist_badge    = {Artifacts Available},
-  publist_badge    = {Artifacts Functional},
-  publist_badge    = {Results Reproduced},
   publist_abstract = {
 Training large AI models on numerous GPUs consumes a massive amount of energy, making power delivery one of the largest limiting factors in building and operating datacenters for AI workloads. However, we observe that not all energy consumed during training directly contributes to end-to-end throughput; a significant portion can be removed without slowing down training. We call this portion energy bloat.
 
@@ -1902,8 +1881,6 @@ Disaggregating compute from storage is an emerging trend in cloud computing. Eff
   year      = {2025},	
   publist_confkey = {EuroSys'25},
   publist_topic = {Systems + AI},
-  publist_badge   = {Artifacts Available},
-  publist_badge   = {Artifacts Functional},
   publist_link = {paper || dpack-eurosys25.pdf},
   publist_abstract = {
 Machine learning (ML) models can leak information about users, and differential privacy (DP) provides a rigorous way to bound that leakage under a given budget. This DP budget can be regarded as a new type of compute resource in workloads of multiple ML models training on user data. Once it is used, the DP budget is forever consumed. Therefore, it is crucial to allocate it most efficiently to train as many models as possible. This paper presents a scheduler for privacy that optimizes for efficiency. We formulate privacy scheduling as a new type of multidimensional knapsack problem, called privacy knapsack, which maximizes DP budget efficiency. We show that privacy knapsack is NP-hard, hence practical algorithms are necessarily approximate. We develop an approximation algorithm for privacy knapsack, DPack, and evaluate it on microbenchmarks and on a new, synthetic private-ML workload we developed from the Alibaba ML cluster trace. We show that DPack: (1) often approaches the efficiency-optimal schedule, (2) consistently schedules more tasks compared to a state-of-the-art privacy scheduling algorithm that focused on fairness (1.3–1.7X in Alibaba, 1.0–2.6X in microbenchmarks), but (3) sacrifices some level of fairness for efficiency. Therefore, using DPack, DP ML operators should be able to train more models on the same amount of user data while offering the same privacy guarantee to their users.  }
@@ -2056,8 +2033,6 @@ Generative AI (GenAI) models have become vital across industries, yet current ev
   publist_confkey = {MLSys'25},
   publist_topic   = {Systems + AI},
   publist_topic   = {Wide-Area Computing},
-  publist_badge   = {Artifacts Available},
-  publist_badge   = {Artifacts Functional},
   publist_abstract = {
     In recent years, collaborative learning (CL) has emerged as a promising approach for machine learning (ML) and data science across distributed edge devices. As the deployment of CL jobs increases, they inevitably contend for limited resources. However, efficient resource scheduling in this context is challenging because of the ephemeral nature and resource heterogeneity of devices, coupled with the overlapping resource requirements of diverse CL jobs. Existing resource managers often assign devices to CL jobs randomly for simplicity and scalability, but this approach compromises job efficiency.
 
@@ -2273,6 +2248,24 @@ We present Cornfigurator, the first deployment planner for generic Any-to-Any mo
   publist_topic   = {Energy-Efficient Systems},
   publist_abstract = {
 The computing demand of AI is growing at an unprecedented rate, but energy supply is not keeping pace. As a result, energy has become an expensive, contended resource that requires explicit management and optimization. Although recent works have made significant progress in large model training optimization, they focus only on a single aspect of energy consumption: dynamic or static energy.
+
+We find that fine-grained kernel scheduling and frequency scaling jointly and interdependently impact both dynamic and static energy consumption. Based on this finding, we design Kareus, a training system that pushes the time--energy tradeoff frontier by optimizing both aspects. Kareus decomposes the intractable joint optimization problem into local, partition-based subproblems. It then uses a multi-pass multi-objective optimization algorithm to find execution schedules that push the time--energy tradeoff frontier. Compared to the state of the art, Kareus reduces training energy by up to 28.3% at the same training time, or reduces training time by up to 27.5% at the same energy consumption.
+  }
+}
+
+@InProceedings{kareus:osdi26,
+  author          = {Ruofan Wu and Jae-Won Chung and Mosharaf Chowdhury},
+  booktitle       = {OSDI},
+  title           = {{Kareus}: Joint Reduction of Dynamic and Static Energy in Large Model Training},
+  year            = {2026},
+  month           = {Jul},
+  publist_confkey = {OSDI'26},
+  publist_link    = {paper || kareus-osdi26.pdf},
+  publist_link    = {code || https://github.com/ml-energy/kareus},
+  publist_topic   = {Systems + AI},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_abstract = {
+The computing demand of AI is growing at an unprecedented rate, but energy supply is not keeping pace. As a result, energy has become an expensive and contended resource that requires explicit management and optimization. Although recent works have made significant progress in large model training optimization, they focus on optimizing either dynamic or static energy consumption.
 
 We find that fine-grained kernel scheduling and frequency scaling jointly and interdependently impact both dynamic and static energy consumption. Based on this finding, we design Kareus, a training system that pushes the time--energy tradeoff frontier by optimizing both aspects. Kareus decomposes the intractable joint optimization problem into local, partition-based subproblems. It then uses a multi-pass multi-objective optimization algorithm to find execution schedules that push the time--energy tradeoff frontier. Compared to the state of the art, Kareus reduces training energy by up to 28.3% at the same training time, or reduces training time by up to 27.5% at the same energy consumption.
   }

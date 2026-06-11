@@ -63,6 +63,9 @@ sections:
 
   - title: "Selected Software Artifacts"
     items:
+      - name: "Kareus"
+        github_url: "https://github.com/ml-energy/kareus"
+        description: "Train large models with less energy and time."
       - name: "Mordal"
         github_url: "https://github.com/SymbioticLab/Mordal"
         description: "Automated pretrained model selection for VLMs."
