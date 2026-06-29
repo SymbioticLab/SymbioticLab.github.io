@@ -2540,3 +2540,20 @@ Together, these works provide comprehensive solutions to address heterogeneity a
 Large language model (LLM) web agents are usually deployed as tool callers: each turn, the model reads a fresh page observation and emits one structured tool action. When every action is a low-level primitive, horizons grow quickly and so do policy-facing LLM completions, dominating latency and cost on benchmarks such as Mind2Web and WebArena. Recent systems therefore wrap repeated interaction fragments as web skills: callable tools built from successful trajectories or induced programs, so one call can replace several primitives. However, prior skill libraries are still triggered mainly by instruction similarity or coarse site metadata, which yields low skill reuse on held-out sites and leaves much of the potential step and token reduction on the table. We present SkillMigrator, an agent that learns reusable web skills and transfers them across sites by matching layout structure rather than specific element references. Each induced skill is stored as a transferable interaction pattern (TIP): the skill paired with a structural sketch of the snapshot at induction time. At test time, SkillMigrator retrieves TIPs by layout similarity and grounds their references on the live page. The rest of the stack is standard: accessibility-snapshot observations with stable references, and fixed tool calling over primitives plus skill invocations. Compared with the state-of-the-art approaches, SkillMigrator reduces the average LLM-action count on successful trajectories by 8-10% across both WebArena and Mind2Web at matched success rate.
   }
 }
+
+@Article{langenergy:arxiv26,
+  author          = {Naihao Deng and Alissa Shen and Yiming Feng and Joan Nwatu and Jae-Won Chung and Mosharaf Chowdhury and Yulong Chen and Rada Mihalcea},
+  title           = {The Language-Energy Divide: Measuring Energy Costs of Multilingual {LLM} Inference},
+  year            = {2026},
+  month           = {Jun},
+  volume          = {abs/2606.21869},
+  archivePrefix   = {arXiv},
+  eprint          = {2606.21869},
+  url             = {https://arxiv.org/abs/2606.21869},
+  publist_confkey = {arXiv:2606.21869},
+  publist_link    = {paper || https://arxiv.org/abs/2606.21869},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_abstract = {
+Large language models (LLMs) are increasingly deployed in multilingual settings, yet the energy costs of serving these models across different languages remain poorly understood. We present a systematic study of inference energy consumption across languages with ML.Energy framework. We find striking disparities: energy consumption per output token varies by up to 8.3x across languages, while total energy for a fixed set of requests varies by up to 179x between the cheapest (English, 17.6 kJ) and the most expensive (Pashto, 3,147 kJ) languages. Our analysis shows that this disparity is driven by two compounding factors: (1) higher per-token energy costs for languages using complex or rare scripts, and (2) more tokens generated for low-resource languages. Moreover, we find a double cost + performance penalty: languages with the highest energy footprints also tend to achieve the lowest task accuracy. We reveal that the energy divide persists across models, hardware, and tasks, suggesting a systemic energy inequity in multilingual LLM deployment. Finally, we recommend that the community treat energy as a first-class evaluation axis, extend reporting checklists and model cards to include it, and adopt deployment-side mitigations for better energy efficiency.
+  }
+}
