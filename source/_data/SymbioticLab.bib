@@ -2576,3 +2576,23 @@ Large language models (LLMs) are increasingly deployed in multilingual settings,
 Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tasks, simulation and real-world settings, and embodiments. It operates in an open-ended loop with three components: (1) a closed-loop robot execution engine that exposes fine-grained multimodal traces, enabling autonomous failure diagnosis, repair synthesis, and validation; (2) a continually expanding skill library that distills validated fixes into reusable, transferable knowledge; and (3) evolutionary search that generates diverse task sequences and control programs to explore beyond single-trajectory refinement. ASPIRE surpasses prior methods by up to 77% on LIBERO-Pro manipulation under perturbation, 72% on Robosuite bimanual handover, and 32% on BEHAVIOR-1K long-horizon household tasks. Its accumulated library also enables zero-shot generalization to unseen long-horizon tasks: on LIBERO-Pro Long, ASPIRE achieves 31% success versus 4% for prior methods despite their use of test-time reasoning and retries. Finally, simulation-discovered skills provide initial evidence of sim-to-real transfer, substantially reducing real-robot programming effort across different embodiments and robot APIs.
   }
 }
+
+@Article{energycalculus:arxiv26,
+  author          = {Mosharaf Chowdhury and Jae-Won Chung and Jeff J. Ma and Nishil Talati and Ruofan Wu},
+  title           = {{Energy Calculus}: A Compositional Algebra of Energy in Computational Systems},
+  year            = {2026},
+  month           = {Jul},
+  volume          = {abs/2607.11087},
+  archivePrefix   = {arXiv},
+  eprint          = {2607.11087},
+  url             = {https://arxiv.org/abs/2607.11087},
+  publist_confkey = {arXiv:2607.11087},
+  publist_link    = {paper || https://arxiv.org/abs/2607.11087},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Energy is a binding constraint for AI scaling, yet it lacks the formal treatment that computation, communication, and learning have long enjoyed. Recent systems demonstrate large energy savings, but each targets a specific granularity and structure; one cannot combine frequency scaling from one system with critical-path analysis from another and reason about their joint effect on total energy. Energy remains a monolithic scalar that is measured after the fact and optimized with point solutions that do not generalize.
+
+We propose energy calculus, a compositional algebra that treats energy as a first-class primitive. It builds on energy elements, units of computation whose energy we can reliably measure, each carrying an energy signature that comprises its time, its static and dynamic energy, the hardware operating point and execution context under which we measured it, and the associated measurement uncertainty. Three operators (sequential, same-device parallel, and cross-device parallel) compose signatures along the same structure as the computation itself, covering arbitrary DAG-structured executions. The algebra rests on seven axioms that capture how hardware consumes energy, and it exhibits two properties distinctive to energy among computing resources: sequential composition commutes only when elements are mutually context-insensitive, and sequential composition does not distribute over parallel composition. We also present a Reduction Theorem that recovers simple context-independent algebra whenever interactions fall below measurement uncertainty, so practitioners pay for context dependence only where the physics demands it. Uncertainty propagates through every composition, so each prediction carries an error bound. Finally, we show that the same operators extend from energy totals to time--energy Pareto frontiers, so reasoning about tradeoffs composes with the same algebra.
+  }
+}
