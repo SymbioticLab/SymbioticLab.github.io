@@ -2596,3 +2596,18 @@ Energy is a binding constraint for AI scaling, yet it lacks the formal treatment
 We propose energy calculus, a compositional algebra that treats energy as a first-class primitive. It builds on energy elements, units of computation whose energy we can reliably measure, each carrying an energy signature that comprises its time, its static and dynamic energy, the hardware operating point and execution context under which we measured it, and the associated measurement uncertainty. Three operators (sequential, same-device parallel, and cross-device parallel) compose signatures along the same structure as the computation itself, covering arbitrary DAG-structured executions. The algebra rests on seven axioms that capture how hardware consumes energy, and it exhibits two properties distinctive to energy among computing resources: sequential composition commutes only when elements are mutually context-insensitive, and sequential composition does not distribute over parallel composition. We also present a Reduction Theorem that recovers simple context-independent algebra whenever interactions fall below measurement uncertainty, so practitioners pay for context dependence only where the physics demands it. Uncertainty propagates through every composition, so each prediction carries an error bound. Finally, we show that the same operators extend from energy totals to time--energy Pareto frontiers, so reasoning about tradeoffs composes with the same algebra.
   }
 }
+
+@InProceedings{gputogrid:powerup26,
+  author          = {Zhirui Liang and Jae-Won Chung and Mosharaf Chowdhury and Jiasi Chen and Vladimir Dvorkin},
+  booktitle       = {PowerUp},
+  title           = {{GPU-to-Grid}: Voltage Regulation via GPU Utilization Control},
+  year            = {2026},
+  month           = {Sep},
+  publist_confkey = {PowerUp'26},
+  publist_link    = {paper || gputogrid-powerup26.pdf},
+  publist_topic   = {Energy-Efficient Systems},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+While the rapid expansion of data centers poses challenges for power grids, it also offers new opportunities as flexible loads. Existing power system research often abstracts data centers as aggregate resources, while computer system research focuses on GPU energy efficiency and largely ignores grid impacts. To bridge this gap, we develop a GPU-to-Grid framework that couples device-level GPU control with power system objectives. We study distribution-level voltage regulation enabled by LLM inference flexibility, using batch size as a data-center-side control knob that trades off GPU power consumption, inference latency, and token throughput. We first formulate the problem as an optimization problem and then realize it as an online feedback optimization controller, implemented by the data center operator using its own empirical GPU power-performance model and real-time measurements from both the GPU and grid systems. Our key insight is that reducing GPU power alleviates lower-voltage violations, while increasing GPU power mitigates upper-voltage violations; this challenges the common belief that minimizing GPU power is always beneficial to power grids.
+  }
+}

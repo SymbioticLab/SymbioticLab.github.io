@@ -507,6 +507,14 @@ venues:
         name: The First Workshop on Agent Skills
         date: 2026-05-26
         url: https://www.agentskills-workshop.org/
+  PowerUp:
+    category: Conferences
+    occurrences:
+      - key: PowerUp'26
+        name: PowerUp 2026
+        date: 2026-09-09
+        url: https://power-up.us/
+        acceptance: 36.08%
 {% endpublist %}
 
 ---
