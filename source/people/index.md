@@ -24,7 +24,7 @@ excerpt: "SymbioticLab current & past members"
 1. [Dr. Hasan Al Maruf](https://www.linkedin.com/in/hasanalmaruf/) (2023) → AMD ➠ Meta
 1. [Prof. Fan Lai](https://www.linkedin.com/in/fan-lai-a27764147/) (2023) → Assistant Professor @UIUC
 1. [Dr. Yiwen Zhang](https://www.linkedin.com/in/yiwen-zhang-a75719112/) (2024) → Google
-1. [Dr. Jiachen Liu](https://www.linkedin.com/in/jiachen-amber-liu-872506169/) (2025) → Meta ➠ Co-Founder @Orchestra Research
+1. [Dr. Jiachen Liu](https://www.linkedin.com/in/jiachen-amber-liu-872506169/) (2025) → Meta ➠ Founder @Agent-Native Research Lab
 1. [Dr. Insu Jang](https://www.linkedin.com/in/insujang/) (2026) → NVIDIA
 
 ## Current Non-Ph.D. Students
