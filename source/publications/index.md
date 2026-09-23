@@ -492,6 +492,14 @@ venues:
         name: ACM Conference on AI and Agentic Systems Demo Track
         date: 2026-05-26
         url: https://caisconf.org
+  EMNLP:
+    category: Conferences
+    occurrences:
+      - key: EMNLP'26
+        name: The 2026 Conference on Empirical Methods in Natural Language Processing
+        date: 2026-10-25
+        url: https://2026.emnlp.org/
+        acceptance: 15.4%
   ACL:
     category: Conferences
     occurrences:
