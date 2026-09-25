@@ -33,6 +33,7 @@ excerpt: "SymbioticLab current & past members"
 1. Letian Ruan (CSE BSE)
 1. David McDermott (CS-LSA & Interdisciplinary Physics BS)
 1. Yash Singh (Mathematics & Physics BS)
+1. Shangdao Li (CSE BSE)
 
 ## Past Members
 1. Jack Kosaian (CSE BSE) → Ph.D. @CMU
