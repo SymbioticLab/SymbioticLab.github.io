@@ -23,10 +23,6 @@ sections:
         logo: "/open-source/logo/zeus.svg"
         logo_scale: 70%
         description: "Measure and optimize the energy consumption of your AI applications."
-      - name: "Cornstarch"
-        github_url: "https://github.com/cornstarch-org/Cornstarch"
-        logo: "/open-source/logo/cornstarch.svg"
-        description: "Build, train, and run your own multimodal model."
       - name: "Cornserve"
         github_url: "https://github.com/cornserve-ai/cornserve"
         description: "Easy, fast, and scalable multimodal AI."
@@ -38,6 +34,10 @@ sections:
 
   - title: "Major Past Projects"
     items:
+      - name: "Cornstarch"
+        github_url: "https://github.com/cornstarch-org/Cornstarch"
+        logo: "/open-source/logo/cornstarch.svg"
+        description: "Build, train, and run your own multimodal model."
       - name: "TPP"
         url: "https://lwn.net/Articles/876993/"
         github_url: ""

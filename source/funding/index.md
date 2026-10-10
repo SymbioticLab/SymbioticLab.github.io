@@ -46,7 +46,6 @@ Any opinions, findings, and conclusions of our research projects are those of th
 
 ![NSF](images/nsf.png)
 ![Ford](images/ford.png)
-![GitHub](images/github.png)
 ![Laude](images/laude.png)
 ![DARPA](images/darpa.png)
 </div>
@@ -55,6 +54,7 @@ Any opinions, findings, and conclusions of our research projects are those of th
 
 <div class='flex-row'>
 
+![GitHub](images/github.png)
 ![Cisco](images/cisco.png)
 ![Google](images/google.png)
 ![Mozilla](images/mozilla.png)
