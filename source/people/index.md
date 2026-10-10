@@ -25,7 +25,7 @@ excerpt: "SymbioticLab current & past members"
 1. [Prof. Fan Lai](https://www.linkedin.com/in/fan-lai-a27764147/) (2023) → Assistant Professor @UIUC
 1. [Dr. Yiwen Zhang](https://www.linkedin.com/in/yiwen-zhang-a75719112/) (2024) → Google
 1. [Dr. Jiachen Liu](https://www.linkedin.com/in/jiachen-amber-liu-872506169/) (2025) → Meta ➠ Founder @[ARA Lab](https://www.agenticresearch.sh/)
-1. [Dr. Insu Jang](https://www.linkedin.com/in/insujang/) (2026) → NVIDIA
+1. [Dr. Insu Jang](https://www.linkedin.com/in/insujang/) (2026) → NVIDIA Research
 
 ## Current Non-Ph.D. Students
 1. Aakash Puntambekar (CSE MSE)
