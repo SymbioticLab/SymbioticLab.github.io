@@ -48,6 +48,7 @@ Any opinions, findings, and conclusions of our research projects are those of th
 ![Ford](images/ford.png)
 ![Laude](images/laude.png)
 ![DARPA](images/darpa.png)
+![Intel](images/intel.png)
 </div>
 
 ## Past Sponsors
